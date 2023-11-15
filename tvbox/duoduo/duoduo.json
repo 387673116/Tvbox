@@ -804,7 +804,7 @@
     "api.htpan.net",
     "https://lf1-cdn-tos.bytegoofy.com/obj/tos-cn-i-dy/455ccf9e8ae744378118e4bd289288dd"
   ],
-  "wallpaper": "http://yydsys.top/bg.php",
+  "wallpaper": "/bizhi.jpg",
   "warningText": "丁丁家庭影院专用版",
   "spider": "./custom_spider.jar;md5;521D78A10B5DA52046832A14735A901B"
 }
