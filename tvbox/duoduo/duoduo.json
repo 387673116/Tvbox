@@ -1,13 +1,14 @@
 {
   "sites": [
-    {
-      "key": "wogg_T4",
+	{
+      "key": "js_ddys",
       "name": "家庭影院一线",
-      "type": 4,
-      "api": "http://home.jundie.top:9520/spider/csp_Wogg?sort=原画,蓝光,超清,高清&token=ececfa3ee0e44bad9094961a7f7b5133",
+      "type": 3,
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1
+      "filterable": 1,
+      "ext": "./lib/ddys.js"
     },
     {
       "key": "csp_WoGG",
@@ -32,15 +33,15 @@
       "filterable": 1,
       "ext": "./lib/4KHDR.js"
     },
-	{
-      "key": "js_ddys",
-      "name": "家庭影院四线",
+    {
+      "key": "js_baby",
+      "name": "儿童频道",
       "type": 3,
       "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/ddys.js"
+      "ext": "./lib/baby.js"
     },
     {
       "key": "js_555",
@@ -90,16 +91,6 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://www.ysgc.fun"
-    },
-    {
-      "key": "js_baby",
-      "name": "👶┃宝宝┃合集",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./lib/baby.js"
     },
     {
       "key": "js_nangua",
