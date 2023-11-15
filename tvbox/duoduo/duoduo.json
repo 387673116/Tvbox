@@ -4,7 +4,7 @@
       "key": "wogg_T4",
       "name": "家庭影院一线",
       "type": 4,
-      "api": "http://home.jundie.top:9520/spider/csp_Wogg?sort=原画,蓝光,超清,高清",
+      "api": "http://home.jundie.top:9520/spider/csp_Wogg?sort=原画,蓝光,超清,高清&token=ececfa3ee0e44bad9094961a7f7b5133",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
