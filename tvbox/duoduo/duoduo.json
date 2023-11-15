@@ -2,7 +2,7 @@
   "sites": [
     {
       "key": "wogg_T4",
-      "name": "家庭影院",
+      "name": "家庭影院 - 一线",
       "type": 4,
       "api": "http://home.jundie.top:9520/spider/csp_Wogg?sort=原画,蓝光,超清,高清&token=f376521b7ba247b183262c2732d870ba",
       "searchable": 1,
@@ -11,7 +11,7 @@
     },
     {
       "key": "csp_WoGG",
-      "name": "在线影院",
+      "name": "家庭影院 - 二线",
       "type": 3,
       "api": "csp_Wogg",
       "searchable": 1,
@@ -23,6 +23,16 @@
       }
     },
     {
+      "key": "js_4KHDR",
+      "name": "家庭影院 - 三线",
+      "type": 3,
+      "api": "./lib/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./lib/4KHDR.js"
+    },
+    {
       "key": "js_在线之家",
       "name": "电影频道",
       "type": 3,
@@ -31,16 +41,6 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "./lib/zxzj.js"
-    },
-    {
-      "key": "js_4KHDR",
-      "name": "👩‍⚕️┃玩偶┃姐姐",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./lib/4KHDR.js"
     },
     {
       "key": "csp_KungFu404",
