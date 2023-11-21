@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Image Redirect</title>
+</head>
+<body>
+    <script>
+        // 当页面加载完毕时执行
+        window.onload = function() {
+            // 使用fetch API读取img.txt文件
+            fetch('img.txt')
+                .then(response => response.text())
+                .then(data => {
+                    // 将文件内容按行分割成数组
+                    const lines = data.split('\n');
+                    // 随机选择一行
+                    const randomLine = lines[Math.floor(Math.random() * lines.length)];
+                    // 重定向到选择的链接
+                    window.location.href = randomLine;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        };
+    </script>
+</body>
+</html>

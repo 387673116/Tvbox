@@ -103,23 +103,48 @@
       "ext": "./lib/nangua.js"
     },
     {
-      "key": "js_6V",
-      "name": "✡️┃六维┃磁力",
+      "key": "Upyunso",
+      "name": "🌤️┃阿里┃云搜",
       "type": 3,
-      "api": "./lib/drpy2.min.js",
+      "api": "csp_UpYun",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./lib/6V.js"
+      "filterable": 0,
+      "jar": "./lib/duo.jar;md5;5C5116C70E15343433C8480C3B448408",
+      "ext": "http://127.0.0.1:9978/file/tvbox/token.txt+4k|fhd|auto"
     },
     {
-      "key": "XYQH_电影港",
-      "name": "🛳┃港口┃磁力",
+      "key": "Alips",
+      "name": "📀┃阿里┃盘搜",
       "type": 3,
-      "playerType": 1,
-      "api": "csp_XYQHiker",
-      "jar": "./lib/spider.txt;md5;A21EA6F5DD3B5F922B3A7F54D3BD0F16",
-      "ext": "./lib/港口.json"
+      "api": "csp_PanSou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "jar": "./lib/duo.jar;md5;5C5116C70E15343433C8480C3B448408",
+      "ext": "http://127.0.0.1:9978/file/tvbox/token.txt+4k|fhd|auto"
+    },
+    {
+      "key": "Yisou",
+      "name": "🎯┃阿里┃易搜",
+      "type": 3,
+      "api": "csp_YiSo",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "jar": "./lib/duo.jar;md5;5C5116C70E15343433C8480C3B448408",
+      "ext": "http://127.0.0.1:9978/file/tvbox/token.txt+4k|fhd|auto"
+    },
+    {
+      "key": "Zhaozy",
+      "name": "🔍┃阿里┃找片",
+      "type": 3,
+      "api": "csp_Zhaozy",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "jar": "./lib/duo.jar;md5;5C5116C70E15343433C8480C3B448408",
+      "ext": "http://127.0.0.1:9978/file/tvbox/token.txt+4k|fhd|auto$$$多多$$$159357"
     },
     {
       "key": "py_xuqu1",
