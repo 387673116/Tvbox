@@ -11,7 +11,7 @@
     },
     {
       "key": "meowtv_zxzj",
-      "name": "在线之家",
+      "name": "在线┃之家",
       "type": 3,
       "api": "csp_Zxzj",
       "searchable": 1,
@@ -22,7 +22,7 @@
     },
     {
       "key": "meowtv_Atys",
-      "name": "奥特影视",
+      "name": "奥特┃影视",
       "type": 3,
       "api": "csp_Auete",
       "searchable": 1,
@@ -32,7 +32,7 @@
     },
     {
       "key": "meowtv_sjys",
-      "name": "视觉影视",
+      "name": "视觉┃影视",
       "type": 3,
       "api": "csp_Xinsj",
       "searchable": 1,
@@ -42,7 +42,7 @@
     },
     {
       "key": "meowtv_Libo",
-      "name": "利播影视",
+      "name": "利播┃影视",
       "type": 3,
       "api": "csp_Libvio",
       "searchable": 1,
@@ -698,55 +698,6 @@
       ]
     },
     {
-      "key": "meowtv_33ys",
-      "name": "三六┃视频",
-      "type": 3,
-      "api": "csp_SP33",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0
-    },
-    {
-      "key": "meowtv_qysp",
-      "name": "奇艺┃视频",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./lib/奇艺视频.js"
-    },
-    {
-      "key": "meowtv_txsp",
-      "name": "腾讯┃视频",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./lib/腾讯视频.js"
-    },
-    {
-      "key": "meowtv_yksp",
-      "name": "优酷┃视频",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./lib/优酷视频.js"
-    },
-    {
-      "key": "meowtv_mgsp",
-      "name": "芒果┃视频",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./lib/芒果视频.js"
-    },
-    {
       "key": "meowtv_djsp",
       "name": "番茄┃短剧",
       "type": 3,
@@ -844,263 +795,6 @@
       "changeable": 1
     },
     {
-      "key": "meowtv_88kq",
-      "name": "八八┃体育",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": "./lib/八八体育.js"
-    },
-    {
-      "key": "meowtv_qmty",
-      "name": "JRK ┃体育",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": "./lib/JRK体育.js"
-    },
-    {
-      "key": "meowtv_310q",
-      "name": "三一┃体育",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": "./lib/三一体育.js"
-    },
-    {
-      "key": "meowtv_gdty",
-      "name": "格斗┃体育",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "ext": "./lib/格斗体育.js"
-    },
-    {
-      "key": "meowtv_qety",
-      "name": "企鹅┃体育",
-      "type": 3,
-      "api": "csp_XPath",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": "./lib/企鹅体育.json"
-    },
-    {
-      "key": "meowtv_mxmv",
-      "name": "明星┃ MV ",
-      "type": 1,
-      "api": "https://mv.wogg.link/mv/vod",
-      "searchable": 1,
-      "quickSearch": 0,
-      "changeable": 0
-    },
-    {
-      "key": "meowtv_kqmv",
-      "name": "酷奇┃ MV ",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": "./lib/酷奇视频.js"
-    },
-    {
-      "key": "meowtv_hyzb",
-      "name": "虎牙┃直播",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": "./lib/虎牙直播.js"
-    },
-    {
-      "key": "meowtv_dyzb",
-      "name": "斗鱼┃直播",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": "./lib/斗鱼直播.js"
-    },
-    {
-      "key": "meowtv_blzb",
-      "name": "哔哩┃直播",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "ext": "./lib/哔哩直播.js"
-    },
-    {
-      "key": "meowtv_jhzb",
-      "name": "聚合┃直播",
-      "type": 3,
-      "api": "csp_Yj1211",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1
-    },
-    {
-      "key": "meowtv_jdsp",
-      "name": "聚短┃视频",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": "./lib/聚短视频.js"
-    },
-    {
-      "key": "meowtv_ysxs",
-      "name": "有声┃小说",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": "./lib/有声小说.js"
-    },
-    {
-      "key": "meowtv_blhj",
-      "name": "哔哩┃合集",
-      "type": 3,
-      "api": "csp_Bili",
-      "searchable": 1,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": "./lib/哔哩合集.json"
-    },
-    {
-      "key": "meowtv_blgq",
-      "name": "哔哩┃歌曲",
-      "type": 3,
-      "api": "csp_Bili",
-      "searchable": 1,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": "./lib/哔哩歌曲.json"
-    },
-    {
-      "key": "meowtv_jjjx",
-      "name": "急救┃教学",
-      "type": 3,
-      "api": "csp_FirstAid",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0
-    },
-    {
-      "key": "meowtv_txdh",
-      "name": "腾讯┃动画",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./lib/腾讯动画.js"
-    },
-    {
-      "key": "meowtv_qydh",
-      "name": "奇艺┃动画",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./lib/奇艺动画.js"
-    },
-    {
-      "key": "meowtv_mgdh",
-      "name": "芒果┃动画",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./lib/芒果动画.js"
-    },
-    {
-      "key": "meowtv_tqss",
-      "name": "童趣┃搜视",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./lib/童趣搜视.js"
-    },
-    {
-      "key": "meowtv_etqm",
-      "name": "儿童┃启蒙",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": "./lib/儿童启蒙.js"
-    },
-    {
-      "key": "meowtv_dtgx",
-      "name": "灯塔┃国学",
-      "type": 3,
-      "api": "csp_Bili",
-      "searchable": 0,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./lib/灯塔国学.json"
-    },
-    {
-      "key": "meowtv_sejy",
-      "name": "少儿┃教育",
-      "type": 3,
-      "api": "csp_Bili",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": "./lib/少儿教育.json"
-    },
-    {
-      "key": "meowtv_xxkt",
-      "name": "小学┃课堂",
-      "type": 3,
-      "api": "csp_Bili",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": "./lib/小学课堂.json"
-    },
-    {
-      "key": "meowtv_czkt",
-      "name": "初中┃课堂",
-      "type": 3,
-      "api": "csp_Bili",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": "./lib/初中课堂.json"
-    },
-    {
-      "key": "meowtv_gzkt",
-      "name": "高中┃课堂",
-      "type": 3,
-      "api": "csp_Bili",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": "./lib/高中课堂.json"
-    },
-    {
       "key": "meowtv_psss",
       "name": "盘搜┃搜索",
       "type": 3,
@@ -1137,16 +831,6 @@
       "api": "csp_Dovx",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 0,
-      "ext": "http://127.0.0.1:9978/file/MeowTV/token.txt+4k|auto|fhd"
-    },
-    {
-      "key": "push_agent",
-      "name": "推送┃链接",
-      "type": 3,
-      "api": "csp_Push",
-      "searchable": 0,
-      "quickSearch": 0,
       "changeable": 0,
       "ext": "http://127.0.0.1:9978/file/MeowTV/token.txt+4k|auto|fhd"
     }
