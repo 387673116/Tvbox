@@ -18,7 +18,7 @@
       "quickSearch": 1,
       "changeable": 1,
       "ext": "https://www.zxzj.pro/",
-      "jar": "/meow3;md5;893D0391C828FD753EE4055EB5D4751A"
+      "jar": "/meow3.jar;md5;893D0391C828FD753EE4055EB5D4751A"
     },
     {
       "key": "meowtv_Atys",
@@ -69,7 +69,7 @@
       "quickSearch": 1,
       "changeable": 0,
       "ext": "http://127.0.0.1:9978/file/MeowTV/token.txt+4k|auto|fhd$$$https://api.wogg.xyz/$$$弹",
-      "jar": "/meow3;md5;893D0391C828FD753EE4055EB5D4751A"
+      "jar": "/meow3.jar;md5;893D0391C828FD753EE4055EB5D4751A"
     },
     {
       "key": "meowtv_77yy",
@@ -79,7 +79,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1,
-      "jar": "/meow3;md5;893D0391C828FD753EE4055EB5D4751A"
+      "jar": "/meow3.jar;md5;893D0391C828FD753EE4055EB5D4751A"
     },
     {
       "key": "meowtv_yqks",
@@ -107,58 +107,58 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/哔嘀影视.json",
-      "jar": "/meow4;md5;369DE8C4321A5C0ED6E7497F93863319"
+      "ext": "./lib/哔嘀影视.json",
+      "jar": "/meow4.jar;md5;369DE8C4321A5C0ED6E7497F93863319"
     },
     {
       "key": "meowtv_jlys",
       "name": "嘉靓┃影视",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 0,
-      "ext": "/lib/嘉靓影视.js"
+      "ext": "./lib/嘉靓影视.js"
     },
     {
       "key": "meowtv_zzys",
       "name": "赞赞┃影视",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 0,
-      "ext": "/lib/赞赞影视.js"
+      "ext": "./lib/赞赞影视.js"
     },
     {
       "key": "meowtv_hhys",
       "name": "吼吼┃影视",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/吼吼影视.js"
+      "ext": "./lib/吼吼影视.js"
     },
     {
       "key": "meowtv_sxys",
       "name": "师兄┃影视",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/师兄影视.js"
+      "ext": "./lib/师兄影视.js"
     },
     {
       "key": "meowtv_dyxs",
       "name": "先生┃影视",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/电影先生.js"
+      "ext": "./lib/电影先生.js"
     },
     {
       "key": "meowtv_kkys",
@@ -168,7 +168,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "jar": "/meow2;md5;3BF23E86FE87305252E9D469ABF751C5"
+      "jar": "/meow2.jar;md5;3BF23E86FE87305252E9D469ABF751C5"
     },
     {
       "key": "meowtv_nmys",
@@ -178,7 +178,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1,
-      "ext": "/lib/农民影视.json"
+      "ext": "./lib/农民影视.json"
     },
     {
       "key": "meowtv_Free",
@@ -188,7 +188,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/免费影视.json"
+      "ext": "./lib/免费影视.json"
     },
     {
       "key": "meowtv_qyyy",
@@ -198,7 +198,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/奇优影院.json"
+      "ext": "./lib/奇优影院.json"
     },
     {
       "key": "meowtv_348D",
@@ -208,8 +208,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/蓝光电影.json",
-      "jar": "/meow2;md5;3BF23E86FE87305252E9D469ABF751C5"
+      "ext": "./lib/蓝光电影.json",
+      "jar": "/meow2.jar;md5;3BF23E86FE87305252E9D469ABF751C5"
     },
     {
       "key": "meowtv_hxys",
@@ -219,7 +219,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/好戏影视.json"
+      "ext": "./lib/好戏影视.json"
     },
     {
       "key": "meowtv_phys",
@@ -229,7 +229,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/胖虎影视.json"
+      "ext": "./lib/胖虎影视.json"
     },
     {
       "key": "meowtv_dgys",
@@ -239,7 +239,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/达龟影视.json"
+      "ext": "./lib/达龟影视.json"
     },
     {
       "key": "meowtv_akyy",
@@ -249,8 +249,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/爱看影视.json",
-      "jar": "/meow4;md5;369DE8C4321A5C0ED6E7497F93863319"
+      "ext": "./lib/爱看影视.json",
+      "jar": "/meow4.jar;md5;369DE8C4321A5C0ED6E7497F93863319"
     },
     {
       "key": "meowtv_scys",
@@ -260,7 +260,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/圣城影视.json"
+      "ext": "./lib/圣城影视.json"
     },
     {
       "key": "meowtv_sbys",
@@ -270,8 +270,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/素白影视.json",
-      "jar": "/meow4;md5;369DE8C4321A5C0ED6E7497F93863319"
+      "ext": "./lib/素白影视.json",
+      "jar": "/meow4.jar;md5;369DE8C4321A5C0ED6E7497F93863319"
     },
     {
       "key": "meowtv_tvbb",
@@ -281,7 +281,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/TVB云播.json"
+      "ext": "./lib/TVB云播.json"
     },
     {
       "key": "meowtv_syys",
@@ -291,7 +291,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/速映影视.json"
+      "ext": "./lib/速映影视.json"
     },
     {
       "key": "meowtv_wnys",
@@ -301,7 +301,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/蜗牛影视.json"
+      "ext": "./lib/蜗牛影视.json"
     },
     {
       "key": "meowtv_mgys",
@@ -311,8 +311,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/蘑菇影视.json",
-      "jar": "/meow2;md5;3BF23E86FE87305252E9D469ABF751C5"
+      "ext": "./lib/蘑菇影视.json",
+      "jar": "/meow2.jar;md5;3BF23E86FE87305252E9D469ABF751C5"
     },
     {
       "key": "meowtv_adys",
@@ -386,7 +386,7 @@
         "分类url": "https://aoao.tv/vodshow/{cateId}--------{catePg}---.html",
         "分类": "短剧$20#电视剧$21#电影$22#动漫$23#综艺$24"
       },
-      "jar": "/meow2;md5;3BF23E86FE87305252E9D469ABF751C5"
+      "jar": "/meow2.jar;md5;3BF23E86FE87305252E9D469ABF751C5"
     },
     {
       "key": "meowtv_yszj",
@@ -397,7 +397,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "http://yingszj.xn--654a.cc/api.php/app/",
-      "jar": "/meow2;md5;3BF23E86FE87305252E9D469ABF751C5"
+      "jar": "/meow2.jar;md5;3BF23E86FE87305252E9D469ABF751C5"
     },
     {
       "key": "meowtv_mmys",
@@ -408,7 +408,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://www.gsjtlxy.top/xgapp.php/v3/",
-      "jar": "/meow2;md5;3BF23E86FE87305252E9D469ABF751C5"
+      "jar": "/meow2.jar;md5;3BF23E86FE87305252E9D469ABF751C5"
     },
     {
       "key": "meowtv_69mj",
@@ -419,7 +419,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://www.69mj.com/xgapp.php/v2/",
-      "jar": "/meow2;md5;3BF23E86FE87305252E9D469ABF751C5"
+      "jar": "/meow2.jar;md5;3BF23E86FE87305252E9D469ABF751C5"
     },
     {
       "key": "meowtv_A8ys",
@@ -430,37 +430,37 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://aaa.a8ys.xyz/ruifenglb_api.php/v1.vod",
-      "jar": "/meow4;md5;369DE8C4321A5C0ED6E7497F93863319"
+      "jar": "/meow4.jar;md5;369DE8C4321A5C0ED6E7497F93863319"
     },
     {
       "key": "meowtv_cgys",
       "name": "菜狗┃影视",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/菜狗影视.js"
+      "ext": "./lib/菜狗影视.js"
     },
     {
       "key": "meowtv_jpyy",
       "name": "荐片┃影视",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1,
-      "ext": "/lib/荐片影视.js"
+      "ext": "./lib/荐片影视.js"
     },
     {
       "key": "meowtv_shys",
       "name": "骚火┃影视",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/骚火影视.js"
+      "ext": "./lib/骚火影视.js"
     },
     {
       "key": "meowtv_xcys",
@@ -470,7 +470,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/星辰影视.json"
+      "ext": "./lib/星辰影视.json"
     },
     {
       "key": "meowtv_996y",
@@ -676,7 +676,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "jar": "/meow2;md5;3BF23E86FE87305252E9D469ABF751C5",
+      "jar": "/meow2.jar;md5;3BF23E86FE87305252E9D469ABF751C5",
       "categories": [
         "国产剧",
         "国产动漫",
@@ -710,51 +710,51 @@
       "key": "meowtv_qysp",
       "name": "奇艺┃视频",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/奇艺视频.js"
+      "ext": "./lib/奇艺视频.js"
     },
     {
       "key": "meowtv_txsp",
       "name": "腾讯┃视频",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/腾讯视频.js"
+      "ext": "./lib/腾讯视频.js"
     },
     {
       "key": "meowtv_yksp",
       "name": "优酷┃视频",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/优酷视频.js"
+      "ext": "./lib/优酷视频.js"
     },
     {
       "key": "meowtv_mgsp",
       "name": "芒果┃视频",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/芒果视频.js"
+      "ext": "./lib/芒果视频.js"
     },
     {
       "key": "meowtv_djsp",
       "name": "番茄┃短剧",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/短剧视频.js"
+      "ext": "./lib/短剧视频.js"
     },
     {
       "key": "meowtv_rxdj",
@@ -770,11 +770,11 @@
       "key": "meowtv_kbcl",
       "name": "酷吧┃磁力",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/酷吧磁力.js"
+      "ext": "./lib/酷吧磁力.js"
     },
     {
       "key": "meowtv_ygcl",
@@ -784,18 +784,18 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/影港磁力.json",
-      "jar": "/meow4;md5;369DE8C4321A5C0ED6E7497F93863319"
+      "ext": "./lib/影港磁力.json",
+      "jar": "/meow4.jar;md5;369DE8C4321A5C0ED6E7497F93863319"
     },
     {
       "key": "meowtv_4Kcl",
       "name": "蓝光┃磁力",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 0,
-      "ext": "/lib/蓝光磁力.js"
+      "ext": "./lib/蓝光磁力.js"
     },
     {
       "key": "meowtv_6Vcl",
@@ -847,41 +847,41 @@
       "key": "meowtv_88kq",
       "name": "八八┃体育",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "/lib/八八体育.js"
+      "ext": "./lib/八八体育.js"
     },
     {
       "key": "meowtv_qmty",
       "name": "JRK ┃体育",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "/lib/JRK体育.js"
+      "ext": "./lib/JRK体育.js"
     },
     {
       "key": "meowtv_310q",
       "name": "三一┃体育",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "/lib/三一体育.js"
+      "ext": "./lib/三一体育.js"
     },
     {
       "key": "meowtv_gdty",
       "name": "格斗┃体育",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
-      "ext": "/lib/格斗体育.js"
+      "ext": "./lib/格斗体育.js"
     },
     {
       "key": "meowtv_qety",
@@ -891,7 +891,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "/lib/企鹅体育.json"
+      "ext": "./lib/企鹅体育.json"
     },
     {
       "key": "meowtv_mxmv",
@@ -906,41 +906,41 @@
       "key": "meowtv_kqmv",
       "name": "酷奇┃ MV ",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "/lib/酷奇视频.js"
+      "ext": "./lib/酷奇视频.js"
     },
     {
       "key": "meowtv_hyzb",
       "name": "虎牙┃直播",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "/lib/虎牙直播.js"
+      "ext": "./lib/虎牙直播.js"
     },
     {
       "key": "meowtv_dyzb",
       "name": "斗鱼┃直播",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "/lib/斗鱼直播.js"
+      "ext": "./lib/斗鱼直播.js"
     },
     {
       "key": "meowtv_blzb",
       "name": "哔哩┃直播",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0,
-      "ext": "/lib/哔哩直播.js"
+      "ext": "./lib/哔哩直播.js"
     },
     {
       "key": "meowtv_jhzb",
@@ -955,21 +955,21 @@
       "key": "meowtv_jdsp",
       "name": "聚短┃视频",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "/lib/聚短视频.js"
+      "ext": "./lib/聚短视频.js"
     },
     {
       "key": "meowtv_ysxs",
       "name": "有声┃小说",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "/lib/有声小说.js"
+      "ext": "./lib/有声小说.js"
     },
     {
       "key": "meowtv_blhj",
@@ -979,7 +979,7 @@
       "searchable": 1,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "/lib/哔哩合集.json"
+      "ext": "./lib/哔哩合集.json"
     },
     {
       "key": "meowtv_blgq",
@@ -989,7 +989,7 @@
       "searchable": 1,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "/lib/哔哩歌曲.json"
+      "ext": "./lib/哔哩歌曲.json"
     },
     {
       "key": "meowtv_jjjx",
@@ -1004,51 +1004,51 @@
       "key": "meowtv_txdh",
       "name": "腾讯┃动画",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/腾讯动画.js"
+      "ext": "./lib/腾讯动画.js"
     },
     {
       "key": "meowtv_qydh",
       "name": "奇艺┃动画",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/奇艺动画.js"
+      "ext": "./lib/奇艺动画.js"
     },
     {
       "key": "meowtv_mgdh",
       "name": "芒果┃动画",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/芒果动画.js"
+      "ext": "./lib/芒果动画.js"
     },
     {
       "key": "meowtv_tqss",
       "name": "童趣┃搜视",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/童趣搜视.js"
+      "ext": "./lib/童趣搜视.js"
     },
     {
       "key": "meowtv_etqm",
       "name": "儿童┃启蒙",
       "type": 3,
-      "api": "/lib/drpy2.min.js",
+      "api": "./lib/drpy2.min.js",
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "/lib/儿童启蒙.js"
+      "ext": "./lib/儿童启蒙.js"
     },
     {
       "key": "meowtv_dtgx",
@@ -1058,7 +1058,7 @@
       "searchable": 0,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "/lib/灯塔国学.json"
+      "ext": "./lib/灯塔国学.json"
     },
     {
       "key": "meowtv_sejy",
@@ -1068,7 +1068,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "/lib/少儿教育.json"
+      "ext": "./lib/少儿教育.json"
     },
     {
       "key": "meowtv_xxkt",
@@ -1078,7 +1078,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "/lib/小学课堂.json"
+      "ext": "./lib/小学课堂.json"
     },
     {
       "key": "meowtv_czkt",
@@ -1088,7 +1088,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "/lib/初中课堂.json"
+      "ext": "./lib/初中课堂.json"
     },
     {
       "key": "meowtv_gzkt",
@@ -1098,7 +1098,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "/lib/高中课堂.json"
+      "ext": "./lib/高中课堂.json"
     },
     {
       "key": "meowtv_psss",
@@ -1168,13 +1168,13 @@
       "name": "直播",
       "type": 0,
       "playerType": 1,
-      "url": "/lib/mtvzb.txt",
+      "url": "./lib/mtvzb.txt",
       "ua": "okhttp/3.15",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     }
   ],
-  "spider": "./meow1;md5;D1115D99527D75948D095085B1407ADD",
+  "spider": "./meow1.jar;md5;D1115D99527D75948D095085B1407ADD",
   "wallpaper": "http://tool.teyonds.com/api",
   "ijk": [
     {
