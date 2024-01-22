@@ -16,7 +16,7 @@
       "api": "csp_WoGG",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 0,
+      "changeable": 1,
       "ext": "http://127.0.0.1:9978/file/MeowTV/token.txt+4k|auto|fhd$$$https://api.wogg.xyz/$$$弹",
       "jar": "https://tvbox.999986.xyz/meow3.jar;md5;893D0391C828FD753EE4055EB5D4751A"
     },
@@ -80,16 +80,6 @@
       "quickSearch": 1,
       "changeable": 1,
       "ext": "https://www.maolvys.com/"
-    },
-    {
-      "key": "meowtv_77yy",
-      "name": "七七┃影视",
-      "type": 3,
-      "api": "csp_Kunyu77",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1,
-      "jar": "https://tvbox.999986.xyz/meow3.jar;md5;893D0391C828FD753EE4055EB5D4751A"
     },
     {
       "key": "meowtv_yqks",
