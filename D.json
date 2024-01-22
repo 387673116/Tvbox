@@ -11,18 +11,17 @@
     },
     {
       "key": "meowtv_wogg",
-      "name": "玩偶影视",
+      "name": "玩偶┃影视",
       "type": 3,
       "api": "csp_WoGG",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1,
-      "ext": "http://127.0.0.1:9978/file/MeowTV/token.txt+4k|auto|fhd$$$https://api.wogg.xyz/$$$弹",
       "jar": "https://tvbox.999986.xyz/meow3.jar;md5;893D0391C828FD753EE4055EB5D4751A"
     },
     {
       "key": "meowtv_ddys",
-      "name": "低端影视",
+      "name": "低端┃影视",
       "type": 3,
       "api": "csp_Ddrk",
       "searchable": 1,
@@ -32,7 +31,7 @@
     },
     {
       "key": "meowtv_zxzj",
-      "name": "在线之家",
+      "name": "在线┃之家",
       "type": 3,
       "api": "csp_Zxzj",
       "searchable": 1,
@@ -43,7 +42,7 @@
     },
     {
       "key": "meowtv_Atys",
-      "name": "奥特影院",
+      "name": "奥特┃影院",
       "type": 3,
       "api": "csp_Auete",
       "searchable": 1,
@@ -53,7 +52,7 @@
     },
     {
       "key": "meowtv_sjys",
-      "name": "新视觉影院",
+      "name": "新视觉┃影院",
       "type": 3,
       "api": "csp_Xinsj",
       "searchable": 1,
@@ -63,7 +62,7 @@
     },
     {
       "key": "meowtv_Libo",
-      "name": "利播影视",
+      "name": "利播┃影视",
       "type": 3,
       "api": "csp_Libvio",
       "searchable": 1,
