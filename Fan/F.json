@@ -43,7 +43,7 @@
     },
     {
       "key": "新6V",
-      "name": "6V磁力",
+      "name": "磁力影院",
       "type": 3,
       "api": "csp_SixV",
       "searchable": 1,
@@ -51,9 +51,6 @@
       "changeable": 0,
       "ext": "http://www.xb6v.com/"
     },
-	
-	
-	
     {
       "key": "短剧",
       "name": "抖音爽剧",
@@ -67,7 +64,7 @@
 	
     {
       "key": "YiSo",
-      "name": "😹易搜┃搜索",
+      "name": "易搜搜索",
       "type": 3,
       "api": "csp_YiSo",
       "searchable": 1,
@@ -77,7 +74,7 @@
     },
     {
       "key": "PanSou",
-      "name": "🦊盘搜┃搜索",
+      "name": "盘搜搜索",
       "type": 3,
       "api": "csp_PanSou",
       "searchable": 1,
@@ -87,7 +84,7 @@
     },
     {
       "key": "UpYun",
-      "name": "😻Up搜┃搜索",
+      "name": "Up搜搜索",
       "type": 3,
       "api": "csp_UpYun",
       "searchable": 1,
