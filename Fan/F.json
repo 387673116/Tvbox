@@ -42,16 +42,6 @@
       "changeable": 1
     },
     {
-      "key": "新6V",
-      "name": "磁力影院",
-      "type": 3,
-      "api": "csp_SixV",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "ext": "http://www.xb6v.com/"
-    },
-    {
       "key": "短剧",
       "name": "抖音爽剧",
       "type": 3,
@@ -60,17 +50,6 @@
       "quickSearch": 1,
       "changeable": 1,
       "ext": "https://duanju.one"
-    },
-	
-    {
-      "key": "YiSo",
-      "name": "易搜搜索",
-      "type": 3,
-      "api": "csp_YiSo",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "ext": "http://127.0.0.1:9978/file/tvfan/token.txt+4k|auto|fhd"
     },
     {
       "key": "PanSou",
