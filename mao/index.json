@@ -6,17 +6,21 @@
       "key": "drpy_js_豆瓣",
       "name": "TOP榜单",
       "type": 3,
-      "api": "csp_Douban",
-      "searchable": 0
+	  "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+      "api": "csp_Douban"
     },
     {
       "key": "比特",
       "name": "推荐线路",
       "type": 3,
-      "api": "csp_Bttwo",
-	  "searchable": 1,
+      "timeout": 15,
+      "playerType": 2,
+      "searchable": 1,
       "quickSearch": 1,
-      "changeable": 0
+      "changeable": 1,
+      "api": "csp_Bttwo"
     },
 	{
       "key": "玩偶哥哥",
@@ -36,7 +40,7 @@
 	  "searchable": 1,
       "quickSearch": 1,
       "changeable": 0,
-      "playerType": "2",
+      "playerType": 2,
       "api": "./lib/drpy2.min.js",
       "ext": "./lib/南瓜.js"
     },
@@ -44,7 +48,7 @@
       "key": "csp_Juqq",
       "name": "影院二线",
       "type": 3,
-      "playerType": "2",
+      "playerType": 2,
 	  "searchable": 1,
       "quickSearch": 1,
       "changeable": 0
@@ -57,7 +61,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 0,
-      "playerType": "2",
+      "playerType": 2,
       "api": "csp_XBPQ",
       "ext": {
         "站名": "黑狐影院",
@@ -104,7 +108,7 @@
 	  "searchable": 1,
       "quickSearch": 1,
       "changeable": 0,
-      "playerType": "2",
+      "playerType": 2,
       "api": "./lib/drpy2.min.js",
       "ext": "./lib/ddys.js"
     }
