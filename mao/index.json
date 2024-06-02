@@ -100,6 +100,10 @@
       "key": "csp_SP360",
       "name": "正版官源",
       "type": 3,
+	  "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "playerType": 2,
       "api": "csp_SP360"
     },{
       "key": "低端",
