@@ -45,11 +45,11 @@
       "name": "影院二线",
       "type": 3,
       "playerType": "2",
-      "api": "csp_Juqq",     
 	  "searchable": 1,
       "quickSearch": 1,
       "changeable": 0
-    },
+      "api": "csp_Juqq",
+	},
     {
       "key": "黑狐",
       "name": "影院三线",
