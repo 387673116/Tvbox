@@ -22,7 +22,7 @@
     },
     {
       "key": "比特",
-      "name": "高速专路",
+      "name": "推荐线路",
       "type": 3,
       "api": "csp_Bttwo",
       "searchable": 1,
