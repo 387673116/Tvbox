@@ -3,11 +3,14 @@
   "wallpaper": "http://www.饭太硬.top/深色壁纸/api.php",
   "sites": [
     {
-      "key": "drpy_js_豆瓣",
+      "key": "豆豆",
       "name": "TOP榜单",
       "type": 3,
-      "api": "csp_Douban",
-      "searchable": 0
+      "api": "csp_DouDou",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+	  "jar": "./aliyunpan.jar;md5;1ff3df38a66ee5378031e4fac1799596"
     },
 	{
       "key": "玩偶哥哥",
