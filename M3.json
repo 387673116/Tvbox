@@ -33,7 +33,7 @@
       "type": 3,
       "playerType": "2",
       "api": "./lib/drpy2.min.js",
-      "ext": "./lib/TVB云播.js"
+      "ext": "./lib/TVB云播.js",
 	  "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
