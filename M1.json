@@ -34,12 +34,18 @@
       "playerType": "2",
       "api": "./lib/drpy2.min.js",
       "ext": "./lib/TVB云播.js"
+	  "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     }, 
     {
       "key": "比特",
       "name": "比特影院",
       "type": 3,
       "api": "csp_Bttwo"
+	  "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     },
     {
       "key": "荐片",
