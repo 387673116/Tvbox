@@ -66,10 +66,10 @@
 			"api": "csp_Czsapp",
 			"type": 3,
 			"playerType": "2",
-			"ext": "https://czzy.top/"
+			"ext": "https://czzy.top/",
 			"searchable": 1,
 			"quickSearch": 1,
-			"filterable": 1,
+			"filterable": 1
 		}
 	],
 	"parses": [{
