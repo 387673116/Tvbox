@@ -1,0 +1,154 @@
+{
+  "spider": "./Panda.jar;md5;b876c3978f963d61d6b64933c9017451",
+  "wallpaper": "https://深色壁纸.xxooo.cf/",
+  "logo": "./logo.gif",
+  "sites": [
+    {
+      "key": "drpy_js_豆瓣",
+      "name": "TOP榜单",
+      "type": 3,
+      "api": "csp_Douban",
+      "searchable": 0
+    },
+    {
+      "key": "csp_Juqq",
+      "name": "家庭一线",
+      "type": 3,
+      "playerType": "2",
+      "api": "csp_Juqq"
+    },    
+	{
+      "key": "可可",
+      "name": " 家庭二线",
+      "type": 3,
+      "playerType": "2",
+      "api": "csp_Keke",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "云播影视",
+      "name": "家庭三线",
+      "type": 3,
+      "playerType": "2",
+      "api": "./lib/drpy2.min.js",
+      "ext": "./lib/TVB云播.js"
+	  "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }, 
+    {
+      "key": "比特",
+      "name": "比特影院",
+      "type": 3,
+      "api": "csp_Bttwo"
+	  "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "荐片",
+      "name": "荐片影院",
+      "api": "csp_Jianpian",
+      "type": 3,
+      "playerType": "2",
+      "ext": "http://api2.rinhome.com"
+    },
+	{
+      "key": "厂长",
+      "name": "厂长影院",
+      "type": 3,
+      "playerType": "2",
+      "api": "csp_Czsapp",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://czzy.top/"
+    }
+  ],
+  "parses": [
+    {
+      "name": "Json聚合",
+      "type": 3,
+      "url": "Demo"
+    },
+    {
+      "name": "Web聚合",
+      "type": 3,
+      "url": "Web"
+    },
+    {
+      "name": "VIP解析",
+      "type": 1,
+      "url": "http://json.84jia.com/home/api?type=ys&uid=335253&key=demprsyzBMQRVY0234&url=",
+      "ext": {
+        "flag": [
+          "qq",
+          "腾讯",
+          "qiyi",
+          "爱奇艺",
+          "奇艺",
+          "youku",
+          "优酷",
+          "tucheng",
+          "sohu",
+          "搜狐",
+          "letv",
+          "乐视",
+          "mgtv",
+          "芒果",
+          "tnmb",
+          "seven",
+          "yzm",
+          "aliyun",
+          "RJuMao",
+          "bilibili",
+          "1905",
+          "xinvip",
+          "XAL",
+          "qiqi",
+          "XALS",
+          "YuMi-vip"
+        ]
+      }
+    },
+    {
+      "name": "肥猫最可爱",
+      "type": 1,
+      "url": "http://xn--ihqu10cn4c.xn--z7x900a.live/jx.php?id=2&url=",
+      "ext": {
+        "flag": [
+          "qq",
+          "腾讯",
+          "qiyi",
+          "爱奇艺",
+          "奇艺",
+          "youku",
+          "优酷",
+          "tucheng",
+          "sohu",
+          "搜狐",
+          "letv",
+          "乐视",
+          "mgtv",
+          "芒果",
+          "tnmb",
+          "seven",
+          "yzm",
+          "aliyun",
+          "RJuMao",
+          "bilibili",
+          "1905",
+          "xinvip",
+          "XAL",
+          "qiqi",
+          "XALS",
+          "YuMi-vip"
+        ]
+      }
+    }
+  ],
+	"lives":[{"name":"live","type":0,"url":"./lib/zby.txt","playerType":1,"ua": "okhttp/3.15","epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"}]
+
+}
