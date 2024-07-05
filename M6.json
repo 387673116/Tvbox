@@ -1,7 +1,7 @@
 {
   "spider": "./Panda.jar;md5;b876c3978f963d61d6b64933c9017451",
   "wallpaper": "https://深色壁纸.xxooo.cf/",
-  "logo": "./logo.gif",
+  "logo": "logo.gif",
   "sites": [
     {
       "key": "drpy_js_豆瓣",
@@ -15,7 +15,10 @@
       "name": "家庭一线",
       "type": 3,
       "playerType": "2",
-      "api": "csp_Juqq"
+      "api": "csp_Juqq",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     },    
 	{
       "key": "可可",
@@ -32,8 +35,8 @@
       "name": "家庭三线",
       "type": 3,
       "playerType": "2",
-      "api": "./lib/drpy2.min.js",
-      "ext": "./lib/TVB云播.js",
+      "api": "lib/drpy2.min.js",
+      "ext": "lib/TVB云播.js",
 	  "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -53,7 +56,10 @@
       "api": "csp_Jianpian",
       "type": 3,
       "playerType": "2",
-      "ext": "http://api2.rinhome.com"
+      "ext": "http://api2.rinhome.com",
+	  "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     },
 	{
       "key": "厂长",
