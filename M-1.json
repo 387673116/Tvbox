@@ -1,0 +1,30 @@
+{
+  "spider": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/jar/pg.jar;md5;2d720579dec380af301010354f50408c",
+  "logo": "https://cdn.pixabay.com/photo/2020/08/09/11/43/woman-5475306_1280.jpg",
+  "sites": [
+	{
+      "key": "laoyazy.com",
+      "name": "私人💕影院一线",
+      "type": 1,
+      "api": "https://api.apilyzy.com/api.php/provide/vod/?ac=list",
+      "searchable": 1,
+      "filterable": 1
+    },    
+	{
+      "key": "didizy.com",
+      "name": "私人💕影院二线",
+      "type": 1,
+      "api": "https://api.ddapi.cc/api.php/provide/vod/?ac=list",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "jkunzy.com",
+      "name": "私人💕影院三线",
+      "type": 1,
+      "api": "https://jkunzyapi.com/api.php/provide/vod/?ac=list",
+      "searchable": 1,
+      "filterable": 1
+    }
+  ]
+}
