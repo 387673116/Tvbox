@@ -1,3 +1,6 @@
+//以下全部出自网络大佬资源，如有冒犯请联系删除。[所有内容仅供学习使用，请勿用于违法用途]
+//本接口无盈利、无引流、免费分享，请勿轻信他人，谨防上当受骗。
+
 {
 	"spider": "https://jihulab.com/Yoursmile/TVbox/-/raw/master/Yoursmile.jar;md5;DB232003C81DF3BE30BEACFE2589CF82",
 	"wallpaper": "https://tuapi.eees.cc/api.php?category=fengjing&type=302",
@@ -29,7 +32,7 @@
 {"key":"csp_SixV","name":"新6V","type":3,"api":"csp_SixV","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://www.xb6v.com/"},
 {"key":"csp_SP360","name":"360","type":3,"api":"csp_SP360","searchable":1,"quickSearch":1,"filterable":1,"changeable":1},
 {"key":"相声小品","name":"相声小品","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":"https://ghproxy.net/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/Blixs.json"},
-{"key":"戏曲","name":"京剧戏曲","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":"https://ghproxy.net/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/Blixq.json"},
+{"key":"戏曲","name":"京剧戏曲","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":"https://ghproxy.net/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/Blixq.json"}
 ],
 "parses": [{
 		"name": "Web聚合",
