@@ -12,7 +12,6 @@
 {"key":"csp_Tvyb","name":"云播","type":3,"api":"csp_Tvyb","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"csp_Zx4k","name":"专线","type":3,"api":"csp_Zx4k","playerType":2,"searchable":1,"quickSearch":1,"filterable":1,"changeable":1},
 {"key":"csp_LiteApple","name":"苹果","type":3,"api":"csp_LiteApple","searchable":1,"quickSearch":1,"filterable":1,"changeable":1},
-{"key":"csp_NewCz","name":"厂长","type":3,"api":"csp_NewCz","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://www.czys.pro/"},
 {"key":"csp_Jpys","name":"金牌","type":3,"api":"csp_Jpys","playerType":2,"searchable":1,"quickSearch":1,"changeable":1},
 {"key":"csp_Xunlei8","name":"迅雷","type":3,"api":"csp_Xunlei8","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"csp_SixV","name":"新6V","type":3,"api":"csp_SixV","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://www.xb6v.com/"},
