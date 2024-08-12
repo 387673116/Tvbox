@@ -9,18 +9,10 @@
       "api": "https://api.apilyzy.com/api.php/provide/vod/?ac=list",
       "searchable": 1,
       "filterable": 1
-    },    
-	{
-      "key": "didizy.com",
-      "name": "资源二线",
-      "type": 1,
-      "api": "https://api.ddapi.cc/api.php/provide/vod/?ac=list",
-      "searchable": 1,
-      "filterable": 1
-    },
+    }, 
     {
       "key": "jkunzy.com",
-      "name": "资源三线",
+      "name": "资源二线",
       "type": 1,
       "api": "https://jkunzyapi.com/api.php/provide/vod/?ac=list",
       "searchable": 1,
