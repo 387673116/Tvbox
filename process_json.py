@@ -3,25 +3,34 @@ import json
 import re
 
 def fetch_and_clean_json(url):
-    # 发送请求获取内容
-    response = requests.get(url)
-    response.raise_for_status()  # 确保请求成功
-
-    # 获取内容并按行分割
-    lines = response.text.splitlines()
-
-    # 删除指定的注释行
-    cleaned_lines = [line for line in lines if line.strip() != "//🐧裙：926953902"]
-
-    # 合并剩余行并解析为 JSON
-    content = "\n".join(cleaned_lines)
     try:
-        data = json.loads(content)
-    except json.JSONDecodeError as e:
-        print("JSON 解析失败:", e)
-        return None
+        # 发送请求获取内容
+        response = requests.get(url)
+        response.raise_for_status()  # 确保请求成功
+        content = response.text
 
-    return data
+        # 打印调试信息
+        print("原始内容：")
+        print(content)
+
+        # 删除指定的注释行
+        cleaned_lines = [line for line in content.splitlines() if line.strip() != "//🐧裙：926953902"]
+        cleaned_content = "\n".join(cleaned_lines)
+
+        # 打印清理后的内容
+        print("清理后的内容：")
+        print(cleaned_content)
+
+        # 解析 JSON
+        data = json.loads(cleaned_content)
+        return data
+
+    except requests.RequestException as e:
+        print(f"网络请求失败: {e}")
+    except json.JSONDecodeError as e:
+        print(f"JSON 解析失败: {e}")
+
+    return None
 
 def filter_and_replace_urls(data, keywords, new_url):
     if isinstance(data, dict):
