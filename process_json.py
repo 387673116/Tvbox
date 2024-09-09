@@ -1,6 +1,5 @@
 import requests
 import re
-import json
 
 # 获取远程数据
 url = 'https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json'
@@ -32,7 +31,7 @@ if response.status_code == 200 and response.text.strip():
         if len(pre_sites_content) > 1:
             sites_content = pre_sites_content[0]
             post_lives_content = pre_sites_content[1]
-
+            
             # 定义需要删除的关键字列表
             keywords = ['高中', '初中', '小学', '少儿', '哔哩哔哩', '看球', '有声小说', 
                         '虎牙直播', '本地', '推送', '墙外', '搜', '网盘', '急救教学', '动漫']
@@ -48,21 +47,11 @@ if response.status_code == 200 and response.text.strip():
             # 重新拼接处理后的内容
             cleaned_text = '"sites":' + cleaned_sites_content + '"lives":' + post_lives_content
 
-    # 修复 JSON 格式
-    try:
-        # 将文本转换为 JSON 对象，以便修复格式
-        json_obj = json.loads('{' + cleaned_text + '}')
-        # 将 JSON 对象转换回格式化的 JSON 字符串
-        formatted_json = json.dumps(json_obj, ensure_ascii=False, indent=2)
-        
-        # 保存结果到 index.json
-        with open('index.json', 'w', encoding='utf-8') as f:
-            f.write(formatted_json)
+    # 保存结果到 index.json
+    with open('index.json', 'w', encoding='utf-8') as f:
+        f.write(cleaned_text)
 
-        print("index.json 文件已生成")
-
-    except json.JSONDecodeError as e:
-        print(f"JSON 解码错误: {e}")
+    print("index.json 文件已生成")
 
 else:
     print("响应内容为空或状态码不是 200")
