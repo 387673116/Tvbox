@@ -33,8 +33,7 @@ if response.status_code == 200 and response.text.strip():
             post_lives_content = pre_sites_content[1]
             
             # 定义需要删除的关键字列表
-            keywords = ['高中', '初中', '小学', '少儿', '哔哩哔哩', '看球', '有声小说', 
-                        '虎牙直播', '本地', '推送', '墙外', '搜', '网盘', '急救教学', '动漫']
+            keywords = ['高中', '初中', '小学', '少儿', '哔哩哔哩', '看球', '有声小说', '虎牙直播', '本地', '推送', '墙外', '搜', '网盘', '急救教学', '动漫', '玩偶哥哥']
 
             # 删除包含关键字的行
             lines = sites_content.split('\n')
