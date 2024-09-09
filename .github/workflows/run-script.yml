@@ -2,21 +2,26 @@ name: Run Python Script
 
 on:
   schedule:
-    - cron: '0 */5 * * *'  # 每 5 小时运行一次
-  workflow_dispatch:  # 允许手动触发工作流
+    - cron: '0 */3 * * *'  # 每3小时运行一次
+  workflow_dispatch:  # 允许手动触发
+
+permissions:
+  contents: write  # 确保有推送权限
 
 jobs:
-  run-script:
+  update:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
-        
-      - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/checkout@v4
         with:
-          python-version: '3.x'  # 设置 Python 版本，根据需要调整
+          fetch-depth: 0  # 确保检出完整历史
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
 
       - name: Install dependencies
         run: |
@@ -24,4 +29,22 @@ jobs:
 
       - name: Run script
         run: |
-          python script.py  # 运行根目录下的 Python 脚本
+          echo "Running Python script..."
+          python script.py  # 根据实际路径调整
+        continue-on-error: true  # 允许脚本失败以便查看详细日志
+
+      - name: List directory contents
+        run: |
+          ls -la  # 列出当前目录中的所有文件和文件夹
+
+      - name: Check index.json content
+        run: |
+          cat index.json  # 确保 index.json 文件存在并查看内容
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add index.json
+          git commit -m 'Update index.json with latest content' || true
+          git push origin main
