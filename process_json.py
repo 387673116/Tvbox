@@ -4,11 +4,19 @@ import json
 # 读取 JSON 数据
 url = 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json'
 response = requests.get(url)
-data = response.json()
+
+# 打印响应状态码和内容，帮助调试
+print(f"Response status code: {response.status_code}")
+print(f"Response text: {response.text[:500]}")  # 打印前500个字符
+
+# 确保响应内容是有效的 JSON
+try:
+    data = response.json()
+except requests.exceptions.JSONDecodeError as e:
+    print(f"JSON decode error: {e}")
+    exit(1)
 
 # 删除指定行（这里假设 JSON 文件是一个列表形式的对象）
-# 需要根据实际情况调整，如果文件是字典类型或其他格式，需要对应调整删除方法
-# 由于没有具体示例，这里假设列表中包含字符串
 data = [line for line in data if line != '//🐧裙：926953902']
 
 # 替换字符串
