@@ -44,7 +44,7 @@ if response.status_code == 200 and response.text.strip():
 
     # 使用正则表达式删除包含这些 key 的部分
     for key in keys_to_remove:
-        pattern = r'\{[^{}]*"key":"{}"[^{}]*\},?'.format(key, key)
+        pattern = r'\{[^{}]*"key":"{}"[^{}]*\},?'.format(re.escape(key), re.escape(key))
         text = re.sub(pattern, '', text)
 
     # 保存结果到 index.json
