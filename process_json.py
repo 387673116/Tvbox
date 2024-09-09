@@ -13,9 +13,7 @@ if response.status_code == 200 and response.text.strip():
     text = response.text
 
     # 删除包含特定字符串的行
-    lines = text.split('\n')
-    lines = [line for line in lines if '//🐧裙：926953902' not in line]
-    cleaned_text = '\n'.join(lines)
+    cleaned_text = re.sub(r'//🐧裙：926953902', '', text)
 
     # 替换特定 URL
     cleaned_text = cleaned_text.replace(
@@ -28,16 +26,18 @@ if response.status_code == 200 and response.text.strip():
 
     # 处理"lives"之前的部分内容
     if '"lives":' in cleaned_text:
+        # 获取 "lives" 之前的所有内容
         pre_lives_content = cleaned_text.split('"lives":')[0]
 
         # 定义需要删除的关键字列表
-        keywords = ['虎牙直播', '有声小说吧', '88看球', '少儿', '小学', '初中', 'TgYunPanLoca', '高中', '急救教学', '易搜', '网盘', '纸条搜', 'csp_PanSearch', '本地', '推送', '动漫']
+        keywords = ['虎牙直播', '有声小说吧', '88看球', '少儿', '小学', '初中', 'TgYunPanLoca', 
+                    '高中', '急救教学', '易搜', '网盘', '纸条搜', 'csp_PanSearch', '本地', '推送', '动漫']
 
-        # 构建正则表达式，删除包含指定关键字的 {} 块及其后面的逗号
+        # 构建正则表达式，删除包含指定关键字的 {} 块，处理跨行情况
         for keyword in keywords:
-            # 仅在 "lives" 前面进行删除
+            # 使用 DOTALL 模式 (re.S)，让 `.` 匹配所有字符，包括换行符
             pattern = r'\{[^{}]*' + re.escape(keyword) + r'[^{}]*\},?'
-            pre_lives_content = re.sub(pattern, '', pre_lives_content)
+            pre_lives_content = re.sub(pattern, '', pre_lives_content, flags=re.S)
 
         # 将处理后的内容与 "lives" 后面的部分重新拼接
         post_lives_content = cleaned_text.split('"lives":', 1)[1]
