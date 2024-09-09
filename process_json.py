@@ -1,5 +1,6 @@
 import requests
 import re
+import json
 
 # 获取远程数据
 url = 'https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json'
@@ -37,24 +38,17 @@ if response.status_code == 200 and response.text.strip():
         for keyword in keywords:
             # 使用 DOTALL 模式 (re.S)，让 `.` 匹配所有字符，包括换行符
             pattern = r'\{[^{}]*' + re.escape(keyword) + r'[^{}]*\},?'
-
-            # 调试：打印匹配前的内容
-            print(f"\n正在查找和删除包含关键字 '{keyword}' 的内容...")
-            
-            # 替换并打印替换后的文本片段以验证
-            pre_lives_content_before = pre_lives_content
             pre_lives_content = re.sub(pattern, '', pre_lives_content, flags=re.S)
-            
-            if pre_lives_content_before != pre_lives_content:
-                print(f"关键字 '{keyword}' 的匹配内容已删除。")
 
         # 将处理后的内容与 "lives" 后面的部分重新拼接
         post_lives_content = cleaned_text.split('"lives":', 1)[1]
         cleaned_text = pre_lives_content + '"lives":' + post_lives_content
 
-    # 打印处理后的文本
-    print("\n处理后的文本:")
-    print(cleaned_text)
+    # 将结果保存为 index.json 文件
+    with open('index.json', 'w', encoding='utf-8') as f:
+        f.write(cleaned_text)
+
+    print("index.json 文件已生成")
 
 else:
     print("响应内容为空或状态码不是 200")

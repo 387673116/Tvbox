@@ -1,4 +1,4 @@
-name: Run Python Script
+name: Run Python Script and Generate index.json
 
 on:
   schedule:
@@ -24,22 +24,15 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: |
-          pip install requests
+        run: pip install requests
 
-      - name: Run script
+      - name: Run script to generate index.json
         run: |
-          echo "Running Python script..."
           python process_json.py  # 确保替换为你的 Python 脚本名称
         continue-on-error: true  # 允许脚本失败以便查看详细日志
 
-      - name: List directory contents
-        run: |
-          ls -la  # 列出当前目录中的所有文件和文件夹
-
       - name: Check index.json content
-        run: |
-          cat index.json  # 确保 index.json 文件存在并查看内容
+        run: cat index.json  # 确保 index.json 文件存在并查看内容
 
       - name: Commit and push changes
         run: |
