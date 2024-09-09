@@ -35,7 +35,7 @@ if response.status_code == 200 and response.text.strip():
             # 修改 "sites" 列表中 key 为 "csp_DouDou" 的项
             for site in data['sites']:
                 if site.get('key') == 'csp_DouDou':
-                    site['name'] = '🔍豆瓣TOP榜单'
+                    site['name'] = '豆瓣TOP榜'
 
         # 替换 "lives" 列表中的 "url" 字段值
         if 'lives' in data:
