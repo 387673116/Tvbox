@@ -23,9 +23,9 @@ if response.status_code == 200 and response.text.strip():
         # 替换 "lives" 列表中的 "url" 字段值
         for live in data.get('lives', []):
             if 'url' in live:
-                # 使用给定的正则表达式来替换 URL
+                # 使用修正后的正则表达式来替换 URL
                 live['url'] = re.sub(
-                    r'http(s)?://([w-]+\.)+[w-]+(/[w- ./?%&=]*)?',
+                    r'http(s)?://[\w\.-]+(/[^\s]*)?',
                     'https://6851.kstore.space/zby.txt',
                     live['url']
                 )
