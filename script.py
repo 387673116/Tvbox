@@ -53,8 +53,8 @@ def main():
     json_data = fetch_json(url)
     processed_data = process_json(json_data)
     
-    # 将处理后的数据输出为文件或其他形式
-    with open('processed_data.json', 'w', encoding='utf-8') as file:
+    # 将处理后的数据输出为文件
+    with open('index.json', 'w', encoding='utf-8') as file:
         json.dump(processed_data, file, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
