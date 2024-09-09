@@ -1,5 +1,4 @@
 import requests
-import re
 import json
 
 # 获取远程数据
@@ -23,15 +22,25 @@ if response.status_code == 200 and response.text.strip():
         print(f"JSON 解析错误: {e}")
         exit()
 
-    # 删除包含特定字符串的行
-    for site in data.get('sites', []):
-        if 'filter' in site and 'https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/wogg.json' in site['filter']:
-            site['filter'] = site['filter'].replace('https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/wogg.json', 'https://6851.kstore.space/zby.txt')
+    # 定义需要删除的关键词
+    keywords_to_remove = [
+        "网盘", "本地", "高中", "初中", "小学", "少儿", "哔哩哔哩", "看球", "有声小说",
+        "虎牙直播", "推送", "墙外", "搜", "急救教学", "动漫"
+    ]
 
-    # 替换特定字符串
+    # 删除包含特定关键词的条目
+    filtered_sites = []
     for site in data.get('sites', []):
-        if 'title' in site and site['title'] == '豆瓣┃本接口免费-🈲贩卖':
-            site['title'] = '豆瓣TOP榜单'
+        should_remove = False
+        for keyword in keywords_to_remove:
+            if keyword in site.get('name', '') or keyword in site.get('key', ''):
+                should_remove = True
+                break
+        if not should_remove:
+            filtered_sites.append(site)
+
+    # 更新 JSON 数据
+    data['sites'] = filtered_sites
 
     # 保存结果到 index.json
     with open('index.json', 'w', encoding='utf-8') as f:
