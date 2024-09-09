@@ -1,52 +1,45 @@
 import requests
 import json
+import re
 
 # 获取远程数据
 url = 'https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json'
 response = requests.get(url)
 
-# 打印响应状态码
+# 打印响应状态码和内容
 print(f"响应状态码: {response.status_code}")
 
 if response.status_code == 200 and response.text.strip():
     # 获取响应文本
     text = response.text
 
-    # 删除注释行
-    text = re.sub(r'^\s*//.*$', '', text, flags=re.MULTILINE)
+    # 删除以 // 开头的注释行
+    cleaned_text = re.sub(r'^\s*//.*\n?', '', text, flags=re.MULTILINE)
 
-    # 解析 JSON 数据
+    # 处理 JSON 数据
     try:
-        data = json.loads(text)
+        data = json.loads(cleaned_text)
+
+        # 替换特定 URL
+        for site in data.get('sites', []):
+            if 'filter' in site:
+                site['filter'] = site['filter'].replace(
+                    'https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt',
+                    'https://6851.kstore.space/zby.txt'
+                )
+
+        # 替换 "豆瓣┃本接口免费-🈲贩卖" 为 "豆瓣TOP榜"
+        if '豆瓣┃本接口免费-🈲贩卖' in data:
+            data['豆瓣┃本接口免费-🈲贩卖'] = '豆瓣TOP榜'
+
+        # 保存结果到 index.json
+        with open('index.json', 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=4)
+
+        print("index.json 文件已生成")
+
     except json.JSONDecodeError as e:
         print(f"JSON 解析错误: {e}")
-        exit()
-
-    # 定义需要删除的关键词
-    keywords_to_remove = [
-        "网盘", "本地", "高中", "初中", "小学", "少儿", "哔哩哔哩", "看球", "有声小说",
-        "虎牙直播", "推送", "墙外", "搜", "急救教学", "动漫"
-    ]
-
-    # 删除包含特定关键词的条目
-    filtered_sites = []
-    for site in data.get('sites', []):
-        should_remove = False
-        for keyword in keywords_to_remove:
-            if keyword in site.get('name', '') or keyword in site.get('key', ''):
-                should_remove = True
-                break
-        if not should_remove:
-            filtered_sites.append(site)
-
-    # 更新 JSON 数据
-    data['sites'] = filtered_sites
-
-    # 保存结果到 index.json
-    with open('index.json', 'w', encoding='utf-8') as f:
-        json.dump(data, f, ensure_ascii=False, indent=4)
-
-    print("index.json 文件已生成")
 
 else:
     print("响应内容为空或状态码不是 200")
