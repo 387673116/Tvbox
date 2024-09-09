@@ -26,7 +26,7 @@ if response.status_code == 200 and response.text.strip():
             '纸条搜', '网盘集合', '少儿', '初中', '高中', '小学', 'csp_Bili', '88看球', 
             '有声小说吧', '虎牙直播', 'csp_Local', 'push_agent', 'TgYunPanLocal5', 
             'TgYunPanLocal4', 'TgYunPanLocal3', 'TgYunPanLocal2', 'TgYunPanLocal1', 
-            'Youtube'
+            'Youtube', 'ConfigCenter'
         ]
 
         if 'sites' in data:
