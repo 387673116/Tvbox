@@ -1,40 +1,47 @@
 import requests
 import json
+import re
 
-# 目标 URL
-url = 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json'
-
-# 发起请求获取 JSON 数据
+# 获取远程数据
+url = 'https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json'
 response = requests.get(url)
-data = response.json()
 
-# 需要删除的键
-keys_to_remove = [
-    "csp_Dm84", "csp_Anime1", "csp_Kugou", "Aid", "易搜", "csp_PanSearch", "纸条搜",
-    "网盘集合", "少儿", "初中", "高中", "小学", "csp_Bili", "88看球", "有声小说吧",
-    "虎牙直播", "csp_Local", "push_agent", "TgYunPanLocal5", "TgYunPanLocal4",
-    "TgYunPanLocal3", "TgYunPanLocal2", "TgYunPanLocal1", "Youtube"
-]
+# 打印响应状态码和内容
+print(f"响应状态码: {response.status_code}")
 
-# 处理数据
-new_sites = []
-for site in data.get('sites', []):
-    if site.get('key') not in keys_to_remove:
-        # 替换字符串
-        if site.get('name') == "🔍豆瓣┃本接口免费-🈲贩卖":
-            site['name'] = "豆瓣TOP榜单"
-        
-        # 替换 URL
-        if isinstance(site.get('ext'), dict):
-            filter_url = site['ext'].get('filter')
-            if filter_url and filter_url.startswith('https://github.moeyy.xyz/'):
-                site['ext']['filter'] = filter_url.replace('https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/wogg.json', 'https://6851.kstore.space/zby.txt')
-        elif isinstance(site.get('ext'), str):
-            site['ext'] = site['ext'].replace('https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/wogg.json', 'https://6851.kstore.space/zby.txt')
+if response.status_code == 200 and response.text.strip():
+    # 获取响应文本
+    text = response.text
 
-        # 添加到新列表
-        new_sites.append(site)
+    # 删除以 // 开头的注释行
+    cleaned_text = re.sub(r'^\s*//.*\n?', '', text, flags=re.MULTILINE)
 
-# 保存修改后的数据
-with open('index.json', 'w', encoding='utf-8') as f:
-    json.dump({'sites': new_sites}, f, ensure_ascii=False, indent=4)
+    # 处理 JSON 数据
+    try:
+        data = json.loads(cleaned_text)
+
+        # 替换 "lives" 列表中的 "url" 字段值
+        for live in data.get('lives', []):
+            if 'url' in live:
+                # 使用给定的正则表达式来替换 URL
+                live['url'] = re.sub(
+                    r'http(s)?://([w-]+\.)+[w-]+(/[w- ./?%&=]*)?',
+                    'https://6851.kstore.space/zby.txt',
+                    live['url']
+                )
+
+        # 替换 "豆瓣┃本接口免费-🈲贩卖" 为 "豆瓣TOP榜单"
+        if '豆瓣┃本接口免费-🈲贩卖' in data:
+            data['豆瓣TOP榜单'] = data.pop('豆瓣┃本接口免费-🈲贩卖')
+
+        # 保存结果到 index.json
+        with open('index.json', 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=4)
+
+        print("index.json 文件已生成")
+
+    except json.JSONDecodeError as e:
+        print(f"JSON 解析错误: {e}")
+
+else:
+    print("响应内容为空或状态码不是 200")
