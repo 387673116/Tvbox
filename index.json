@@ -4,7 +4,7 @@
     "sites": [
         {
             "key": "csp_DouDou",
-            "name": "🔍豆瓣TOP榜单",
+            "name": "豆瓣TOP榜",
             "type": 3,
             "api": "csp_DouDou",
             "searchable": 0,
