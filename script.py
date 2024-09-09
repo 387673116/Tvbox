@@ -2,69 +2,80 @@ import requests
 import json
 import re
 
-# 定义需要删除的关键词
-keywords_to_remove = [
-    "虎牙直播", "有声小说吧", "88看球", "少儿", "小学", "初中", 
+def fetch_and_clean_json(url):
+    # 发送请求获取内容
+    response = requests.get(url)
+    response.raise_for_status()  # 确保请求成功
+
+    # 获取内容并按行分割
+    lines = response.text.splitlines()
+
+    # 删除指定的注释行
+    cleaned_lines = [line for line in lines if line.strip() != "//🐧裙：926953902"]
+
+    # 合并剩余行并解析为 JSON
+    content = "\n".join(cleaned_lines)
+    try:
+        data = json.loads(content)
+    except json.JSONDecodeError as e:
+        print("JSON 解析失败:", e)
+        return None
+
+    return data
+
+def filter_and_replace_urls(data, keywords, new_url):
+    if isinstance(data, dict):
+        for key, value in list(data.items()):
+            if key == "sites" or key == "lives":
+                if isinstance(value, list):
+                    # 过滤列表中的项
+                    data[key] = [item for item in value if not contains_keywords(item, keywords)]
+                    # 替换 URL
+                    data[key] = [replace_urls(item, new_url) for item in data[key]]
+            else:
+                # 递归处理字典中的其他项
+                data[key] = filter_and_replace_urls(value, keywords, new_url)
+    elif isinstance(data, list):
+        data = [filter_and_replace_urls(item, keywords, new_url) for item in data]
+    return data
+
+def contains_keywords(item, keywords):
+    if isinstance(item, str):
+        return any(keyword in item for keyword in keywords)
+    elif isinstance(item, dict):
+        return any(contains_keywords(value, keywords) for value in item.values())
+    elif isinstance(item, list):
+        return any(contains_keywords(element, keywords) for element in item)
+    return False
+
+def replace_urls(item, new_url):
+    if isinstance(item, str):
+        # 替换 http 或 https 的 URL
+        return re.sub(r'https?://[^\s"]+', new_url, item)
+    elif isinstance(item, dict):
+        return {k: replace_urls(v, new_url) for k, v in item.items()}
+    elif isinstance(item, list):
+        return [replace_urls(element, new_url) for element in item]
+    return item
+
+# URL 和需要删除的注释行数
+url = "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json"
+
+# 关键词列表
+keywords = [
+    "虎牙直播", "有声小说吧", "88看球", "少儿", "小学", "初中",
     "墙外", "高中", "急救教学", "搜", "盘"
 ]
 
-# 从指定链接获取 JSON 数据
-def fetch_json(url):
-    try:
-        response = requests.get(url)
-        response.raise_for_status()  # 如果请求失败，则引发异常
-        print(f"Response status code: {response.status_code}")
-        print(f"Response content: {response.text[:500]}")  # 只打印前 500 个字符
-        return response.json()
-    except requests.exceptions.RequestException as e:
-        print(f"请求失败: {e}")
-        raise
-    except json.JSONDecodeError as e:
-        print(f"JSON 解析失败: {e}")
-        raise
+# 新的 URL
+new_url = "https://6851.kstore.space/zby.txt"
 
-# 删除注释
-def remove_comments(json_str):
-    # 删除单行注释
-    json_str = re.sub(r'//.*', '', json_str)
-    # 删除多行注释
-    json_str = re.sub(r'/\*[\s\S]*?\*/', '', json_str)
-    return json_str
+# 处理 JSON 数据
+data = fetch_and_clean_json(url)
 
-# 替换和删除指定的内容
-def process_json(data):
-    # 将 JSON 数据转化为字符串以便进行正则操作
-    json_str = json.dumps(data, ensure_ascii=False)
-    
-    # 删除 JSON 字符串中的注释
-    json_str = remove_comments(json_str)
-    
-    # 替换关键词
-    json_str = json_str.replace("豆瓣┃本接口免费-🈲贩卖", "豆瓣TOP榜单")
-    
-    # 删除包含指定关键词的内容
-    for keyword in keywords_to_remove:
-        pattern = re.compile(r'\{[^{}]*' + re.escape(keyword) + r'[^{}]*\}(?:,)?')
-        json_str = pattern.sub('', json_str)
-    
-    # 替换 live 项中的 URL（http 和 https）
-    json_str = re.sub(r'("live"\s*:\s*")http[s]?://[^"]*(")', r'\1https://6851.kstore.space/zby.txt\2', json_str)
-
-    # 清理多余的逗号和括号
-    json_str = re.sub(r',\s*(?=\})', '', json_str)  # 删除}前的逗号
-    json_str = re.sub(r'\{\s*}', '', json_str)  # 删除空的{}
-    
-    return json.loads(json_str)
-
-# 主函数
-def main():
-    url = "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json"
-    json_data = fetch_json(url)
-    processed_data = process_json(json_data)
-    
-    # 将处理后的数据输出为文件
-    with open('index.json', 'w', encoding='utf-8') as file:
-        json.dump(processed_data, file, ensure_ascii=False, indent=4)
-
-if __name__ == "__main__":
-    main()
+if data is not None:
+    filtered_and_updated_data = filter_and_replace_urls(data, keywords, new_url)
+    print("处理后的数据：")
+    print(json.dumps(filtered_and_updated_data, indent=2, ensure_ascii=False))
+else:
+    print("没有有效的数据")
