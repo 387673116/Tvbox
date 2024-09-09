@@ -30,8 +30,8 @@ if response.status_code == 200 and response.text.strip():
         pre_lives_content = cleaned_text.split('"lives":')[0]
 
         # 定义需要删除的关键字列表
-        keywords = ['虎牙直播', '有声小说吧', '88看球', '少儿', '小学', '初中', 'TgYunPanLoca', 
-                    '高中', '急救教学', '易搜', '网盘', '纸条搜', 'csp_PanSearch', '本地', '推送', '动漫']
+        keywords = ['虎牙直播', '有声小说吧', '88看球', '少儿', '小学', '初中', 'TgYunPan', 
+                    '高中', '急救教学', '易搜', '网盘', '纸条', '（墙外）', '搜索', '易搜', '本地', '推送', '动漫', '动漫']
 
         # 构建正则表达式，删除包含指定关键字的 {} 块，处理跨行情况
         for keyword in keywords:
