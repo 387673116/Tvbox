@@ -276,24 +276,6 @@
             "changeable": 1
         },
         {
-            "key": "csp_Anime1",
-            "name": "🌸Anime动漫",
-            "type": 3,
-            "api": "csp_Anime1",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
-        {
-            "key": "csp_Dm84",
-            "name": "🚌动漫巴士",
-            "type": 3,
-            "api": "csp_Dm84",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
-        {
             "key": "csp_Djtt",
             "name": "🌈短剧",
             "type": 3,
@@ -302,31 +284,6 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1
-        },
-        {
-            "key": "csp_Kugou",
-            "name": "🐶酷狗",
-            "type": 3,
-            "api": "csp_Kugou",
-            "playerType": 2,
-            "ext": {
-                "classes": [
-                    {
-                        "type_name": "酷狗",
-                        "type_id": "kugou"
-                    }
-                ]
-            }
-        },
-        {
-            "key": "Aid",
-            "name": "🚑急救教学",
-            "type": 3,
-            "api": "csp_FirstAid",
-            "searchable": 0,
-            "quickSearch": 0,
-            "filterable": 0,
-            "changeable": 0
         },
         {
             "key": "玩偶gg",
@@ -367,175 +324,6 @@
             }
         },
         {
-            "key": "易搜",
-            "name": "🆎易搜",
-            "type": 3,
-            "api": "csp_YiSo",
-            "searchable": 1,
-            "filterable": 0,
-            "switchable": 0,
-            "ext": {
-                "commonConfig": "http://127.0.0.1:9978/file/TVBox/peizhi.json"
-            }
-        },
-        {
-            "key": "csp_PanSearch",
-            "name": "📀盘搜索",
-            "type": 3,
-            "api": "csp_PanSearch",
-            "searchable": 1,
-            "changeable": 0,
-            "ext": {
-                "commonConfig": "http://127.0.0.1:9978/file/TVBox/peizhi.json"
-            }
-        },
-        {
-            "key": "纸条搜",
-            "name": "📜小纸条",
-            "type": 3,
-            "api": "csp_XiaoZhiTiao",
-            "searchable": 1,
-            "changeable": 0,
-            "ext": {
-                "commonConfig": "http://127.0.0.1:9978/file/TVBox/peizhi.json"
-            }
-        },
-        {
-            "key": "网盘集合",
-            "name": "🅿网盘集合|4K",
-            "type": 3,
-            "api": "csp_网盘集合",
-            "searchable": 1,
-            "filterable": 0,
-            "switchable": 0,
-            "ext": {
-                "commonConfig": "http://127.0.0.1:9978/file/TVBox/peizhi.json",
-                "share": "https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/网盘集合.json"
-            }
-        },
-        {
-            "key": "Youtube",
-            "name": "⚡Youtube（墙外）",
-            "type": 3,
-            "api": "csp_Youtube",
-            "searchable": 1,
-            "changeable": 1,
-            "style": {
-                "type": "rect",
-                "ratio": 1.433
-            },
-            "ext": {
-                "json": "https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/youtube.json",
-                "cookie": ""
-            }
-        },
-        {
-            "key": "TgYunPanLocal1",
-            "name": "🅿TgYunPanLocal（墙外）",
-            "type": 3,
-            "api": "csp_TgYunPanLocal",
-            "searchable": 1,
-            "filterable": 0,
-            "switchable": 0,
-            "ext": {
-                "channelUsername": "yunpanshare",
-                "commonConfig": "http://127.0.0.1:9978/file/TVBox/peizhi.json"
-            }
-        },
-        {
-            "key": "TgYunPanLocal2",
-            "name": "🅿TgYunPanLocal2（墙外）",
-            "type": 3,
-            "api": "csp_TgYunPanLocal",
-            "searchable": 1,
-            "filterable": 0,
-            "switchable": 0,
-            "ext": {
-                "channelUsername": "shareAliyun",
-                "commonConfig": "http://127.0.0.1:9978/file/TVBox/peizhi.json"
-            }
-        },
-        {
-            "key": "TgYunPanLocal3",
-            "name": "🅿TgYunPanLocal3（墙外）",
-            "type": 3,
-            "api": "csp_TgYunPanLocal",
-            "searchable": 1,
-            "filterable": 0,
-            "switchable": 0,
-            "ext": {
-                "channelUsername": "kuakeyun",
-                "commonConfig": "http://127.0.0.1:9978/file/TVBox/peizhi.json"
-            }
-        },
-        {
-            "key": "TgYunPanLocal4",
-            "name": "🅿TgYunPanLocal4（墙外）",
-            "type": 3,
-            "api": "csp_TgYunPanLocal",
-            "searchable": 1,
-            "filterable": 0,
-            "switchable": 0,
-            "ext": {
-                "channelUsername": "qixingzhenren",
-                "commonConfig": "http://127.0.0.1:9978/file/TVBox/peizhi.json"
-            }
-        },
-        {
-            "key": "TgYunPanLocal5",
-            "name": "🅿TgYunPanLocal5（墙外）",
-            "type": 3,
-            "api": "csp_TgYunPanLocal",
-            "searchable": 1,
-            "filterable": 0,
-            "switchable": 0,
-            "ext": {
-                "channelUsername": "guaguale115",
-                "commonConfig": "http://127.0.0.1:9978/file/TVBox/peizhi.json"
-            }
-        },
-        {
-            "key": "push_agent",
-            "name": "🍭推送",
-            "type": 3,
-            "api": "csp_Push",
-            "searchable": 0,
-            "quickSearch": 0,
-            "ext": {
-                "commonConfig": "http://127.0.0.1:9978/file/TVBox/peizhi.json"
-            }
-        },
-        {
-            "key": "csp_Local",
-            "name": "📚本地",
-            "type": 3,
-            "api": "csp_Local",
-            "searchable": 0,
-            "quickSearch": 0,
-            "filterable": 1
-        },
-        {
-            "key": "虎牙直播",
-            "name": "🐯虎牙直播",
-            "type": 3,
-            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/js/lib/drpy2.min.js",
-            "searchable": 0,
-            "quickSearch": 0,
-            "filterable": 0,
-            "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/js/虎牙直播.js"
-        },
-        {
-            "key": "有声小说吧",
-            "name": "有声小说吧",
-            "type": 3,
-            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/js/lib/drpy2.min.js",
-            "playerType": "2",
-            "searchable": 0,
-            "quickSearch": 0,
-            "filterable": 0,
-            "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/js/有声小说吧.js"
-        },
-        {
             "key": "JRKAN直播",
             "name": "JRKAN直播",
             "type": 3,
@@ -544,16 +332,6 @@
             "quickSearch": 0,
             "filterable": 0,
             "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/js/JRKAN直播.js"
-        },
-        {
-            "key": "88看球",
-            "name": "⚽88看球",
-            "type": 3,
-            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/js/lib/drpy2.min.js",
-            "searchable": 0,
-            "quickSearch": 0,
-            "filterable": 0,
-            "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/js/88看球.js"
         },
         {
             "key": "短视频",
@@ -599,16 +377,6 @@
             }
         },
         {
-            "key": "csp_Bili",
-            "name": "🅱️哔哩哔哩",
-            "type": 3,
-            "api": "csp_Bili",
-            "searchable": 0,
-            "quickSearch": 0,
-            "filterable": 1,
-            "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/Bili.json"
-        },
-        {
             "key": "相声小品",
             "name": "🅱️相声小品",
             "type": 3,
@@ -627,46 +395,6 @@
             "quickSearch": 0,
             "filterable": 1,
             "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/Blixq.json"
-        },
-        {
-            "key": "少儿",
-            "name": "🅱️少儿",
-            "type": 3,
-            "api": "csp_Bili",
-            "searchable": 0,
-            "quickSearch": 0,
-            "filterable": 1,
-            "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/少儿教育.json"
-        },
-        {
-            "key": "小学",
-            "name": "🅱️小学",
-            "type": 3,
-            "api": "csp_Bili",
-            "searchable": 0,
-            "quickSearch": 0,
-            "filterable": 1,
-            "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/小学课堂.json"
-        },
-        {
-            "key": "初中",
-            "name": "🅱️初中",
-            "type": 3,
-            "api": "csp_Bili",
-            "searchable": 0,
-            "quickSearch": 0,
-            "filterable": 1,
-            "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/初中课堂.json"
-        },
-        {
-            "key": "高中",
-            "name": "🅱️高中",
-            "type": 3,
-            "api": "csp_Bili",
-            "searchable": 0,
-            "quickSearch": 0,
-            "filterable": 1,
-            "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/高中课堂.json"
         }
     ],
     "parses": [
