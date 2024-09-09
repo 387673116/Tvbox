@@ -16,9 +16,24 @@ if response.status_code == 200 and response.text.strip():
     # 删除以 // 开头的注释行
     cleaned_text = re.sub(r'^\s*//.*\n?', '', text, flags=re.MULTILINE)
 
+    # 处理字符串内容的替换
+    lines = cleaned_text.split('\n')
+    keywords = ['豆瓣┃本接口免费-🈲贩卖']
+    filtered_lines = []
+
+    for line in lines:
+        if not any(keyword in line for keyword in keywords):
+            filtered_lines.append(line)
+        else:
+            # 替换豆瓣相关内容
+            line = line.replace('豆瓣┃本接口免费-🈲贩卖', '豆瓣TOP榜单')
+            filtered_lines.append(line)
+
+    processed_content = "\n".join(filtered_lines)
+
     # 处理 JSON 数据
     try:
-        data = json.loads(cleaned_text)
+        data = json.loads(processed_content)
 
         # 替换 "lives" 列表中的 "url" 字段值
         for live in data.get('lives', []):
@@ -29,10 +44,6 @@ if response.status_code == 200 and response.text.strip():
                     'https://6851.kstore.space/zby.txt',
                     live['url']
                 )
-
-        # 替换 "豆瓣┃本接口免费-🈲贩卖" 为 "豆瓣TOP榜单"
-        if '豆瓣┃本接口免费-🈲贩卖' in data:
-            data['豆瓣TOP榜单'] = data.pop('豆瓣┃本接口免费-🈲贩卖')
 
         # 保存结果到 index.json
         with open('index.json', 'w', encoding='utf-8') as f:
