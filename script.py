@@ -10,9 +10,16 @@ keywords_to_remove = [
 
 # 从指定链接获取 JSON 数据
 def fetch_json(url):
-    response = requests.get(url)
-    response.raise_for_status()  # 如果请求失败，则引发异常
-    return response.json()
+    try:
+        response = requests.get(url)
+        response.raise_for_status()  # 如果请求失败，则引发异常
+        return response.json()
+    except requests.exceptions.RequestException as e:
+        print(f"请求失败: {e}")
+        raise
+    except json.JSONDecodeError as e:
+        print(f"JSON 解析失败: {e}")
+        raise
 
 # 删除注释
 def remove_comments(json_str):
