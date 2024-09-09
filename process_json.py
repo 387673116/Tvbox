@@ -31,9 +31,8 @@ if response.status_code == 200 and response.text.strip():
                 )
 
         # 替换 "豆瓣┃本接口免费-🈲贩卖" 为 "豆瓣TOP榜单"
-        for key in list(data.keys()):
-            if key == '豆瓣┃本接口免费-🈲贩卖':
-                data['豆瓣TOP榜单'] = data.pop('豆瓣┃本接口免费-🈲贩卖')
+        if '豆瓣┃本接口免费-🈲贩卖' in data:
+            data['豆瓣TOP榜单'] = data.pop('豆瓣┃本接口免费-🈲贩卖')
 
         # 保存结果到 index.json
         with open('index.json', 'w', encoding='utf-8') as f:
