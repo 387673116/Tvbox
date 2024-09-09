@@ -13,6 +13,8 @@ def fetch_json(url):
     try:
         response = requests.get(url)
         response.raise_for_status()  # 如果请求失败，则引发异常
+        print(f"Response status code: {response.status_code}")
+        print(f"Response content: {response.text[:500]}")  # 只打印前 500 个字符
         return response.json()
     except requests.exceptions.RequestException as e:
         print(f"请求失败: {e}")
