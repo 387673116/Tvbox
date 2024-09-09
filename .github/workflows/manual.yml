@@ -30,21 +30,15 @@ jobs:
       - name: Run script
         run: |
           echo "Running Python script..."
-          python script.py  # 根据实际路径调整
-        continue-on-error: true  # 允许脚本失败以便查看详细日志
-
-      - name: List directory contents
-        run: |
-          ls -la  # 列出当前目录中的所有文件和文件夹
-
-      - name: Check index.json content
-        run: |
-          cat index.json  # 确保 index.json 文件存在并查看内容
+          python script.py  # 替换为实际的 Python 脚本路径
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add index.json
-          git commit -m 'Update index.json with latest content' || true
+          git add index.json live.txt
+          git commit -m 'Update index.json and live.txt with latest content' || true
+          git pull --rebase origin main  # 拉取远程更改并进行 rebase
           git push origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
