@@ -30,7 +30,7 @@ jobs:
       - name: Run script
         run: |
           echo "Running Python script..."
-          python script.py  # 根据实际路径调整
+          python process_json.py  # 确保替换为你的 Python 脚本名称
         continue-on-error: true  # 允许脚本失败以便查看详细日志
 
       - name: List directory contents
