@@ -1,43 +1,42 @@
 import requests
 import json
 
-# 读取 JSON 数据
+# 获取远程 JSON 数据
 url = 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json'
 response = requests.get(url)
 
-# 打印响应状态码和内容，帮助调试
-print(f"Response status code: {response.status_code}")
-print(f"Response text: {response.text[:500]}")  # 打印前500个字符
-
-# 确保响应内容是有效的 JSON
-try:
+# 检查请求是否成功
+if response.status_code == 200:
+    # 解析 JSON 数据
     data = response.json()
-except requests.exceptions.JSONDecodeError as e:
-    print(f"JSON decode error: {e}")
-    exit(1)
+    
+    # 将数据转换为字符串形式进行处理
+    json_str = json.dumps(data, ensure_ascii=False)
 
-# 删除指定行（这里假设 JSON 文件是一个列表形式的对象）
-data = [line for line in data if line != '//🐧裙：926953902']
+    # 打印原始 JSON 字符串
+    print("原始 JSON 字符串:")
+    print(json_str)
 
-# 替换字符串
-for item in data:
-    if isinstance(item, str):
-        item = item.replace('豆瓣┃本接口免费-🈲贩卖', '豆瓣TOP榜单')
-    elif isinstance(item, dict):
-        # 替换字典中的值
-        for key, value in item.items():
-            if isinstance(value, str):
-                item[key] = value.replace('豆瓣┃本接口免费-🈲贩卖', '豆瓣TOP榜单')
+    # 删除包含特定字符串的行（这里我们假设删除操作是在 JSON 字符串中进行）
+    lines = json_str.split('\n')
+    lines = [line for line in lines if '//🐧裙：926953902' not in line]
+    cleaned_json_str = '\n'.join(lines)
 
-        # 替换 lives 内的 url
-        if 'lives' in item:
-            for live in item['lives']:
-                if 'url' in live:
-                    live['url'] = live['url'].replace('http://', 'https://6851.kstore.space/zby.txt')
-                    live['url'] = live['url'].replace('https://', 'https://6851.kstore.space/zby.txt')
+    # 打印清理后的 JSON 字符串
+    print("\n清理后的 JSON 字符串:")
+    print(cleaned_json_str)
+    
+    # 重新将清理后的 JSON 字符串解析为 Python 对象
+    try:
+        cleaned_data = json.loads(cleaned_json_str)
+    except json.JSONDecodeError as e:
+        print("\nJSON 解码错误:", e)
+        cleaned_data = None
 
-# 保存修改后的数据到 index.json 文件
-with open('index.json', 'w', encoding='utf-8') as f:
-    json.dump(data, f, ensure_ascii=False, indent=4)
-
-print('Processing completed and saved to index.json')
+    # 如果解析成功，格式化并输出清理后的 JSON 数据
+    if cleaned_data is not None:
+        formatted_json = json.dumps(cleaned_data, indent=4, ensure_ascii=False)
+        print("\n格式化后的 JSON 数据:")
+        print(formatted_json)
+else:
+    print(f"请求失败，状态码: {response.status_code}")
