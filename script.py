@@ -12,12 +12,14 @@ def extract_and_process_content(json_str):
         
         # 删除包含特定关键字的行
         keywords = ['虎牙直播', '有声小说吧', '88看球', '少儿', '小学', '初中', '墙外', '高中', '急救教学', '搜', '盘']
-        lines = content.splitlines()
-        filtered_lines = [line for line in lines if not any(keyword in line for keyword in keywords)]
+        lines = content.split('\n')
+        filtered_lines = []
+        for line in lines:
+            if not any(keyword in line for keyword in keywords):
+                # 处理豆瓣相关内容
+                line = line.replace('豆瓣┃本接口免费-🈲贩卖', '豆瓣TOP榜单')
+                filtered_lines.append(line)
         processed_content = "\n".join(filtered_lines)
-        
-        # 替换特定的内容
-        processed_content = processed_content.replace('豆瓣┃本接口免费-🈲贩卖', '豆瓣TOP榜单')
         
         return processed_content
     return None
