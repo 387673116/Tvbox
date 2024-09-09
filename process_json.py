@@ -1,90 +1,35 @@
 import requests
 import json
-import re
 
-def fetch_and_clean_json(url):
-    try:
-        # 发送请求获取内容
-        response = requests.get(url)
-        response.raise_for_status()  # 确保请求成功
-        content = response.text
+# 读取 JSON 数据
+url = 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json'
+response = requests.get(url)
+data = response.json()
 
-        # 打印调试信息
-        print("原始内容：")
-        print(content)
+# 删除指定行（这里假设 JSON 文件是一个列表形式的对象）
+# 需要根据实际情况调整，如果文件是字典类型或其他格式，需要对应调整删除方法
+# 由于没有具体示例，这里假设列表中包含字符串
+data = [line for line in data if line != '//🐧裙：926953902']
 
-        # 删除指定的注释行
-        cleaned_lines = [line for line in content.splitlines() if line.strip() != "//🐧裙：926953902"]
-        cleaned_content = "\n".join(cleaned_lines)
-
-        # 打印清理后的内容
-        print("清理后的内容：")
-        print(cleaned_content)
-
-        # 解析 JSON
-        data = json.loads(cleaned_content)
-        return data
-
-    except requests.RequestException as e:
-        print(f"网络请求失败: {e}")
-    except json.JSONDecodeError as e:
-        print(f"JSON 解析失败: {e}")
-
-    return None
-
-def filter_and_replace_urls(data, keywords, new_url):
-    if isinstance(data, dict):
-        for key, value in list(data.items()):
-            if key == "sites" or key == "lives":
-                if isinstance(value, list):
-                    # 过滤列表中的项
-                    data[key] = [item for item in value if not contains_keywords(item, keywords)]
-                    # 替换 URL
-                    data[key] = [replace_urls(item, new_url) for item in data[key]]
-            else:
-                # 递归处理字典中的其他项
-                data[key] = filter_and_replace_urls(value, keywords, new_url)
-    elif isinstance(data, list):
-        data = [filter_and_replace_urls(item, keywords, new_url) for item in data]
-    return data
-
-def contains_keywords(item, keywords):
+# 替换字符串
+for item in data:
     if isinstance(item, str):
-        return any(keyword in item for keyword in keywords)
+        item = item.replace('豆瓣┃本接口免费-🈲贩卖', '豆瓣TOP榜单')
     elif isinstance(item, dict):
-        return any(contains_keywords(value, keywords) for value in item.values())
-    elif isinstance(item, list):
-        return any(contains_keywords(element, keywords) for element in item)
-    return False
+        # 替换字典中的值
+        for key, value in item.items():
+            if isinstance(value, str):
+                item[key] = value.replace('豆瓣┃本接口免费-🈲贩卖', '豆瓣TOP榜单')
 
-def replace_urls(item, new_url):
-    if isinstance(item, str):
-        # 替换 http 或 https 的 URL
-        return re.sub(r'https?://[^\s"]+', new_url, item)
-    elif isinstance(item, dict):
-        return {k: replace_urls(v, new_url) for k, v in item.items()}
-    elif isinstance(item, list):
-        return [replace_urls(element, new_url) for element in item]
-    return item
+        # 替换 lives 内的 url
+        if 'lives' in item:
+            for live in item['lives']:
+                if 'url' in live:
+                    live['url'] = live['url'].replace('http://', 'https://6851.kstore.space/zby.txt')
+                    live['url'] = live['url'].replace('https://', 'https://6851.kstore.space/zby.txt')
 
-# URL 和需要删除的注释行数
-url = "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json"
+# 保存修改后的数据到 index.json 文件
+with open('index.json', 'w', encoding='utf-8') as f:
+    json.dump(data, f, ensure_ascii=False, indent=4)
 
-# 关键词列表
-keywords = [
-    "虎牙直播", "有声小说吧", "88看球", "少儿", "小学", "初中",
-    "墙外", "高中", "急救教学", "搜", "盘"
-]
-
-# 新的 URL
-new_url = "https://6851.kstore.space/zby.txt"
-
-# 处理 JSON 数据
-data = fetch_and_clean_json(url)
-
-if data is not None:
-    filtered_and_updated_data = filter_and_replace_urls(data, keywords, new_url)
-    print("处理后的数据：")
-    print(json.dumps(filtered_and_updated_data, indent=2, ensure_ascii=False))
-else:
-    print("没有有效的数据")
+print('Processing completed and saved to index.json')
