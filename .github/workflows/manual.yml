@@ -1,0 +1,27 @@
+name: Run Python Script
+
+on:
+  schedule:
+    - cron: '0 */5 * * *'  # 每 5 小时运行一次
+  workflow_dispatch:  # 允许手动触发工作流
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'  # 设置 Python 版本，根据需要调整
+
+      - name: Install dependencies
+        run: |
+          pip install requests
+
+      - name: Run script
+        run: |
+          python script.py  # 运行根目录下的 Python 脚本
