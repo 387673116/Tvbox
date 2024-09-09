@@ -20,15 +20,22 @@ if response.status_code == 200 and response.text.strip():
     try:
         data = json.loads(cleaned_text)
 
+        # 修改 "sites" 列表中 key 为 "csp_DouDou" 的项
+        if 'sites' in data:
+            for site in data['sites']:
+                if site.get('key') == 'csp_DouDou':
+                    site['name'] = '🔍豆瓣TOP榜单'
+
         # 替换 "lives" 列表中的 "url" 字段值
-        for live in data.get('lives', []):
-            if 'url' in live:
-                # 使用修正后的正则表达式来替换 URL
-                live['url'] = re.sub(
-                    r'http(s)?://[\w\.-]+(/[^\s]*)?',
-                    'https://6851.kstore.space/zby.txt',
-                    live['url']
-                )
+        if 'lives' in data:
+            for live in data['lives']:
+                if 'url' in live:
+                    # 使用修正后的正则表达式来替换 URL
+                    live['url'] = re.sub(
+                        r'http(s)?://[\w\.-]+(/[^\s]*)?',
+                        'https://6851.kstore.space/zby.txt',
+                        live['url']
+                    )
 
         # 保存结果到 index.json
         with open('index.json', 'w', encoding='utf-8') as f:
