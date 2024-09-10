@@ -26,7 +26,7 @@ if response.status_code == 200 and response.text.strip():
             '纸条搜', '网盘集合', '少儿', '初中', '高中', '小学', 'csp_Bili', '88看球', 
             '有声小说吧', '虎牙直播', 'csp_Local', 'push_agent', 'TgYunPanLocal5', 
             'TgYunPanLocal4', 'TgYunPanLocal3', 'TgYunPanLocal2', 'TgYunPanLocal1', 
-            'Youtube', 'ConfigCenter', 'JRKAN直播', '星剧社', '蜡笔', '玩偶gg'
+            'Youtube', 'ConfigCenter', 'JRKAN直播', '星剧社', '蜡笔', '玩偶gg', 'csp_NewCz'
         ]
 
         if 'sites' in data:
@@ -43,11 +43,11 @@ if response.status_code == 200 and response.text.strip():
                 if 'url' in live:
                     live['url'] = 'https://6851.kstore.space/zby.txt'
                     
-        # 保存结果到 index.json
+        # 保存处理后的数据为压缩的 JSON 格式
         with open('index.json', 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=4)
+            json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
 
-        print("index.json 文件已生成")
+        print("压缩后的 index.json 文件已生成")
 
     except json.JSONDecodeError as e:
         print(f"JSON 解析错误: {e}")
