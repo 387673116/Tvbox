@@ -2,7 +2,7 @@ name: Run Python Script and Generate index.json
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # 每6小时运行一次
+    - cron: '0 */6 * * *'  # 每3小时运行一次
   workflow_dispatch:  # 允许手动触发
 
 permissions:
@@ -28,11 +28,11 @@ jobs:
 
       - name: Run script to generate index.json
         run: |
-          python index.py  # 确保替换为你的 Python 脚本名称
+          python scripts/index.py  # 确保替换为你的 Python 脚本名称
         continue-on-error: true  # 允许脚本失败以便查看详细日志
 
       - name: Check index.json content
-        run: cat scripts/index.json  # 确保 index.json 文件存在并查看内容
+        run: cat index.json  # 确保 index.json 文件存在并查看内容
 
       - name: Commit and push changes
         run: |
