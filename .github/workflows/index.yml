@@ -28,7 +28,7 @@ jobs:
 
       - name: Run script to generate index.json
         run: |
-          python process_json.py  # 确保替换为你的 Python 脚本名称
+          python index.py  # 确保替换为你的 Python 脚本名称
         continue-on-error: true  # 允许脚本失败以便查看详细日志
 
       - name: Check index.json content
