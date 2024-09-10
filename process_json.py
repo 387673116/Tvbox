@@ -26,16 +26,27 @@ if response.status_code == 200 and response.text.strip():
             '纸条搜', '网盘集合', '少儿', '初中', '高中', '小学', 'csp_Bili', '88看球', 
             '有声小说吧', '虎牙直播', 'csp_Local', 'push_agent', 'TgYunPanLocal5', 
             'TgYunPanLocal4', 'TgYunPanLocal3', 'TgYunPanLocal2', 'TgYunPanLocal1', 
-            'Youtube', 'ConfigCenter', 'JRKAN直播', '星剧社', '蜡笔', '玩偶gg'
+            'Youtube'
         ]
 
         if 'sites' in data:
+            # 打印所有 key 来进行调试
+            print("处理前的所有 key：")
+            for site in data['sites']:
+                print(site.get('key'))
+
+            # 执行删除操作
             data['sites'] = [site for site in data['sites'] if site.get('key') not in keys_to_remove]
+
+            # 再次打印剩余的 key
+            print("处理后的所有 key：")
+            for site in data['sites']:
+                print(site.get('key'))
 
             # 修改 "sites" 列表中 key 为 "csp_DouDou" 的项
             for site in data['sites']:
                 if site.get('key') == 'csp_DouDou':
-                    site['name'] = '豆瓣TOP榜'
+                    site['name'] = '🔍豆瓣TOP榜单'
 
         # 直接将 "lives" 列表中的 "url" 字段值替换为指定值
         if 'lives' in data:
