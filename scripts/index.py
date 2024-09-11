@@ -32,10 +32,15 @@ if response.status_code == 200 and response.text.strip():
         if 'sites' in data:
             data['sites'] = [site for site in data['sites'] if site.get('key') not in keys_to_remove]
 
-            # 修改 "sites" 列表中 key 为 "csp_DouDou" 的项
+            # 修改 "sites" 列表中 key 为 "csp_DouDou", "csp_Jianpian", "csp_SixV" 的项
             for site in data['sites']:
                 if site.get('key') == 'csp_DouDou':
-                    site['name'] = '豆瓣TOP榜'
+                    site['name'] = '🔍豆瓣TOP榜'
+                elif site.get('key') == 'csp_Jianpian':
+                    site['name'] = '⚡荐片'
+                elif site.get('key') == 'csp_SixV':
+                    site['name'] = '🌸新6V'
+
 
         # 直接将 "lives" 列表中的 "url" 字段值替换为指定值
         if 'lives' in data:
