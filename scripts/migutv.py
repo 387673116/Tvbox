@@ -31,7 +31,9 @@ try:
             # 如果遇到开始标志
             if start_keyword in line:
                 capture = True
-                result.append("#EXTINF:-1, " + line.strip())  # 添加“咪咕移动,#genre#”作为频道名
+                # 提取频道名称，去掉#genre#部分
+                channel_name = line.split(",")[0].strip()  # 只保留“咪咕移动”部分
+                result.append(f"#EXTINF:-1, {channel_name}")  # 添加正确的频道名称
 
             # 如果处于提取状态
             elif capture:
