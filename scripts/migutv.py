@@ -16,32 +16,22 @@ try:
         # 获取文件内容并按行分割
         lines = content.splitlines()
 
-        # 定义开始标志和结束条件
-        start_keyword = "咪咕移动,#genre#"
-
         # 用来存储提取的内容
         result = []
-        capture = False
-
+        
         # 添加m3u文件头
         result.append("#EXTM3U")
 
         # 遍历文件的每一行
         for line in lines:
-            # 如果遇到开始标志
-            if start_keyword in line:
-                capture = True
-                # 提取频道名称，去掉#genre#部分
-                channel_name = line.split(",")[0].strip()  # 只保留“咪咕移动”部分
-                result.append(f"#EXTINF:-1, {channel_name}")  # 添加正确的频道名称
-
-            # 如果处于提取状态
-            elif capture:
-                # 遇到空白行时停止提取
-                if line.strip() == "":
-                    break
-                # 将频道URL添加到结果
-                result.append(line.strip())
+            # 每行格式为 频道名称,播放链接
+            if "," in line:
+                # 分割频道名称和播放链接
+                channel_name, channel_url = line.split(",", 1)
+                # 添加频道信息
+                result.append(f"#EXTINF:-1, {channel_name.strip()}")
+                # 添加播放链接
+                result.append(channel_url.strip())
 
         # 将提取的内容写入m3u文件（根目录）
         with open("migutv.m3u", "w", encoding="utf-8") as m3u_file:
