@@ -16,48 +16,40 @@ try:
         # 获取文件内容并按行分割
         lines = content.splitlines()
 
-        # 定义开始标志
-        start_keyword = "咪咕移动,#genre#"
-        capture = False
-
         # 用来存储提取的内容
         result = []
+
+        # 定义当前分类
+        current_category = None
 
         # 添加m3u文件头
         result.append("#EXTM3U")
 
-        # 添加分类名称
-        category_name = "咪咕视频"
-        result.append(f"#EXTINF:-1, {category_name}")
-
         # 遍历文件的每一行
         for line in lines:
-            # 当遇到咪咕移动时，开始捕获内容
-            if start_keyword in line:
-                capture = True
-                continue  # 跳过标志行本身
-
-            # 如果捕获状态为True
-            if capture:
-                # 如果遇到空白行或其他停止条件，可以设置结束捕获
-                if line.strip() == "":
-                    break
-
-                # 每行格式为 频道名称,播放链接
-                if "," in line:
-                    # 分割频道名称和播放链接
-                    channel_name, channel_url = line.split(",", 1)
-                    # 添加频道信息
+            # 检测分类标记
+            if "#genre#" in line:
+                current_category = line.replace("#genre#", "").strip()
+                continue
+            
+            # 如果每行包含频道信息（例如 频道名称,播放链接）
+            if "," in line:
+                # 分割频道名称和播放链接
+                channel_name, channel_url = line.split(",", 1)
+                # 添加频道信息
+                if current_category:
+                    result.append(f"#EXTINF:-1 group-title=\"{current_category}\", {channel_name.strip()}")
+                else:
                     result.append(f"#EXTINF:-1, {channel_name.strip()}")
-                    # 添加播放链接
-                    result.append(channel_url.strip())
-
+                # 添加播放链接
+                result.append(channel_url.strip())
+                
         # 将提取的内容写入m3u文件（根目录）
         with open("zb.m3u", "w", encoding="utf-8") as m3u_file:
             for r in result:
                 m3u_file.write(r + "\n")
 
-        print(" zb.m3u 任务已完成.")
+        print("zb.m3u 任务已完成.")
     else:
         print("无法下载文件")
         exit()
