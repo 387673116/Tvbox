@@ -33,10 +33,6 @@ def process_m3u_content(content):
     # 添加m3u文件头
     result.append("#EXTM3U")
 
-    # 添加分类名称
-    category_name = "咪咕视频"
-    result.append(f"#EXTINF:-1 group-title=\"{category_name}\", {category_name}")
-
     # 遍历文件的每一行
     for line in lines:
         # 当遇到咪咕移动时，开始捕获内容
