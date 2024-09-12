@@ -1,7 +1,7 @@
 import requests
 
 try:
-    # 下载远程m3u文件内容
+    # 下载远程 m3u 文件内容
     url = "https://6851.kstore.space/zby.txt"
     response = requests.get(url)
 
@@ -22,7 +22,7 @@ try:
         # 用来存储提取的内容
         result = []
 
-        # 添加m3u文件头
+        # 添加 m3u 文件头
         result.append("#EXTM3U")
 
         # 遍历文件的每一行
@@ -35,7 +35,7 @@ try:
                 capture = True
                 continue
 
-            # 如果捕获状态为True
+            # 如果捕获状态为 True
             if capture:
                 # 处理频道信息
                 if line.strip() and not line.startswith("#"):
@@ -43,11 +43,11 @@ try:
                         # 分割频道名称和播放链接
                         channel_name, channel_url = line.split(",", 1)
                         # 添加频道信息
-                        result.append(f"#EXTINF:-1, {channel_name.strip()}")
+                        result.append(f"#EXTINF:-1,{channel_name.strip()}")
                         # 添加播放链接
                         result.append(channel_url.strip())
 
-        # 将提取的内容写入m3u文件（根目录）
+        # 将提取的内容写入 m3u 文件（根目录）
         with open("zb.m3u", "w", encoding="utf-8") as m3u_file:
             for r in result:
                 m3u_file.write(r + "\n")
