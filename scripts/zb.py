@@ -22,20 +22,33 @@ try:
         # 添加m3u文件头
         result.append("#EXTM3U")
 
+        # 用来标记是否处于分组内
+        in_group = False
+
         # 遍历文件的每一行
         for line in lines:
-            # 每行格式为 频道名称,播放链接
-            if "," in line:
-                # 分割频道名称和播放链接
-                channel_name, channel_url = line.split(",", 1)
-                # 删除不必要的空白符
-                channel_name = channel_name.strip()
-                channel_url = channel_url.strip()
+            # 处理分组信息
+            if "," not in line and line.strip():
+                if in_group:
+                    result.append("")  # 添加一个空行作为分隔
+                result.append(f"#EXTGRP:{line.strip()}")
+                in_group = True
+                continue
 
-                # 添加频道信息
-                result.append(f"#EXTINF:-1, {channel_name}")
-                # 添加播放链接
-                result.append(channel_url)
+            # 如果处于分组内
+            if in_group:
+                # 每行格式为 频道名称,播放链接
+                if "," in line:
+                    # 分割频道名称和播放链接
+                    channel_name, channel_url = line.split(",", 1)
+                    # 删除不必要的空白符
+                    channel_name = channel_name.strip()
+                    channel_url = channel_url.strip()
+
+                    # 添加频道信息
+                    result.append(f"#EXTINF:-1, {channel_name}")
+                    # 添加播放链接
+                    result.append(channel_url)
 
         # 将提取的内容写入m3u文件（根目录）
         with open("zb.m3u", "w", encoding="utf-8") as m3u_file:
