@@ -1,4 +1,5 @@
 #EXTM3U
+#EXTINF:-1, 咪咕视频
 #EXTINF:-1, CCTV1
 http://101.200.122.188/tv/migu085.php?id=cctv1
 #EXTINF:-1, CCTV2
