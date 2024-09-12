@@ -1,4 +1,4 @@
-name: Update TXT File
+name: Update m3u File
 
 on:
   schedule:
@@ -37,14 +37,14 @@ jobs:
         run: |
           ls -la  # 列出当前目录中的所有文件和文件夹
 
-      - name: Check migutv.txt content
+      - name: Check migutv.m3u content
         run: |
-          cat migutv.txt  # 确保 migutv.txt 文件存在并查看内容
+          cat migutv.m3u  # 确保 migutv.m3u 文件存在并查看内容
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add migutv.txt
-          git commit -m 'Update migutv.txt with latest content' || true
+          git add migutv.m3u
+          git commit -m 'Update migutv.m3u with latest content' || true
           git push origin main

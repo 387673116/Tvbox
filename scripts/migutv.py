@@ -1,7 +1,7 @@
 import requests
 
 try:
-    # 下载远程txt文件内容
+    # 下载远程m3u文件内容
     url = "https://6851.kstore.space/zby.txt"
     response = requests.get(url)
 
@@ -37,12 +37,12 @@ try:
                     break
                 result.append(line.strip())  # 添加到结果
 
-        # 将提取的内容写入TXT文件（根目录）
-        with open("migutv.txt", "w", encoding="utf-8") as txt_file:
+        # 将提取的内容写入m3u文件（根目录）
+        with open("migutv.m3u", "w", encoding="utf-8") as m3u_file:
             for r in result:
-                txt_file.write(r + "\n")
+                m3u_file.write(r + "\n")
 
-        print("File migutv.txt has been written successfully.")
+        print("File migutv.m3u has been written successfully.")
     else:
         print("无法下载文件")
         exit()
