@@ -23,19 +23,23 @@ try:
         result = []
         capture = False
 
+        # 添加m3u文件头
+        result.append("#EXTM3U")
+
         # 遍历文件的每一行
         for line in lines:
             # 如果遇到开始标志
             if start_keyword in line:
                 capture = True
-                result.append(line.strip())  # 保留“咪咕移动,#genre#”这一行
+                result.append("#EXTINF:-1, " + line.strip())  # 添加“咪咕移动,#genre#”作为频道名
 
             # 如果处于提取状态
             elif capture:
                 # 遇到空白行时停止提取
                 if line.strip() == "":
                     break
-                result.append(line.strip())  # 添加到结果
+                # 将频道URL添加到结果
+                result.append(line.strip())
 
         # 将提取的内容写入m3u文件（根目录）
         with open("migutv.m3u", "w", encoding="utf-8") as m3u_file:
