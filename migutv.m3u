@@ -1,4 +1,5 @@
-咪咕移动,#genre#
+#EXTM3U
+#EXTINF:-1, 咪咕移动,#genre#
 CCTV1,http://101.200.122.188/tv/migu085.php?id=cctv1
 CCTV2,http://101.200.122.188/tv/migu085.php?id=cctv2
 CCTV3,http://101.200.122.188/tv/migu085.php?id=cctv3
