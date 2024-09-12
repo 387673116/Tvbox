@@ -1,90 +1,90 @@
 #EXTM3U
-#EXTINF:-1, 咪咕视频
-#EXTINF:-1, CCTV1
+#EXTINF:-1 group-title="咪咕视频", 咪咕视频
+#EXTINF:-1 group-title="咪咕视频", CCTV1
 http://101.200.122.188/tv/migu085.php?id=cctv1
-#EXTINF:-1, CCTV2
+#EXTINF:-1 group-title="咪咕视频", CCTV2
 http://101.200.122.188/tv/migu085.php?id=cctv2
-#EXTINF:-1, CCTV3
+#EXTINF:-1 group-title="咪咕视频", CCTV3
 http://101.200.122.188/tv/migu085.php?id=cctv3
-#EXTINF:-1, CCTV4
+#EXTINF:-1 group-title="咪咕视频", CCTV4
 http://101.200.122.188/tv/migu085.php?id=cctv4#http://101.200.122.188/tv/migu085.php?id=cctv4a#http://101.200.122.188/tv/migu085.php?id=cctv4o
-#EXTINF:-1, CCTV5
+#EXTINF:-1 group-title="咪咕视频", CCTV5
 http://101.200.122.188/tv/migu085.php?id=cctv5
-#EXTINF:-1, CCTV5+
+#EXTINF:-1 group-title="咪咕视频", CCTV5+
 http://101.200.122.188/tv/migu085.php?id=cctv5p
-#EXTINF:-1, CCTV6
+#EXTINF:-1 group-title="咪咕视频", CCTV6
 http://101.200.122.188/tv/migu085.php?id=cctv6
-#EXTINF:-1, CCTV7
+#EXTINF:-1 group-title="咪咕视频", CCTV7
 http://101.200.122.188/tv/migu085.php?id=cctv7
-#EXTINF:-1, CCTV8
+#EXTINF:-1 group-title="咪咕视频", CCTV8
 http://101.200.122.188/tv/migu085.php?id=cctv8
-#EXTINF:-1, CCTV9
+#EXTINF:-1 group-title="咪咕视频", CCTV9
 http://101.200.122.188/tv/migu085.php?id=cctv9
-#EXTINF:-1, CCTV10
+#EXTINF:-1 group-title="咪咕视频", CCTV10
 http://101.200.122.188/tv/migu085.php?id=cctv10
-#EXTINF:-1, CCTV11
+#EXTINF:-1 group-title="咪咕视频", CCTV11
 http://101.200.122.188/tv/migu085.php?id=cctv11
-#EXTINF:-1, CCTV12
+#EXTINF:-1 group-title="咪咕视频", CCTV12
 http://101.200.122.188/tv/migu085.php?id=cctv12
-#EXTINF:-1, CCTV13
+#EXTINF:-1 group-title="咪咕视频", CCTV13
 http://101.200.122.188/tv/migu085.php?id=cctv13
-#EXTINF:-1, CCTV14
+#EXTINF:-1 group-title="咪咕视频", CCTV14
 http://101.200.122.188/tv/migu085.php?id=cctv14
-#EXTINF:-1, CCTV15
+#EXTINF:-1 group-title="咪咕视频", CCTV15
 http://101.200.122.188/tv/migu085.php?id=cctv15
-#EXTINF:-1, CCTV17
+#EXTINF:-1 group-title="咪咕视频", CCTV17
 http://101.200.122.188/tv/migu085.php?id=cctv17
-#EXTINF:-1, 东方卫视
+#EXTINF:-1 group-title="咪咕视频", 东方卫视
 http://101.200.122.188/tv/migu085.php?id=dfws
-#EXTINF:-1, 重庆卫视
+#EXTINF:-1 group-title="咪咕视频", 重庆卫视
 http://101.200.122.188/tv/migu085.php?id=cqws
-#EXTINF:-1, 辽宁卫视
+#EXTINF:-1 group-title="咪咕视频", 辽宁卫视
 http://101.200.122.188/tv/migu085.php?id=lnws
-#EXTINF:-1, 吉林卫视
+#EXTINF:-1 group-title="咪咕视频", 吉林卫视
 http://101.200.122.188/tv/migu085.php?id=jlws
-#EXTINF:-1, 内蒙古卫视
+#EXTINF:-1 group-title="咪咕视频", 内蒙古卫视
 http://101.200.122.188/tv/migu085.php?id=nmws
-#EXTINF:-1, 宁夏卫视
+#EXTINF:-1 group-title="咪咕视频", 宁夏卫视
 http://101.200.122.188/tv/migu085.php?id=nxws
-#EXTINF:-1, 甘肃卫视
+#EXTINF:-1 group-title="咪咕视频", 甘肃卫视
 http://101.200.122.188/tv/migu085.php?id=gsws
-#EXTINF:-1, 青海卫视
+#EXTINF:-1 group-title="咪咕视频", 青海卫视
 http://101.200.122.188/tv/migu085.php?id=qhws
-#EXTINF:-1, 陕西卫视
+#EXTINF:-1 group-title="咪咕视频", 陕西卫视
 http://101.200.122.188/tv/migu085.php?id=sxws
-#EXTINF:-1, 山东卫视
+#EXTINF:-1 group-title="咪咕视频", 山东卫视
 http://101.200.122.188/tv/migu085.php?id=sdws
-#EXTINF:-1, 河南卫视
+#EXTINF:-1 group-title="咪咕视频", 河南卫视
 http://101.200.122.188/tv/migu085.php?id=hnws
-#EXTINF:-1, 湖北卫视
+#EXTINF:-1 group-title="咪咕视频", 湖北卫视
 http://101.200.122.188/tv/migu085.php?id=hubws
-#EXTINF:-1, 湖南卫视
+#EXTINF:-1 group-title="咪咕视频", 湖南卫视
 http://101.200.122.188/tv/migu085.php?id=hunws
-#EXTINF:-1, 江西卫视
+#EXTINF:-1 group-title="咪咕视频", 江西卫视
 http://101.200.122.188/tv/migu085.php?id=jxws
-#EXTINF:-1, 江苏卫视
+#EXTINF:-1 group-title="咪咕视频", 江苏卫视
 http://101.200.122.188/tv/migu085.php?id=jsws
-#EXTINF:-1, 广东卫视
+#EXTINF:-1 group-title="咪咕视频", 广东卫视
 http://101.200.122.188/tv/migu085.php?id=gdws
-#EXTINF:-1, 大湾区卫视
+#EXTINF:-1 group-title="咪咕视频", 大湾区卫视
 http://101.200.122.188/tv/migu085.php?id=dwqws
-#EXTINF:-1, 广西卫视
+#EXTINF:-1 group-title="咪咕视频", 广西卫视
 http://101.200.122.188/tv/migu085.php?id=gxws
-#EXTINF:-1, 云南卫视
+#EXTINF:-1 group-title="咪咕视频", 云南卫视
 http://101.200.122.188/tv/migu085.php?id=ynws
-#EXTINF:-1, 贵州卫视
+#EXTINF:-1 group-title="咪咕视频", 贵州卫视
 http://101.200.122.188/tv/migu085.php?id=gzws
-#EXTINF:-1, 新疆卫视
+#EXTINF:-1 group-title="咪咕视频", 新疆卫视
 http://101.200.122.188/tv/migu085.php?id=xjws
-#EXTINF:-1, 海南卫视
+#EXTINF:-1 group-title="咪咕视频", 海南卫视
 http://101.200.122.188/tv/migu085.php?id=hinws
-#EXTINF:-1, 西藏卫视
+#EXTINF:-1 group-title="咪咕视频", 西藏卫视
 http://101.200.122.188/tv/migu085.php?id=xzws
-#EXTINF:-1, 四海钓鱼
+#EXTINF:-1 group-title="咪咕视频", 四海钓鱼
 http://101.200.122.188/tv/migu085.php?id=shdy
-#EXTINF:-1, 东方影视
+#EXTINF:-1 group-title="咪咕视频", 东方影视
 http://101.200.122.188/tv/migu085.php?id=dfys
-#EXTINF:-1, 广东影视
+#EXTINF:-1 group-title="咪咕视频", 广东影视
 http://101.200.122.188/tv/migu085.php?id=gdys
-#EXTINF:-1, 嘉佳卡通
+#EXTINF:-1 group-title="咪咕视频", 嘉佳卡通
 http://101.200.122.188/tv/migu085.php?id=jjkt
