@@ -1,4 +1,5 @@
 import requests
+import re
 
 try:
     # 下载远程m3u文件内容
@@ -36,8 +37,9 @@ try:
             if "," in line:
                 # 分割频道名称和播放链接
                 channel_name, channel_url = line.split(",", 1)
-                # 添加频道信息
+                # 处理分类名称，去除中文逗号和英文逗号
                 if current_category:
+                    current_category = re.sub(r'[，,]', '', current_category)
                     result.append(f"#EXTINF:-1 group-title=\"{current_category}\", {channel_name.strip()}")
                 else:
                     result.append(f"#EXTINF:-1, {channel_name.strip()}")
