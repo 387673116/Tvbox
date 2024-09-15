@@ -22,32 +22,53 @@ if response.status_code == 200 and response.text.strip():
 
         # 删除指定 key 的项
         keys_to_remove = [
-            'csp_Dm84', 'csp_Anime1', 'csp_Kugou', 'Aid', '易搜', 'csp_PanSearch',  '短视频',
+            'csp_Dm84', 'csp_Anime1', 'csp_Kugou', 'Aid', '易搜', 'csp_PanSearch', '短视频',
             '纸条搜', '网盘集合', '少儿', '初中', '高中', '小学', 'csp_Bili', '88看球', 'csp_Qiyou',
             '有声小说吧', '虎牙直播', 'csp_Local', 'push_agent', 'TgYunPanLocal5', 'csp_FengGo',
             'TgYunPanLocal4', 'TgYunPanLocal3', 'TgYunPanLocal2', 'TgYunPanLocal1', '酷奇MV',
-            'Youtube', 'ConfigCenter', 'JRKAN直播', '星剧社', '蜡笔', 'csp_YGP', 'csp_SP360'
+            'Youtube', 'JRKAN直播', '星剧社', '蜡笔', 'csp_YGP', 'csp_SP360', 'csp_DiDuan'
         ]
 
         if 'sites' in data:
+            # 移除不需要的项
             data['sites'] = [site for site in data['sites'] if site.get('key') not in keys_to_remove]
 
-            # 修改 "sites" 列表中 key 为 "csp_DouDou", "csp_Jianpian", "csp_SixV" 的项
-            for site in data['sites']:
+            # 初始化移动操作需要的变量
+            jianpian_item = None
+            config_center_item = None
+            wanougg_item_index = None
+
+            # 遍历 sites 并进行对应修改
+            for i, site in enumerate(data['sites']):
                 if site.get('key') == 'csp_DouDou':
                     site['name'] = '🔍豆瓣TOP榜'
                 elif site.get('key') == 'csp_Jianpian':
-                    site['name'] = '⚡荐片'
+                    site['name'] = '📺荐片'
+                    jianpian_item = site  # 记录 csp_Jianpian
                 elif site.get('key') == 'csp_SixV':
                     site['name'] = '🌸新6V'
+                elif site.get('key') == 'ConfigCenter':
+                    config_center_item = site  # 记录 ConfigCenter
+                elif site.get('key') == '玩偶gg':
+                    site['name'] = '⚡网盘合集'
+                    wanougg_item_index = i  # 记录 玩偶gg 的位置
 
+            # 如果找到 csp_Jianpian，移动到第二项
+            if jianpian_item:
+                data['sites'].remove(jianpian_item)
+                data['sites'].insert(1, jianpian_item)
+
+            # 如果找到 ConfigCenter 和 玩偶gg，移动 ConfigCenter 到 玩偶gg 后
+            if config_center_item and wanougg_item_index is not None:
+                data['sites'].remove(config_center_item)
+                data['sites'].insert(wanougg_item_index + 1, config_center_item)
 
         # 直接将 "lives" 列表中的 "url" 字段值替换为指定值
         if 'lives' in data:
             for live in data['lives']:
                 if 'url' in live:
                     live['url'] = 'https://6851.kstore.space/zby.txt'
-                    
+
         # 保存处理后的数据为压缩的 JSON 格式
         with open('index.json', 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
