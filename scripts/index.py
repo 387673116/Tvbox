@@ -23,10 +23,10 @@ if response.status_code == 200 and response.text.strip():
         # 删除指定 key 的项
         keys_to_remove = [
             'csp_Dm84', 'csp_Anime1', 'csp_Kugou', 'Aid', '易搜', 'csp_PanSearch',  '短视频',
-            '纸条搜', '少儿', '初中', '高中', '小学', 'csp_Bili', '88看球', 'csp_Qiyou',
+            '纸条搜', '网盘集合', '少儿', '初中', '高中', '小学', 'csp_Bili', '88看球', 'csp_Qiyou',
             '有声小说吧', '虎牙直播', 'csp_Local', 'push_agent', 'TgYunPanLocal5', 'csp_FengGo',
-            'TgYunPanLocal4', 'TgYunPanLocal3', 'TgYunPanLocal2', 'TgYunPanLocal1', '酷奇MV',
-            'Youtube', 'JRKAN直播', '星剧社', '蜡笔', 'csp_YGP', 'csp_SP360'
+            'TgYunPanLocal4', 'TgYunPanLocal3', 'TgYunPanLocal2', 'TgYunPanLocal1', '酷奇MV', '斗鱼直播',
+            'Youtube', 'ConfigCenter', 'JRKAN直播', '星剧社', '蜡笔', '玩偶gg', 'csp_YGP', 'csp_SP360'
         ]
 
         if 'sites' in data:
@@ -41,19 +41,6 @@ if response.status_code == 200 and response.text.strip():
                     site['name'] = '⚡荐片'
                 elif site.get('key') == 'csp_SixV':
                     site['name'] = '🌸新6V'
-
-            # 将 "ConfigCenter" 移动到 "玩偶gg" 后面
-            config_center_site = next((site for site in data['sites'] if site.get('key') == 'ConfigCenter'), None)
-            wanou_gg_site = next((site for site in data['sites'] if site.get('key') == '玩偶gg'), None)
-            if config_center_site and wanou_gg_site:
-                data['sites'].remove(config_center_site)
-                wanou_gg_index = data['sites'].index(wanou_gg_site)
-                data['sites'].insert(wanou_gg_index + 1, config_center_site)
-
-            # 修改 "玩偶gg" 的 name
-            for site in data['sites']:
-                if site.get('key') == '玩偶gg':
-                    site['name'] = '⚽玩偶网盘'
 
             # 调整 "csp_Jianpian" 到第二个位置
             jianpian_site = next((site for site in data['sites'] if site.get('key') == 'csp_Jianpian'), None)
