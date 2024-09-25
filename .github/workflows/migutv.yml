@@ -1,50 +1,64 @@
-name: Update m3u File
+import requests
+import re
+import os
 
-on:
-  schedule:
-    - cron: '0 2 * * *'  # 每3小时运行一次
-  workflow_dispatch:  # 允许手动触发
+def is_valid_url(url):
+    # 简单的 URL 验证
+    return url.startswith("http://") or url.startswith("https://")
 
-permissions:
-  contents: write  # 确保有推送权限
+def fetch_m3u_file(url):
+    try:
+        response = requests.get(url)
+        response.raise_for_status()  # 确保请求成功
+        try:
+            return response.content.decode('utf-8')
+        except UnicodeDecodeError:
+            return response.content.decode('gbk')
+    except requests.RequestException as e:
+        print(f"请求错误: {e}")
+        exit(1)
 
-jobs:
-  update:
-    runs-on: ubuntu-latest
+def process_m3u_content(content):
+    lines = content.splitlines()
+    start_keyword = "咪咕移动,#genre#"
+    capture = False
+    result = ["#EXTM3U"]
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # 确保检出完整历史
+    for line in lines:
+        if start_keyword in line:
+            capture = True
+            continue
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
+        if capture:
+            if line.strip() == "":
+                break
 
-      - name: Install dependencies
-        run: |
-          pip install requests
+            if "," in line:
+                channel_name, channel_url = line.split(",", 1)
+                channel_url = channel_url.strip()
+                if is_valid_url(channel_url):
+                    result.append(f"#EXTINF:-1 group-title=\"咪咕视频\", {channel_name.strip()}")
+                    result.append(channel_url)
 
-      - name: Run script
-        run: |
-          echo "Running Python script..."
-          python scripts/migutv.py  # 根据实际路径调整
-        continue-on-error: true  # 允许脚本失败以便查看详细日志
+    return result
 
-      - name: List directory contents
-        run: |
-          ls -la  # 列出当前目录中的所有文件和文件夹
+def write_m3u_file(filename, content):
+    try:
+        filepath = os.path.join(os.getcwd(), filename)  # 使用绝对路径
+        with open(filepath, "w", encoding="utf-8") as m3u_file:
+            for line in content:
+                if line != "#EXTINF:-1 group-title=\"咪咕视频\", 咪咕视频":
+                    m3u_file.write(line + "\n")
+        print(f"{filepath} 任务已完成.")
+    except IOError as e:
+        print(f"文件操作错误: {e}")
+        exit(1)
 
-      - name: Check migutv.m3u content
-        run: |
-          cat migutv.m3u  # 确保 migutv.m3u 文件存在并查看内容
+def main():
+    url = "https://6851.kstore.space/zby.txt"
+    content = fetch_m3u_file(url)
+    processed_content = process_m3u_content(content)
+    write_m3u_file("migutv.m3u", processed_content)
 
-      - name: Commit and push changes
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add migutv.m3u
-          git commit -m 'Update migutv.m3u with latest content' || true
-          git push origin main
+if __name__ == "__main__":
+    main()
