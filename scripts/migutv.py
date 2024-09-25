@@ -1,5 +1,6 @@
 import requests
 import re
+import os
 
 def is_valid_url(url):
     # 简单的 URL 验证
@@ -43,11 +44,12 @@ def process_m3u_content(content):
 
 def write_m3u_file(filename, content):
     try:
-        with open(filename, "w", encoding="utf-8") as m3u_file:
+        filepath = os.path.join(os.getcwd(), filename)  # 使用绝对路径
+        with open(filepath, "w", encoding="utf-8") as m3u_file:
             for line in content:
                 if line != "#EXTINF:-1 group-title=\"咪咕视频\", 咪咕视频":
                     m3u_file.write(line + "\n")
-        print(f"{filename} 任务已完成.")
+        print(f"{filepath} 任务已完成.")
     except IOError as e:
         print(f"文件操作错误: {e}")
         exit(1)
