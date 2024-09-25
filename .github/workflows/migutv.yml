@@ -24,25 +24,20 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: |
-          pip install requests
+        run: pip install requests
 
       - name: Run the Python script to update m3u
         run: |
           python scripts/migutv.py  # 根据你的仓库结构调整路径
-
-      - name: List directory contents
-        run: |
-          ls -la  # 确认文件是否已在根目录生成或被替换
+        continue-on-error: true  # 允许脚本失败以便查看详细日志
 
       - name: Check migutv.m3u content
-        run: |
-          cat migutv.m3u  # 输出文件内容以确认更新是否成功
+        run: cat migutv.m3u  # 输出文件内容以确认更新是否成功
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add migutv.m3u  # 将更新的文件加入提交
-          git commit -m "Auto-update migutv.m3u" || echo "No changes to commit"  # 如果文件没有变化，不进行提交
+          git commit -m 'Update migutv.m3u with latest content' || true
           git push origin main  # 推送到仓库
