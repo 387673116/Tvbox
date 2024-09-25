@@ -2,7 +2,7 @@ name: Update m3u File
 
 on:
   schedule:
-    - cron: '0 3 * * *'  # 每3小时运行一次
+    - cron: '0 3 * * *'  
   workflow_dispatch:  # 允许手动触发
 
 permissions:
@@ -27,19 +27,13 @@ jobs:
         run: |
           pip install requests
 
-      - name: Run script
+      - name: Run script to generate zb.m3u
         run: |
-          echo "Running Python script..."
-          python scripts/zb.py  # 根据实际路径调整
+            python scripts/zb.py  # 根据实际路径调整
         continue-on-error: true  # 允许脚本失败以便查看详细日志
 
-      - name: List directory contents
-        run: |
-          ls -la  # 列出当前目录中的所有文件和文件夹
-
       - name: Check zb.m3u content
-        run: |
-          cat zb.m3u  # 确保 zb.m3u 文件存在并查看内容
+        run: cat zb.m3u  # 确保 zb.m3u 文件存在并查看内容
 
       - name: Commit and push changes
         run: |
