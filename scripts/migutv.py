@@ -1,5 +1,4 @@
 import requests
-import re
 import os
 
 def is_valid_url(url):
@@ -43,13 +42,12 @@ def process_m3u_content(content):
 
 def write_m3u_file(filename, content):
     try:
-        # 获取当前工作目录，确保文件写入根目录
-        filepath = os.path.join(os.getcwd(), filename)
+        filepath = os.path.join(os.getcwd(), filename)  # 确保写入根目录
         with open(filepath, "w", encoding="utf-8") as m3u_file:
             for line in content:
                 if line != "#EXTINF:-1 group-title=\"咪咕视频\", 咪咕视频":
                     m3u_file.write(line + "\n")
-        print(f"{filepath} 任务已完成.")
+        print(f"{filename} 文件更新成功.")
     except IOError as e:
         print(f"文件操作错误: {e}")
         exit(1)
@@ -58,8 +56,7 @@ def main():
     url = "https://6851.kstore.space/zby.txt"
     content = fetch_m3u_file(url)
     processed_content = process_m3u_content(content)
-    # 保存到仓库根目录
-    write_m3u_file("migutv.m3u", processed_content)
+    write_m3u_file("migutv.m3u", processed_content)  # 写入仓库根目录
 
 if __name__ == "__main__":
     main()

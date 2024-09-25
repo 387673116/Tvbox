@@ -2,8 +2,8 @@ name: Update m3u File
 
 on:
   schedule:
-    - cron: '0 2 * * *'  # 每天凌晨2点运行
-  workflow_dispatch:  # 允许手动触发
+    - cron: '0 2 * * *'  # 每天凌晨2点执行
+  workflow_dispatch:  # 支持手动触发
 
 permissions:
   contents: write  # 确保有推送权限
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # 确保检出完整历史
+          fetch-depth: 0  # 确保获取完整的历史记录
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -27,27 +27,22 @@ jobs:
         run: |
           pip install requests
 
-      - name: Run script
+      - name: Run the Python script to update m3u
         run: |
-          echo "Running Python script..."
-          python scripts/migutv.py  # 根据实际路径调整
+          python scripts/migutv.py  # 根据你的仓库结构调整路径
 
-      - name: List directory contents after script run
+      - name: List directory contents
         run: |
-          echo "Listing contents after script run..."
-          ls -la  # 确保 migutv.m3u 文件在根目录
+          ls -la  # 确认文件是否已在根目录生成或被替换
 
       - name: Check migutv.m3u content
         run: |
-          cat migutv.m3u  # 确保 migutv.m3u 文件存在并查看内容
-
-      - name: Show git status
-        run: git status  # 检查 Git 状态，确认文件是否被修改
+          cat migutv.m3u  # 输出文件内容以确认更新是否成功
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add migutv.m3u
-          git commit -m 'Update migutv.m3u with latest content' || true
-          git push origin main
+          git add migutv.m3u  # 将更新的文件加入提交
+          git commit -m "Auto-update migutv.m3u" || echo "No changes to commit"  # 如果文件没有变化，不进行提交
+          git push origin main  # 推送到仓库
