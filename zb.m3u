@@ -659,6 +659,612 @@ http://gslbservzqhsw.itv.cmvideo.cn/9001547084732463424/1.m3u8?channel-id=bestzb
 http://gslbservzqhsw.itv.cmvideo.cn/5000000010000026105/1.m3u8?channel-id=bestzb&Contentid=5000000010000026105&livemode=1&stbId=3
 #EXTINF:-1 group-title="秒开源", SiTV七彩戏剧
 http://gslbservzqhsw.itv.cmvideo.cn/5000000011000031116/1.m3u8?channel-id=bestzb&Contentid=5000000011000031116&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV1
+http://111.29.9.33:6610/000000001000/1000000001000018602/index.m3u8?channel-id=ystenlive&Contentid=1000000001000018602&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV1
+http://111.29.9.33:6610/000000001000/1000000001000021973/index.m3u8?channel-id=ystenlive&Contentid=1000000001000021973&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV1
+http://111.29.9.33:6610/000000001000/1000000005000265001/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265001&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV1
+http://111.29.9.33:6610/000000001000/5000000001000004953/index.m3u8?channel-id=bestzb&Contentid=5000000001000004953&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV1
+http://111.29.9.33:6610/000000001000/5000000004000002226/index.m3u8?channel-id=bestzb&Contentid=5000000004000002226&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV1
+http://111.29.9.33:6610/000000001000/5000000010000030810/index.m3u8?channel-id=bestzb&Contentid=5000000010000030810&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV1
+http://111.29.9.33:6610/000000001000/5000000011000265001/index.m3u8?channel-id=bestzb&Contentid=5000000011000265001&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV1
+http://111.29.9.33:6610/000000001000/reallive-cctv1/index.m3u8?channel-id=ystenlive&Contentid=reallive-cctv1&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV2
+http://111.29.9.33:6610/000000001000/1000000001000012442/index.m3u8?channel-id=ystenlive&Contentid=1000000001000012442&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV2
+http://111.29.9.33:6610/000000001000/1000000001000023315/index.m3u8?channel-id=ystenlive&Contentid=1000000001000023315&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV2
+http://111.29.9.33:6610/000000001000/5000000005000031113/index.m3u8?channel-id=bestzb&Contentid=5000000005000031113&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV2
+http://111.29.9.33:6610/000000001000/5000000011000031101/index.m3u8?channel-id=bestzb&Contentid=5000000011000031101&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV3
+http://111.29.9.33:6610/000000001000/1000000001000011218/index.m3u8?channel-id=ystenlive&Contentid=1000000001000011218&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV3
+http://111.29.9.33:6610/000000001000/5000000011000265003/index.m3u8?channel-id=bestzb&Contentid=5000000011000265003&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV4
+http://111.29.9.33:6610/000000001000/1000000002000031664/index.m3u8?channel-id=ystenlive&Contentid=1000000002000031664&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV4
+http://111.29.9.33:6610/000000001000/1000000005000265004/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265004&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV4
+http://111.29.9.33:6610/000000001000/5000000005000030093/index.m3u8?channel-id=bestzb&Contentid=5000000005000030093&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV4
+http://111.29.9.33:6610/000000001000/5000000011000031102/index.m3u8?channel-id=bestzb&Contentid=5000000011000031102&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV4
+http://111.29.9.33:6610/000000001000/5000000011000265004/index.m3u8?channel-id=bestzb&Contentid=5000000011000265004&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV5
+http://111.29.9.33:6610/000000001000/1000000001000004794/index.m3u8?channel-id=ystenlive&Contentid=1000000001000004794&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV5
+http://111.29.9.33:6610/000000001000/1000000005000265005/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265005&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV5
+http://111.29.9.33:6610/000000001000/1000000006000270006/index.m3u8?channel-id=ystenlive&Contentid=1000000006000270006&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV5
+http://111.29.9.33:6610/000000001000/5000000011000265005/index.m3u8?channel-id=bestzb&Contentid=5000000011000265005&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV6
+http://111.29.9.33:6610/000000001000/1000000001000016466/index.m3u8?channel-id=ystenlive&Contentid=1000000001000016466&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV6
+http://111.29.9.33:6610/000000001000/1000000005000265006/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265006&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV6
+http://111.29.9.33:6610/000000001000/5000000011000265006/index.m3u8?channel-id=bestzb&Contentid=5000000011000265006&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV7
+http://111.29.9.33:6610/000000001000/1000000001000017218/index.m3u8?channel-id=ystenlive&Contentid=1000000001000017218&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV7
+http://111.29.9.33:6610/000000001000/1000000001000024341/index.m3u8?channel-id=ystenlive&Contentid=1000000001000024341&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV7
+http://111.29.9.33:6610/000000001000/1000000005000265007/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265007&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV7
+http://111.29.9.33:6610/000000001000/5000000005000026715/index.m3u8?channel-id=bestzb&Contentid=5000000005000026715&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV7
+http://111.29.9.33:6610/000000001000/5000000011000031104/index.m3u8?channel-id=bestzb&Contentid=5000000011000031104&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV8
+http://111.29.9.33:6610/000000001000/1000000001000003736/index.m3u8?channel-id=ystenlive&Contentid=1000000001000003736&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV9
+http://111.29.9.33:6610/000000001000/1000000001000014583/index.m3u8?channel-id=ystenlive&Contentid=1000000001000014583&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV9
+http://111.29.9.33:6610/000000001000/1000000001000028286/index.m3u8?channel-id=ystenlive&Contentid=1000000001000028286&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV9
+http://111.29.9.33:6610/000000001000/5000000010000018384/index.m3u8?channel-id=bestzb&Contentid=5000000010000018384&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV10
+http://111.29.9.33:6610/000000001000/1000000001000023734/index.m3u8?channel-id=ystenlive&Contentid=1000000001000023734&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV10
+http://111.29.9.33:6610/000000001000/1000000001000026367/index.m3u8?channel-id=ystenlive&Contentid=1000000001000026367&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV10
+http://111.29.9.33:6610/000000001000/1000000005000265010/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265010&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV10
+http://111.29.9.33:6610/000000001000/5000000004000012827/index.m3u8?channel-id=bestzb&Contentid=5000000004000012827&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV10
+http://111.29.9.33:6610/000000001000/5000000010000016738/index.m3u8?channel-id=bestzb&Contentid=5000000010000016738&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV11
+http://111.29.9.33:6610/000000001000/1000000002000019789/index.m3u8?channel-id=ystenlive&Contentid=1000000002000019789&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV11
+http://111.29.9.33:6610/000000001000/5000000011000031106/index.m3u8?channel-id=bestzb&Contentid=5000000011000031106&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV12
+http://111.29.9.33:6610/000000001000/1000000001000001640/index.m3u8?channel-id=ystenlive&Contentid=1000000001000001640&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV12
+http://111.29.9.33:6610/000000001000/1000000001000032494/index.m3u8?channel-id=ystenlive&Contentid=1000000001000032494&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV12
+http://111.29.9.33:6610/000000001000/1000000005000265012/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265012&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV12
+http://111.29.9.33:6610/000000001000/5000000011000031107/index.m3u8?channel-id=bestzb&Contentid=5000000011000031107&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV13
+http://111.29.9.33:6610/000000001000/1000000002000021303/index.m3u8?channel-id=ystenlive&Contentid=1000000002000021303&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV13
+http://111.29.9.33:6610/000000001000/5000000011000031108/index.m3u8?channel-id=bestzb&Contentid=5000000011000031108&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV14
+http://111.29.9.33:6610/000000001000/1000000001000008170/index.m3u8?channel-id=ystenlive&Contentid=1000000001000008170&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV14
+http://111.29.9.33:6610/000000001000/1000000001000021349/index.m3u8?channel-id=ystenlive&Contentid=1000000001000021349&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV14
+http://111.29.9.33:6610/000000001000/1000000005000265013/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265013&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV14
+http://111.29.9.33:6610/000000001000/5000000004000006673/index.m3u8?channel-id=bestzb&Contentid=5000000004000006673&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV14
+http://111.29.9.33:6610/000000001000/5000000010000023358/index.m3u8?channel-id=bestzb&Contentid=5000000010000023358&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV15
+http://111.29.9.33:6610/000000001000/1000000002000008163/index.m3u8?channel-id=ystenlive&Contentid=1000000002000008163&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV15
+http://111.29.9.33:6610/000000001000/5000000011000031109/index.m3u8?channel-id=bestzb&Contentid=5000000011000031109&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV16
+http://111.29.9.33:6610/000000001000/1000000006000233001/index.m3u8?channel-id=ystenlive&Contentid=1000000006000233001&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV16
+http://111.29.9.33:6610/000000001000/1000000006000233002/index.m3u8?channel-id=ystenlive&Contentid=1000000006000233002&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV17
+http://111.29.9.33:6610/000000001000/1000000005000056836/index.m3u8?channel-id=ystenlive&Contentid=1000000005000056836&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV17
+http://111.29.9.33:6610/000000001000/1000000005000265015/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265015&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV17
+http://111.29.9.33:6610/000000001000/1000000006000268004/index.m3u8?channel-id=ystenlive&Contentid=1000000006000268004&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV5+
+http://111.29.9.33:6610/000000001000/1000000001000018504/index.m3u8?channel-id=ystenlive&Contentid=1000000001000018504&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV5+
+http://111.29.9.33:6610/000000001000/1000000001000020505/index.m3u8?channel-id=ystenlive&Contentid=1000000001000020505&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CCTV5+
+http://111.29.9.33:6610/000000001000/5000000011000031127/index.m3u8?channel-id=bestzb&Contentid=5000000011000031127&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CGTN
+http://111.29.9.33:6610/000000001000/1000000002000009569/index.m3u8?channel-id=ystenlive&Contentid=1000000002000009569&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CGTN纪录
+http://111.29.9.33:6610/000000001000/8428799834696888424/index.m3u8?channel-id=ystenlive&Contentid=8428799834696888424&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CGTN俄语
+http://111.29.9.33:6610/000000001000/1000000006000280004/index.m3u8?channel-id=ystenlive&Contentid=1000000006000280004&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CGTN法语
+http://111.29.9.33:6610/000000001000/1000000006000280003/index.m3u8?channel-id=ystenlive&Contentid=1000000006000280003&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CGTN阿拉伯语
+http://111.29.9.33:6610/000000001000/1000000006000280001/index.m3u8?channel-id=ystenlive&Contentid=1000000006000280001&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", CGTN西班牙语
+http://111.29.9.33:6610/000000001000/1000000006000280002/index.m3u8?channel-id=ystenlive&Contentid=1000000006000280002&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 中国教育1台
+http://111.29.9.33:6610/000000001000/1000000002000027253/index.m3u8?channel-id=ystenlive&Contentid=1000000002000027253&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 中国教育1台
+http://111.29.9.33:6610/000000001000/5000000002000002652/index.m3u8?channel-id=bestzb&Contentid=5000000002000002652&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 中国教育1台
+http://111.29.9.33:6610/000000001000/7106250793420582078/index.m3u8?channel-id=ystenlive&Contentid=7106250793420582078&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 中国教育2台
+http://111.29.9.33:6610/000000001000/1000000005000266004/index.m3u8?channel-id=ystenlive&Contentid=1000000005000266004&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 中国教育4台
+http://111.29.9.33:6610/000000001000/1000000005000025333/index.m3u8?channel-id=ystenlive&Contentid=1000000005000025333&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 中国教育4台
+http://111.29.9.33:6610/000000001000/5000000006000012123/index.m3u8?channel-id=bestzb&Contentid=5000000006000012123&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 中国教育4台
+http://111.29.9.33:6610/000000001000/5000000011000031126/index.m3u8?channel-id=bestzb&Contentid=5000000011000031126&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 湖南卫视
+http://111.29.9.33:6610/000000001000/1000000001000009115/index.m3u8?channel-id=ystenlive&Contentid=1000000001000009115&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 湖南卫视
+http://111.29.9.33:6610/000000001000/1000000001000032695/index.m3u8?channel-id=ystenlive&Contentid=1000000001000032695&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 湖南卫视
+http://111.29.9.33:6610/000000001000/1000000005000265024/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265024&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 湖南卫视
+http://111.29.9.33:6610/000000001000/5000000004000006692/index.m3u8?channel-id=bestzb&Contentid=5000000004000006692&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 湖南卫视
+http://111.29.9.33:6610/000000001000/5000000010000030452/index.m3u8?channel-id=bestzb&Contentid=5000000010000030452&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 湖南卫视
+http://111.29.9.33:6610/000000001000/5000000011000265010/index.m3u8?channel-id=bestzb&Contentid=5000000011000265010&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 湖南卫视
+http://111.29.9.33:6610/000000001000/6954818217931477266/index.m3u8?channel-id=ystenlive&Contentid=6954818217931477266&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 东方卫视
+http://111.29.9.33:6610/000000001000/1000000001000005866/index.m3u8?channel-id=ystenlive&Contentid=1000000001000005866&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 东方卫视
+http://111.29.9.33:6610/000000001000/1000000001000030202/index.m3u8?channel-id=ystenlive&Contentid=1000000001000030202&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 东方卫视
+http://111.29.9.33:6610/000000001000/1000000005000265018/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265018&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 东方卫视
+http://111.29.9.33:6610/000000001000/5000000004000014098/index.m3u8?channel-id=bestzb&Contentid=5000000004000014098&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 东方卫视
+http://111.29.9.33:6610/000000001000/5000000010000032246/index.m3u8?channel-id=bestzb&Contentid=5000000010000032246&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 东方卫视
+http://111.29.9.33:6610/000000001000/5000000011000265007/index.m3u8?channel-id=bestzb&Contentid=5000000011000265007&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 东方卫视
+http://111.29.9.33:6610/000000001000/6081477947334326291/index.m3u8?channel-id=ystenlive&Contentid=6081477947334326291&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 江苏卫视
+http://111.29.9.33:6610/000000001000/1000000001000001828/index.m3u8?channel-id=ystenlive&Contentid=1000000001000001828&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 江苏卫视
+http://111.29.9.33:6610/000000001000/1000000001000004684/index.m3u8?channel-id=ystenlive&Contentid=1000000001000004684&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 江苏卫视
+http://111.29.9.33:6610/000000001000/4796340999304424198/index.m3u8?channel-id=ystenlive&Contentid=4796340999304424198&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 江苏卫视
+http://111.29.9.33:6610/000000001000/5000000004000019351/index.m3u8?channel-id=bestzb&Contentid=5000000004000019351&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 江苏卫视
+http://111.29.9.33:6610/000000001000/5000000010000018509/index.m3u8?channel-id=bestzb&Contentid=5000000010000018509&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 江苏卫视
+http://111.29.9.33:6610/000000001000/5000000011000265009/index.m3u8?channel-id=bestzb&Contentid=5000000011000265009&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 广东卫视
+http://111.29.9.33:6610/000000001000/1000000001000014176/index.m3u8?channel-id=ystenlive&Contentid=1000000001000014176&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 广东卫视
+http://111.29.9.33:6610/000000001000/1000000001000028357/index.m3u8?channel-id=ystenlive&Contentid=1000000001000028357&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 广东卫视
+http://111.29.9.33:6610/000000001000/1000000005000265034/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265034&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 广东卫视
+http://111.29.9.33:6610/000000001000/5000000004000014694/index.m3u8?channel-id=bestzb&Contentid=5000000004000014694&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 广东卫视
+http://111.29.9.33:6610/000000001000/5616881981321254555/index.m3u8?channel-id=ystenlive&Contentid=5616881981321254555&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 浙江卫视
+http://111.29.9.33:6610/000000001000/1000000001000009806/index.m3u8?channel-id=ystenlive&Contentid=1000000001000009806&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 浙江卫
+http://111.29.9.33:6610/000000001000/1000000001000014260/index.m3u8?channel-id=ystenlive&Contentid=1000000001000014260&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 浙江卫视
+http://111.29.9.33:6610/000000001000/1000000005000265031/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265031&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 浙江卫视
+http://111.29.9.33:6610/000000001000/5000000004000007275/index.m3u8?channel-id=bestzb&Contentid=5000000004000007275&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 浙江卫视
+http://111.29.9.33:6610/000000001000/5000000010000017320/index.m3u8?channel-id=bestzb&Contentid=5000000010000017320&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 浙江卫视
+http://111.29.9.33:6610/000000001000/7889730693553663314/index.m3u8?channel-id=ystenlive&Contentid=7889730693553663314&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 北京卫视
+http://111.29.9.33:6610/000000001000/1000000001000017156/index.m3u8?channel-id=ystenlive&Contentid=1000000001000017156&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 北京卫视
+http://111.29.9.33:6610/000000001000/1000000001000021288/index.m3u8?channel-id=ystenlive&Contentid=1000000001000021288&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 北京卫视
+http://111.29.9.33:6610/000000001000/5000000004000031556/index.m3u8?channel-id=bestzb&Contentid=5000000004000031556&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 北京卫视
+http://111.29.9.33:6610/000000001000/8186688740528366039/index.m3u8?channel-id=ystenlive&Contentid=8186688740528366039&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 深圳卫视
+http://111.29.9.33:6610/000000001000/1000000001000009227/index.m3u8?channel-id=ystenlive&Contentid=1000000001000009227&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 深圳卫视
+http://111.29.9.33:6610/000000001000/1000000001000011645/index.m3u8?channel-id=ystenlive&Contentid=1000000001000011645&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 深圳卫视
+http://111.29.9.33:6610/000000001000/1000000005000265028/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265028&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 深圳卫视
+http://111.29.9.33:6610/000000001000/5000000004000007410/index.m3u8?channel-id=bestzb&Contentid=5000000004000007410&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 深圳卫视
+http://111.29.9.33:6610/000000001000/5352218613763113657/index.m3u8?channel-id=ystenlive&Contentid=5352218613763113657&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 天津卫视
+http://111.29.9.33:6610/000000001000/1000000001000000831/index.m3u8?channel-id=ystenlive&Contentid=1000000001000000831&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 天津卫视
+http://111.29.9.33:6610/000000001000/1000000001000003475/index.m3u8?channel-id=ystenlive&Contentid=1000000001000003475&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 天津卫视
+http://111.29.9.33:6610/000000001000/1000000005000265026/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265026&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 天津卫视
+http://111.29.9.33:6610/000000001000/5000000001000030788/index.m3u8?channel-id=bestzb&Contentid=5000000001000030788&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 天津卫视
+http://111.29.9.33:6610/000000001000/5000000004000006827/index.m3u8?channel-id=bestzb&Contentid=5000000004000006827&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 天津卫视
+http://111.29.9.33:6610/000000001000/6707942579111517572/index.m3u8?channel-id=ystenlive&Contentid=6707942579111517572&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 山东卫视
+http://111.29.9.33:6610/000000001000/1000000001000012807/index.m3u8?channel-id=ystenlive&Contentid=1000000001000012807&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 山东卫视
+http://111.29.9.33:6610/000000001000/1000000001000016568/index.m3u8?channel-id=ystenlive&Contentid=1000000001000016568&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 山东卫视
+http://111.29.9.33:6610/000000001000/1000000005000265019/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265019&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 山东卫视
+http://111.29.9.33:6610/000000001000/5000000004000020424/index.m3u8?channel-id=bestzb&Contentid=5000000004000020424&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 山东卫视
+http://111.29.9.33:6610/000000001000/7347081113971056899/index.m3u8?channel-id=ystenlive&Contentid=7347081113971056899&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 山东卫视
+http://111.29.9.33:6610/000000001000/7744799445271696577/index.m3u8?channel-id=ystenlive&Contentid=7744799445271696577&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 安徽卫视
+http://111.29.9.33:6610/000000001000/1000000001000020780/index.m3u8?channel-id=ystenlive&Contentid=1000000001000020780&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 安徽卫视
+http://111.29.9.33:6610/000000001000/1000000001000030159/index.m3u8?channel-id=ystenlive&Contentid=1000000001000030159&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 安徽卫视
+http://111.29.9.33:6610/000000001000/1000000005000265025/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265025&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 安徽卫视
+http://111.29.9.33:6610/000000001000/5000000004000023002/index.m3u8?channel-id=bestzb&Contentid=5000000004000023002&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 江西卫视
+http://111.29.9.33:6610/000000001000/1000000001000013731/index.m3u8?channel-id=ystenlive&Contentid=1000000001000013731&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 江西卫视
+http://111.29.9.33:6610/000000001000/1000000005000265032/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265032&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 江西卫视
+http://111.29.9.33:6610/000000001000/1000000006000268001/index.m3u8?channel-id=ystenlive&Contentid=1000000006000268001&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 江西卫视
+http://111.29.9.33:6610/000000001000/5000000004000011210/index.m3u8?channel-id=bestzb&Contentid=5000000004000011210&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 黑龙江卫视
+http://111.29.9.33:6610/000000001000/1000000001000001925/index.m3u8?channel-id=ystenlive&Contentid=1000000001000001925&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 黑龙江卫视
+http://111.29.9.33:6610/000000001000/1000000001000009082/index.m3u8?channel-id=ystenlive&Contentid=1000000001000009082&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 黑龙江卫视
+http://111.29.9.33:6610/000000001000/1000000005000265029/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265029&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 黑龙江卫视
+http://111.29.9.33:6610/000000001000/5000000004000025203/index.m3u8?channel-id=bestzb&Contentid=5000000004000025203&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 四川卫视
+http://111.29.9.33:6610/000000001000/1000000002000016825/index.m3u8?channel-id=ystenlive&Contentid=1000000002000016825&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 四川卫视
+http://111.29.9.33:6610/000000001000/5000000004000006119/index.m3u8?channel-id=bestzb&Contentid=5000000004000006119&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 贵州卫视
+http://111.29.9.33:6610/000000001000/1000000002000003169/index.m3u8?channel-id=ystenlive&Contentid=1000000002000003169&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 贵州卫视
+http://111.29.9.33:6610/000000001000/5000000004000025843/index.m3u8?channel-id=bestzb&Contentid=5000000004000025843&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 湖北卫视
+http://111.29.9.33:6610/000000001000/1000000001000010355/index.m3u8?channel-id=ystenlive&Contentid=1000000001000010355&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 湖北卫视
+http://111.29.9.33:6610/000000001000/1000000001000024621/index.m3u8?channel-id=ystenlive&Contentid=1000000001000024621&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 湖北卫视
+http://111.29.9.33:6610/000000001000/5000000004000014954/index.m3u8?channel-id=bestzb&Contentid=5000000004000014954&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 辽宁卫视
+http://111.29.9.33:6610/000000001000/1000000001000001945/index.m3u8?channel-id=ystenlive&Contentid=1000000001000001945&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 辽宁卫视
+http://111.29.9.33:6610/000000001000/1000000005000265022/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265022&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 辽宁卫视
+http://111.29.9.33:6610/000000001000/5000000004000011671/index.m3u8?channel-id=bestzb&Contentid=5000000004000011671&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 广西卫视
+http://111.29.9.33:6610/000000001000/1000000002000019837/index.m3u8?channel-id=ystenlive&Contentid=1000000002000019837&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 广西卫视
+http://111.29.9.33:6610/000000001000/5000000011000031118/index.m3u8?channel-id=bestzb&Contentid=5000000011000031118&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 重庆卫视
+http://111.29.9.33:6610/000000001000/1000000001000001096/index.m3u8?channel-id=ystenlive&Contentid=1000000001000001096&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 重庆卫视
+http://111.29.9.33:6610/000000001000/1000000002000018937/index.m3u8?channel-id=ystenlive&Contentid=1000000002000018937&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 重庆卫视
+http://111.29.9.33:6610/000000001000/5000000004000025797/index.m3u8?channel-id=bestzb&Contentid=5000000004000025797&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 东南卫视
+http://111.29.9.33:6610/000000001000/1000000002000009263/index.m3u8?channel-id=ystenlive&Contentid=1000000002000009263&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 东南卫视
+http://111.29.9.33:6610/000000001000/1000000005000265033/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265033&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 东南卫视
+http://111.29.9.33:6610/000000001000/5000000004000010584/index.m3u8?channel-id=bestzb&Contentid=5000000004000010584&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 吉林卫视
+http://111.29.9.33:6610/000000001000/5000000011000031117/index.m3u8?channel-id=bestzb&Contentid=5000000011000031117&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 吉林卫视
+http://111.29.9.33:6610/000000001000/6042486520432105075/index.m3u8?channel-id=ystenlive&Contentid=6042486520432105075&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 海南卫视
+http://111.29.9.33:6610/000000001000/5000000004000006211/index.m3u8?channel-id=bestzb&Contentid=5000000004000006211&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 海南卫视
+http://111.29.9.33:6610/000000001000/7899627377857656087/index.m3u8?channel-id=ystenlive&Contentid=7899627377857656087&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 云南卫视
+http://111.29.9.33:6610/000000001000/1000000002000024694/index.m3u8?channel-id=ystenlive&Contentid=1000000002000024694&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 云南卫视
+http://111.29.9.33:6610/000000001000/5000000011000031120/index.m3u8?channel-id=bestzb&Contentid=5000000011000031120&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 厦门卫视
+http://111.29.9.33:6610/000000001000/1000000005000266006/index.m3u8?channel-id=ystenlive&Contentid=1000000005000266006&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 河南卫视
+http://111.29.9.33:6610/000000001000/5000000011000031119/index.m3u8?channel-id=bestzb&Contentid=5000000011000031119&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 河南卫视
+http://111.29.9.33:6610/000000001000/7304224304099543804/index.m3u8?channel-id=ystenlive&Contentid=7304224304099543804&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 河北卫视
+http://111.29.9.33:6610/000000001000/1000000002000017118/index.m3u8?channel-id=ystenlive&Contentid=1000000002000017118&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 河北卫视
+http://111.29.9.33:6610/000000001000/5000000006000040016/index.m3u8?channel-id=bestzb&Contentid=5000000006000040016&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 陕西卫视
+http://111.29.9.33:6610/000000001000/1000000002000007495/index.m3u8?channel-id=ystenlive&Contentid=1000000002000007495&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 陕西卫视
+http://111.29.9.33:6610/000000001000/5000000006000040017/index.m3u8?channel-id=bestzb&Contentid=5000000006000040017&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 山西卫视
+http://111.29.9.33:6610/000000001000/1000000002000021220/index.m3u8?channel-id=ystenlive&Contentid=1000000002000021220&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 甘肃卫视
+http://111.29.9.33:6610/000000001000/1000000002000017827/index.m3u8?channel-id=ystenlive&Contentid=1000000002000017827&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 甘肃卫视
+http://111.29.9.33:6610/000000001000/5000000011000031121/index.m3u8?channel-id=bestzb&Contentid=5000000011000031121&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 宁夏卫视
+http://111.29.9.33:6610/000000001000/1000000002000031451/index.m3u8?channel-id=ystenlive&Contentid=1000000002000031451&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 宁夏卫视
+http://111.29.9.33:6610/000000001000/5000000006000040022/index.m3u8?channel-id=bestzb&Contentid=5000000006000040022&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 青海卫视
+http://111.29.9.33:6610/000000001000/1000000002000013359/index.m3u8?channel-id=ystenlive&Contentid=1000000002000013359&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 青海卫视
+http://111.29.9.33:6610/000000001000/5000000006000040015/index.m3u8?channel-id=bestzb&Contentid=5000000006000040015&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 西藏卫视
+http://111.29.9.33:6610/000000001000/6603041244077933770/index.m3u8?channel-id=ystenlive&Contentid=6603041244077933770&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 新疆卫视
+http://111.29.9.33:6610/000000001000/1000000002000029441/index.m3u8?channel-id=ystenlive&Contentid=1000000002000029441&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 新疆卫视
+http://111.29.9.33:6610/000000001000/5000000006000040018/index.m3u8?channel-id=bestzb&Contentid=5000000006000040018&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 内蒙古卫视
+http://111.29.9.33:6610/000000001000/1000000002000014080/index.m3u8?channel-id=ystenlive&Contentid=1000000002000014080&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 大湾区卫视
+http://111.29.9.33:6610/000000001000/1000000002000011619/index.m3u8?channel-id=ystenlive&Contentid=1000000002000011619&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 延边卫视
+http://111.29.9.33:6610/000000001000/1000000005000266008/index.m3u8?channel-id=ystenlive&Contentid=1000000005000266008&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 兵团卫视
+http://111.29.9.33:6610/000000001000/1000000005000266005/index.m3u8?channel-id=ystenlive&Contentid=1000000005000266005&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 兵团卫视
+http://111.29.9.33:6610/000000001000/5000000006000040020/index.m3u8?channel-id=bestzb&Contentid=5000000006000040020&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 山东教育卫视
+http://111.29.9.33:6610/000000001000/1000000002000004097/index.m3u8?channel-id=ystenlive&Contentid=1000000002000004097&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 康巴卫视
+http://111.29.9.33:6610/000000001000/1000000005000266002/index.m3u8?channel-id=ystenlive&Contentid=1000000005000266002&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 安多卫视
+http://111.29.9.33:6610/000000001000/5000000006000022124/index.m3u8?channel-id=bestzb&Contentid=5000000006000022124&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 卡酷少儿
+http://111.29.9.33:6610/000000001000/5000000011000265008/index.m3u8?channel-id=bestzb&Contentid=5000000011000265008&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 卡酷少儿
+http://111.29.9.33:6610/000000001000/7589856436881630561/index.m3u8?channel-id=ystenlive&Contentid=7589856436881630561&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 金鹰卡通
+http://111.29.9.33:6610/000000001000/1000000002000016601/index.m3u8?channel-id=ystenlive&Contentid=1000000002000016601&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 金鹰卡通
+http://111.29.9.33:6610/000000001000/5000000006000040024/index.m3u8?channel-id=bestzb&Contentid=5000000006000040024&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 优漫卡通
+http://111.29.9.33:6610/000000001000/1000000002000010063/index.m3u8?channel-id=ystenlive&Contentid=1000000002000010063&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 哈哈炫动
+http://111.29.9.33:6610/000000001000/1000000002000000172/index.m3u8?channel-id=ystenlive&Contentid=1000000002000000172&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 哈哈炫动
+http://111.29.9.33:6610/000000001000/5000000011000031123/index.m3u8?channel-id=bestzb&Contentid=5000000011000031123&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 嘉佳卡通
+http://111.29.9.33:6610/000000001000/1000000002000025964/index.m3u8?channel-id=ystenlive&Contentid=1000000002000025964&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 茶频道
+http://111.29.9.33:6610/000000001000/5000000011000031209/index.m3u8?channel-id=bestzb&Contentid=5000000011000031209&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 快乐垂钓
+http://111.29.9.33:6610/000000001000/5000000011000031206/index.m3u8?channel-id=bestzb&Contentid=5000000011000031206&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 欢笑剧场4K
+http://111.29.9.33:6610/000000001000/5000000002000009455/index.m3u8?channel-id=bestzb&Contentid=5000000002000009455&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 都市剧场
+http://111.29.9.33:6610/000000001000/5000000011000031111/index.m3u8?channel-id=bestzb&Contentid=5000000011000031111&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 动漫秀场
+http://111.29.9.33:6610/000000001000/5000000011000031113/index.m3u8?channel-id=bestzb&Contentid=5000000011000031113&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 乐游
+http://111.29.9.33:6610/000000001000/5000000011000031112/index.m3u8?channel-id=bestzb&Contentid=5000000011000031112&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 游戏风云
+http://111.29.9.33:6610/000000001000/5000000011000031114/index.m3u8?channel-id=bestzb&Contentid=5000000011000031114&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 魅力足球
+http://111.29.9.33:6610/000000001000/5000000011000031207/index.m3u8?channel-id=bestzb&Contentid=5000000011000031207&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 法治天地
+http://111.29.9.33:6610/000000001000/9001547084732463424/index.m3u8?channel-id=bestzb&Contentid=9001547084732463424&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 金色学堂
+http://111.29.9.33:6610/000000001000/5000000010000026105/index.m3u8?channel-id=bestzb&Contentid=5000000010000026105&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 七彩戏剧
+http://111.29.9.33:6610/000000001000/5000000011000031116/index.m3u8?channel-id=bestzb&Contentid=5000000011000031116&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 生活时尚
+http://111.29.9.33:6610/000000001000/5000000002000019634/index.m3u8?channel-id=bestzb&Contentid=5000000002000019634&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 东方财经
+http://111.29.9.33:6610/000000001000/5000000007000010003/index.m3u8?channel-id=bestzb&Contentid=5000000007000010003&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 纯享4K
+http://111.29.9.33:6610/000000001000/1000000004000011651/index.m3u8?channel-id=ystenlive&Contentid=1000000004000011651&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 黑莓电影
+http://111.29.9.33:6610/000000001000/1000000004000019624/index.m3u8?channel-id=ystenlive&Contentid=1000000004000019624&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 黑莓电影
+http://111.29.9.33:6610/000000001000/8785669936177902664/index.m3u8?channel-id=ystenlive&Contentid=8785669936177902664&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 黑莓动画
+http://111.29.9.33:6610/000000001000/1000000004000021734/index.m3u8?channel-id=ystenlive&Contentid=1000000004000021734&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 黑莓动画
+http://111.29.9.33:6610/000000001000/6497762188035533951/index.m3u8?channel-id=ystenlive&Contentid=6497762188035533951&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 哒啵赛事
+http://111.29.9.33:6610/000000001000/5320946857686967621/index.m3u8?channel-id=ystenlive&Contentid=5320946857686967621&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 哒啵电竞
+http://111.29.9.33:6610/000000001000/1000000006000032327/index.m3u8?channel-id=ystenlive&Contentid=1000000006000032327&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 超级电视剧
+http://111.29.9.33:6610/000000001000/1000000001000008139/index.m3u8?channel-id=ystenlive&Contentid=1000000001000008139&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 超级电视剧
+http://111.29.9.33:6610/000000001000/1000000004000024993/index.m3u8?channel-id=ystenlive&Contentid=1000000004000024993&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 超级电视剧
+http://111.29.9.33:6610/000000001000/1000000006000268003/index.m3u8?channel-id=ystenlive&Contentid=1000000006000268003&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 超级电影
+http://111.29.9.33:6610/000000001000/1000000001000012884/index.m3u8?channel-id=ystenlive&Contentid=1000000001000012884&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 超级电影
+http://111.29.9.33:6610/000000001000/1000000003000012426/index.m3u8?channel-id=ystenlive&Contentid=1000000003000012426&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 超级电影
+http://111.29.9.33:6610/000000001000/1000000004000002120/index.m3u8?channel-id=ystenlive&Contentid=1000000004000002120&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 动作电影
+http://111.29.9.33:6610/000000001000/1000000004000018653/index.m3u8?channel-id=ystenlive&Contentid=1000000004000018653&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 动作电影
+http://111.29.9.33:6610/000000001000/8103864434730665389/index.m3u8?channel-id=ystenlive&Contentid=8103864434730665389&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 家庭剧场
+http://111.29.9.33:6610/000000001000/1000000004000008284/index.m3u8?channel-id=ystenlive&Contentid=1000000004000008284&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 家庭剧场
+http://111.29.9.33:6610/000000001000/6316377948248689070/index.m3u8?channel-id=ystenlive&Contentid=6316377948248689070&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 惊悚悬疑
+http://111.29.9.33:6610/000000001000/1000000004000024282/index.m3u8?channel-id=ystenlive&Contentid=1000000004000024282&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 惊悚悬疑
+http://111.29.9.33:6610/000000001000/7151256057701199617/index.m3u8?channel-id=ystenlive&Contentid=7151256057701199617&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 精品大剧
+http://111.29.9.33:6610/000000001000/1000000004000013968/index.m3u8?channel-id=ystenlive&Contentid=1000000004000013968&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 精品大剧
+http://111.29.9.33:6610/000000001000/7882297361445410858/index.m3u8?channel-id=ystenlive&Contentid=7882297361445410858&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 明星大片
+http://111.29.9.33:6610/000000001000/1000000004000019008/index.m3u8?channel-id=ystenlive&Contentid=1000000004000019008&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 军旅剧场
+http://111.29.9.33:6610/000000001000/7485075951068666323/index.m3u8?channel-id=ystenlive&Contentid=7485075951068666323&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 古装剧场
+http://111.29.9.33:6610/000000001000/6859053933687922163/index.m3u8?channel-id=ystenlive&Contentid=6859053933687922163&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 爱情喜剧
+http://111.29.9.33:6610/000000001000/8393829412396288037/index.m3u8?channel-id=ystenlive&Contentid=8393829412396288037&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 精品纪录
+http://111.29.9.33:6610/000000001000/6298506997017621594/index.m3u8?channel-id=ystenlive&Contentid=6298506997017621594&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 超级体育
+http://111.29.9.33:6610/000000001000/1000000001000009601/index.m3u8?channel-id=ystenlive&Contentid=1000000001000009601&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 超级体育
+http://111.29.9.33:6610/000000001000/1000000004000007755/index.m3u8?channel-id=ystenlive&Contentid=1000000004000007755&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 精品体育
+http://111.29.9.33:6610/000000001000/1000000004000014634/index.m3u8?channel-id=ystenlive&Contentid=1000000004000014634&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 精品体育
+http://111.29.9.33:6610/000000001000/6460382139625130259/index.m3u8?channel-id=ystenlive&Contentid=6460382139625130259&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 中国功夫
+http://111.29.9.33:6610/000000001000/5897056882324761054/index.m3u8?channel-id=ystenlive&Contentid=5897056882324761054&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 超级综艺
+http://111.29.9.33:6610/000000001000/1000000001000025771/index.m3u8?channel-id=ystenlive&Contentid=1000000001000025771&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 超级综艺
+http://111.29.9.33:6610/000000001000/1000000004000023658/index.m3u8?channel-id=ystenlive&Contentid=1000000004000023658&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 金牌综艺
+http://111.29.9.33:6610/000000001000/1000000004000026167/index.m3u8?channel-id=ystenlive&Contentid=1000000004000026167&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 金牌综艺
+http://111.29.9.33:6610/000000001000/6399725674632152632/index.m3u8?channel-id=ystenlive&Contentid=6399725674632152632&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 炫舞未来
+http://111.29.9.33:6610/000000001000/1000000001000000515/index.m3u8?channel-id=ystenlive&Contentid=1000000001000000515&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 农业致富
+http://111.29.9.33:6610/000000001000/6193684637634073625/index.m3u8?channel-id=ystenlive&Contentid=6193684637634073625&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 军事评论
+http://111.29.9.33:6610/000000001000/5822616274253344775/index.m3u8?channel-id=ystenlive&Contentid=5822616274253344775&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 精品萌宠
+http://111.29.9.33:6610/000000001000/1000000006000032328/index.m3u8?channel-id=ystenlive&Contentid=1000000006000032328&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 潮妈辣婆
+http://111.29.9.33:6610/000000001000/6516734029835465177/index.m3u8?channel-id=ystenlive&Contentid=6516734029835465177&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 怡伴健康
+http://111.29.9.33:6610/000000001000/7820874641606664941/index.m3u8?channel-id=ystenlive&Contentid=7820874641606664941&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 武搏世界
+http://111.29.9.33:6610/000000001000/bokesen/index.m3u8?channel-id=ystenlive&Contentid=bokesen&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 北京纪实科教
+http://111.29.9.33:6610/000000001000/1000000001000001910/index.m3u8?channel-id=ystenlive&Contentid=1000000001000001910&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 北京纪实科教
+http://111.29.9.33:6610/000000001000/1000000001000028380/index.m3u8?channel-id=ystenlive&Contentid=1000000001000028380&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 北京纪实科教
+http://111.29.9.33:6610/000000001000/1000000005000265020/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265020&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 北京纪实科教
+http://111.29.9.33:6610/000000001000/5000000011000031204/index.m3u8?channel-id=bestzb&Contentid=5000000011000031204&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 纪实人文
+http://111.29.9.33:6610/000000001000/1000000001000010606/index.m3u8?channel-id=ystenlive&Contentid=1000000001000010606&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 纪实人文
+http://111.29.9.33:6610/000000001000/1000000001000016545/index.m3u8?channel-id=ystenlive&Contentid=1000000001000016545&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 纪实人文
+http://111.29.9.33:6610/000000001000/1000000005000265021/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265021&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 纪实人文
+http://111.29.9.33:6610/000000001000/5000000004000010282/index.m3u8?channel-id=bestzb&Contentid=5000000004000010282&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 金鹰纪实
+http://111.29.9.33:6610/000000001000/1000000002000011724/index.m3u8?channel-id=ystenlive&Contentid=1000000002000011724&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 金鹰纪实
+http://111.29.9.33:6610/000000001000/5000000011000031203/index.m3u8?channel-id=bestzb&Contentid=5000000011000031203&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 东方影视
+http://111.29.9.33:6610/000000001000/5000000010000032212/index.m3u8?channel-id=bestzb&Contentid=5000000010000032212&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 广东珠江
+http://111.29.9.33:6610/000000001000/1000000004000011655/index.m3u8?channel-id=ystenlive&Contentid=1000000004000011655&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 广东珠江
+http://111.29.9.33:6610/000000001000/2000000003000000033/index.m3u8?channel-id=hnbblive&Contentid=2000000003000000033&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 西藏藏语
+http://111.29.9.33:6610/000000001000/7134589828528695864/index.m3u8?channel-id=ystenlive&Contentid=7134589828528695864&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 第一财经
+http://111.29.9.33:6610/000000001000/5000000010000027146/index.m3u8?channel-id=bestzb&Contentid=5000000010000027146&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 百视通
+http://111.29.9.33:6610/000000001000/5000000001000001116/index.m3u8?channel-id=bestzb&Contentid=5000000001000001116&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 百视通
+http://111.29.9.33:6610/000000001000/5000000001000002898/index.m3u8?channel-id=bestzb&Contentid=5000000001000002898&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 百视通
+http://111.29.9.33:6610/000000001000/5000000001000004876/index.m3u8?channel-id=bestzb&Contentid=5000000001000004876&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 百视通
+http://111.29.9.33:6610/000000001000/5000000001000006777/index.m3u8?channel-id=bestzb&Contentid=5000000001000006777&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 百视通
+http://111.29.9.33:6610/000000001000/5000000001000017342/index.m3u8?channel-id=bestzb&Contentid=5000000001000017342&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 百视通
+http://111.29.9.33:6610/000000001000/5000000001000018009/index.m3u8?channel-id=bestzb&Contentid=5000000001000018009&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 百视通
+http://111.29.9.33:6610/000000001000/5000000001000019233/index.m3u8?channel-id=bestzb&Contentid=5000000001000019233&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 百视通
+http://111.29.9.33:6610/000000001000/5000000001000022620/index.m3u8?channel-id=bestzb&Contentid=5000000001000022620&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 百视通
+http://111.29.9.33:6610/000000001000/5000000001000023256/index.m3u8?channel-id=bestzb&Contentid=5000000001000023256&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 百视通
+http://111.29.9.33:6610/000000001000/5000000001000026930/index.m3u8?channel-id=bestzb&Contentid=5000000001000026930&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 东方购物
+http://111.29.9.33:6610/000000001000/5000000011000031124/index.m3u8?channel-id=bestzb&Contentid=5000000011000031124&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 东方购物
+http://111.29.9.33:6610/000000001000/5000000011000031125/index.m3u8?channel-id=bestzb&Contentid=5000000011000031125&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 风尚购物
+http://111.29.9.33:6610/000000001000/1000000005000003651/index.m3u8?channel-id=ystenlive&Contentid=1000000005000003651&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 好享购物
+http://111.29.9.33:6610/000000001000/5000000003000008938/index.m3u8?channel-id=bestzb&Contentid=5000000003000008938&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 湖南爱晚
+http://111.29.9.33:6610/000000001000/6307875884530512195/index.m3u8?channel-id=hnbblive&Contentid=6307875884530512195&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 湖南电视剧
+http://111.29.9.33:6610/000000001000/8765482907954673867/index.m3u8?channel-id=hnbblive&Contentid=8765482907954673867&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 湖南电影
+http://111.29.9.33:6610/000000001000/7884242846753128038/index.m3u8?channel-id=hnbblive&Contentid=7884242846753128038&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 湖南都市
+http://111.29.9.33:6610/000000001000/4682579636905393407/index.m3u8?channel-id=hnbblive&Contentid=4682579636905393407&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 湖南国际
+http://111.29.9.33:6610/000000001000/5015828848322021526/index.m3u8?channel-id=hnbblive&Contentid=5015828848322021526&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 湖南经视
+http://111.29.9.33:6610/000000001000/6306119848317438256/index.m3u8?channel-id=hnbblive&Contentid=6306119848317438256&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 湖南娱乐
+http://111.29.9.33:6610/000000001000/6427893650335440392/index.m3u8?channel-id=hnbblive&Contentid=6427893650335440392&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 家家购物
+http://111.29.9.33:6610/000000001000/5000000009000012022/index.m3u8?channel-id=bestzb&Contentid=5000000009000012022&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 家有购物
+http://111.29.9.33:6610/000000001000/1000000006000269003/index.m3u8?channel-id=ystenlive&Contentid=1000000006000269003&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 精品综合
+http://111.29.9.33:6610/000000001000/5595720619887440144/index.m3u8?channel-id=ystenlive&Contentid=5595720619887440144&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 咪咕精彩足球
+http://111.29.9.33:6610/000000001000/1000000006000270002/index.m3u8?channel-id=ystenlive&Contentid=1000000006000270002&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 咪咕全民热练
+http://111.29.9.33:6610/000000001000/1000000006000270007/index.m3u8?channel-id=ystenlive&Contentid=1000000006000270007&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 咪咕视频
+http://111.29.9.33:6610/000000001000/1000000006000270005/index.m3u8?channel-id=ystenlive&Contentid=1000000006000270005&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 咪咕体育4K
+http://111.29.9.33:6610/000000001000/3000000010000005180/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000005180&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 咪咕综合体育
+http://111.29.9.33:6610/000000001000/1000000006000270001/index.m3u8?channel-id=ystenlive&Contentid=1000000006000270001&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 热播精选
+http://111.29.9.33:6610/000000001000/7681593242002292003/index.m3u8?channel-id=ystenlive&Contentid=7681593242002292003&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 上海ICS
+http://111.29.9.33:6610/000000001000/5000000010000030951/index.m3u8?channel-id=bestzb&Contentid=5000000010000030951&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 上海都市
+http://111.29.9.33:6610/000000001000/5000000010000018926/index.m3u8?channel-id=bestzb&Contentid=5000000010000018926&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 上海新闻综合
+http://111.29.9.33:6610/000000001000/5000000011000031110/index.m3u8?channel-id=bestzb&Contentid=5000000011000031110&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 央广购物
+http://111.29.9.33:6610/000000001000/5000000009000012021/index.m3u8?channel-id=bestzb&Contentid=5000000009000012021&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 移动云VR
+http://111.29.9.33:6610/000000001000/3000000010000015686/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000015686&livemode=1&stbId=3
+#EXTINF:-1 group-title="秒开源2", 英雄联盟音乐节
+http://111.29.9.33:6610/000000001000/8978605063318475207/index.m3u8?channel-id=ystenlive&Contentid=8978605063318475207&livemode=1&stbId=3
 #EXTINF:-1 group-title="咪咕爱看", CCTV1
 http://ttkx.live:55/lib/aikan.php?id=cctv1
 #EXTINF:-1 group-title="咪咕爱看", CCTV2
@@ -3187,1158 +3793,6 @@ http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010105/1.m3u8
 http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010137/1.m3u8
 #EXTINF:-1 group-title="IPV6线路3", CGTN SD
 http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010095/1.m3u8
-#EXTINF:-1 group-title="斯玛特", INEWS 新聞台
-http://fm1077.serv00.net/Smart.php?id=inews_twn
-#EXTINF:-1 group-title="斯玛特", 無線財經資訊台
-http://fm1077.serv00.net/Smart.php?id=tvbcaijing_twn
-#EXTINF:-1 group-title="斯玛特", 珍珠台(備用)
-http://fm1077.serv00.net/Smart.php?id=pearl_hkdavid
-#EXTINF:-1 group-title="斯玛特", 珍珠台
-http://fm1077.serv00.net/Smart.php?id=pearl_twn
-#EXTINF:-1 group-title="斯玛特", 翡翠台(備用)
-http://fm1077.serv00.net/Smart.php?id=jade_mike
-#EXTINF:-1 group-title="斯玛特", 翡翠台
-http://fm1077.serv00.net/Smart.php?id=jade_twn
-#EXTINF:-1 group-title="斯玛特", 鳳凰衛視
-http://fm1077.serv00.net/Smart.php?id=phoenixtv_hd
-#EXTINF:-1 group-title="斯玛特", 鳳凰資訊
-http://fm1077.serv00.net/Smart.php?id=phoenixinfo_hd
-#EXTINF:-1 group-title="斯玛特", 鳳凰香港
-http://fm1077.serv00.net/Smart.php?id=hkphoenix_twn
-#EXTINF:-1 group-title="斯玛特", J2(備用)
-http://fm1077.serv00.net/Smart.php?id=j2_hkdavid
-#EXTINF:-1 group-title="斯玛特", J2
-http://fm1077.serv00.net/Smart.php?id=j2_twn
-#EXTINF:-1 group-title="斯玛特", RHK 31
-http://fm1077.serv00.net/Smart.php?id=rhk31_twn
-#EXTINF:-1 group-title="斯玛特", RHK 32
-http://fm1077.serv00.net/Smart.php?id=rhk32_twn
-#EXTINF:-1 group-title="斯玛特", TVB 星河
-http://fm1077.serv00.net/Smart.php?id=tvbxinhe_twn
-#EXTINF:-1 group-title="斯玛特", VIUTV1
-http://fm1077.serv00.net/Smart.php?id=viu1_twn
-#EXTINF:-1 group-title="斯玛特", VIU TV 69
-http://fm1077.serv00.net/Smart.php?id=viutv69_hkdavid
-#EXTINF:-1 group-title="斯玛特", VIU6
-http://fm1077.serv00.net/Smart.php?id=viusix_twn
-#EXTINF:-1 group-title="斯玛特", 東森戲劇
-http://fm1077.serv00.net/Smart.php?id=ettvdrama
-#EXTINF:-1 group-title="斯玛特", 東森洋片
-http://fm1077.serv00.net/Smart.php?id=ettvwestern
-#EXTINF:-1 group-title="斯玛特", 東森綜合
-http://fm1077.serv00.net/Smart.php?id=ettvzhonghe
-#EXTINF:-1 group-title="斯玛特", 東森財經新聞
-http://fm1077.serv00.net/Smart.php?id=ettvcaijing_twn
-#EXTINF:-1 group-title="斯玛特", 東森電影
-http://fm1077.serv00.net/Smart.php?id=ettvmovie
-#EXTINF:-1 group-title="斯玛特", 緯來日本台
-http://fm1077.serv00.net/Smart.php?id=videolandjapan
-#EXTINF:-1 group-title="斯玛特", 緯來體育台
-http://fm1077.serv00.net/Smart.php?id=videolandsport
-#EXTINF:-1 group-title="斯玛特", 美亞電影
-http://fm1077.serv00.net/Smart.php?id=meiyamovie_twn
-#EXTINF:-1 group-title="斯玛特", BBC WORLD NEWS
-http://fm1077.serv00.net/Smart.php?id=bbcnews_twn
-#EXTINF:-1 group-title="斯玛特", BLOOMBERG NEWS
-http://fm1077.serv00.net/Smart.php?id=bloomberg_twn
-#EXTINF:-1 group-title="斯玛特", FOX NEWS
-http://fm1077.serv00.net/Smart.php?id=foxnews_twn
-#EXTINF:-1 group-title="斯玛特", 阿里郎
-http://fm1077.serv00.net/Smart.php?id=arirang_twn
-#EXTINF:-1 group-title="斯玛特", CN卡通
-http://fm1077.serv00.net/Smart.php?id=momo1_twn
-#EXTINF:-1 group-title="斯玛特", 靖天卡通台
-http://fm1077.serv00.net/Smart.php?id=jingtiancartoon_twn
-#EXTINF:-1 group-title="斯玛特", 靖天國際台
-http://fm1077.serv00.net/Smart.php?id=jingtianintl_twn
-#EXTINF:-1 group-title="斯玛特", 非凡新聞台
-http://fm1077.serv00.net/Smart.php?id=feifannews_twn
-#EXTINF:-1 group-title="斯玛特", 龍祥時代
-http://fm1077.serv00.net/Smart.php?id=lungxiangtime_twn
-#EXTINF:-1 group-title="斯玛特", 龍華偶像
-http://fm1077.serv00.net/Smart.php?id=lunghuaidol_twn
-#EXTINF:-1 group-title="斯玛特", 龍華戲劇
-http://fm1077.serv00.net/Smart.php?id=lunghuaxiju_twn
-#EXTINF:-1 group-title="斯玛特", 龍華洋片
-http://fm1077.serv00.net/Smart.php?id=lunghuawestern_twn
-#EXTINF:-1 group-title="斯玛特", 龍華經典
-http://fm1077.serv00.net/Smart.php?id=lunghuajingdian_twn
-#EXTINF:-1 group-title="斯玛特", 龍華電影
-http://fm1077.serv00.net/Smart.php?id=xingwei_movie
-#EXTINF:-1 group-title="斯玛特", AXN
-http://fm1077.serv00.net/Smart.php?id=axn_twn
-#EXTINF:-1 group-title="斯玛特", CINEMAX
-http://fm1077.serv00.net/Smart.php?id=cinemax_twn
-#EXTINF:-1 group-title="斯玛特", EYE戲劇
-http://fm1077.serv00.net/Smart.php?id=eyetvxiju_twn
-#EXTINF:-1 group-title="斯玛特", EYE旅遊
-http://fm1077.serv00.net/Smart.php?id=eyetvtravel_twn
-#EXTINF:-1 group-title="斯玛特", HBO
-http://fm1077.serv00.net/Smart.php?id=hbohd_twn
-#EXTINF:-1 group-title="斯玛特", HBO FAMILY
-http://fm1077.serv00.net/Smart.php?id=fyi_twn
-#EXTINF:-1 group-title="斯玛特", 好萊塢電影台
-http://fm1077.serv00.net/Smart.php?id=hollywoodmovies_twn
-#EXTINF:-1 group-title="斯玛特", MTV LIVE
-http://fm1077.serv00.net/Smart.php?id=mtvhd_twn
-#EXTINF:-1 group-title="斯玛特", TLC旅遊生活
-http://fm1077.serv00.net/Smart.php?id=tlc_twn
-#EXTINF:-1 group-title="斯玛特", 東森新聞
-http://fm1077.serv00.net/Smart.php?id=ettvnews
-#EXTINF:-1 group-title="斯玛特", TVBS HD
-http://fm1077.serv00.net/Smart.php?id=tvbs
-#EXTINF:-1 group-title="斯玛特", TVBS新聞台
-http://fm1077.serv00.net/Smart.php?id=tvbs_n
-#EXTINF:-1 group-title="斯玛特", TVBS歡樂台
-http://fm1077.serv00.net/Smart.php?id=tvbshuanle_twn
-#EXTINF:-1 group-title="斯玛特", 三立台灣台
-http://fm1077.serv00.net/Smart.php?id=sanlitaiwan
-#EXTINF:-1 group-title="斯玛特", 三立戲劇台
-http://fm1077.serv00.net/Smart.php?id=sanlixiju_twn
-#EXTINF:-1 group-title="斯玛特", 三立綜合台
-http://fm1077.serv00.net/Smart.php?id=sanlizhonghe
-#EXTINF:-1 group-title="斯玛特", 中天亞洲台
-http://fm1077.serv00.net/Smart.php?id=ctiasia_twn
-#EXTINF:-1 group-title="斯玛特", 中天娱樂
-http://fm1077.serv00.net/Smart.php?id=ctient
-#EXTINF:-1 group-title="斯玛特", 中天新聞HD
-http://fm1077.serv00.net/Smart.php?id=ctinews
-#EXTINF:-1 group-title="斯玛特", 中天綜合
-http://fm1077.serv00.net/Smart.php?id=ctizhonghe
-#EXTINF:-1 group-title="斯玛特", 亞洲旅遊台
-http://fm1077.serv00.net/Smart.php?id=asiatravel_twn
-#EXTINF:-1 group-title="斯玛特", 亞洲美食
-http://fm1077.serv00.net/Smart.php?id=afc_twn
-#EXTINF:-1 group-title="斯玛特", 八大戲劇
-http://fm1077.serv00.net/Smart.php?id=badadrama
-#EXTINF:-1 group-title="斯玛特", 八大第一
-http://fm1077.serv00.net/Smart.php?id=badafirst
-#EXTINF:-1 group-title="斯玛特", 八大綜合
-http://fm1077.serv00.net/Smart.php?id=badazhonghe
-#EXTINF:-1 group-title="斯玛特", 公視
-http://fm1077.serv00.net/Smart.php?id=ctv_taiwan
-#EXTINF:-1 group-title="斯玛特", 民視
-http://fm1077.serv00.net/Smart.php?id=ftvhd_taiwan
-#EXTINF:-1 group-title="斯玛特", 民視第一台
-http://fm1077.serv00.net/Smart.php?id=lunghuajingdian_twn
-#EXTINF:-1 group-title="斯玛特", 民視台灣台
-http://fm1077.serv00.net/Smart.php?id=ftvtaiwan_twn
-#EXTINF:-1 group-title="斯玛特", 民視新聞台
-http://fm1077.serv00.net/Smart.php?id=ftvnew_taiwan
-#EXTINF:-1 group-title="斯玛特", 台視
-http://fm1077.serv00.net/Smart.php?id=ttv_taiwan
-#EXTINF:-1 group-title="斯玛特", 台視新聞台
-http://fm1077.serv00.net/Smart.php?id=ttvnews_twn
-#EXTINF:-1 group-title="斯玛特", 中視
-http://fm1077.serv00.net/Smart.php?id=zhongshihd_twn
-#EXTINF:-1 group-title="斯玛特", 中視新聞台
-http://fm1077.serv00.net/Smart.php?id=zhongshinews_twn
-#EXTINF:-1 group-title="斯玛特", 中視經典
-http://fm1077.serv00.net/Smart.php?id=zhongshi_twn
-#EXTINF:-1 group-title="斯玛特", 華視
-http://fm1077.serv00.net/Smart.php?id=ctshd_twn
-#EXTINF:-1 group-title="斯玛特", 華藝綜合
-http://fm1077.serv00.net/Smart.php?id=weishichinese_twn
-#EXTINF:-1 group-title="斯玛特", 大愛一台
-http://fm1077.serv00.net/Smart.php?id=daai_twn
-#EXTINF:-1 group-title="斯玛特", 寰宇新聞台
-http://fm1077.serv00.net/Smart.php?id=huanyuxinwen_twn
-#EXTINF:-1 group-title="斯玛特", 寰宇財經台
-http://fm1077.serv00.net/Smart.php?id=huanyutaiwan_twn
-#EXTINF:-1 group-title="斯玛特", 年代新聞台
-http://fm1077.serv00.net/Smart.php?id=niandainews_twn
-#EXTINF:-1 group-title="斯玛特", 愛爾達影劇
-http://fm1077.serv00.net/Smart.php?id=eltayingju_twn
-#EXTINF:-1 group-title="斯玛特", 愛爾達體育 1
-http://fm1077.serv00.net/Smart.php?id=eltasport_twn
-#EXTINF:-1 group-title="斯玛特", 愛爾達體育 2
-http://fm1077.serv00.net/Smart.php?id=eltasport2_twn
-#EXTINF:-1 group-title="斯玛特", 愛爾達體育 3
-http://fm1077.serv00.net/Smart.php?id=eltasport3_twn
-#EXTINF:-1 group-title="斯玛特", ELEVEN 1
-http://fm1077.serv00.net/Smart.php?id=golfchannel_twn
-#EXTINF:-1 group-title="斯玛特", 博斯網球
-http://fm1077.serv00.net/Smart.php?id=bositennis_twn
-#EXTINF:-1 group-title="斯玛特", 博斯運動1
-http://fm1077.serv00.net/Smart.php?id=bosisport1_twn
-#EXTINF:-1 group-title="斯玛特", 博斯運動2
-http://fm1077.serv00.net/Smart.php?id=bosisport2_twn
-#EXTINF:-1 group-title="斯玛特", 博斯高球1
-http://fm1077.serv00.net/Smart.php?id=bosigolf1_twn
-#EXTINF:-1 group-title="斯玛特", 博斯高球2
-http://fm1077.serv00.net/Smart.php?id=bosigolf2_twn
-#EXTINF:-1 group-title="斯玛特", 探索亞洲
-http://fm1077.serv00.net/Smart.php?id=discoverytwn_twn
-#EXTINF:-1 group-title="斯玛特", 探索動力
-http://fm1077.serv00.net/Smart.php?id=discoveryturbo_twn
-#EXTINF:-1 group-title="斯玛特", 國家地理
-http://fm1077.serv00.net/Smart.php?id=natgeohd_twn
-#EXTINF:-1 group-title="斯玛特", 野生動物
-http://fm1077.serv00.net/Smart.php?id=natgeowild_twn
-#EXTINF:-1 group-title="斯玛特", 動物星球
-http://fm1077.serv00.net/Smart.php?id=animalplanet_twn
-#EXTINF:-1 group-title="斯玛特", 時尚
-http://fm1077.serv00.net/Smart.php?id=fashiontv_twn
-#EXTINF:-1 group-title="斯玛特", DISCOVERY ASIA
-http://fm1077.serv00.net/Smart.php?id=discoverytwn_twn
-#EXTINF:-1 group-title="斯玛特", DISCOVERY HD
-http://fm1077.serv00.net/Smart.php?id=discoveryhd_twn
-#EXTINF:-1 group-title="斯玛特", TV1
-http://fm1077.serv00.net/Smart.php?id=TV1
-#EXTINF:-1 group-title="斯玛特", TV1(備用)
-http://fm1077.serv00.net/Smart.php?id=TV1_backup
-#EXTINF:-1 group-title="斯玛特", TV2
-http://fm1077.serv00.net/Smart.php?id=TV2
-#EXTINF:-1 group-title="斯玛特", TV3
-http://fm1077.serv00.net/Smart.php?id=TV3
-#EXTINF:-1 group-title="斯玛特", TV3(備用)
-http://fm1077.serv00.net/Smart.php?id=tv3_twn
-#EXTINF:-1 group-title="斯玛特", NTV7
-http://fm1077.serv00.net/Smart.php?id=NTV7
-#EXTINF:-1 group-title="斯玛特", TV8
-http://fm1077.serv00.net/Smart.php?id=TV8
-#EXTINF:-1 group-title="斯玛特", TV9
-http://fm1077.serv00.net/Smart.php?id=TV9
-#EXTINF:-1 group-title="斯玛特", WARNA
-http://fm1077.serv00.net/Smart.php?id=Warna-O
-#EXTINF:-1 group-title="斯玛特", WARNA(備用)
-http://fm1077.serv00.net/Smart.php?id=Warna
-#EXTINF:-1 group-title="斯玛特", RIA
-http://fm1077.serv00.net/Smart.php?id=Ria-0
-#EXTINF:-1 group-title="斯玛特", RIA(備用)
-http://fm1077.serv00.net/Smart.php?id=Ria49
-#EXTINF:-1 group-title="斯玛特", RIA-3
-http://fm1077.serv00.net/Smart.php?id=Ria_quanjia
-#EXTINF:-1 group-title="斯玛特", AL-HIJRAH
-http://fm1077.serv00.net/Smart.php?id=Alhijrah
-#EXTINF:-1 group-title="斯玛特", AL-HIJRAH(備用)
-http://fm1077.serv00.net/Smart.php?id=Alhijrah_backup
-#EXTINF:-1 group-title="斯玛特", AWANI
-http://fm1077.serv00.net/Smart.php?id=Awani
-#EXTINF:-1 group-title="斯玛特", BERNAMA
-http://fm1077.serv00.net/Smart.php?id=Bernama
-#EXTINF:-1 group-title="斯玛特", PRIMA
-http://fm1077.serv00.net/Smart.php?id=Prima-0
-#EXTINF:-1 group-title="斯玛特", PRIMA(備用)
-http://fm1077.serv00.net/Smart.php?id=Prima49
-#EXTINF:-1 group-title="斯玛特", CERIA
-http://fm1077.serv00.net/Smart.php?id=Ceria
-#EXTINF:-1 group-title="斯玛特", ASTRO MTV
-http://fm1077.serv00.net/Smart.php?id=AstroMTV
-#EXTINF:-1 group-title="斯玛特", MECCA LIVE HD
-http://fm1077.serv00.net/Smart.php?id=quran_mido
-#EXTINF:-1 group-title="斯玛特", MADINAH HD
-http://fm1077.serv00.net/Smart.php?id=sunnah_mido
-#EXTINF:-1 group-title="斯玛特", OASIS
-http://fm1077.serv00.net/Smart.php?id=Oasis
-#EXTINF:-1 group-title="斯玛特", HBO HD
-http://fm1077.serv00.net/Smart.php?id=Hbo
-#EXTINF:-1 group-title="斯玛特", HBO SIGNATURE
-http://fm1077.serv00.net/Smart.php?id=Hbosignature
-#EXTINF:-1 group-title="斯玛特", HBO HITS
-http://fm1077.serv00.net/Smart.php?id=Hbohits
-#EXTINF:-1 group-title="斯玛特", NATGEO WILD HD
-http://fm1077.serv00.net/Smart.php?id=Natgeowild
-#EXTINF:-1 group-title="斯玛特", CARTOON NETWORK
-http://fm1077.serv00.net/Smart.php?id=Cn
-#EXTINF:-1 group-title="斯玛特", NICKELODEON
-http://fm1077.serv00.net/Smart.php?id=Nickelodeon
-#EXTINF:-1 group-title="斯玛特", NICK JR
-http://fm1077.serv00.net/Smart.php?id=Nickjr
-#EXTINF:-1 group-title="斯玛特", CITRA
-http://fm1077.serv00.net/Smart.php?id=Citra
-#EXTINF:-1 group-title="斯玛特", SENSASI
-http://fm1077.serv00.net/Smart.php?id=Sensasi
-#EXTINF:-1 group-title="斯玛特", AURA
-http://fm1077.serv00.net/Smart.php?id=Aura
-#EXTINF:-1 group-title="斯玛特", RANIA
-http://fm1077.serv00.net/Smart.php?id=Rania
-#EXTINF:-1 group-title="斯玛特", BOO
-http://fm1077.serv00.net/Smart.php?id=Boo
-#EXTINF:-1 group-title="斯玛特", AWESOME TV
-http://fm1077.serv00.net/Smart.php?id=Awesome_mega
-#EXTINF:-1 group-title="斯玛特", SONY HD
-http://fm1077.serv00.net/Smart.php?id=SetOne
-#EXTINF:-1 group-title="斯玛特", KBS WORLD
-http://fm1077.serv00.net/Smart.php?id=KBS
-#EXTINF:-1 group-title="斯玛特", TVN
-http://fm1077.serv00.net/Smart.php?id=TVN
-#EXTINF:-1 group-title="斯玛特", ASTRO PREMIER
-http://fm1077.serv00.net/Smart.php?id=Astropremier
-#EXTINF:-1 group-title="斯玛特", AEC
-http://fm1077.serv00.net/Smart.php?id=AEC
-#EXTINF:-1 group-title="斯玛特", 華麗台 HD
-http://fm1077.serv00.net/Smart.php?id=Wlt
-#EXTINF:-1 group-title="斯玛特", 歡喜台 HD
-http://fm1077.serv00.net/Smart.php?id=Huahee
-#EXTINF:-1 group-title="斯玛特", 歡喜台(備用)
-http://fm1077.serv00.net/Smart.php?id=Huahee_backup
-#EXTINF:-1 group-title="斯玛特", ASTRO QJ
-http://fm1077.serv00.net/Smart.php?id=Quanjia
-#EXTINF:-1 group-title="斯玛特", TVB JADE
-http://fm1077.serv00.net/Smart.php?id=Tvbjade
-#EXTINF:-1 group-title="斯玛特", TVBS ASIA
-http://fm1077.serv00.net/Smart.php?id=Tvbasia
-#EXTINF:-1 group-title="斯玛特", TVB ENTERTAINMENT
-http://fm1077.serv00.net/Smart.php?id=Tvbentertainment
-#EXTINF:-1 group-title="斯玛特", TVB CLASSIC
-http://fm1077.serv00.net/Smart.php?id=Tvbclassic
-#EXTINF:-1 group-title="斯玛特", AOD
-http://fm1077.serv00.net/Smart.php?id=AodHD
-#EXTINF:-1 group-title="斯玛特", ONE
-http://fm1077.serv00.net/Smart.php?id=One_mega
-#EXTINF:-1 group-title="斯玛特", TVB 星河台
-http://fm1077.serv00.net/Smart.php?id=Xinhe
-#EXTINF:-1 group-title="斯玛特", 愛奇藝
-http://fm1077.serv00.net/Smart.php?id=Qiyi
-#EXTINF:-1 group-title="斯玛特", ANIMAL PLANET (ENG)
-http://fm1077.serv00.net/Smart.php?id=AnimalPlanet
-#EXTINF:-1 group-title="斯玛特", TVN MOVIE
-http://fm1077.serv00.net/Smart.php?id=Tvnmovie
-#EXTINF:-1 group-title="斯玛特", CNN(備用)
-http://fm1077.serv00.net/Smart.php?id=cnn_twn
-#EXTINF:-1 group-title="斯玛特", CELESTIAL CLASSIC
-http://fm1077.serv00.net/Smart.php?id=Celestial2
-#EXTINF:-1 group-title="斯玛特", CNBC
-http://fm1077.serv00.net/Smart.php?id=cnbc_twn
-#EXTINF:-1 group-title="斯玛特", RTM SPORTS HD
-http://fm1077.serv00.net/Smart.php?id=Rtmsport
-#EXTINF:-1 group-title="斯玛特", TLC
-http://fm1077.serv00.net/Smart.php?id=Tlc
-#EXTINF:-1 group-title="斯玛特", CNA
-http://fm1077.serv00.net/Smart.php?id=cna
-#EXTINF:-1 group-title="斯玛特", AFC 亞洲旅遊台
-http://fm1077.serv00.net/Smart.php?id=asiatravel_twn
-#EXTINF:-1 group-title="斯玛特", BBC WORLD NEWS
-http://fm1077.serv00.net/Smart.php?id=bbcnews_twn
-#EXTINF:-1 group-title="斯玛特", FOODNETWORK HD
-http://fm1077.serv00.net/Smart.php?id=Foodnetwork_mega
-#EXTINF:-1 group-title="斯玛特", HGTV
-http://fm1077.serv00.net/Smart.php?id=HGTV
-#EXTINF:-1 group-title="斯玛特", ARENA
-http://fm1077.serv00.net/Smart.php?id=Arena
-#EXTINF:-1 group-title="斯玛特", GOSHOP
-http://fm1077.serv00.net/Smart.php?id=Goshop
-#EXTINF:-1 group-title="斯玛特", CELESTIAL MOVIES HD
-http://fm1077.serv00.net/Smart.php?id=Celestial_mega
-#EXTINF:-1 group-title="斯玛特", ARENA 2
-http://fm1077.serv00.net/Smart.php?id=Arena2
-#EXTINF:-1 group-title="斯玛特", AXN HD
-http://fm1077.serv00.net/Smart.php?id=Axn
-#EXTINF:-1 group-title="斯玛特", PARAMOUNT NETWORK
-http://fm1077.serv00.net/Smart.php?id=Paramountnetwork
-#EXTINF:-1 group-title="斯玛特", BOLAARENA 1
-http://fm1077.serv00.net/Smart.php?id=Bolaarena1
-#EXTINF:-1 group-title="斯玛特", ASTROL KPLUS
-http://fm1077.serv00.net/Smart.php?id=Kplus
-#EXTINF:-1 group-title="斯玛特", ROCK ACTIONS
-http://fm1077.serv00.net/Smart.php?id=Rockaction
-#EXTINF:-1 group-title="斯玛特", BLOOMBERG NEWS
-http://fm1077.serv00.net/Smart.php?id=bloomberg_twn
-#EXTINF:-1 group-title="斯玛特", AL-JAZEERA
-http://fm1077.serv00.net/Smart.php?id=aljazeera_twn
-#EXTINF:-1 group-title="斯玛特", ROCK ENTERTAINMENT
-http://fm1077.serv00.net/Smart.php?id=Rockentertain
-#EXTINF:-1 group-title="斯玛特", SHOWCASE
-http://fm1077.serv00.net/Smart.php?id=Showcase_mega
-#EXTINF:-1 group-title="斯玛特", BOLAARENA 2
-http://fm1077.serv00.net/Smart.php?id=Bolaarena2
-#EXTINF:-1 group-title="斯玛特", CHANNEL 5
-http://fm1077.serv00.net/Smart.php?id=Channel5HD
-#EXTINF:-1 group-title="斯玛特", CHANNEL 5(備用)
-http://fm1077.serv00.net/Smart.php?id=Ch5_mega
-#EXTINF:-1 group-title="斯玛特", CHANNEL 8
-http://fm1077.serv00.net/Smart.php?id=Channel8HD
-#EXTINF:-1 group-title="斯玛特", CHANNEL 8(備用)
-http://fm1077.serv00.net/Smart.php?id=Ch8_mega
-#EXTINF:-1 group-title="斯玛特", SURIA
-http://fm1077.serv00.net/Smart.php?id=Suria
-#EXTINF:-1 group-title="斯玛特", SURIA(備用)
-http://fm1077.serv00.net/Smart.php?id=Suria_backup
-#EXTINF:-1 group-title="斯玛特", CHANNEL U
-http://fm1077.serv00.net/Smart.php?id=ChannelU
-#EXTINF:-1 group-title="斯玛特", CHANNEL U(備用)
-http://fm1077.serv00.net/Smart.php?id=ChU_mega
-#EXTINF:-1 group-title="斯玛特", VASANTHAM
-http://fm1077.serv00.net/Smart.php?id=Vasantham
-#EXTINF:-1 group-title="斯玛特", VASANTHAM(備用)
-http://fm1077.serv00.net/Smart.php?id=Vasantham_mega
-#EXTINF:-1 group-title="斯玛特", CNA
-http://fm1077.serv00.net/Smart.php?id=cna
-#EXTINF:-1 group-title="斯玛特", CNA(備用)
-http://fm1077.serv00.net/Smart.php?id=cna_twn
-#EXTINF:-1 group-title="斯玛特", TVRI NATIONAL
-http://fm1077.serv00.net/Smart.php?id=TVRI
-#EXTINF:-1 group-title="斯玛特", RCTI
-http://fm1077.serv00.net/Smart.php?id=Rcti
-#EXTINF:-1 group-title="斯玛特", KOMPASS TV
-http://fm1077.serv00.net/Smart.php?id=Kompass
-#EXTINF:-1 group-title="斯玛特", BERITA SATU
-http://fm1077.serv00.net/Smart.php?id=BeritaSatu_eko
-#EXTINF:-1 group-title="斯玛特", INDOSIAR HD
-http://fm1077.serv00.net/Smart.php?id=Indosiar
-#EXTINF:-1 group-title="斯玛特", ANTV
-http://fm1077.serv00.net/Smart.php?id=Antv
-#EXTINF:-1 group-title="斯玛特", MNC TV
-http://fm1077.serv00.net/Smart.php?id=Mnctv
-#EXTINF:-1 group-title="斯玛特", TRANS 7
-http://fm1077.serv00.net/Smart.php?id=Trans7_eko
-#EXTINF:-1 group-title="斯玛特", TRANSTV
-http://fm1077.serv00.net/Smart.php?id=Transtv
-#EXTINF:-1 group-title="斯玛特", JTV
-http://fm1077.serv00.net/Smart.php?id=JTV_eko
-#EXTINF:-1 group-title="斯玛特", METRO TV
-http://fm1077.serv00.net/Smart.php?id=metrotv_eko
-#EXTINF:-1 group-title="斯玛特", CINEMAX
-http://fm1077.serv00.net/Smart.php?id=Cinemax
-#EXTINF:-1 group-title="斯玛特", SCTV
-http://fm1077.serv00.net/Smart.php?id=SCTV
-#EXTINF:-1 group-title="斯玛特", TVONE
-http://fm1077.serv00.net/Smart.php?id=Tvone
-#EXTINF:-1 group-title="斯玛特", TVMU
-http://fm1077.serv00.net/Smart.php?id=TVMU_eko
-#EXTINF:-1 group-title="斯玛特", GTV
-http://fm1077.serv00.net/Smart.php?id=Gtv
-#EXTINF:-1 group-title="斯玛特", RTV
-http://fm1077.serv00.net/Smart.php?id=Rtv
-#EXTINF:-1 group-title="斯玛特", JAK TV
-http://fm1077.serv00.net/Smart.php?id=JakTV
-#EXTINF:-1 group-title="斯玛特", INEWS TV
-http://fm1077.serv00.net/Smart.php?id=Inewstv
-#EXTINF:-1 group-title="斯玛特", DAAI TV
-http://fm1077.serv00.net/Smart.php?id=DaaiTV
-#EXTINF:-1 group-title="斯玛特", NET TV
-http://fm1077.serv00.net/Smart.php?id=NetTV
-#EXTINF:-1 group-title="斯玛特", ANIMAX
-http://fm1077.serv00.net/Smart.php?id=Animax
-#EXTINF:-1 group-title="斯玛特", EWTN
-http://fm1077.serv00.net/Smart.php?id=Ewtn
-#EXTINF:-1 group-title="斯玛特", ALQURAN ALKAREEM
-http://fm1077.serv00.net/Smart.php?id=AlQuran
-#EXTINF:-1 group-title="斯玛特", TAWAF TV
-http://fm1077.serv00.net/Smart.php?id=TawafTV
-#EXTINF:-1 group-title="斯玛特", VISION PRIME
-http://fm1077.serv00.net/Smart.php?id=VisionPrime
-#EXTINF:-1 group-title="斯玛特", MUSLIM TV
-http://fm1077.serv00.net/Smart.php?id=MuslimTV
-#EXTINF:-1 group-title="斯玛特", MUSIC TV
-http://fm1077.serv00.net/Smart.php?id=MusicTV
-#EXTINF:-1 group-title="斯玛特", LIFESTYLE&FASHION
-http://fm1077.serv00.net/Smart.php?id=Lifestyle
-#EXTINF:-1 group-title="斯玛特", ENTERTAIN
-http://fm1077.serv00.net/Smart.php?id=Entertain
-#EXTINF:-1 group-title="斯玛特", HITS
-http://fm1077.serv00.net/Smart.php?id=Hits
-#EXTINF:-1 group-title="斯玛特", WARNER TV
-http://fm1077.serv00.net/Smart.php?id=WarnerTV
-#EXTINF:-1 group-title="斯玛特", SCM
-http://fm1077.serv00.net/Smart.php?id=Weishimovie
-#EXTINF:-1 group-title="斯玛特", THRILL
-http://fm1077.serv00.net/Smart.php?id=Thrill
-#EXTINF:-1 group-title="斯玛特", FIGHT SPORTS
-http://fm1077.serv00.net/Smart.php?id=Fs
-#EXTINF:-1 group-title="斯玛特", BEINSPORTS 2 HD
-http://fm1077.serv00.net/Smart.php?id=Bein2hd
-#EXTINF:-1 group-title="斯玛特", HITS MOVIE
-http://fm1077.serv00.net/Smart.php?id=Hitsmovie
-#EXTINF:-1 group-title="斯玛特", ONE
-http://fm1077.serv00.net/Smart.php?id=One_mega
-#EXTINF:-1 group-title="斯玛特", TVN MOVIE
-http://fm1077.serv00.net/Smart.php?id=Tvnmovie
-#EXTINF:-1 group-title="斯玛特", CELESTIAL MOVIES HD
-http://fm1077.serv00.net/Smart.php?id=Celestialindo
-#EXTINF:-1 group-title="斯玛特", ROCK ACTIONS
-http://fm1077.serv00.net/Smart.php?id=Rockaction
-#EXTINF:-1 group-title="斯玛特", ROCK ENTERTAINMENT
-http://fm1077.serv00.net/Smart.php?id=Rockentertain
-#EXTINF:-1 group-title="斯玛特", J2(備用)
-http://fm1077.serv00.net/Smart.php?id=j2_hkdavid
-#EXTINF:-1 group-title="斯玛特", J2
-http://fm1077.serv00.net/Smart.php?id=j2_twn
-#EXTINF:-1 group-title="斯玛特", RHK 31
-http://fm1077.serv00.net/Smart.php?id=rhk31_twn
-#EXTINF:-1 group-title="斯玛特", RHK 32
-http://fm1077.serv00.net/Smart.php?id=rhk32_twn
-#EXTINF:-1 group-title="斯玛特", TVB 星河
-http://fm1077.serv00.net/Smart.php?id=tvbxinhe_twn
-#EXTINF:-1 group-title="斯玛特", VIUTV1
-http://fm1077.serv00.net/Smart.php?id=viu1_twn
-#EXTINF:-1 group-title="斯玛特", VIU TV 69
-http://fm1077.serv00.net/Smart.php?id=viutv69_hkdavid
-#EXTINF:-1 group-title="斯玛特", VIU6
-http://fm1077.serv00.net/Smart.php?id=viusix_twn
-#EXTINF:-1 group-title="斯玛特", INEWS 新聞台
-http://fm1077.serv00.net/Smart.php?id=inews_twn
-#EXTINF:-1 group-title="斯玛特", 無線財經資訊台
-http://fm1077.serv00.net/Smart.php?id=tvbcaijing_twn
-#EXTINF:-1 group-title="斯玛特", 珍珠台(備用)
-http://fm1077.serv00.net/Smart.php?id=pearl_hkdavid
-#EXTINF:-1 group-title="斯玛特", 珍珠台
-http://fm1077.serv00.net/Smart.php?id=pearl_twn
-#EXTINF:-1 group-title="斯玛特", 翡翠台(備用)
-http://fm1077.serv00.net/Smart.php?id=jade_mike
-#EXTINF:-1 group-title="斯玛特", 翡翠台
-http://fm1077.serv00.net/Smart.php?id=jade_twn
-#EXTINF:-1 group-title="斯玛特", 鳳凰衛視
-http://fm1077.serv00.net/Smart.php?id=phoenixtv_hd
-#EXTINF:-1 group-title="斯玛特", 鳳凰資訊
-http://fm1077.serv00.net/Smart.php?id=phoenixinfo_hd
-#EXTINF:-1 group-title="斯玛特", 鳳凰香港
-http://fm1077.serv00.net/Smart.php?id=hkphoenix_twn
-#EXTINF:-1 group-title="斯玛特", CCTV-1
-http://fm1077.serv00.net/Smart.php?id=cctv1
-#EXTINF:-1 group-title="斯玛特", CCTV-2
-http://fm1077.serv00.net/Smart.php?id=cctv2
-#EXTINF:-1 group-title="斯玛特", CCTV-3
-http://fm1077.serv00.net/Smart.php?id=cctv3
-#EXTINF:-1 group-title="斯玛特", CCTV-4
-http://fm1077.serv00.net/Smart.php?id=cctv4#http://fm1077.serv00.net/Smart.php?id=Cctv4
-#EXTINF:-1 group-title="斯玛特", CCTV-5
-http://fm1077.serv00.net/Smart.php?id=cctv5
-#EXTINF:-1 group-title="斯玛特", CCTV-5+
-http://fm1077.serv00.net/Smart.php?id=cctv5plus
-#EXTINF:-1 group-title="斯玛特", CCTV-6
-http://fm1077.serv00.net/Smart.php?id=cctv6
-#EXTINF:-1 group-title="斯玛特", CCTV-7
-http://fm1077.serv00.net/Smart.php?id=cctv7
-#EXTINF:-1 group-title="斯玛特", CCTV-8
-http://fm1077.serv00.net/Smart.php?id=cctv8hd
-#EXTINF:-1 group-title="斯玛特", CCTV-9
-http://fm1077.serv00.net/Smart.php?id=cctv9hd
-#EXTINF:-1 group-title="斯玛特", CCTV-10
-http://fm1077.serv00.net/Smart.php?id=cctv10hd
-#EXTINF:-1 group-title="斯玛特", CCTV-11
-http://fm1077.serv00.net/Smart.php?id=cctv11
-#EXTINF:-1 group-title="斯玛特", CCTV-12
-http://fm1077.serv00.net/Smart.php?id=cctv12
-#EXTINF:-1 group-title="斯玛特", CCTV-13
-http://fm1077.serv00.net/Smart.php?id=cctv13
-#EXTINF:-1 group-title="斯玛特", CCTV-14
-http://fm1077.serv00.net/Smart.php?id=cctv14
-#EXTINF:-1 group-title="斯玛特", CCTV-15
-http://fm1077.serv00.net/Smart.php?id=cctv15
-#EXTINF:-1 group-title="斯玛特", CCTV-16
-http://fm1077.serv00.net/Smart.php?id=cctv16
-#EXTINF:-1 group-title="斯玛特", CCTV-17
-http://fm1077.serv00.net/Smart.php?id=cctv17
-#EXTINF:-1 group-title="斯玛特", 湖南衛視
-http://fm1077.serv00.net/Smart.php?id=hunan_twn
-#EXTINF:-1 group-title="斯玛特", 江蘇衛視
-http://fm1077.serv00.net/Smart.php?id=jiangsu_twn
-#EXTINF:-1 group-title="斯玛特", 深圳衛視
-http://fm1077.serv00.net/Smart.php?id=shenzhen
-#EXTINF:-1 group-title="斯玛特", 大灣區衛視
-http://fm1077.serv00.net/Smart.php?id=nanfang_twn
-#EXTINF:-1 group-title="斯玛特", 廣東衛視
-http://fm1077.serv00.net/Smart.php?id=guangdongweishi_twn
-#EXTINF:-1 group-title="斯玛特", 北京衛視
-http://fm1077.serv00.net/Smart.php?id=beijing
-#EXTINF:-1 group-title="斯玛特", 廣東珠江
-http://fm1077.serv00.net/Smart.php?id=zhujiang
-#EXTINF:-1 group-title="斯玛特", 廣西衛視
-http://fm1077.serv00.net/Smart.php?id=guangxi
-#EXTINF:-1 group-title="斯玛特", 湖北衛視
-http://fm1077.serv00.net/Smart.php?id=hubei
-#EXTINF:-1 group-title="斯玛特", 四川衛視
-http://fm1077.serv00.net/Smart.php?id=sichuan_twn
-#EXTINF:-1 group-title="斯玛特", 鳳凰衛視
-http://fm1077.serv00.net/Smart.php?id=phoenixtv_hd
-#EXTINF:-1 group-title="斯玛特", 東方衛視
-http://fm1077.serv00.net/Smart.php?id=dongfangweishi_twn
-#EXTINF:-1 group-title="斯玛特", CGTN
-http://fm1077.serv00.net/Smart.php?id=CGTN
-#EXTINF:-1 group-title="斯玛特", 鳳凰資訊
-http://fm1077.serv00.net/Smart.php?id=phoenixinfo_hd
-#EXTINF:-1 group-title="斯玛特", SUPERSPORTS 1
-http://fm1077.serv00.net/Smart.php?id=Assp1
-#EXTINF:-1 group-title="斯玛特", SUPERSPORTS 1(備用)
-http://fm1077.serv00.net/Smart.php?id=go_assp1
-#EXTINF:-1 group-title="斯玛特", SUPERSPORTQ 1(備用2)
-http://fm1077.serv00.net/Smart.php?id=Assp1_mega
-#EXTINF:-1 group-title="斯玛特", SUPERSPORTS 2
-http://fm1077.serv00.net/Smart.php?id=Assp2
-#EXTINF:-1 group-title="斯玛特", SUPERSPORTS 2(備用)
-http://fm1077.serv00.net/Smart.php?id=go_assp2
-#EXTINF:-1 group-title="斯玛特", SUPERSPORTS 3
-http://fm1077.serv00.net/Smart.php?id=Assp3
-#EXTINF:-1 group-title="斯玛特", SUPERSPORTS 3(備用)
-http://fm1077.serv00.net/Smart.php?id=go_assp3
-#EXTINF:-1 group-title="斯玛特", SUPERSPORTS 3(備用2)
-http://fm1077.serv00.net/Smart.php?id=Assp3_mega
-#EXTINF:-1 group-title="斯玛特", SUPERSPORTS 4
-http://fm1077.serv00.net/Smart.php?id=Assp4_mega
-#EXTINF:-1 group-title="斯玛特", SUPERSPORTS 4(備用)
-http://fm1077.serv00.net/Smart.php?id=go_assp4
-#EXTINF:-1 group-title="斯玛特", SUPERSPORTS 5
-http://fm1077.serv00.net/Smart.php?id=go_assp5
-#EXTINF:-1 group-title="斯玛特", BEIN 2HD
-http://fm1077.serv00.net/Smart.php?id=Beinhd
-#EXTINF:-1 group-title="斯玛特", BEINSPORTS HD
-http://fm1077.serv00.net/Smart.php?id=Besports
-#EXTINF:-1 group-title="斯玛特", CHAMPION 5 EPL
-http://fm1077.serv00.net/Smart.php?id=Champion5epl
-#EXTINF:-1 group-title="斯玛特", WWE
-http://fm1077.serv00.net/Smart.php?id=Wwe
-#EXTINF:-1 group-title="斯玛特", CHAMPION 6 EPL
-http://fm1077.serv00.net/Smart.php?id=Champion6epl
-#EXTINF:-1 group-title="斯玛特", FIGHT SPORTS
-http://fm1077.serv00.net/Smart.php?id=Fs
-#EXTINF:-1 group-title="斯玛特", UFC NETWORK
-http://fm1077.serv00.net/Smart.php?id=ufc_mega
-#EXTINF:-1 group-title="斯玛特", NBA TV
-http://fm1077.serv00.net/Smart.php?id=nbatv_twn
-#EXTINF:-1 group-title="斯玛特", ASTRO CRICKET
-http://fm1077.serv00.net/Smart.php?id=Acricket_mega
-#EXTINF:-1 group-title="斯玛特", ASTRO GOLF
-http://fm1077.serv00.net/Smart.php?id=Agolf
-#EXTINF:-1 group-title="斯玛特", TNT SPORTS 1
-http://fm1077.serv00.net/Smart.php?id=beeone
-#EXTINF:-1 group-title="斯玛特", TNT SPORTS 2
-http://fm1077.serv00.net/Smart.php?id=beetwo
-#EXTINF:-1 group-title="斯玛特", TNT SPORTS 3
-http://fm1077.serv00.net/Smart.php?id=beethree
-#EXTINF:-1 group-title="斯玛特", TNT SPORTS 4
-http://fm1077.serv00.net/Smart.php?id=beefour
-#EXTINF:-1 group-title="斯玛特", SONY TEN 1
-http://fm1077.serv00.net/Smart.php?id=ten1_raj
-#EXTINF:-1 group-title="斯玛特", SONY TEN 2
-http://fm1077.serv00.net/Smart.php?id=ten2_raj
-#EXTINF:-1 group-title="斯玛特", SONY TEN 3
-http://fm1077.serv00.net/Smart.php?id=ten3_raj
-#EXTINF:-1 group-title="斯玛特", SPOTV 1 HD
-http://fm1077.serv00.net/Smart.php?id=go_spotv
-#EXTINF:-1 group-title="斯玛特", SPO TV 2
-http://fm1077.serv00.net/Smart.php?id=go_spotv2
-#EXTINF:-1 group-title="斯玛特", BEINSPORTS 2 HD
-http://fm1077.serv00.net/Smart.php?id=Bein2hd
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS ARENA
-http://fm1077.serv00.net/Smart.php?id=tiankongarena
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS F1
-http://fm1077.serv00.net/Smart.php?id=tiankongf1
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS CRICKET
-http://fm1077.serv00.net/Smart.php?id=tiankongcricket
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS EPL
-http://fm1077.serv00.net/Smart.php?id=tiankongepl
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS FOOTBALL
-http://fm1077.serv00.net/Smart.php?id=tiankongfootball
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS GOLF
-http://fm1077.serv00.net/Smart.php?id=tiankonggolf
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS MAIN EVENT
-http://fm1077.serv00.net/Smart.php?id=tiankongmain
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS NEWS
-http://fm1077.serv00.net/Smart.php?id=tiankongnews
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS NFL
-http://fm1077.serv00.net/Smart.php?id=tiankongnfl
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS RACING
-http://fm1077.serv00.net/Smart.php?id=tiankongracing
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS MIX
-http://fm1077.serv00.net/Smart.php?id=tiankongmix
-#EXTINF:-1 group-title="斯玛特", CCTV-5
-http://fm1077.serv00.net/Smart.php?id=cctv5
-#EXTINF:-1 group-title="斯玛特", CCTV-5+
-http://fm1077.serv00.net/Smart.php?id=cctv5plus
-#EXTINF:-1 group-title="斯玛特", 愛爾達體育2台
-http://fm1077.serv00.net/Smart.php?id=eltasport2_twn
-#EXTINF:-1 group-title="斯玛特", 愛爾達體育3台
-http://fm1077.serv00.net/Smart.php?id=eltasport3_twn
-#EXTINF:-1 group-title="斯玛特", RTM SPORTS HD
-http://fm1077.serv00.net/Smart.php?id=Rtmsport
-#EXTINF:-1 group-title="斯玛特", ARENA
-http://fm1077.serv00.net/Smart.php?id=Arena
-#EXTINF:-1 group-title="斯玛特", ARENA 2
-http://fm1077.serv00.net/Smart.php?id=Arena2
-#EXTINF:-1 group-title="斯玛特", BOLAARENA 1
-http://fm1077.serv00.net/Smart.php?id=Bolaarena1
-#EXTINF:-1 group-title="斯玛特", BEIN 1 SPORTS
-http://fm1077.serv00.net/Smart.php?id=bein1_mega
-#EXTINF:-1 group-title="斯玛特", BEIN 2 SPORTS
-http://fm1077.serv00.net/Smart.php?id=bein2_mega
-#EXTINF:-1 group-title="斯玛特", BEIN 3 SPORTS
-http://fm1077.serv00.net/Smart.php?id=bein3_mega
-#EXTINF:-1 group-title="斯玛特", BEIN 4 SPORTS
-http://fm1077.serv00.net/Smart.php?id=bein4_mega
-#EXTINF:-1 group-title="斯玛特", BEIN 5 SPORTS
-http://fm1077.serv00.net/Smart.php?id=bein5_mega
-#EXTINF:-1 group-title="斯玛特", BEIN 6 SPORTS
-http://fm1077.serv00.net/Smart.php?id=bein6_mega
-#EXTINF:-1 group-title="斯玛特", BEIN 7 SPORTS
-http://fm1077.serv00.net/Smart.php?id=bein7_mega
-#EXTINF:-1 group-title="斯玛特", RUGBY PASS TV
-http://fm1077.serv00.net/Smart.php?id=Rugbypasstv
-#EXTINF:-1 group-title="斯玛特", BOLAARENA 2
-http://fm1077.serv00.net/Smart.php?id=Bolaarena2
-#EXTINF:-1 group-title="斯玛特", SUN TV HD
-http://fm1077.serv00.net/Smart.php?id=Suntv
-#EXTINF:-1 group-title="斯玛特", STAR VIJAY
-http://fm1077.serv00.net/Smart.php?id=Starvijay
-#EXTINF:-1 group-title="斯玛特", COLORS TAMIL
-http://fm1077.serv00.net/Smart.php?id=Colorstam_mega
-#EXTINF:-1 group-title="斯玛特", SUN MUSIC
-http://fm1077.serv00.net/Smart.php?id=Sunmusic
-#EXTINF:-1 group-title="斯玛特", ASTRO SUNLIFE
-http://fm1077.serv00.net/Smart.php?id=Sunlife
-#EXTINF:-1 group-title="斯玛特", ASTRO VAANAVIL
-http://fm1077.serv00.net/Smart.php?id=Vaanavil
-#EXTINF:-1 group-title="斯玛特", ZEE TAMIL
-http://fm1077.serv00.net/Smart.php?id=Zeetamil
-#EXTINF:-1 group-title="斯玛特", ZEE BUSINESS
-http://fm1077.serv00.net/Smart.php?id=Zeebusiness
-#EXTINF:-1 group-title="斯玛特", NEWS 18 TAMIL
-http://fm1077.serv00.net/Smart.php?id=news18tamil_raj
-#EXTINF:-1 group-title="斯玛特", ADITHYA
-http://fm1077.serv00.net/Smart.php?id=Adithya
-#EXTINF:-1 group-title="斯玛特", MAKKAL TV
-http://fm1077.serv00.net/Smart.php?id=Makkaltv
-#EXTINF:-1 group-title="斯玛特", ZEE ACTION
-http://fm1077.serv00.net/Smart.php?id=Zeeaction
-#EXTINF:-1 group-title="斯玛特", ASTRO KTV
-http://fm1077.serv00.net/Smart.php?id=Astroktv
-#EXTINF:-1 group-title="斯玛特", ZEE TV HD
-http://fm1077.serv00.net/Smart.php?id=Zeetvhd
-#EXTINF:-1 group-title="斯玛特", ZEE CINEMA HD
-http://fm1077.serv00.net/Smart.php?id=Zeecinemahd
-#EXTINF:-1 group-title="斯玛特", COLOR HD
-http://fm1077.serv00.net/Smart.php?id=Colorhd
-#EXTINF:-1 group-title="斯玛特", STARPLUS HD
-http://fm1077.serv00.net/Smart.php?id=Starplushd
-#EXTINF:-1 group-title="斯玛特", PICTURE HD
-http://fm1077.serv00.net/Smart.php?id=Npicture
-#EXTINF:-1 group-title="斯玛特", ZEE NEWS
-http://fm1077.serv00.net/Smart.php?id=Zeenews
-#EXTINF:-1 group-title="斯玛特", ASIANET
-http://fm1077.serv00.net/Smart.php?id=asianet_raj
-#EXTINF:-1 group-title="斯玛特", ASIANET NEWS
-http://fm1077.serv00.net/Smart.php?id=asianetnews_raj
-#EXTINF:-1 group-title="斯玛特", TIMES NOW
-http://fm1077.serv00.net/Smart.php?id=timesnow_mega
-#EXTINF:-1 group-title="斯玛特", BBC EARTH TAMIL
-http://fm1077.serv00.net/Smart.php?id=bbcearthtam_raj
-#EXTINF:-1 group-title="斯玛特", DISCOVERY WORLD TAMIL
-http://fm1077.serv00.net/Smart.php?id=discoveryworldtam_raj
-#EXTINF:-1 group-title="斯玛特", HISTORY TAMIL
-http://fm1077.serv00.net/Smart.php?id=historytam_raj
-#EXTINF:-1 group-title="斯玛特", NATGEO TAMIL
-http://fm1077.serv00.net/Smart.php?id=natgeotamil_raj
-#EXTINF:-1 group-title="斯玛特", NATGEO WILD TAMIL
-http://fm1077.serv00.net/Smart.php?id=natgeowildtamil_raj
-#EXTINF:-1 group-title="斯玛特", DISCOVERY KIDS TAMIL
-http://fm1077.serv00.net/Smart.php?id=discoverykidtamil_raj
-#EXTINF:-1 group-title="斯玛特", DISCOVERY TAMIL
-http://fm1077.serv00.net/Smart.php?id=discoverytamil_raj
-#EXTINF:-1 group-title="斯玛特", SONY YAY TAMIL
-http://fm1077.serv00.net/Smart.php?id=sonyyaytam_raj
-#EXTINF:-1 group-title="斯玛特", SUN TV INDIA
-http://fm1077.serv00.net/Smart.php?id=suntv_raj
-#EXTINF:-1 group-title="斯玛特", STARMAA HD
-http://fm1077.serv00.net/Smart.php?id=starmaa_raj
-#EXTINF:-1 group-title="斯玛特", STARMAA MOVIES HD
-http://fm1077.serv00.net/Smart.php?id=starmaamovies_raj
-#EXTINF:-1 group-title="斯玛特", BOLLYONE
-http://fm1077.serv00.net/Smart.php?id=Bollyone
-#EXTINF:-1 group-title="斯玛特", ASTRO SUNMUSIC
-http://fm1077.serv00.net/Smart.php?id=Sunmusic
-#EXTINF:-1 group-title="斯玛特", SONY PIX HD
-http://fm1077.serv00.net/Smart.php?id=sonypix_mega
-#EXTINF:-1 group-title="斯玛特", VIJAY SUPER
-http://fm1077.serv00.net/Smart.php?id=vijaysuper_raj
-#EXTINF:-1 group-title="斯玛特", AXN
-http://fm1077.serv00.net/Smart.php?id=axn_twn
-#EXTINF:-1 group-title="斯玛特", ANIMAX
-http://fm1077.serv00.net/Smart.php?id=Animax
-#EXTINF:-1 group-title="斯玛特", ASTROL KPLUS
-http://fm1077.serv00.net/Smart.php?id=Kplus
-#EXTINF:-1 group-title="斯玛特", AXN HD
-http://fm1077.serv00.net/Smart.php?id=Axn
-#EXTINF:-1 group-title="斯玛特", CCTV-6
-http://fm1077.serv00.net/Smart.php?id=cctv6
-#EXTINF:-1 group-title="斯玛特", CINEMAX
-http://fm1077.serv00.net/Smart.php?id=cinemax_twn
-#EXTINF:-1 group-title="斯玛特", CELESTIAL CLASSIC
-http://fm1077.serv00.net/Smart.php?id=Celestial2
-#EXTINF:-1 group-title="斯玛特", CELESTIAL MOVIES HD
-http://fm1077.serv00.net/Smart.php?id=Celestialindo
-#EXTINF:-1 group-title="斯玛特", CINEMAX
-http://fm1077.serv00.net/Smart.php?id=Cinemax
-#EXTINF:-1 group-title="斯玛特", HBO FAMILY
-http://fm1077.serv00.net/Smart.php?id=Hbofamily
-#EXTINF:-1 group-title="斯玛特", HBO HD
-http://fm1077.serv00.net/Smart.php?id=Hbo
-#EXTINF:-1 group-title="斯玛特", HBO HITS
-http://fm1077.serv00.net/Smart.php?id=Hbohits
-#EXTINF:-1 group-title="斯玛特", HBO SIGNATURE
-http://fm1077.serv00.net/Smart.php?id=Hbosignature
-#EXTINF:-1 group-title="斯玛特", HBO_HD
-http://fm1077.serv00.net/Smart.php?id=hbohd_twn
-#EXTINF:-1 group-title="斯玛特", HBO_HITS
-http://fm1077.serv00.net/Smart.php?id=hbohits_twn
-#EXTINF:-1 group-title="斯玛特", HITS MOVIE
-http://fm1077.serv00.net/Smart.php?id=Hitsmovie
-#EXTINF:-1 group-title="斯玛特", HITS
-http://fm1077.serv00.net/Smart.php?id=Hits
-#EXTINF:-1 group-title="斯玛特", HOLLYWOOD MOVIES
-http://fm1077.serv00.net/Smart.php?id=hollywoodmovies_twn
-#EXTINF:-1 group-title="斯玛特", MOVIES NOW HD
-http://fm1077.serv00.net/Smart.php?id=moviesnow_raj
-#EXTINF:-1 group-title="斯玛特", ONE
-http://fm1077.serv00.net/Smart.php?id=One_mega
-#EXTINF:-1 group-title="斯玛特", PARAMOUNT NETWORK
-http://fm1077.serv00.net/Smart.php?id=Paramountnetwork
-#EXTINF:-1 group-title="斯玛特", ROCK ACTIONS
-http://fm1077.serv00.net/Smart.php?id=Rockaction
-#EXTINF:-1 group-title="斯玛特", ROCK ENTERTAINMENT
-http://fm1077.serv00.net/Smart.php?id=Rockentertain
-#EXTINF:-1 group-title="斯玛特", SCM
-http://fm1077.serv00.net/Smart.php?id=Weishimovie
-#EXTINF:-1 group-title="斯玛特", SONY PIX HD
-http://fm1077.serv00.net/Smart.php?id=sonypix_mega
-#EXTINF:-1 group-title="斯玛特", STAR MOVIES HD
-http://fm1077.serv00.net/Smart.php?id=starmovies_raj
-#EXTINF:-1 group-title="斯玛特", THRILL
-http://fm1077.serv00.net/Smart.php?id=Thrill
-#EXTINF:-1 group-title="斯玛特", WARNER TV
-http://fm1077.serv00.net/Smart.php?id=WarnerTV
-#EXTINF:-1 group-title="斯玛特", TVN MOVIE
-http://fm1077.serv00.net/Smart.php?id=Tvnmovie
-#EXTINF:-1 group-title="斯玛特", 大愛2台
-http://fm1077.serv00.net/Smart.php?id=catchplay_twn
-#EXTINF:-1 group-title="斯玛特", 龍華電影
-http://fm1077.serv00.net/Smart.php?id=xingwei_movie
-#EXTINF:-1 group-title="斯玛特", 東森洋片
-http://fm1077.serv00.net/Smart.php?id=ettvwestern
-#EXTINF:-1 group-title="斯玛特", 東森電影
-http://fm1077.serv00.net/Smart.php?id=ettvmovie
-#EXTINF:-1 group-title="斯玛特", 美亞電影
-http://fm1077.serv00.net/Smart.php?id=meiyamovie_twn
-#EXTINF:-1 group-title="斯玛特", 龍華洋片
-http://fm1077.serv00.net/Smart.php?id=lunghuawestern_twn
-#EXTINF:-1 group-title="斯玛特", 龍祥时代
-http://fm1077.serv00.net/Smart.php?id=lungxiangtime_twn
-#EXTINF:-1 group-title="斯玛特", AFC 亞洲旅遊台
-http://fm1077.serv00.net/Smart.php?id=asiatravel_twn
-#EXTINF:-1 group-title="斯玛特", ANIMAL PLANET (ENG)
-http://fm1077.serv00.net/Smart.php?id=AnimalPlanet
-#EXTINF:-1 group-title="斯玛特", ANIMAL_PLANET
-http://fm1077.serv00.net/Smart.php?id=animalplanet_twn
-#EXTINF:-1 group-title="斯玛特", ASIA TRAVEL
-http://fm1077.serv00.net/Smart.php?id=asiatravel_twn
-#EXTINF:-1 group-title="斯玛特", BBC EARTH HD
-http://fm1077.serv00.net/Smart.php?id=bbcearth_twn
-#EXTINF:-1 group-title="斯玛特", BBC EARTH LIFESTYLE
-http://fm1077.serv00.net/Smart.php?id=bbclifestyle_twn
-#EXTINF:-1 group-title="斯玛特", CI
-http://fm1077.serv00.net/Smart.php?id=ci_twn
-#EXTINF:-1 group-title="斯玛特", DISCOVERY ASIA
-http://fm1077.serv00.net/Smart.php?id=discoverytwn_twn
-#EXTINF:-1 group-title="斯玛特", DISCOVERY HD
-http://fm1077.serv00.net/Smart.php?id=discoveryhd_twn
-#EXTINF:-1 group-title="斯玛特", FASHION TV
-http://fm1077.serv00.net/Smart.php?id=fashiontv_twn
-#EXTINF:-1 group-title="斯玛特", FOODNETWORK HD
-http://fm1077.serv00.net/Smart.php?id=Foodnetwork_mega
-#EXTINF:-1 group-title="斯玛特", HGTV
-http://fm1077.serv00.net/Smart.php?id=HGTV
-#EXTINF:-1 group-title="斯玛特", HISTORY
-http://fm1077.serv00.net/Smart.php?id=History
-#EXTINF:-1 group-title="斯玛特", MTV LIVE
-http://fm1077.serv00.net/Smart.php?id=mtvhd_twn
-#EXTINF:-1 group-title="斯玛特", NATGEO HD
-http://fm1077.serv00.net/Smart.php?id=Natgeo
-#EXTINF:-1 group-title="斯玛特", NATGEO WILD HD
-http://fm1077.serv00.net/Smart.php?id=Natgeowild
-#EXTINF:-1 group-title="斯玛特", NATGEO_WILD HD
-http://fm1077.serv00.net/Smart.php?id=natgeowild_twn
-#EXTINF:-1 group-title="斯玛特", NATGEO_HD
-http://fm1077.serv00.net/Smart.php?id=natgeohd_twn
-#EXTINF:-1 group-title="斯玛特", TLC
-http://fm1077.serv00.net/Smart.php?id=Tlc
-#EXTINF:-1 group-title="斯玛特", TLC ASIA
-http://fm1077.serv00.net/Smart.php?id=tlc_twn
-#EXTINF:-1 group-title="斯玛特", 亞洲美食
-http://fm1077.serv00.net/Smart.php?id=afc_twn
-#EXTINF:-1 group-title="斯玛特", 美食星球
-http://fm1077.serv00.net/Smart.php?id=foodplanet_twn
-#EXTINF:-1 group-title="斯玛特", ABC NEWS
-http://fm1077.serv00.net/Smart.php?id=abcnews_glo
-#EXTINF:-1 group-title="斯玛特", AL-JAZEERA
-http://fm1077.serv00.net/Smart.php?id=aljazeera_twn
-#EXTINF:-1 group-title="斯玛特", BBC WORLD NEWS
-http://fm1077.serv00.net/Smart.php?id=Bbcnews#http://fm1077.serv00.net/Smart.php?id=bbcnews_twn
-#EXTINF:-1 group-title="斯玛特", BLOOMBERG NEWS
-http://fm1077.serv00.net/Smart.php?id=bloomberg_twn
-#EXTINF:-1 group-title="斯玛特", CBS HD
-http://fm1077.serv00.net/Smart.php?id=cbshd_glo
-#EXTINF:-1 group-title="斯玛特", CBSN HD
-http://fm1077.serv00.net/Smart.php?id=cbsn_glo
-#EXTINF:-1 group-title="斯玛特", CGTN
-http://fm1077.serv00.net/Smart.php?id=CGTN
-#EXTINF:-1 group-title="斯玛特", CNA
-http://fm1077.serv00.net/Smart.php?id=cna
-#EXTINF:-1 group-title="斯玛特", CNBC
-http://fm1077.serv00.net/Smart.php?id=cnbc_twn
-#EXTINF:-1 group-title="斯玛特", CNN INTERNATIONAL
-http://fm1077.serv00.net/Smart.php?id=Cnn
-#EXTINF:-1 group-title="斯玛特", CNN(備用)
-http://fm1077.serv00.net/Smart.php?id=cnn_twn
-#EXTINF:-1 group-title="斯玛特", DW (DEUTSCH)
-http://fm1077.serv00.net/Smart.php?id=dw_twn
-#EXTINF:-1 group-title="斯玛特", FOX NEWS
-http://fm1077.serv00.net/Smart.php?id=foxnews_twn
-#EXTINF:-1 group-title="斯玛特", FRANCE 24
-http://fm1077.serv00.net/Smart.php?id=france24_twn
-#EXTINF:-1 group-title="斯玛特", NHK WORLD
-http://fm1077.serv00.net/Smart.php?id=nhkworld_japan
-#EXTINF:-1 group-title="斯玛特", SKYNEWS
-http://fm1077.serv00.net/Smart.php?id=skynews_antik
-#EXTINF:-1 group-title="斯玛特", 東森財經新聞
-http://fm1077.serv00.net/Smart.php?id=ettvcaijing_twn
-#EXTINF:-1 group-title="斯玛特", ANIMAX
-http://fm1077.serv00.net/Smart.php?id=Animax
-#EXTINF:-1 group-title="斯玛特", BABY TV ENG
-http://fm1077.serv00.net/Smart.php?id=Babytv
-#EXTINF:-1 group-title="斯玛特", BABY TV
-http://fm1077.serv00.net/Smart.php?id=babytv_twn
-#EXTINF:-1 group-title="斯玛特", BOOMERANG TAIWAN
-http://fm1077.serv00.net/Smart.php?id=boomerang_twn
-#EXTINF:-1 group-title="斯玛特", BOOMERANG
-http://fm1077.serv00.net/Smart.php?id=Boomerang
-#EXTINF:-1 group-title="斯玛特", CBEEBIES
-http://fm1077.serv00.net/Smart.php?id=Cbeebies
-#EXTINF:-1 group-title="斯玛特", CARTOON NETWORK
-http://fm1077.serv00.net/Smart.php?id=Cn
-#EXTINF:-1 group-title="斯玛特", DISNEY TAIWAN
-http://fm1077.serv00.net/Smart.php?id=disneytwn_twn
-#EXTINF:-1 group-title="斯玛特", KIDS TV
-http://fm1077.serv00.net/Smart.php?id=KidsTV
-#EXTINF:-1 group-title="斯玛特", MIAOMI
-http://fm1077.serv00.net/Smart.php?id=MiaoMi
-#EXTINF:-1 group-title="斯玛特", MOMO TV
-http://fm1077.serv00.net/Smart.php?id=momo1_twn
-#EXTINF:-1 group-title="斯玛特", NICK JR
-http://fm1077.serv00.net/Smart.php?id=Nickjr
-#EXTINF:-1 group-title="斯玛特", NICKELODEON
-http://fm1077.serv00.net/Smart.php?id=Nickelodeon
-#EXTINF:-1 group-title="斯玛特", 東森幼幼 YOYO TV
-http://fm1077.serv00.net/Smart.php?id=yoyo_twn
-#EXTINF:-1 group-title="斯玛特", 靖天卡通台
-http://fm1077.serv00.net/Smart.php?id=jingtiancartoon_twn
-#EXTINF:-1 group-title="斯玛特", AMARIN
-http://fm1077.serv00.net/Smart.php?id=amarin_pat
-#EXTINF:-1 group-title="斯玛特", CH 8
-http://fm1077.serv00.net/Smart.php?id=ch8_pat
-#EXTINF:-1 group-title="斯玛特", CHANNEL 3 THAILAND
-http://fm1077.serv00.net/Smart.php?id=ch3_pat
-#EXTINF:-1 group-title="斯玛特", CHANNEL 5 THAILAND
-http://fm1077.serv00.net/Smart.php?id=ch5_pat
-#EXTINF:-1 group-title="斯玛特", CHANNEL 7 THAILAND
-http://fm1077.serv00.net/Smart.php?id=ch7_pat
-#EXTINF:-1 group-title="斯玛特", GMM CHANNEL
-http://fm1077.serv00.net/Smart.php?id=gmmchannel_pat
-#EXTINF:-1 group-title="斯玛特", GMMONE
-http://fm1077.serv00.net/Smart.php?id=gmmone_pat
-#EXTINF:-1 group-title="斯玛特", MCOT HD THAILAND-1
-http://fm1077.serv00.net/Smart.php?id=mcot_pat
-#EXTINF:-1 group-title="斯玛特", MONO
-http://fm1077.serv00.net/Smart.php?id=mono_pat
-#EXTINF:-1 group-title="斯玛特", NATION
-http://fm1077.serv00.net/Smart.php?id=nation_pat
-#EXTINF:-1 group-title="斯玛特", NBT
-http://fm1077.serv00.net/Smart.php?id=nbt_pat
-#EXTINF:-1 group-title="斯玛特", NEW
-http://fm1077.serv00.net/Smart.php?id=new_pat
-#EXTINF:-1 group-title="斯玛特", PPTV THAILAND1
-http://fm1077.serv00.net/Smart.php?id=pptv_pat
-#EXTINF:-1 group-title="斯玛特", TPTV
-http://fm1077.serv00.net/Smart.php?id=tptv_pat
-#EXTINF:-1 group-title="斯玛特", THAI THAI
-http://fm1077.serv00.net/Smart.php?id=thaithai_pat
-#EXTINF:-1 group-title="斯玛特", THAIRATH
-http://fm1077.serv00.net/Smart.php?id=thairath_pat
-#EXTINF:-1 group-title="斯玛特", TNN24
-http://fm1077.serv00.net/Smart.php?id=tnn24_pat
-#EXTINF:-1 group-title="斯玛特", WORKPOINT
-http://fm1077.serv00.net/Smart.php?id=workpoint_pat
-#EXTINF:-1 group-title="斯玛特", TPBS
-http://fm1077.serv00.net/Smart.php?id=tpbs_pat
-#EXTINF:-1 group-title="斯玛特", AL-JAZEERA
-http://fm1077.serv00.net/Smart.php?id=aljazeera_twn
-#EXTINF:-1 group-title="斯玛特", ANIMAL PLANET (ENG)
-http://fm1077.serv00.net/Smart.php?id=AnimalPlanet
-#EXTINF:-1 group-title="斯玛特", AXN HD
-http://fm1077.serv00.net/Smart.php?id=Axn
-#EXTINF:-1 group-title="斯玛特", BBC 1
-http://fm1077.serv00.net/Smart.php?id=bbc1_antik
-#EXTINF:-1 group-title="斯玛特", BBC 2
-http://fm1077.serv00.net/Smart.php?id=bbc2_antik
-#EXTINF:-1 group-title="斯玛特", BBC EARTH HD
-http://fm1077.serv00.net/Smart.php?id=bbcearth_twn
-#EXTINF:-1 group-title="斯玛特", BBC EARTH LIFESTYLE
-http://fm1077.serv00.net/Smart.php?id=bbclifestyle_twn
-#EXTINF:-1 group-title="斯玛特", BBC WORLD NEWS
-http://fm1077.serv00.net/Smart.php?id=bbcworldnews_antik
-#EXTINF:-1 group-title="斯玛特", BLOOMBERG NEWS
-http://fm1077.serv00.net/Smart.php?id=bloomberg_twn
-#EXTINF:-1 group-title="斯玛特", BOOMERANG
-http://fm1077.serv00.net/Smart.php?id=Boomerang
-#EXTINF:-1 group-title="斯玛特", CBBC
-http://fm1077.serv00.net/Smart.php?id=cbbc_antik
-#EXTINF:-1 group-title="斯玛特", CBEEBIES
-http://fm1077.serv00.net/Smart.php?id=Cbeebies
-#EXTINF:-1 group-title="斯玛特", CGTN
-http://fm1077.serv00.net/Smart.php?id=CGTN
-#EXTINF:-1 group-title="斯玛特", CNBC
-http://fm1077.serv00.net/Smart.php?id=cnbc_twn
-#EXTINF:-1 group-title="斯玛特", CHANNEL 4
-http://fm1077.serv00.net/Smart.php?id=channel4_antik
-#EXTINF:-1 group-title="斯玛特", DW (DEUTSCH)
-http://fm1077.serv00.net/Smart.php?id=dw_twn
-#EXTINF:-1 group-title="斯玛特", EURONEWS
-http://fm1077.serv00.net/Smart.php?id=euronews_antik
-#EXTINF:-1 group-title="斯玛特", FRANCE 24
-http://fm1077.serv00.net/Smart.php?id=france24_twn
-#EXTINF:-1 group-title="斯玛特", FREESPORTS
-http://fm1077.serv00.net/Smart.php?id=freesports_antik
-#EXTINF:-1 group-title="斯玛特", HBO HD
-http://fm1077.serv00.net/Smart.php?id=Hbo
-#EXTINF:-1 group-title="斯玛特", HGTV
-http://fm1077.serv00.net/Smart.php?id=HGTV
-#EXTINF:-1 group-title="斯玛特", HISTORY
-http://fm1077.serv00.net/Smart.php?id=History
-#EXTINF:-1 group-title="斯玛特", HITS MOVIE
-http://fm1077.serv00.net/Smart.php?id=Hitsmovie
-#EXTINF:-1 group-title="斯玛特", KIDS TV
-http://fm1077.serv00.net/Smart.php?id=KidsTV
-#EXTINF:-1 group-title="斯玛特", MTV LIVE
-http://fm1077.serv00.net/Smart.php?id=mtvhd_twn
-#EXTINF:-1 group-title="斯玛特", MORE4
-http://fm1077.serv00.net/Smart.php?id=more4_antik
-#EXTINF:-1 group-title="斯玛特", NHK WORLD
-http://fm1077.serv00.net/Smart.php?id=nhkworld_japan
-#EXTINF:-1 group-title="斯玛特", NATGEO HD
-http://fm1077.serv00.net/Smart.php?id=Natgeo
-#EXTINF:-1 group-title="斯玛特", NATGEO WILD HD
-http://fm1077.serv00.net/Smart.php?id=Natgeowild
-#EXTINF:-1 group-title="斯玛特", NICK JR
-http://fm1077.serv00.net/Smart.php?id=Nickjr
-#EXTINF:-1 group-title="斯玛特", NICKELODEON
-http://fm1077.serv00.net/Smart.php?id=Nickelodeon
-#EXTINF:-1 group-title="斯玛特", PICK TV
-http://fm1077.serv00.net/Smart.php?id=picktv_antik
-#EXTINF:-1 group-title="斯玛特", SKYNEWS
-http://fm1077.serv00.net/Smart.php?id=skynews_antik
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS ARENA
-http://fm1077.serv00.net/Smart.php?id=tiankongarena
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS CRICKET
-http://fm1077.serv00.net/Smart.php?id=tiankongcricket
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS EPL
-http://fm1077.serv00.net/Smart.php?id=tiankongepl
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS F1
-http://fm1077.serv00.net/Smart.php?id=tiankongf1
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS FOOTBALL
-http://fm1077.serv00.net/Smart.php?id=tiankongfootball
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS GOLF
-http://fm1077.serv00.net/Smart.php?id=tiankonggolf
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS MAIN EVENT
-http://fm1077.serv00.net/Smart.php?id=tiankongmain
-#EXTINF:-1 group-title="斯玛特", SKYSPORTS NEWS
-http://fm1077.serv00.net/Smart.php?id=tiankongnews
-#EXTINF:-1 group-title="斯玛特", STAR MOVIES HD
-http://fm1077.serv00.net/Smart.php?id=starmovies_raj
-#EXTINF:-1 group-title="斯玛特", TLC
-http://fm1077.serv00.net/Smart.php?id=Tlc
-#EXTINF:-1 group-title="斯玛特", THRILL
-http://fm1077.serv00.net/Smart.php?id=Thrill
-#EXTINF:-1 group-title="斯玛特", WARNER TV
-http://fm1077.serv00.net/Smart.php?id=WarnerTV
-#EXTINF:-1 group-title="斯玛特", ITV 1
-http://fm1077.serv00.net/Smart.php?id=itv1_antik
-#EXTINF:-1 group-title="斯玛特", ITV 2
-http://fm1077.serv00.net/Smart.php?id=itv2_antik
-#EXTINF:-1 group-title="斯玛特", ANTV
-http://fm1077.serv00.net/Smart.php?id=viet_antv
-#EXTINF:-1 group-title="斯玛特", BPTV 2
-http://fm1077.serv00.net/Smart.php?id=viet_bptv2
-#EXTINF:-1 group-title="斯玛特", BRT HD
-http://fm1077.serv00.net/Smart.php?id=viet_brt
-#EXTINF:-1 group-title="斯玛特", CA MAU TV
-http://fm1077.serv00.net/Smart.php?id=viet_camautv
-#EXTINF:-1 group-title="斯玛特", DANANG TV1 HD
-http://fm1077.serv00.net/Smart.php?id=viet_danangtv1
-#EXTINF:-1 group-title="斯玛特", DANANG TV2 HD
-http://fm1077.serv00.net/Smart.php?id=viet_danangtv2
-#EXTINF:-1 group-title="斯玛特", HBTV HD
-http://fm1077.serv00.net/Smart.php?id=viet_hbtv
-#EXTINF:-1 group-title="斯玛特", HTV 7
-http://fm1077.serv00.net/Smart.php?id=viet_htv7
-#EXTINF:-1 group-title="斯玛特", HTV 9
-http://fm1077.serv00.net/Smart.php?id=viet_htv9
-#EXTINF:-1 group-title="斯玛特", PTTH 1
-http://fm1077.serv00.net/Smart.php?id=viet_ptth1
-#EXTINF:-1 group-title="斯玛特", VTV 1
-http://fm1077.serv00.net/Smart.php?id=viet_vtv1
-#EXTINF:-1 group-title="斯玛特", VTV 7
-http://fm1077.serv00.net/Smart.php?id=viet_vtv7
-#EXTINF:-1 group-title="斯玛特", ALL THE KPOP
-http://fm1077.serv00.net/Smart.php?id=allthekpop_korea
-#EXTINF:-1 group-title="斯玛特", APPS TV
-http://fm1077.serv00.net/Smart.php?id=appongoogle_korea
-#EXTINF:-1 group-title="斯玛特", ARIRANG HD
-http://fm1077.serv00.net/Smart.php?id=arirang_korea
-#EXTINF:-1 group-title="斯玛特", CBS
-http://fm1077.serv00.net/Smart.php?id=cbs_korea
-#EXTINF:-1 group-title="斯玛特", CGNTV
-http://fm1077.serv00.net/Smart.php?id=cgntv_korea
-#EXTINF:-1 group-title="斯玛特", EBS 1
-http://fm1077.serv00.net/Smart.php?id=ebs1_korea
-#EXTINF:-1 group-title="斯玛特", EBS KIDS
-http://fm1077.serv00.net/Smart.php?id=ebskids_korea
-#EXTINF:-1 group-title="斯玛特", EBS PLUS2
-http://fm1077.serv00.net/Smart.php?id=ebsplus2_korea
-#EXTINF:-1 group-title="斯玛特", EBS2
-http://fm1077.serv00.net/Smart.php?id=ebs2_korea
-#EXTINF:-1 group-title="斯玛特", J THE KPOP
-http://fm1077.serv00.net/Smart.php?id=jthekpop_korea
-#EXTINF:-1 group-title="斯玛特", KBS WORLD 24
-http://fm1077.serv00.net/Smart.php?id=kbsworld24_korea
-#EXTINF:-1 group-title="斯玛特", SBS PLUS
-http://fm1077.serv00.net/Smart.php?id=sbsplus_korea
-#EXTINF:-1 group-title="斯玛特", YTN DMB
-http://fm1077.serv00.net/Smart.php?id=ytndmb_korea
-#EXTINF:-1 group-title="斯玛特", YTN KOREAN
-http://fm1077.serv00.net/Smart.php?id=ytnkorean_korea
-#EXTINF:-1 group-title="斯玛特", YTN SCIENCE
-http://fm1077.serv00.net/Smart.php?id=ytnscience_korea
-#EXTINF:-1 group-title="斯玛特", YTN
-http://fm1077.serv00.net/Smart.php?id=ytn_korea
-#EXTINF:-1 group-title="斯玛特", YONHAP NEWS
-http://fm1077.serv00.net/Smart.php?id=yonhapnews_korea
-#EXTINF:-1 group-title="斯玛特", BS-TBS
-http://fm1077.serv00.net/Smart.php?id=bstbs_japan
-#EXTINF:-1 group-title="斯玛特", BSジャパン 181
-http://fm1077.serv00.net/Smart.php?id=bs181_japan
-#EXTINF:-1 group-title="斯玛特", BSフジ BS FUJI
-http://fm1077.serv00.net/Smart.php?id=bsfuji_japan
-#EXTINF:-1 group-title="斯玛特", CNA JAPAN
-http://fm1077.serv00.net/Smart.php?id=cna_japan
-#EXTINF:-1 group-title="斯玛特", JET 綜合
-http://fm1077.serv00.net/Smart.php?id=jettv_japan
-#EXTINF:-1 group-title="斯玛特", NHK OASKA
-http://fm1077.serv00.net/Smart.php?id=nhkosaka_japan
-#EXTINF:-1 group-title="斯玛特", NHK WORLD
-http://fm1077.serv00.net/Smart.php?id=nhkworld_japan
-#EXTINF:-1 group-title="斯玛特", NHK-E
-http://fm1077.serv00.net/Smart.php?id=nhke_japan
-#EXTINF:-1 group-title="斯玛特", NHK-総合-2
-http://fm1077.serv00.net/Smart.php?id=nhkg_japan
-#EXTINF:-1 group-title="斯玛特", NHKBS1
-http://fm1077.serv00.net/Smart.php?id=nhkbs1_japan
-#EXTINF:-1 group-title="斯玛特", NHKBSプレミア PREMIUM
-http://fm1077.serv00.net/Smart.php?id=nhkpremium_japan
-#EXTINF:-1 group-title="斯玛特", TOKYOMX
-http://fm1077.serv00.net/Smart.php?id=tokyomx_japan
-#EXTINF:-1 group-title="斯玛特", テレビ朝日 ASAHI TV
-http://fm1077.serv00.net/Smart.php?id=asahitv_japan
-#EXTINF:-1 group-title="斯玛特", テレビ東京 TOKYO TV
-http://fm1077.serv00.net/Smart.php?id=tokyotv_japan
 #EXTINF:-1 group-title="湾湾频道", 民视台湾台
 https://www.qiuyels.top/proxy.php?id=4gtv-4gtv001
 #EXTINF:-1 group-title="湾湾频道", 民视
