@@ -1,4 +1,4 @@
-import requests 
+import requests
 import json
 import re
 
@@ -16,13 +16,19 @@ if response.status_code == 200 and response.text.strip():
     # 删除以 // 开头的注释行
     cleaned_text = re.sub(r'^\s*//.*\n?', '', text, flags=re.MULTILINE)
 
+    # 匹配以 http 或 https 开头，后面是任意域名，再跟其他 URL 的链接，并替换为 https://gh.999986.xyz/
+    domain_pattern = r'https?://[^/]+/(https?://[\w./-]+)'
+    
+    # 使用正则替换，保留后面的 URL 部分
+    cleaned_text = re.sub(domain_pattern, r'https://gh.999986.xyz/\1', cleaned_text)
+
     # 处理 JSON 数据
     try:
         data = json.loads(cleaned_text)
 
         # 删除指定 key 的项
         keys_to_remove = [
-            'csp_Dm84', 'csp_Anime1', 'csp_Kugou', 'Aid', '易搜', 'csp_PanSearch',  '短视频', 'TgYunPan|本地',
+            'csp_Dm84', 'csp_Anime1', 'csp_Kugou', 'Aid', '易搜', 'csp_PanSearch', '短视频', 'TgYunPan|本地',
             '纸条搜', '网盘集合', '少儿', '初中', '高中', '小学', 'csp_Bili', '88看球', 'csp_Qiyou',
             '有声小说吧', '虎牙直播', 'csp_Local', 'push_agent', 'TgYunPanLocal5', 'csp_FengGo',
             'TgYunPanLocal4', 'TgYunPanLocal3', 'TgYunPanLocal2', 'TgYunPanLocal1', '酷奇MV', '斗鱼直播',
