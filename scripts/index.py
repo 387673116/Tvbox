@@ -41,7 +41,7 @@ if response.status_code == 200 and response.text.strip():
 
             # 修改 "sites" 列表中 key 为 "csp_DouDou", "csp_Jianpian", "csp_SixV" 的项
             for site in data['sites']:
-                if site.get('key') == 'csp_DouDou':
+                if site.get('key') == 'csp_Douban':
                     site['name'] = '🔍豆瓣TOP榜'
                 elif site.get('key') == 'csp_Jianpian':
                     site['name'] = '⚡荐片'
