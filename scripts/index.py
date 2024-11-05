@@ -43,6 +43,8 @@ if response.status_code == 200 and response.text.strip():
             for site in data['sites']:
                 if site.get('key') == 'csp_Douban':
                     site['name'] = '🔍豆瓣TOP榜'
+                elif site.get('key') == 'csp_DouDou':
+                    site['name'] = '🔍豆瓣TOP榜'
                 elif site.get('key') == 'csp_Jianpian':
                     site['name'] = '⚡荐片'
                 elif site.get('key') == 'csp_SixV':
