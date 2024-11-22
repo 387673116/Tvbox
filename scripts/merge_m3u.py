@@ -1,10 +1,10 @@
 import requests
 import os
 import hashlib
-import re  # 导入 re 模块
+import re
 
-# 下载 M3U 文件
-def download_m3u(url):
+# 下载 M3U 或 TXT 文件
+def download_file(url):
     try:
         response = requests.get(url, timeout=10)
         response.raise_for_status()
@@ -15,10 +15,24 @@ def download_m3u(url):
 
 # 判断是否是 IPv6 地址
 def is_ipv6(url):
-    # 使用正则表达式检查链接是否包含 IPv6 地址
     return bool(re.search(r'\[[a-fA-F0-9:]+\]', url))
 
-# 解析 M3U 文件
+# 解析 TXT 格式的 IPTV 源
+def parse_txt(content):
+    channels = []
+    lines = content.strip().split("\n")
+    for line in lines:
+        # 假设每行都包含 URL 和名称（频道名称和链接）
+        parts = line.split(" ", 1)  # 分割频道名称和 URL
+        if len(parts) == 2:
+            name, url = parts
+            # 过滤掉 IPv6 链接
+            if not is_ipv6(url):
+                info = f'#EXTINF:-1,{name}'  # 用频道名称填充 EXTINF
+                channels.append({"info": info, "url": url})
+    return channels
+
+# 解析 M3U 格式的 IPTV 源
 def parse_m3u(content):
     channels = []
     lines = content.strip().split("\n")
@@ -26,8 +40,7 @@ def parse_m3u(content):
         if lines[i].startswith("#EXTINF"):
             info = lines[i]
             url = lines[i + 1] if i + 1 < len(lines) else ""
-            
-            # 过滤掉包含IPv6的URL
+            # 过滤掉 IPv6 链接
             if not is_ipv6(url):
                 channels.append({"info": info, "url": url})
     return channels
@@ -75,16 +88,18 @@ def calculate_hash(file_path):
 # 主函数
 def main():
     urls = [
-        "https://gh.999986.xyz/https://raw.githubusercontent.com/XiaoZhang5656/xiaozhang-5656.github.io/master/iptv-live.txt",
-        "https://gh.999986.xyz/https://raw.githubusercontent.com/YueChan/Live/master/Global.m3u",
+        "https://gh.999986.xyz/https://raw.githubusercontent.com/XiaoZhang5656/xiaozhang-5656.github.io/master/iptv-live.txt",  # TXT 格式链接
+        "https://gh.999986.xyz/https://raw.githubusercontent.com/YueChan/Live/master/Global.m3u",  # M3U 格式链接
     ]
     
-    # 下载并解析 M3U 文件
     all_channels = []
     for url in urls:
-        content = download_m3u(url)
+        content = download_file(url)
         if content:
-            all_channels.extend(parse_m3u(content))
+            if url.endswith(".txt"):
+                all_channels.extend(parse_txt(content))  # 解析 TXT 文件
+            else:
+                all_channels.extend(parse_m3u(content))  # 解析 M3U 文件
     
     # 合并频道并分类
     merged_channels = merge_channels(all_channels)
