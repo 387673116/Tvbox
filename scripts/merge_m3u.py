@@ -92,8 +92,8 @@ def calculate_hash(file_path):
 # 主函数
 def main():
     urls = [
-        "https://gh.999986.xyz/https://raw.githubusercontent.com/XiaoZhang5656/xiaozhang-5656.github.io/master/iptv-live.txt",  # TXT 格式链接
-        "https://gh.999986.xyz/https://raw.githubusercontent.com/YueChan/Live/master/Global.m3u",  # M3U 格式链接
+        "https://raw.githubusercontent.com/XiaoZhang5656/xiaozhang-5656.github.io/master/iptv-live.txt",  # TXT 格式链接
+        "https://raw.githubusercontent.com/YueChan/Live/master/Global.m3u",  # M3U 格式链接
     ]
     
     all_channels = []
