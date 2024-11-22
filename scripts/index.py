@@ -1,6 +1,7 @@
 import requests
 import json
 import re
+import hashlib
 
 def fetch_remote_data(url):
     try:
@@ -61,7 +62,7 @@ def process_json_data(cleaned_text):
         # 替换 "lives" 列表中的 "url" 字段值
         if 'lives' in data:
             for live in data['lives']:
-                live['url'] = 'https://6851.kstore.space/zby.txt'
+                live['url'] = 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/iptv.m3u'
 
         return data
 
@@ -77,6 +78,24 @@ def save_to_json(data, filename):
     except IOError as e:
         print(f"文件保存错误: {e}")
 
+def compare_json_files(existing_file, new_data):
+    try:
+        # 如果文件存在，则读取并对比
+        with open(existing_file, 'r', encoding='utf-8') as f:
+            existing_data = json.load(f)
+        
+        # 比较两者的内容是否相同
+        existing_hash = hashlib.md5(json.dumps(existing_data, ensure_ascii=False).encode('utf-8')).hexdigest()
+        new_hash = hashlib.md5(json.dumps(new_data, ensure_ascii=False).encode('utf-8')).hexdigest()
+
+        return existing_hash != new_hash  # 如果内容不同，返回 True
+
+    except FileNotFoundError:
+        return True  # 如果文件不存在，认为内容不同，需要更新
+    except Exception as e:
+        print(f"文件对比时发生错误: {e}")
+        return False
+
 if __name__ == "__main__":
     url = 'https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json'
     raw_text = fetch_remote_data(url)
@@ -86,4 +105,8 @@ if __name__ == "__main__":
         processed_data = process_json_data(cleaned_text)
         
         if processed_data:
-            save_to_json(processed_data, 'index.json')
+            # 检查当前目录的 index.json 是否需要更新
+            if compare_json_files('index.json', processed_data):
+                save_to_json(processed_data, 'index.json')
+            else:
+                print("index.json 内容未变化，未进行更新。")
