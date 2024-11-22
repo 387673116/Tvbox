@@ -25,11 +25,20 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4
+          # 安装 Chrome 浏览器和 ChromeDriver
+          sudo apt-get update
+          sudo apt-get install -y wget curl unzip
+          sudo apt-get install -y libnss3 libgdk-pixbuf2.0-0 libx11-xcb1 libasound2
+          curl -sS https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o chrome.deb
+          sudo dpkg -i chrome.deb
+          sudo apt-get install -f  # 解决可能的依赖问题
+
+          # 安装 Python 库
+          pip install requests beautifulsoup4 selenium
 
       - name: Run the script to update .m3u file
         run: |
-          python scripts/aktv.py  # 修改为脚本的正确路径
+          python scripts/aktv.py  # 假设脚本路径为 scripts/aktv.py
 
       - name: Commit and push changes if any
         run: |

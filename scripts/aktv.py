@@ -1,52 +1,42 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+import time
 import requests
-from bs4 import BeautifulSoup
 
-# 获取网页内容
-def fetch_channels(url="https://aktv.top/"):
-    """抓取网页并提取频道信息"""
-    response = requests.get(url)
-    soup = BeautifulSoup(response.text, "html.parser")
+# 设置 Chrome 无头模式
+chrome_options = Options()
+chrome_options.add_argument("--headless")  # 无头模式，不显示浏览器
+chrome_options.add_argument("--disable-gpu")  # 禁用 GPU 加速
+chrome_options.add_argument("--no-sandbox")  # 解决一些环境问题
 
-    channels = []
-    for item in soup.find_all('div', class_='channel-class'):  # 需要根据实际网页结构修改
-        title = item.find('span', class_='title').text.strip()
-        link = item.find('a', href=True)['href'].strip()
-        category = item.find('span', class_='category').text.strip()
-        tv_id = item.get('tv-id', 'unknown')  # 获取tv-id属性，若没有则为unknown
+# 启动 Chrome 浏览器
+driver = webdriver.Chrome(options=chrome_options)
 
-        # 添加频道信息
-        channels.append((category, title, link, tv_id))
-    
-    return channels
+# 打开目标网页
+driver.get("http://aktv.top/")
 
-# 检查链接有效性
-def is_valid_url(url):
-    """检查URL是否有效"""
-    try:
-        response = requests.head(url, timeout=5)
-        return response.status_code == 200
-    except requests.exceptions.RequestException:
-        return False
+# 等待页面加载完成
+time.sleep(5)  # 或者使用 WebDriverWait 等待特定元素加载
 
-# 保存到.m3u文件
-def save_to_m3u(channels, filename="guoji.m3u"):
-    """将有效的频道链接保存到.m3u文件中"""
-    with open(filename, "w", encoding="utf-8") as file:
-        for category, title, link, tv_id in channels:
-            # 验证链接有效性
-            if is_valid_url(link):
-                file.write(f'#EXTINF:-1 group-title="{category}", {title} (ID: {tv_id})\n')
-                file.write(f'{link}\n')
+# 获取所有链接
+links = driver.find_elements(By.TAG_NAME, 'a')
 
-# 主函数
-def main():
-    url = "https://aktv.top/"
-    
-    # 1. 获取频道信息
-    channels = fetch_channels(url)
-    
-    # 2. 保存有效的链接到.m3u文件
-    save_to_m3u(channels)
+# 保存有效的 m3u8 链接
+valid_links = []
+for link in links:
+    href = link.get_attribute('href')
+    if href and "m3u8" in href:  # 检查链接是否包含 m3u8
+        if requests.head(href).status_code == 200:  # 检查链接是否有效
+            valid_links.append(href)
 
-if __name__ == "__main__":
-    main()
+# 关闭浏览器
+driver.quit()
+
+# 输出结果并保存到 guoji.m3u 文件
+with open("guoji.m3u", "w", encoding="utf-8") as file:
+    for link in valid_links:
+        file.write(f"#EXTINF:-1 group-title=\"国际\", {link}\n")
+        file.write(f"{link}\n")
+
+print("m3u文件更新完成")
