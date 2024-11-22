@@ -80,7 +80,7 @@ http://aktv.top/AKTV/live/aktv3/null-2/AKTV.m3u8
 #EXTINF:-1 tvg-id="aktv/null-9" group-title="国际",寰宇新聞台
 http://aktv.top/AKTV/live/aktv/null-9/AKTV.m3u8
 #EXTINF:-1 tvg-id="NHK-HK" group-title="国际",NHK World
-https://live.hg16888.vip/mytvsuper/CNHK
+http://aktv.top/AKTV/live/aktv3/nhkworldjapan/AKTV.m3u8
 #EXTINF:-1 tvg-id="aktv/channel5hd" group-title="国际",Channel 5 HD
 http://aktv.top/AKTV/live/aktv/channel5hd/AKTV.m3u8
 #EXTINF:-1 tvg-id="aktv/channel8hd" group-title="国际",Channel 8 HD
