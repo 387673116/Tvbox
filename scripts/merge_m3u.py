@@ -101,9 +101,15 @@ def main():
         content = download_file(url)
         if content:
             if url.endswith(".txt"):
-                all_channels.extend(parse_txt(content))  # 解析 TXT 文件
+                print(f"开始解析TXT文件：{url}")
+                txt_channels = parse_txt(content)  # 解析 TXT 文件
+                print(f"解析到 {len(txt_channels)} 个频道")
+                all_channels.extend(txt_channels)
             else:
-                all_channels.extend(parse_m3u(content))  # 解析 M3U 文件
+                print(f"开始解析M3U文件：{url}")
+                m3u_channels = parse_m3u(content)  # 解析 M3U 文件
+                print(f"解析到 {len(m3u_channels)} 个频道")
+                all_channels.extend(m3u_channels)
     
     # 合并频道并分类
     merged_channels = merge_channels(all_channels)
