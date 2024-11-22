@@ -3,7 +3,7 @@ import os
 import hashlib
 import re
 
-# 下载 M3U 或 TXT 文件
+# 下载文件
 def download_file(url):
     try:
         response = requests.get(url, timeout=10)
@@ -22,14 +22,18 @@ def parse_txt(content):
     channels = []
     lines = content.strip().split("\n")
     for line in lines:
-        # 假设每行都包含 URL 和名称（频道名称和链接）
-        parts = line.split(" ", 1)  # 分割频道名称和 URL
+        # 假设每行格式为：分类名称 #genre# 频道名称 播放链接
+        parts = line.split(" #genre# ")
         if len(parts) == 2:
-            name, url = parts
-            # 过滤掉 IPv6 链接
-            if not is_ipv6(url):
-                info = f'#EXTINF:-1,{name}'  # 用频道名称填充 EXTINF
-                channels.append({"info": info, "url": url})
+            category, rest = parts
+            # 频道名称和播放链接部分
+            channel_parts = rest.split(" ", 1)
+            if len(channel_parts) == 2:
+                name, url = channel_parts
+                # 过滤掉 IPv6 链接
+                if not is_ipv6(url):
+                    info = f'#EXTINF:-1 group-title="{category.strip()}",{name.strip()}'
+                    channels.append({"info": info, "url": url.strip()})
     return channels
 
 # 解析 M3U 格式的 IPTV 源
