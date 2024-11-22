@@ -13,6 +13,11 @@ def download_m3u(url):
         print(f"无法下载 {url}: {e}")
         return ""
 
+# 判断是否是 IPv6 地址
+def is_ipv6(url):
+    # 使用正则表达式检查链接是否包含 IPv6 地址
+    return bool(re.search(r'\[[a-fA-F0-9:]+\]', url))
+
 # 解析 M3U 文件
 def parse_m3u(content):
     channels = []
@@ -21,7 +26,10 @@ def parse_m3u(content):
         if lines[i].startswith("#EXTINF"):
             info = lines[i]
             url = lines[i + 1] if i + 1 < len(lines) else ""
-            channels.append({"info": info, "url": url})
+            
+            # 过滤掉包含IPv6的URL
+            if not is_ipv6(url):
+                channels.append({"info": info, "url": url})
     return channels
 
 # 合并频道列表
@@ -67,9 +75,8 @@ def calculate_hash(file_path):
 # 主函数
 def main():
     urls = [
-        "https://iptv-org.github.io/iptv/index.m3u",
-        "https://raw.githubusercontent.com/YueChan/Live/master/APTV.m3u",
-        "https://raw.githubusercontent.com/YueChan/Live/master/Global.m3u",
+        "https://gh.999986.xyz/https://raw.githubusercontent.com/XiaoZhang5656/xiaozhang-5656.github.io/master/iptv-live.txt",
+        "https://gh.999986.xyz/https://raw.githubusercontent.com/YueChan/Live/master/Global.m3u",
     ]
     
     # 下载并解析 M3U 文件
