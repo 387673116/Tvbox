@@ -21,7 +21,8 @@ jobs:
       run: pip install requests
 
     - name: 执行脚本
-      run: python merge_m3u.py
+      run:  |
+          python scripts/python merge_m3u.py
 
     - name: 检查是否有更改
       run: |
