@@ -1,0 +1,39 @@
+name: Update Live Streams
+
+on:
+  schedule:
+    - cron: '30 0 * * *'  # 每天凌晨1:30执行一次
+  workflow_dispatch:  # 允许手动触发
+
+permissions:
+  contents: write  # 确保有推送权限            
+
+jobs:
+  update-m3u:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 确保检出完整历史
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Run the script to update .m3u file
+        run: |
+          python scripts/aktv.py  # 修改为脚本的正确路径
+
+      - name: Commit and push changes if any
+        run: |
+          git config --global user.name 'your-github-username'
+          git config --global user.email 'your-email@example.com'
+          git add guoji.m3u
+          git diff --cached --exit-code || git commit -m "Update guoji.m3u" && git push
