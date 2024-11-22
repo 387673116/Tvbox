@@ -8,15 +8,18 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 为 GitHub Actions 授予推送权限
+      actions: read
+
     steps:
-    
     # 步骤 1：检出代码
     - name: 检出代码
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4  # 使用最新版本
 
     # 步骤 2：设置 Python 环境
     - name: 设置 Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5  # 使用最新版本
       with:
         python-version: "3.x"
 
