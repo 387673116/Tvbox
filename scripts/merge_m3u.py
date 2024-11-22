@@ -1,6 +1,7 @@
 import requests
 import os
 import hashlib
+import re  # 导入 re 模块
 
 # 下载 M3U 文件
 def download_m3u(url):
@@ -39,7 +40,7 @@ def sort_channels(channels):
     categories = {}
     for channel in channels:
         group = "未分类"
-        match = re.search(r'group-title="([^"]+)"', channel["info"])
+        match = re.search(r'group-title="([^"]+)"', channel["info"])  # 使用正则提取 group-title
         if match:
             group = match.group(1)
         if group not in categories:
