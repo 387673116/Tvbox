@@ -72,7 +72,7 @@ for url in urls:
     except requests.exceptions.RequestException as e:
         print(f"下载或解析 {url} 时发生错误: {e}")
 
-# 保存有效的 URL 到 iptv.txt 文件
+# 保存有效的 URL 到 iptv.txt 文件（确保使用 UTF-8 编码）
 with open("iptv.txt", "w", encoding="utf-8") as f:
     for url in valid_urls:
         f.write(url + "\n")
