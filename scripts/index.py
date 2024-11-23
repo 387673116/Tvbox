@@ -30,58 +30,23 @@ def clean_text(text):
 def process_json_data(cleaned_text):
     try:
         data = json.loads(cleaned_text)
-        keys_to_remove = [
-            'csp_Dm84', 'csp_Anime1', 'csp_Kugou', 'Aid', '易搜', 'csp_PanSearch', '短视频', 'TgYunPan|本地',
-            '纸条搜', '网盘集合', '少儿', '初中', '高中', '小学', 'csp_Bili', '88看球', 'csp_Qiyou', 'csp_Alllive',
-            '有声小说吧', '虎牙直播', 'csp_Local', 'push_agent', 'TgYunPanLocal5', 'csp_FengGo',
-            'TgYunPanLocal4', 'TgYunPanLocal3', 'TgYunPanLocal2', 'TgYunPanLocal1', '酷奇MV', '斗鱼直播',
-            'Youtube', 'ConfigCenter', 'JRKAN直播', '星剧社', '蜡笔', '玩偶gg', 'csp_YGP', 'csp_SP360'
-        ]
-
-        # 删除指定 key 的项，并去掉 name 中包含“墙外”或“木偶”的项
-        if 'sites' in data:
-            data['sites'] = [
-                site for site in data['sites']
-                if site.get('key') not in keys_to_remove and '墙外' not in site.get('name', '') and '木偶' not in site.get('name', '')
-            ]
-
-            # 修改指定 key 的 name 字段
-            for site in data['sites']:
-                if site.get('key') == 'csp_Douban':
-                    site['name'] = '🔍豆瓣TOP榜'
-                elif site.get('key') == 'csp_DouDou':
-                    site['name'] = '🔍豆瓣TOP榜'
-                elif site.get('key') == 'csp_Jianpian':
-                    site['name'] = '⚡荐片'
-                elif site.get('key') == 'csp_SixV':
-                    site['name'] = '🌸新6V'
-
-            # 将 "csp_Jianpian" 调整到第二个位置
-            jianpian_site = next((site for site in data['sites'] if site.get('key') == 'csp_Jianpian'), None)
-            if jianpian_site:
-                data['sites'].remove(jianpian_site)
-                data['sites'].insert(1, jianpian_site)
 
         # 修改 "lives" 列表中的数据
         if 'lives' in data:
-            # 修改 "name" 为 "IPV4" 的项的 URL
-            for live in data['lives']:
-                live['name'] = 'IPV4'
-                live['url'] = 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/iptv4.m3u'
+            # 创建 IPV4 组
+            ipv4_group = {
+                'name': 'IPV4',
+                'url': 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/iptv4.m3u'
+            }
 
-            # 复制 "IPV4" 的数据，生成新的 "IPV6" 数据，并修改 URL
-            ipv6_data = [
-                {**live, 'name': 'IPV6', 'url': 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/iptv6.m3u'}
-                for live in data['lives']
-            ]
+            # 创建 IPV6 组
+            ipv6_group = {
+                'name': 'IPV6',
+                'url': 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/iptv6.m3u'
+            }
 
-            # 将 "IPV6" 数据添加到 "lives" 列表中
-            data['lives'].extend(ipv6_data)
-
-            # 删除 "name" 不是 "IPV4" 或 "IPV6" 的项
-            data['lives'] = [
-                live for live in data['lives'] if live.get('name') in ['IPV4', 'IPV6']
-            ]
+            # 只保留 IPV4 和 IPV6 两组
+            data['lives'] = [ipv4_group, ipv6_group]
 
         return data
 
