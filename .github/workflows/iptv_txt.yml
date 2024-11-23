@@ -25,11 +25,11 @@ jobs:
 
     # 步骤 3：安装依赖
     - name: 安装依赖
-      run: pip install requests
+      run: pip install requests m3u8
 
-    # 步骤 4：执行合并 M3U 脚本
+    # 步骤 4：执行合并和优化 M3U 脚本
     - name: 执行脚本
-      run: python scripts/merge_m3u.py  # 请确保路径正确
+      run: python scripts/iptv_txt.py  # 确保路径正确
 
     # 步骤 5：检查是否有更改并提交
     - name: 检查是否有更改
