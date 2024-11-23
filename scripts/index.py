@@ -60,9 +60,9 @@ def process_json_data(cleaned_text):
                 data['sites'].insert(1, jianpian_site)
 
         # 替换 "lives" 列表中的 "url" 字段值
-        # if 'lives' in data:
-            # for live in data['lives']:
-                # live['url'] = 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/iptv.m3u'
+        if 'lives' in data:
+            for live in data['lives']:
+                live['url'] = 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/iptv.m3u'
 
         return data
 
