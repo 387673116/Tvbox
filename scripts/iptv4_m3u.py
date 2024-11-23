@@ -12,22 +12,22 @@ def download_m3u(url):
         print(f"无法下载 M3U 文件: {url}, 错误: {e}")
         return None
 
-# 修改分类名称，支持修改现有分类和设置默认分类
-def modify_category(m3u_data, category_map, default_category):
+# 修改分类名称（group-title），并设置默认分组
+def modify_group_title(m3u_data, category_map, default_group):
     lines = m3u_data.splitlines()
     new_lines = []
     for line in lines:
         if line.startswith("#EXTINF:"):
-            # 检查是否有现有分类
-            match = re.search(r'tvg-name="([^"]*)"', line)
+            # 检查是否存在 group-title
+            match = re.search(r'group-title="([^"]*)"', line)
             if match:
-                current_category = match.group(1)
-                # 替换为指定的新分类
-                if current_category in category_map:
-                    line = line.replace(current_category, category_map[current_category])
+                current_group = match.group(1)
+                # 替换分类名称
+                if current_group in category_map:
+                    line = line.replace(f'group-title="{current_group}"', f'group-title="{category_map[current_group]}"')
             else:
-                # 如果没有分类，添加默认分类
-                line = line.rstrip() + f' tvg-name="{default_category}"'
+                # 如果没有 group-title，添加默认分组
+                line = line.rstrip() + f' group-title="{default_group}"'
         new_lines.append(line)
     return "\n".join(new_lines)
 
@@ -35,20 +35,18 @@ def modify_category(m3u_data, category_map, default_category):
 def merge_m3u():
     # 下载两个 M3U 文件
     chinese_m3u = download_m3u("https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u")
-    chinese_m3u = download_m3u("https://raw.githubusercontent.com/387673116/Tvbox/master/other/jingqu.m3u")
     international_m3u = download_m3u("https://aktv.top/live.m3u")
     
     if international_m3u and chinese_m3u:
-        # 修改分类名称
         # 分类映射：将 AKTV 改为 "海外频道"
         category_map = {"AKTV": "海外频道"}
-        # 默认分组：将无分组的频道改为 "央视频道"
-        default_category = "央视频道"
+        # 默认分组：无 group-title 时设置为 "央视频道"
+        default_group = "央视频道"
         
         # 修改国际频道的分类
-        international_m3u = modify_category(international_m3u, category_map, default_category)
+        international_m3u = modify_group_title(international_m3u, category_map, default_group)
         # 修改卫视频道的分类
-        chinese_m3u = modify_category(chinese_m3u, category_map, default_category)
+        chinese_m3u = modify_group_title(chinese_m3u, category_map, default_group)
 
         # 合并两个 M3U 文件
         merged_m3u = international_m3u + "\n" + chinese_m3u
