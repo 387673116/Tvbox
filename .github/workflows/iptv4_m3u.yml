@@ -39,8 +39,8 @@ jobs:
           echo "检测到文件更改，提交更新。"
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add ipv4.m3u  # 修改为 ipv4.m3u 文件的实际路径
-          git commit -m "更新 ipv4.m3u 文件"
+          git add iptv4.m3u  # 修改为 iptv4.m3u 文件的实际路径
+          git commit -m "更新 iptv4.m3u 文件"
           git push
         else
           echo "没有检测到更改。"
