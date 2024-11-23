@@ -74,7 +74,7 @@ def process_json_data(cleaned_text):
 
             # 复制第一组数据，修改第二组和第三组的数据
             ipv6_data = {**data['lives'][0], 'name': 'IPV6线路', 'url': 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/iptv6.m3u'}
-            zonghe_data = {**data['lives'][0], 'name': '综合线路', 'url': 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/综合.m3u'}
+            zonghe_data = {**data['lives'][0], 'name': '综合线路', 'url': 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/zonghe.m3u'}
 
             # 将修改后的数据添加到 "lives" 列表
             data['lives'].append(ipv6_data)
