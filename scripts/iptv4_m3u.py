@@ -12,8 +12,8 @@ def download_m3u(url):
         print(f"无法下载 M3U 文件: {url}, 错误: {e}")
         return None
 
-# 修改分类名称（group-title），并设置默认分组
-def modify_group_title(m3u_data, category_map, default_group):
+# 修改分类名称（group-title），并处理没有 group-title 的情况
+def modify_group_title(m3u_data, url, category_map):
     lines = m3u_data.splitlines()
     new_lines = []
     for line in lines:
@@ -22,24 +22,25 @@ def modify_group_title(m3u_data, category_map, default_group):
             match = re.search(r'group-title="([^"]*)"', line)
             if match:
                 current_group = match.group(1)
-                # 替换分类名称
+                # 如果匹配到的 group-title 在分类映射中，则替换
                 if current_group in category_map:
                     line = line.replace(f'group-title="{current_group}"', f'group-title="{category_map[current_group]}"')
             else:
-                # 如果没有 group-title，添加默认分组
-                line = line.rstrip() + f' group-title="{default_group}"'
+                # 如果没有 group-title 且是指定的 URL，则添加默认分组
+                if url == "https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u":
+                    line = line.rstrip() + ' group-title="央视频道"'
         new_lines.append(line)
     return "\n".join(new_lines)
 
 # 合并多个 M3U 文件内容
-def merge_m3u_files(urls, output_file, category_map, default_group):
+def merge_m3u_files(urls, output_file, category_map):
     merged_content = ""
     for url in urls:
         print(f"正在处理: {url}")
         m3u_data = download_m3u(url)
         if m3u_data:
             # 修改分类名称并合并
-            m3u_data = modify_group_title(m3u_data, category_map, default_group)
+            m3u_data = modify_group_title(m3u_data, url, category_map)
             merged_content += m3u_data + "\n"
         else:
             print(f"跳过未成功下载的文件: {url}")
@@ -65,11 +66,8 @@ if __name__ == "__main__":
         "AKTV": "海外频道"
     }
     
-    # 默认分组：无 group-title 时设置的分组名称
-    default_group = "央视频道"
-    
     # 输出文件名
     output_file = "iptv4.m3u"
     
     # 开始合并
-    merge_m3u_files(m3u_urls, output_file, category_map, default_group)
+    merge_m3u_files(m3u_urls, output_file, category_map)
