@@ -1,4 +1,4 @@
-name: Run Python Script and Generate index.json
+name: 生成index.json
 
 on:
   schedule:

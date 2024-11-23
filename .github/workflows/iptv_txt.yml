@@ -1,4 +1,4 @@
-name: Merge and Optimize M3U
+name: 生成iptv.txt
 
 on:
   schedule:
