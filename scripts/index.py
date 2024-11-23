@@ -33,13 +33,37 @@ def process_json_data(cleaned_text):
                 data['sites'].remove(jianpian_site)
                 data['sites'].insert(1, jianpian_site)
 
-        # 替换 "lives" 列表中的内容，保留3组并更新字段值
+        # 替换 "lives" 列表中的内容，修改前三个并删除后续项
         if 'lives' in data:
             data['lives'] = [
-                {"name": "IPV4", "url": "https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/iptv4.m3u"},
-                {"name": "IPV6", "url": "https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/iptv6.m3u"},
-                {"name": "综合频道", "url": "https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/zonghe.m3u"}
-            ]
+                {
+                    "name": "IPV4线路",
+                    "type": 0,
+                    "url": "https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/iptv4.json",
+                    "playerType": 1,
+                    "ua": "okhttp/3.15",
+                    "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+                    "logo": "https://epg.112114.xyz/logo/{name}.png"
+                },
+                {
+                    "name": "IPV6线路",
+                    "type": 0,
+                    "url": "https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/iptv6.json",
+                    "playerType": 1,
+                    "ua": "okhttp/3.15",
+                    "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+                    "logo": "https://epg.112114.xyz/logo/{name}.png"
+                },
+                {
+                    "name": "综合线路",
+                    "type": 0,
+                    "url": "https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/zonghe.json",
+                    "playerType": 1,
+                    "ua": "okhttp/3.15",
+                    "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+                    "logo": "https://epg.112114.xyz/logo/{name}.png"
+                }
+            ]  # 只保留前三个
 
         return data
 
