@@ -31,33 +31,45 @@ def modify_group_title(m3u_data, category_map, default_group):
         new_lines.append(line)
     return "\n".join(new_lines)
 
-# 合并并保存 M3U 文件
-def merge_m3u():
-    # 下载两个 M3U 文件
-    chinese_m3u = download_m3u("https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u")
-    chinese_m3u = download_m3u("https://raw.githubusercontent.com/387673116/Tvbox/master/other/jingqu.m3u")
-    international_m3u = download_m3u("https://aktv.top/live.m3u")
+# 合并多个 M3U 文件内容
+def merge_m3u_files(urls, output_file, category_map, default_group):
+    merged_content = ""
+    for url in urls:
+        print(f"正在处理: {url}")
+        m3u_data = download_m3u(url)
+        if m3u_data:
+            # 修改分类名称并合并
+            m3u_data = modify_group_title(m3u_data, category_map, default_group)
+            merged_content += m3u_data + "\n"
+        else:
+            print(f"跳过未成功下载的文件: {url}")
     
-    if international_m3u and chinese_m3u:
-        # 分类映射：将 AKTV 改为 "海外频道"
-        category_map = {"AKTV": "海外频道"}
-        # 默认分组：无 group-title 时设置为 "央视频道"
-        default_group = "央视频道"
-        
-        # 修改国际频道的分类
-        international_m3u = modify_group_title(international_m3u, category_map, default_group)
-        # 修改卫视频道的分类
-        chinese_m3u = modify_group_title(chinese_m3u, category_map, default_group)
-
-        # 合并两个 M3U 文件
-        merged_m3u = international_m3u + "\n" + chinese_m3u
-
-        # 保存到 iptv4.m3u 文件
-        with open("iptv4.m3u", "w", encoding="utf-8") as f:
-            f.write(merged_m3u)
-        print("M3U 文件已成功合并并保存为 iptv4.m3u")
+    if merged_content:
+        # 保存合并后的内容到文件
+        with open(output_file, "w", encoding="utf-8") as f:
+            f.write(merged_content)
+        print(f"M3U 文件已成功合并并保存为 {output_file}")
     else:
-        print("未能成功下载所有 M3U 文件，合并失败")
+        print("未能合并任何有效的 M3U 数据。")
 
 if __name__ == "__main__":
-    merge_m3u()
+    # 定义所有要合并的 M3U 文件 URL
+    m3u_urls = [
+        "https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u",
+        "https://raw.githubusercontent.com/387673116/Tvbox/master/other/jingqu.m3u",
+        "https://aktv.top/live.m3u"
+    ]
+    
+    # 分类映射：将指定分类名称替换为新的名称
+    category_map = {
+        "AKTV": "海外频道"
+    }
+    
+    # 默认分组：无 group-title 时设置的分组名称
+    default_group = "央视频道"
+    
+    # 输出文件名
+    output_file = "iptv4.m3u"
+    
+    # 开始合并
+    merge_m3u_files(m3u_urls, output_file, category_map, default_group)
