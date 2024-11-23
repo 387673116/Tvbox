@@ -35,6 +35,7 @@ def modify_group_title(m3u_data, category_map, default_group):
 def merge_m3u():
     # 下载两个 M3U 文件
     chinese_m3u = download_m3u("https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u")
+    chinese_m3u = download_m3u("https://raw.githubusercontent.com/387673116/Tvbox/master/other/jingqu.m3u")
     international_m3u = download_m3u("https://aktv.top/live.m3u")
     
     if international_m3u and chinese_m3u:
