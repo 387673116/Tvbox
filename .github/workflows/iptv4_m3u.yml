@@ -1,4 +1,4 @@
-name: 生成ipv4.m3u
+name: 生成iptv4.m3u
 
 on:
   schedule:
@@ -29,7 +29,7 @@ jobs:
 
     # 步骤 4：执行合并和优化 M3U 脚本
     - name: 执行脚本
-      run: python scripts/ipv4_m3u.py  # 确保路径正确，脚本文件名更改为 ipv4_m3u.py
+      run: python scripts/iptv4_m3u.py  # 确保路径正确，脚本文件名更改为 ipv4_m3u.py
 
     # 步骤 5：检查是否有更改并提交
     - name: 检查是否有更改并提交
