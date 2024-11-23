@@ -28,7 +28,11 @@ def modify_group_title(m3u_data, url, category_map):
             else:
                 # 如果没有 group-title 且是指定的 URL，则添加默认分组
                 if url == "https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u":
-                    line = line.rstrip() + ' group-title="央视频道"'
+                    # 检查是否有 tvg-logo，如果有，group-title 应该在 tvg-logo 之前
+                    if 'tvg-logo' in line:
+                        line = line.replace('tvg-logo', 'group-title="央视频道" tvg-logo')
+                    else:
+                        line = line.rstrip() + ' group-title="央视频道"'
         new_lines.append(line)
     return "\n".join(new_lines)
 
