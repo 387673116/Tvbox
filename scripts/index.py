@@ -63,23 +63,22 @@ def process_json_data(cleaned_text):
                 data['sites'].insert(1, jianpian_site)
 
         # 替换 "lives" 列表中的数据
-        if 'lives' in data:
-            ipv4_group = {
-                'name': 'IPV4线路',
-                'url': 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/iptv4.m3u'
-            }
+        # 保留 "lives" 列表中的第一组数据，并删除其他数据
+        if 'lives' in data and len(data['lives']) > 0:
+            # 删除除第一组外的所有数据
+            data['lives'] = [data['lives'][0]]  # 只保留第一组数据
 
-            ipv6_group = {
-                'name': 'IPV6线路',
-                'url': 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/iptv6.m3u'
-            }
-            zonghe_group = {
-                'name': '综合线路',
-                'url': 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/zonghe.m3u'
-            }
+            # 替换第一组数据的 name 和 url
+            data['lives'][0]['name'] = 'IPV4线路'
+            data['lives'][0]['url'] = 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/iptv4.m3u'
 
-            # 替换为仅包含 IPV4 和 IPV6 zonghe三组
-            data['lives'] = [ipv4_group, ipv6_group, zonghe_group]
+            # 复制第一组数据，修改第二组和第三组的数据
+            ipv6_data = {**data['lives'][0], 'name': 'IPV6线路', 'url': 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/iptv6.m3u'}
+            zonghe_data = {**data['lives'][0], 'name': '综合线路', 'url': 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/综合.m3u'}
+
+            # 将修改后的数据添加到 "lives" 列表
+            data['lives'].append(ipv6_data)
+            data['lives'].append(zonghe_data)
 
         return data
 
