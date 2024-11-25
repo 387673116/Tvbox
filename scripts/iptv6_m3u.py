@@ -90,10 +90,11 @@ def remove_keywords_and_special_chars(m3u_content):
     # 将每个频道的多个播放链接按顺序添加
     final_lines = []
     for channel_name, lines in channel_links.items():
-        for i, line in enumerate(lines):
+        for line in lines:
             final_lines.append(line)  # 添加频道描述行
             # 添加播放链接，多个播放链接时都添加
-            final_lines.append(lines[i])
+            for i in range(1, len(lines)):  # 从第二条链接开始加入备用链接
+                final_lines.append(lines[i])
 
     # 删除空行
     final_lines = [line for line in final_lines if line.strip()]
