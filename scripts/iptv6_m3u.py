@@ -121,11 +121,11 @@ def merge_m3u(urls):
 # 主函数
 def main():
     urls = [
-        "https://gh.999986.xyz/https://raw.githubusercontent.com/fanmingming/live/master/tv/m3u/ipv6.m3u",
-        "https://gh.999986.xyz/https://raw.githubusercontent.com/YanG-1989/m3u/master/Gather.m3u",
-        "https://gh.999986.xyz/https://raw.githubusercontent.com/YueChan/live/master/APTV.m3u",
+        "https://raw.githubusercontent.com/fanmingming/live/master/tv/m3u/ipv6.m3u",
+        "https://raw.githubusercontent.com/YanG-1989/m3u/master/Gather.m3u",
+        "https://raw.githubusercontent.com/YueChan/live/master/APTV.m3u",
         "https://raw.githubusercontent.com/387673116/Tvbox/master/other/jingqu.m3u",  
-        "https://gh.999986.xyz/https://raw.githubusercontent.com/YueChan/live/master/Global.m3u"
+        "https://raw.githubusercontent.com/YueChan/live/master/Global.m3u"
     ]
 
     # 合并并过滤内容
