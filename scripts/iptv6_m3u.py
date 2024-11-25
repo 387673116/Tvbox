@@ -14,7 +14,7 @@ def download_m3u(url):
 def remove_keywords_and_special_chars(m3u_content):
     lines = m3u_content.splitlines()
     filtered_lines = []
-    remove_keywords = ["咪咕", "虎牙", "斗鱼", "埋堆", "轮播", "上海", "内蒙"]
+    remove_keywords = ["咪咕", "虎牙", "斗鱼", "埋堆", "轮播", "上海", "内蒙", "B站", "IPV6"]
 
     skip_next_line = False  # 用来标记是否跳过播放链接行
 
@@ -25,8 +25,9 @@ def remove_keywords_and_special_chars(m3u_content):
                 skip_next_line = True  # 如果包含这些关键词，则跳过下一行（播放链接）
                 continue  # 跳过当前频道的描述行
             
-            # 删除“频道”关键字，但保留其他内容
+            # 删除“频道”和“IPV6”关键字，但保留其他内容
             line = re.sub(r"频道", "", line)
+            line = re.sub(r"IPV6", "", line)
 
             # 去除中文引号「」和符号“•”
             line = re.sub(r"[「」•]", "", line)
