@@ -1,38 +1,39 @@
-#EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://live.fanmingming.com/tv/CCTV1.png" group-title="央视",CCTV-1
+#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
+#EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://live.fanmingming.com/tv/CCTV1.png" group-title="央视",CCTV-1 综合
 http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000311/index.m3u8?IASHttpSessionId=
-#EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://live.fanmingming.com/tv/CCTV2.png" group-title="央视",CCTV-2
+#EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://live.fanmingming.com/tv/CCTV2.png" group-title="央视",CCTV-2 财经
 http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000317/index.m3u8?IASHttpSessionId=
-#EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://live.fanmingming.com/tv/CCTV3.png" group-title="央视",CCTV-3
+#EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://live.fanmingming.com/tv/CCTV3.png" group-title="央视",CCTV-3 综艺
 http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000359/index.m3u8?IASHttpSessionId=
-#EXTINF:-1 tvg-name="CCTV4" tvg-logo="https://live.fanmingming.com/tv/CCTV4.png" group-title="央视",CCTV-4
+#EXTINF:-1 tvg-name="CCTV4" tvg-logo="https://live.fanmingming.com/tv/CCTV4.png" group-title="央视",CCTV-4 中文国际
 http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000320/index.m3u8?IASHttpSessionId=
-#EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://live.fanmingming.com/tv/CCTV5.png" group-title="央视",CCTV-5
+#EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://live.fanmingming.com/tv/CCTV5.png" group-title="央视",CCTV-5 体育
 http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000360/index.m3u8?IASHttpSessionId=
-#EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.com/tv/CCTV5+.png" group-title="央视",CCTV-5+
+#EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.com/tv/CCTV5+.png" group-title="央视",CCTV-5+ 体育赛事
 http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000316/index.m3u8?IASHttpSessionId=
-#EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://live.fanmingming.com/tv/CCTV6.png" group-title="央视",CCTV-6
+#EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://live.fanmingming.com/tv/CCTV6.png" group-title="央视",CCTV-6 电影
 http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000361/index.m3u8?IASHttpSessionId=
-#EXTINF:-1 tvg-name="CCTV7" tvg-logo="https://live.fanmingming.com/tv/CCTV7.png" group-title="央视",CCTV-7
+#EXTINF:-1 tvg-name="CCTV7" tvg-logo="https://live.fanmingming.com/tv/CCTV7.png" group-title="央视",CCTV-7 国防军事
 http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000318/index.m3u8?IASHttpSessionId=
-#EXTINF:-1 tvg-name="CCTV8" tvg-logo="https://live.fanmingming.com/tv/CCTV8.png" group-title="央视",CCTV-8
+#EXTINF:-1 tvg-name="CCTV8" tvg-logo="https://live.fanmingming.com/tv/CCTV8.png" group-title="央视",CCTV-8 电视剧
 http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000362/index.m3u8?IASHttpSessionId=
-#EXTINF:-1 tvg-name="CCTV9" tvg-logo="https://live.fanmingming.com/tv/CCTV9.png" group-title="央视",CCTV-9
+#EXTINF:-1 tvg-name="CCTV9" tvg-logo="https://live.fanmingming.com/tv/CCTV9.png" group-title="央视",CCTV-9 纪录
 http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000319/index.m3u8?IASHttpSessionId=
-#EXTINF:-1 tvg-name="CCTV10" tvg-logo="https://live.fanmingming.com/tv/CCTV10.png" group-title="央视",CCTV-10
+#EXTINF:-1 tvg-name="CCTV10" tvg-logo="https://live.fanmingming.com/tv/CCTV10.png" group-title="央视",CCTV-10 科教
 http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000321/index.m3u8?IASHttpSessionId=
-#EXTINF:-1 tvg-name="CCTV11" tvg-logo="https://live.fanmingming.com/tv/CCTV11.png" group-title="央视",CCTV-11
+#EXTINF:-1 tvg-name="CCTV11" tvg-logo="https://live.fanmingming.com/tv/CCTV11.png" group-title="央视",CCTV-11 戏曲
 http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000344/index.m3u8?IASHttpSessionId=
-#EXTINF:-1 tvg-name="CCTV12" tvg-logo="https://live.fanmingming.com/tv/CCTV12.png" group-title="央视",CCTV-12
+#EXTINF:-1 tvg-name="CCTV12" tvg-logo="https://live.fanmingming.com/tv/CCTV12.png" group-title="央视",CCTV-12 社会与法
 http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000322/index.m3u8?IASHttpSessionId=
-#EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://live.fanmingming.com/tv/CCTV13.png" group-title="央视",CCTV-13
+#EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://live.fanmingming.com/tv/CCTV13.png" group-title="央视",CCTV-13 新闻
 http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000345/index.m3u8?IASHttpSessionId=
-#EXTINF:-1 tvg-name="CCTV14" tvg-logo="https://live.fanmingming.com/tv/CCTV14.png" group-title="央视",CCTV-14
+#EXTINF:-1 tvg-name="CCTV14" tvg-logo="https://live.fanmingming.com/tv/CCTV14.png" group-title="央视",CCTV-14 少儿
 http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000323/index.m3u8?IASHttpSessionId=
-#EXTINF:-1 tvg-name="CCTV15" tvg-logo="https://live.fanmingming.com/tv/CCTV15.png" group-title="央视",CCTV-15
+#EXTINF:-1 tvg-name="CCTV15" tvg-logo="https://live.fanmingming.com/tv/CCTV15.png" group-title="央视",CCTV-15 音乐
 http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000346/index.m3u8?IASHttpSessionId=
-#EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://live.fanmingming.com/tv/CCTV16.png" group-title="央视",CCTV-16
+#EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://live.fanmingming.com/tv/CCTV16.png" group-title="央视",CCTV-16 奥林匹克
 http://[2409:8087:74d9:21::6]:80/270000001128/9900000016/index.m3u8
-#EXTINF:-1 tvg-name="CCTV17" tvg-logo="https://live.fanmingming.com/tv/CCTV17.png" group-title="央视",CCTV-17
+#EXTINF:-1 tvg-name="CCTV17" tvg-logo="https://live.fanmingming.com/tv/CCTV17.png" group-title="央视",CCTV-17 农业农村
 http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000303/index.m3u8?IASHttpSessionId=
 #EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://live.fanmingming.com/tv/CCTV4K.png" group-title="央视",CCTV-4K 超高清
 http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000382/index.m3u8?IASHttpSessionId=
@@ -447,6 +448,146 @@ http://[2409:8087:74d9:21::6]:80/270000001128/9900000122/index.m3u8
 http://[2409:8087:74d9:21::6]:80/270000001128/9900000019/index.m3u8
 #EXTINF:-1 tvg-name="newtv金牌综艺" tvg-logo="https://live.fanmingming.com/tv/NEWTV金牌综艺.png" group-title="数字",金牌综艺
 http://[2409:8087:74d9:21::6]:80/270000001128/9900000112/index.m3u8
+#EXTINF:-1 group-title="国际",BBC News
+https://d3pxo1qcgzxtxs.cloudfront.net/10005/99951298/hls/playlist.m3u8?ads.xumo_channelId=99951298
+#EXTINF:-1 group-title="国际",CNN
+http://cord-cutter.net:8080/Rme2Fg/183926/104884?checkedby:alliptvlinks.com
+#EXTINF:-1 group-title="国际",CNA
+https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
+#EXTINF:-1 group-title="国际",NBC News Now
+https://jmp2.uk/sam-GBBB1500004LG.m3u8
+#EXTINF:-1 group-title="国际",ABC News Live
+https://d4ybyqrhce41r.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-xumo-linear-nbcu-hlsv3/master.m3u8?ads.channelId=99991626
+#EXTINF:-1 group-title="国际",AXS TV Now
+https://dikcfc9915kp8.cloudfront.net/hls/1080p/playlist.m3u8
+#EXTINF:-1 group-title="国际",Newsmax
+http://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
+#EXTINF:-1 group-title="国际",CBN News
+https://bcovlive-a.akamaihd.net/re8d9f611ee4a490a9bb59e52db91414d/us-east-1/734546207001/playlist.m3u8
+#EXTINF:-1 group-title="国际",WionNews
+https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
+#EXTINF:-1 group-title="国际",RT News
+https://rt-glb.rttv.com/dvr/rtnews/playlist_4500Kb.m3u8
+#EXTINF:-1 group-title="国际",Arirang
+https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8
+#EXTINF:-1 group-title="国际",Fashion TV
+http://91.247.68.229:8000/play/Fashion/index.m3u8
+#EXTINF:-1 group-title="国际",Love Nature
+http://aktv.top/AKTV/live/aktv3/lovenaturehd/AKTV.m3u8
+#EXTINF:-1 group-title="国际",Kids TV
+https://jansonmedia-kidstv-1-us.xiaomi.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="国际",RT Documentary
+https://rt-rtd.rttv.com/live/rtdoc/playlist_4500Kb.m3u8
+#EXTINF:-1 group-title="国际",Taiwan Plus
+https://bcovlive-a.akamaihd.net/rce33d845cb9e42dfa302c7ac345f7858/ap-northeast-1/6282251407001/playlist.m3u8
+#EXTINF:-1 group-title="国际",TED Conference
+https://tedconferences-ted-1-us.xiaomi.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="国际",Ted Talks 
+https://tedconferences-ted-1-eu.xiaomi.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="国际",Mytime
+https://appletree-mytimeau-samsung.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="国际",MovieDome
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00771-kochfilmsgerman-moviedomeuk-xiaomi/playlist.m3u8
+#EXTINF:-1 group-title="国际",New Movies
+https://newidco-newmovies-1-us.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="国际",ION Plus
+https://dbrb49pjoymg4.cloudfront.net/10001/9999614/hls/playlist.m3u8?ads.xumo_channelId=9999614
+#EXTINF:-1 group-title="国际",Today Allday
+https://d4ybyqrhce41r.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-xumo-linear-nbcu-hlsv3/master.m3u8?ads.channelId=99991245
+#EXTINF:-1 group-title="国际",LoveStories
+https://lovestoriestv-lovestoriestv-1-eu.xiaomi.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="国际",Travel XP
+https://travelxp-travelxp-1-eu.xiaomi.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="国际",Ondemand China
+https://newidco-ondemandchina-1-us.xiaomi.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="国际",Young Hollywood
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00143-younghollywoodl-younghollywood-xiaomi/playlist.m3u8
+#EXTINF:-1 group-title="国际",Food
+https://food-eu.xiaomi.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="aktv/null-3" group-title="国际",凤凰中文
+http://aktv.top/AKTV/live/aktv/null-3/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null-4" group-title="国际",凤凰资讯
+http://aktv.top/AKTV/live/aktv/null-4/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null-5" group-title="国际",凤凰香港
+http://aktv.top/AKTV/live/aktv/null-5/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null-12" group-title="国际",中天亚洲
+http://aktv.top/AKTV/live/aktv/null-12/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null-8" group-title="国际",中天新聞
+http://aktv.top/AKTV/live/aktv/null-8/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null-10" group-title="国际",中视
+http://aktv.top/AKTV/live/aktv/null-10/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/tvbs-1" group-title="国际",TVBS新闻
+http://aktv.top/AKTV/live/aktv/tvbs-1/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null-1" group-title="国际",无线新闻
+http://aktv.top/AKTV/live/aktv/null-1/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv2/null-1" group-title="国际",无线新闻(北美)
+http://aktv.top/AKTV/live/aktv2/null-1/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv3/null-2" group-title="国际",无线卫星新闻
+http://aktv.top/AKTV/live/aktv3/null-2/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null-9" group-title="国际",寰宇新闻台
+http://aktv.top/AKTV/live/aktv/null-9/AKTV.m3u8
+#EXTINF:-1 tvg-name="NHK-HK" group-title="国际",NHK World
+http://aktv.top/AKTV/live/aktv3/nhkworldjapan/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/channel5hd" group-title="国际",Channel 5 HD
+http://aktv.top/AKTV/live/aktv/channel5hd/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/channel8hd" group-title="国际",Channel 8 HD
+http://aktv.top/AKTV/live/aktv/channel8hd/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/channeluhd" group-title="国际",Channel U HD
+http://aktv.top/AKTV/live/aktv/channeluhd/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/popc" group-title="国际",PopC
+http://aktv.top/AKTV/live/aktv/popc/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/tvbplus" group-title="国际",TVB Plus
+http://aktv.top/AKTV/live/aktv/tvbplus/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/tvbs" group-title="国际",TVBS
+http://aktv.top/AKTV/live/aktv/tvbs/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/tvn" group-title="国际",tvN
+http://aktv.top/AKTV/live/aktv/tvn/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null-15" group-title="国际",千禧經典台
+http://aktv.top/AKTV/live/aktv/null-15/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/hk" group-title="国际",娛樂新聞台(HK)
+http://aktv.top/AKTV/live/aktv/hk/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null-19" group-title="国际",明珠剧集台(北美)
+http://aktv.top/AKTV/live/aktv/null-19/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null-2" group-title="国际",明珠台
+http://aktv.top/AKTV/live/aktv/null-2/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/hk-1" group-title="国际",美亞電影台(HK)
+http://aktv.top/AKTV/live/aktv/hk-1/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null-18" group-title="国际",翡翠剧集台(北美)
+http://aktv.top/AKTV/live/aktv/null-18/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null" group-title="国际",翡翠台
+http://aktv.top/AKTV/live/aktv/null/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null-17" group-title="国际",翡翠综合台(北美)
+http://aktv.top/AKTV/live/aktv/null-17/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null-11" group-title="国际",華視
+http://aktv.top/AKTV/live/aktv/null-11/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null-6" group-title="国际",靖天電影台
+http://aktv.top/AKTV/live/aktv/null-6/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null-21" group-title="国际",黃金翡翠台
+http://aktv.top/AKTV/live/aktv/null-21/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null-22" group-title="国际",龍華日韓台
+http://aktv.top/AKTV/live/aktv/null-22/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null-7" group-title="国际",龍華經典台
+http://aktv.top/AKTV/live/aktv/null-7/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv/null-23" group-title="国际",龍華電影台
+http://aktv.top/AKTV/live/aktv/null-23/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv2/viutv99" group-title="国际",ViuTV 99
+http://aktv.top/AKTV/live/aktv2/viutv99/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv2/viutv696" group-title="国际",ViuTV 696
+http://aktv.top/AKTV/live/aktv2/viutv696/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv3/animaxhk" group-title="国际",Animax
+http://aktv.top/AKTV/live/aktv3/animaxhk/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv3/dw" group-title="国际",DW
+http://aktv.top/AKTV/live/aktv3/dw/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv3/kix" group-title="国际",KIX
+http://aktv.top/AKTV/live/aktv3/kix/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv3/nickjr" group-title="国际",Nick Jr
+http://aktv.top/AKTV/live/aktv3/nickjr/AKTV.m3u8、
+#EXTINF:-1 tvg-name="aktv3/zoomoo" group-title="国际",ZooMoo
+http://aktv.top/AKTV/live/aktv3/zoomoo/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv3/nickelodeon" group-title="国际",Nickelodeon
+http://aktv.top/AKTV/live/aktv3/nickelodeon/AKTV.m3u8
+#EXTINF:-1 tvg-name="aktv3/rockaction" group-title="国际",ROCK Action
+http://aktv.top/AKTV/live/aktv3/rockaction/AKTV.m3u8
 #EXTINF:-1 tvg-name="直播中国" tvg-logo="https://live.fanmingming.com/tv/直播中国.png" group-title="景区直播",直播中国
 https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-name="直播中国" tvg-logo="https://live.fanmingming.com/tv/直播中国.png" group-title="景区直播",直播中国
@@ -639,143 +780,3 @@ https://gcalic.v.myalicdn.com/gc/djyqyl1_1/index.m3u8
 https://gcalic.v.myalicdn.com/gc/lsdfgfl_1/index.m3u8
 #EXTINF:-1 tvg-name="乐山大佛全景" tvg-logo="https://live.fanmingming.com/tv/乐山大佛全景.png" group-title="景区直播",乐山大佛全景
 https://gcalic.v.myalicdn.com/gc/lsdfgfl_1/index.m3u8
-#EXTINF:-1 group-title="国际",BBC News
-https://d3pxo1qcgzxtxs.cloudfront.net/10005/99951298/hls/playlist.m3u8?ads.xumo_channelId=99951298
-#EXTINF:-1 group-title="国际",CNN
-http://cord-cutter.net:8080/Rme2Fg/183926/104884?checkedby:alliptvlinks.com
-#EXTINF:-1 group-title="国际",CNA
-https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
-#EXTINF:-1 group-title="国际",NBC News Now
-https://jmp2.uk/sam-GBBB1500004LG.m3u8
-#EXTINF:-1 group-title="国际",ABC News Live
-https://d4ybyqrhce41r.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-xumo-linear-nbcu-hlsv3/master.m3u8?ads.channelId=99991626
-#EXTINF:-1 group-title="国际",AXS TV Now
-https://dikcfc9915kp8.cloudfront.net/hls/1080p/playlist.m3u8
-#EXTINF:-1 group-title="国际",Newsmax
-http://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
-#EXTINF:-1 group-title="国际",CBN News
-https://bcovlive-a.akamaihd.net/re8d9f611ee4a490a9bb59e52db91414d/us-east-1/734546207001/playlist.m3u8
-#EXTINF:-1 group-title="国际",WionNews
-https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
-#EXTINF:-1 group-title="国际",RT News
-https://rt-glb.rttv.com/dvr/rtnews/playlist_4500Kb.m3u8
-#EXTINF:-1 group-title="国际",Arirang
-https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8
-#EXTINF:-1 group-title="国际",Fashion TV
-http://91.247.68.229:8000/play/Fashion/index.m3u8
-#EXTINF:-1 group-title="国际",Love Nature
-http://aktv.top/AKTV/live/aktv3/lovenaturehd/AKTV.m3u8
-#EXTINF:-1 group-title="国际",Kids TV
-https://jansonmedia-kidstv-1-us.xiaomi.wurl.tv/playlist.m3u8
-#EXTINF:-1 group-title="国际",RT Documentary
-https://rt-rtd.rttv.com/live/rtdoc/playlist_4500Kb.m3u8
-#EXTINF:-1 group-title="国际",Taiwan Plus
-https://bcovlive-a.akamaihd.net/rce33d845cb9e42dfa302c7ac345f7858/ap-northeast-1/6282251407001/playlist.m3u8
-#EXTINF:-1 group-title="国际",TED Conference
-https://tedconferences-ted-1-us.xiaomi.wurl.tv/playlist.m3u8
-#EXTINF:-1 group-title="国际",Ted Talks 
-https://tedconferences-ted-1-eu.xiaomi.wurl.tv/playlist.m3u8
-#EXTINF:-1 group-title="国际",Mytime
-https://appletree-mytimeau-samsung.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="国际",MovieDome
-https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00771-kochfilmsgerman-moviedomeuk-xiaomi/playlist.m3u8
-#EXTINF:-1 group-title="国际",New Movies
-https://newidco-newmovies-1-us.lg.wurl.tv/playlist.m3u8
-#EXTINF:-1 group-title="国际",ION Plus
-https://dbrb49pjoymg4.cloudfront.net/10001/9999614/hls/playlist.m3u8?ads.xumo_channelId=9999614
-#EXTINF:-1 group-title="国际",Today Allday
-https://d4ybyqrhce41r.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-xumo-linear-nbcu-hlsv3/master.m3u8?ads.channelId=99991245
-#EXTINF:-1 group-title="国际",LoveStories
-https://lovestoriestv-lovestoriestv-1-eu.xiaomi.wurl.tv/playlist.m3u8
-#EXTINF:-1 group-title="国际",Travel XP
-https://travelxp-travelxp-1-eu.xiaomi.wurl.tv/playlist.m3u8
-#EXTINF:-1 group-title="国际",Ondemand China
-https://newidco-ondemandchina-1-us.xiaomi.wurl.tv/playlist.m3u8
-#EXTINF:-1 group-title="国际",Young Hollywood
-https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00143-younghollywoodl-younghollywood-xiaomi/playlist.m3u8
-#EXTINF:-1 group-title="国际",Food
-https://food-eu.xiaomi.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="aktv/null-3" group-title="国际",凤凰中文
-http://aktv.top/AKTV/live/aktv/null-3/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null-4" group-title="国际",凤凰资讯
-http://aktv.top/AKTV/live/aktv/null-4/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null-5" group-title="国际",凤凰香港
-http://aktv.top/AKTV/live/aktv/null-5/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null-12" group-title="国际",中天亚洲
-http://aktv.top/AKTV/live/aktv/null-12/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null-8" group-title="国际",中天新聞
-http://aktv.top/AKTV/live/aktv/null-8/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null-10" group-title="国际",中视
-http://aktv.top/AKTV/live/aktv/null-10/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/tvbs-1" group-title="国际",TVBS新闻
-http://aktv.top/AKTV/live/aktv/tvbs-1/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null-1" group-title="国际",无线新闻
-http://aktv.top/AKTV/live/aktv/null-1/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv2/null-1" group-title="国际",无线新闻(北美)
-http://aktv.top/AKTV/live/aktv2/null-1/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv3/null-2" group-title="国际",无线卫星新闻
-http://aktv.top/AKTV/live/aktv3/null-2/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null-9" group-title="国际",寰宇新闻台
-http://aktv.top/AKTV/live/aktv/null-9/AKTV.m3u8
-#EXTINF:-1 tvg-name="NHK-HK" group-title="国际",NHK World
-http://aktv.top/AKTV/live/aktv3/nhkworldjapan/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/channel5hd" group-title="国际",Channel 5 HD
-http://aktv.top/AKTV/live/aktv/channel5hd/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/channel8hd" group-title="国际",Channel 8 HD
-http://aktv.top/AKTV/live/aktv/channel8hd/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/channeluhd" group-title="国际",Channel U HD
-http://aktv.top/AKTV/live/aktv/channeluhd/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/popc" group-title="国际",PopC
-http://aktv.top/AKTV/live/aktv/popc/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/tvbplus" group-title="国际",TVB Plus
-http://aktv.top/AKTV/live/aktv/tvbplus/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/tvbs" group-title="国际",TVBS
-http://aktv.top/AKTV/live/aktv/tvbs/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/tvn" group-title="国际",tvN
-http://aktv.top/AKTV/live/aktv/tvn/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null-15" group-title="国际",千禧經典台
-http://aktv.top/AKTV/live/aktv/null-15/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/hk" group-title="国际",娛樂新聞台(HK)
-http://aktv.top/AKTV/live/aktv/hk/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null-19" group-title="国际",明珠剧集台(北美)
-http://aktv.top/AKTV/live/aktv/null-19/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null-2" group-title="国际",明珠台
-http://aktv.top/AKTV/live/aktv/null-2/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/hk-1" group-title="国际",美亞電影台(HK)
-http://aktv.top/AKTV/live/aktv/hk-1/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null-18" group-title="国际",翡翠剧集台(北美)
-http://aktv.top/AKTV/live/aktv/null-18/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null" group-title="国际",翡翠台
-http://aktv.top/AKTV/live/aktv/null/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null-17" group-title="国际",翡翠综合台(北美)
-http://aktv.top/AKTV/live/aktv/null-17/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null-11" group-title="国际",華視
-http://aktv.top/AKTV/live/aktv/null-11/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null-6" group-title="国际",靖天電影台
-http://aktv.top/AKTV/live/aktv/null-6/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null-21" group-title="国际",黃金翡翠台
-http://aktv.top/AKTV/live/aktv/null-21/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null-22" group-title="国际",龍華日韓台
-http://aktv.top/AKTV/live/aktv/null-22/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null-7" group-title="国际",龍華經典台
-http://aktv.top/AKTV/live/aktv/null-7/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv/null-23" group-title="国际",龍華電影台
-http://aktv.top/AKTV/live/aktv/null-23/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv2/viutv99" group-title="国际",ViuTV 99
-http://aktv.top/AKTV/live/aktv2/viutv99/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv2/viutv696" group-title="国际",ViuTV 696
-http://aktv.top/AKTV/live/aktv2/viutv696/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv3/animaxhk" group-title="国际",Animax
-http://aktv.top/AKTV/live/aktv3/animaxhk/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv3/dw" group-title="国际",DW
-http://aktv.top/AKTV/live/aktv3/dw/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv3/kix" group-title="国际",KIX
-http://aktv.top/AKTV/live/aktv3/kix/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv3/nickjr" group-title="国际",Nick Jr
-http://aktv.top/AKTV/live/aktv3/nickjr/AKTV.m3u8、
-#EXTINF:-1 tvg-name="aktv3/zoomoo" group-title="国际",ZooMoo
-http://aktv.top/AKTV/live/aktv3/zoomoo/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv3/nickelodeon" group-title="国际",Nickelodeon
-http://aktv.top/AKTV/live/aktv3/nickelodeon/AKTV.m3u8
-#EXTINF:-1 tvg-name="aktv3/rockaction" group-title="国际",ROCK Action
-http://aktv.top/AKTV/live/aktv3/rockaction/AKTV.m3u8
