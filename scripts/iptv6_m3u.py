@@ -10,7 +10,7 @@ def download_m3u(url):
         print(f"无法下载文件: {url}")
         return None
 
-# 过滤并去除指定的关键字和符号，同时保留包含“频道”和“IPV6”的频道
+# 过滤并去除指定的关键字和符号，同时保留其他符号
 def remove_keywords_and_special_chars(m3u_content):
     lines = m3u_content.splitlines()
     filtered_lines = []
@@ -21,7 +21,7 @@ def remove_keywords_and_special_chars(m3u_content):
             # 检查频道名称是否包含要删除的关键词
             if any(keyword in line for keyword in remove_keywords):
                 continue  # 如果包含这些关键词，则跳过该频道
-            # 去除中文引号「」和“•”符号
+            # 去除中文引号「」和符号“•”
             line = re.sub(r"[「」•]", "", line)
         filtered_lines.append(line)
     
@@ -41,10 +41,10 @@ def merge_m3u(urls):
 # 主函数
 def main():
     urls = [
-        "https://raw.githubusercontent.com/fanmingming/live/master/tv/m3u/ipv6.m3u",
-        "https://raw.githubusercontent.com/YanG-1989/m3u/master/Gather.m3u",
-        "https://raw.githubusercontent.com/YueChan/live/master/APTV.m3u",
-        "https://raw.githubusercontent.com/YueChan/live/master/Global.m3u"
+        "https://gh.999986.xyz/https://raw.githubusercontent.com/fanmingming/live/master/tv/m3u/ipv6.m3u",
+        "https://gh.999986.xyz/https://raw.githubusercontent.com/YanG-1989/m3u/master/Gather.m3u",
+        "https://gh.999986.xyz/https://raw.githubusercontent.com/YueChan/live/master/APTV.m3u",
+        "https://gh.999986.xyz/https://raw.githubusercontent.com/YueChan/live/master/Global.m3u"
     ]
 
     # 合并并过滤内容
