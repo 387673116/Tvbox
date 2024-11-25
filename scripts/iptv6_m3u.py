@@ -25,6 +25,10 @@ def remove_keywords_and_special_chars(m3u_content):
     channel_links = defaultdict(list)  # 用来存储相同频道名称的多个播放链接
 
     for line in lines:
+        # 跳过空白行
+        if not line.strip():
+            continue
+
         if line.startswith("#EXTM3U"):
             # 只保留第一个 #EXTM3U 标签
             if first_extm3u:
