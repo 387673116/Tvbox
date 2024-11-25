@@ -10,27 +10,27 @@ def download_m3u(url):
         print(f"无法下载文件: {url}")
         return None
 
-# 过滤包含 "IPV6" 关键字的频道
-def filter_channels(m3u_content):
+# 过滤并去除 "IPV6" 关键字和中文引号「」、符号•
+def remove_ipv6_and_special_chars(m3u_content):
     lines = m3u_content.splitlines()
     filtered_lines = []
+
     for line in lines:
         if line.startswith("#EXTINF:"):
-            if "IPV6" not in line:
-                filtered_lines.append(line)
-        else:
-            if not line.startswith("#") and "IPV6" not in line:
-                filtered_lines.append(line)
+            # 去除中文引号「」和“•”符号
+            line = re.sub(r"[「」•]", "", line)
+        filtered_lines.append(line)
+    
     return "\n".join(filtered_lines)
 
-# 合并多个 M3U 文件并去除包含 "IPV6" 的频道
+# 合并多个 M3U 文件并去除 "IPV6" 关键字和中文引号、符号•
 def merge_m3u(urls):
     merged_content = "#EXTM3U\n"  # M3U 文件的开头
     for url in urls:
         print(f"正在处理: {url}")
         m3u_content = download_m3u(url)
         if m3u_content:
-            filtered_content = filter_channels(m3u_content)
+            filtered_content = remove_ipv6_and_special_chars(m3u_content)
             merged_content += filtered_content + "\n"
     return merged_content
 
