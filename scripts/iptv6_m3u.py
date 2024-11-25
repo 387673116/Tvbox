@@ -1,5 +1,6 @@
 import requests
 import re
+from collections import defaultdict
 
 # 下载并解析 M3U 文件的函数
 def download_m3u(url):
@@ -15,11 +16,13 @@ def download_m3u(url):
 def remove_keywords_and_special_chars(m3u_content):
     lines = m3u_content.splitlines()
     filtered_lines = []
-    remove_keywords = ["咪咕", "虎牙", "斗鱼", "埋堆", "轮播", "上海", "内蒙", "B站", "IPV6", "地方"]
+    remove_keywords = ["咪咕", "虎牙", "斗鱼", "埋堆", "轮播", "上海", "内蒙", "B站", "IPV6", "地方", "炫舞未来"]
 
     skip_next_line = False  # 用来标记是否跳过播放链接行
     first_extm3u = True  # 用来标记是否已添加过 #EXTM3U 标签
     first_x_tvg_url = True  # 用来标记是否已添加过 x-tvg-url 标签
+
+    channel_links = defaultdict(list)  # 用来存储相同频道名称的多个播放链接
 
     for line in lines:
         if line.startswith("#EXTM3U"):
@@ -64,8 +67,19 @@ def remove_keywords_and_special_chars(m3u_content):
             line = re.sub(r" 奥林匹克", "", line)
             line = re.sub(r" 纪录", "", line)
             line = re.sub(r" 农业农村", "", line)
+			line = re.sub(r"CCTV4欧洲", "CCTV-4 欧洲", line)
+            line = re.sub(r"CCTV4美洲", "CCTV-4 美洲", line)
+
             # 去除中文引号「」和符号“•”
             line = re.sub(r"[「」•]", "", line)
+
+            # 获取频道名称
+            channel_name = re.search(r",([^,]+)$", line)  # 提取频道名称
+            if channel_name:
+                channel_name = channel_name.group(1).strip()
+
+                # 将该频道的描述行与播放链接关联
+                channel_links[channel_name].append(line)
 
         if skip_next_line:
             skip_next_line = False  # 跳过播放链接行
@@ -73,7 +87,14 @@ def remove_keywords_and_special_chars(m3u_content):
         
         filtered_lines.append(line)
     
-    return "\n".join(filtered_lines)
+    # 将每个频道的多个播放链接按顺序添加
+    final_lines = []
+    for channel_name, lines in channel_links.items():
+        for line in lines:
+            final_lines.append(line)  # 添加描述行
+            final_lines.append(channel_links[channel_name][0])  # 添加播放链接
+
+    return "\n".join(final_lines)
 
 # 合并多个 M3U 文件并去除指定关键字和符号
 def merge_m3u(urls):
