@@ -105,7 +105,7 @@ def remove_keywords_and_special_chars(m3u_content):
             final_lines.append(lines[i])  # 描述行
             final_lines.append(lines[i + 1])  # 播放链接
 
-            # 添加备用链接的格式
+            # 如果有备用链接，将其邻近输出
             if i + 2 < len(lines):  # 确保有备用链接
                 final_lines.append(f'#EXTINF:-1, {channel_name} (Backup)')
                 final_lines.append(lines[i + 2])  # 备用播放链接
