@@ -65,9 +65,8 @@ def remove_keywords_and_special_chars(m3u_content):
             line = re.sub(r" 少儿", "", line)
             line = re.sub(r" 音乐", "", line)
             line = re.sub(r" 奥林匹克", "", line)
-            line = re.sub(r" 纪录", "", line)
             line = re.sub(r" 农业农村", "", line)
-			line = re.sub(r"CCTV4欧洲", "CCTV-4 欧洲", line)
+            line = re.sub(r"CCTV4欧洲", "CCTV-4 欧洲", line)
             line = re.sub(r"CCTV4美洲", "CCTV-4 美洲", line)
 
             # 去除中文引号「」和符号“•”
@@ -90,9 +89,10 @@ def remove_keywords_and_special_chars(m3u_content):
     # 将每个频道的多个播放链接按顺序添加
     final_lines = []
     for channel_name, lines in channel_links.items():
-        for line in lines:
+        # 将相同频道的多个播放链接合并
+        for idx, line in enumerate(lines):
             final_lines.append(line)  # 添加描述行
-            final_lines.append(channel_links[channel_name][0])  # 添加播放链接
+            final_lines.append(lines[idx])  # 添加播放链接
 
     return "\n".join(final_lines)
 
