@@ -3,32 +3,67 @@ import re
 
 # 下载并解析 M3U 文件的函数
 def download_m3u(url):
-    response = requests.get(url)
-    if response.status_code == 200:
+    try:
+        response = requests.get(url)
+        response.raise_for_status()  # 如果响应失败，抛出异常
         return response.text
-    else:
-        print(f"无法下载文件: {url}")
+    except requests.RequestException as e:
+        print(f"下载文件失败: {url}, 错误: {e}")
         return None
 
 # 过滤并去除指定的关键字和符号，同时保留其他符号
 def remove_keywords_and_special_chars(m3u_content):
     lines = m3u_content.splitlines()
     filtered_lines = []
-    remove_keywords = ["咪咕", "虎牙", "斗鱼", "埋堆", "轮播", "上海", "内蒙", "B站", "IPV6"]
+    remove_keywords = ["咪咕", "虎牙", "斗鱼", "埋堆", "轮播", "上海", "内蒙", "B站", "IPV6", "地方"]
 
     skip_next_line = False  # 用来标记是否跳过播放链接行
+    first_extm3u = True  # 用来标记是否已添加过 #EXTM3U 标签
+    first_x_tvg_url = True  # 用来标记是否已添加过 x-tvg-url 标签
 
     for line in lines:
+        if line.startswith("#EXTM3U"):
+            # 只保留第一个 #EXTM3U 标签
+            if first_extm3u:
+                filtered_lines.append(line)
+                first_extm3u = False
+            continue  # 跳过后续的 #EXTM3U 标签
+        
+        if line.startswith("x-tvg-url"):
+            # 只保留第一个 x-tvg-url 标签
+            if first_x_tvg_url:
+                filtered_lines.append(line)
+                first_x_tvg_url = False
+            continue  # 跳过后续的 x-tvg-url 标签
+
         if line.startswith("#EXTINF:"):
             # 检查频道名称是否包含要删除的关键词
             if any(keyword in line for keyword in remove_keywords):
                 skip_next_line = True  # 如果包含这些关键词，则跳过下一行（播放链接）
                 continue  # 跳过当前频道的描述行
-            
+
             # 删除“频道”和“IPV6”关键字，但保留其他内容
             line = re.sub(r"频道", "", line)
             line = re.sub(r"IPV6", "", line)
-
+            line = re.sub(r" 综合", "", line)
+            line = re.sub(r" 财经", "", line)
+            line = re.sub(r" 综艺", "", line)
+            line = re.sub(r" 科教", "", line)
+            line = re.sub(r" 中文国际", "", line)
+            line = re.sub(r" 体育赛事", "", line)
+            line = re.sub(r" 体育", "", line)
+            line = re.sub(r" 戏曲", "", line)
+            line = re.sub(r" 电影", "", line)
+            line = re.sub(r" 国防军事", "", line)
+            line = re.sub(r" 电视剧", "", line)
+            line = re.sub(r" 纪录", "", line)
+            line = re.sub(r" 社会与法", "", line)
+            line = re.sub(r" 新闻", "", line)
+            line = re.sub(r" 少儿", "", line)
+            line = re.sub(r" 音乐", "", line)
+            line = re.sub(r" 奥林匹克", "", line)
+            line = re.sub(r" 纪录", "", line)
+            line = re.sub(r" 农业农村", "", line)
             # 去除中文引号「」和符号“•”
             line = re.sub(r"[「」•]", "", line)
 
@@ -42,7 +77,7 @@ def remove_keywords_and_special_chars(m3u_content):
 
 # 合并多个 M3U 文件并去除指定关键字和符号
 def merge_m3u(urls):
-    merged_content = "#EXTM3U\n"  # M3U 文件的开头
+    merged_content = ""
     for url in urls:
         print(f"正在处理: {url}")
         m3u_content = download_m3u(url)
