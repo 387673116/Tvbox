@@ -20,6 +20,10 @@ def download_file(url):
 
 # 解析 M3U 文件
 def parse_m3u(content):
+    # 先将 tvg-id 替换为 tvg-name
+    content = content.replace('tvg-id', 'tvg-name')
+    
+    # 正则表达式匹配 EXTINF 标签和播放链接
     pattern = re.compile(r'#EXTINF:-1(.*?),\s*(.+)\n(https?://.+)')
     entries = pattern.findall(content)
     parsed = []
