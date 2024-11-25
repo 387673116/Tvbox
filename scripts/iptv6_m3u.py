@@ -47,7 +47,7 @@ def remove_keywords_and_special_chars(m3u_content):
         if line.startswith("#EXTINF:"):
             # 检查频道名称是否包含要删除的关键词
             if any(keyword in line for keyword in remove_keywords):
-                skip_next_line = True  # 如果包含这些关键词，则跳过下一行（播放链接） 
+                skip_next_line = True  # 如果包含这些关键词，则跳过下一行（播放链接）
                 continue  # 跳过当前频道的描述行
 
             # 删除“频道”和“IPV6”关键字，但保留其他内容
@@ -97,18 +97,20 @@ def remove_keywords_and_special_chars(m3u_content):
             # 清空当前的描述行
             current_extinf_line = None
 
-    # 合并每个频道的描述行和播放链接
+    # 合并每个频道的描述行和播放链接，按 tvg-name 归类
     final_lines = []
     for channel_name, lines in channel_links.items():
-        # 将相同频道的链接邻近
+        main_link_added = False  # 用于标记是否已经添加了主链接
         for i in range(0, len(lines), 2):  # 每两个元素一组，第一项为描述，第二项为播放链接
-            final_lines.append(lines[i])  # 描述行
-            final_lines.append(lines[i + 1])  # 播放链接
-
-            # 如果有备用链接，将其邻近输出
-            if i + 2 < len(lines):  # 确保有备用链接
-                final_lines.append(f'#EXTINF:-1, {channel_name} (Backup)')
-                final_lines.append(lines[i + 2])  # 备用播放链接
+            if not main_link_added:
+                # 添加主链接
+                final_lines.append(lines[i])  # 描述行
+                final_lines.append(lines[i + 1])  # 播放链接
+                main_link_added = True
+            else:
+                # 添加备用链接
+                final_lines.append(f'#EXTINF:-1, {channel_name} (Backup)')  # 备用链接
+                final_lines.append(lines[i + 1])  # 备用播放链接
 
     return "\n".join(final_lines)
 
