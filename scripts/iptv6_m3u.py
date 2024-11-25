@@ -23,9 +23,13 @@ def remove_keywords_and_special_chars(m3u_content):
     first_x_tvg_url = True  # 用来标记是否已添加过 x-tvg-url 标签
 
     channel_links = defaultdict(list)  # 用来存储相同频道名称的多个播放链接
-    current_channel = None  # 当前正在处理的频道名称
+    current_extinf_line = None  # 用来存储当前的 #EXTINF: 描述行
 
     for line in lines:
+        # 跳过空白行
+        if not line.strip():
+            continue
+
         if line.startswith("#EXTM3U"):
             # 只保留第一个 #EXTM3U 标签
             if first_extm3u:
@@ -66,43 +70,39 @@ def remove_keywords_and_special_chars(m3u_content):
             line = re.sub(r" 少儿", "", line)
             line = re.sub(r" 音乐", "", line)
             line = re.sub(r" 奥林匹克", "", line)
-            line = re.sub(r" 纪录", "", line)
             line = re.sub(r" 农业农村", "", line)
             line = re.sub(r"CCTV4欧洲", "CCTV-4 欧洲", line)
             line = re.sub(r"CCTV4美洲", "CCTV-4 美洲", line)
+            line = re.sub(r"tvg-id", "tvg-name", line)
 
             # 去除中文引号「」和符号“•”
             line = re.sub(r"[「」•]", "", line)
 
-            # 获取频道名称
-            channel_name = re.search(r",([^,]+)$", line)  # 提取频道名称
-            if channel_name:
-                current_channel = channel_name.group(1).strip()
-
-            # 添加频道描述行
-            filtered_lines.append(line)
-
-        if not skip_next_line:
-            # 只有当当前行不是播放链接时才继续处理播放链接
-            if line.startswith("http"):
-                # 将播放链接存入相同频道下
-                if current_channel:
-                    channel_links[current_channel].append(line)
-            else:
-                filtered_lines.append(line)
+            # 保存当前的 #EXTINF: 描述行
+            current_extinf_line = line
 
         if skip_next_line:
             skip_next_line = False  # 跳过播放链接行
+            continue
+        
+        # 存储每个频道的播放链接
+        if current_extinf_line and not line.startswith("#EXTINF:"):
+            # 关联当前频道的描述行与播放链接
+            channel_name = re.search(r",([^,]+)$", current_extinf_line)  # 提取频道名称
+            if channel_name:
+                channel_name = channel_name.group(1).strip()
+                channel_links[channel_name].append(current_extinf_line)  # 添加描述行
+                channel_links[channel_name].append(line)  # 添加播放链接
 
-    # 将每个频道的多个播放链接按顺序添加
+            # 清空当前的描述行
+            current_extinf_line = None
+
+    # 合并每个频道的描述行和播放链接
     final_lines = []
     for channel_name, lines in channel_links.items():
-        for line in lines:
-            final_lines.append(f"#EXTINF:-1, {channel_name}")
-            final_lines.append(line)
-
-    # 删除空行
-    final_lines = [line for line in final_lines if line.strip()]
+        for i in range(0, len(lines), 2):  # 每两个元素一组，第一项为描述，第二项为播放链接
+            final_lines.append(lines[i])  # 描述行
+            final_lines.append(lines[i + 1])  # 播放链接
 
     return "\n".join(final_lines)
 
