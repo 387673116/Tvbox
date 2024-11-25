@@ -16,13 +16,21 @@ def remove_keywords_and_special_chars(m3u_content):
     filtered_lines = []
     remove_keywords = ["咪咕", "虎牙", "斗鱼", "埋堆", "轮播", "上海", "内蒙"]
 
+    skip_next_line = False  # 用来标记是否跳过播放链接行
+
     for line in lines:
         if line.startswith("#EXTINF:"):
             # 检查频道名称是否包含要删除的关键词
             if any(keyword in line for keyword in remove_keywords):
-                continue  # 如果包含这些关键词，则跳过该频道
+                skip_next_line = True  # 如果包含这些关键词，则跳过下一行（播放链接）
+                continue  # 跳过当前频道的描述行
             # 去除中文引号「」和符号“•”
             line = re.sub(r"[「」•]", "", line)
+
+        if skip_next_line:
+            skip_next_line = False  # 跳过播放链接行
+            continue
+        
         filtered_lines.append(line)
     
     return "\n".join(filtered_lines)
