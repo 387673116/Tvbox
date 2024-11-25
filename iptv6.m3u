@@ -591,28 +591,18 @@ http://aktv.top/AKTV/live/aktv3/rockaction/AKTV.m3u8
 #EXTINF:-1 tvg-name="直播中国" tvg-logo="https://live.fanmingming.com/tv/直播中国.png" group-title="景区直播",直播中国
 https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1, 直播中国 (Backup)
-#EXTINF:-1 tvg-name="直播中国" tvg-logo="https://live.fanmingming.com/tv/直播中国.png" group-title="景区直播",直播中国
-#EXTINF:-1 tvg-name="直播中国" tvg-logo="https://live.fanmingming.com/tv/直播中国.png" group-title="景区直播",直播中国
 https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-name="新疆天山(定海神针)" tvg-logo="https://live.fanmingming.com/tv/新疆天山(定海神针).png" group-title="景区直播",新疆天山(定海神针)
 http://gctxyc.liveplay.myqcloud.com/gc/xjtcdhsz_1/index.m3u8
 #EXTINF:-1, 新疆天山(定海神针) (Backup)
-#EXTINF:-1 tvg-name="新疆天山(定海神针)" tvg-logo="https://live.fanmingming.com/tv/新疆天山(定海神针).png" group-title="景区直播",新疆天山(定海神针)
-#EXTINF:-1 tvg-name="新疆天山(定海神针)" tvg-logo="https://live.fanmingming.com/tv/新疆天山(定海神针).png" group-title="景区直播",新疆天山(定海神针)
 https://gcalic.v.myalicdn.com/gc/xjtcdhsz_1/index.m3u8
 #EXTINF:-1, 新疆天山(定海神针) (Backup)
-#EXTINF:-1 tvg-name="新疆天山(定海神针)" tvg-logo="https://live.fanmingming.com/tv/新疆天山(定海神针).png" group-title="景区直播",新疆天山(定海神针)
-#EXTINF:-1 tvg-name="新疆天山(定海神针)" tvg-logo="https://live.fanmingming.com/tv/新疆天山(定海神针).png" group-title="景区直播",新疆天山(定海神针)
 https://gcalic.v.myalicdn.com/gc/xjtcdhsz_1/index.m3u8
 #EXTINF:-1 tvg-name="黄花城水长城02" tvg-logo="https://live.fanmingming.com/tv/黄花城水长城02.png" group-title="景区直播",黄花城水长城02
 http://gctxyc.liveplay.myqcloud.com/gc/wgw02_1/index.m3u8
 #EXTINF:-1, 黄花城水长城02 (Backup)
-#EXTINF:-1 tvg-name="黄花城水长城02" tvg-logo="https://live.fanmingming.com/tv/黄花城水长城02.png" group-title="景区直播",黄花城水长城02
-#EXTINF:-1 tvg-name="黄花城水长城02" tvg-logo="https://live.fanmingming.com/tv/黄花城水长城02.png" group-title="景区直播",黄花城水长城02
 https://gcalic.v.myalicdn.com/gc/wgw02_1/index.m3u8
 #EXTINF:-1, 黄花城水长城02 (Backup)
-#EXTINF:-1 tvg-name="黄花城水长城02" tvg-logo="https://live.fanmingming.com/tv/黄花城水长城02.png" group-title="景区直播",黄花城水长城02
-#EXTINF:-1 tvg-name="黄花城水长城02" tvg-logo="https://live.fanmingming.com/tv/黄花城水长城02.png" group-title="景区直播",黄花城水长城02
 https://gcalic.v.myalicdn.com/gc/wgw02_1/index.m3u8
 #EXTINF:-1 tvg-name="湖南张家界水绕四门" tvg-logo="https://live.fanmingming.com/tv/湖南张家界水绕四门.png" group-title="景区直播",湖南张家界水绕四门
 https://gcalic.v.myalicdn.com/gc/zjjsrsm_1/index.m3u8
@@ -641,8 +631,6 @@ https://gcalic.v.myalicdn.com/gc/tms05_1/index.m3u8
 #EXTINF:-1 tvg-name="厦门鼓浪屿" tvg-logo="https://live.fanmingming.com/tv/厦门鼓浪屿.png" group-title="景区直播",厦门鼓浪屿
 https://gcalic.v.myalicdn.com/gc/gly01_1/index.m3u8
 #EXTINF:-1, 厦门鼓浪屿 (Backup)
-#EXTINF:-1 tvg-name="厦门鼓浪屿" tvg-logo="https://live.fanmingming.com/tv/厦门鼓浪屿.png" group-title="景区直播",厦门鼓浪屿
-#EXTINF:-1 tvg-name="厦门鼓浪屿" tvg-logo="https://live.fanmingming.com/tv/厦门鼓浪屿.png" group-title="景区直播",厦门鼓浪屿
 https://gcalic.v.myalicdn.com/gc/gly01_1/index.m3u8
 #EXTINF:-1 tvg-name="广西玉林大容山莲花山顶" tvg-logo="https://live.fanmingming.com/tv/广西玉林大容山莲花山顶.png" group-title="景区直播",广西玉林大容山莲花山顶
 https://gcalic.v.myalicdn.com/gc/drs01_1/index.m3u8
@@ -653,8 +641,6 @@ https://gcalic.v.myalicdn.com/gc/blg03_1/index.m3u8
 #EXTINF:-1 tvg-name="安徽池州九华山风景区九华山" tvg-logo="https://live.fanmingming.com/tv/安徽池州九华山风景区九华山.png" group-title="景区直播",安徽池州九华山风景区九华山
 https://gcalic.v.myalicdn.com/gc/jhs05_1/index.m3u8
 #EXTINF:-1, 安徽池州九华山风景区九华山 (Backup)
-#EXTINF:-1 tvg-name="安徽池州九华山风景区九华山" tvg-logo="https://live.fanmingming.com/tv/安徽池州九华山风景区九华山.png" group-title="景区直播",安徽池州九华山风景区九华山
-#EXTINF:-1 tvg-name="安徽池州九华山风景区九华山" tvg-logo="https://live.fanmingming.com/tv/安徽池州九华山风景区九华山.png" group-title="景区直播",安徽池州九华山风景区九华山
 https://gcalic.v.myalicdn.com/gc/jhs05_1/index.m3u8
 #EXTINF:-1 tvg-name="安徽池州九华山风景区花台" tvg-logo="https://live.fanmingming.com/tv/安徽池州九华山风景区花台.png" group-title="景区直播",安徽池州九华山风景区花台
 https://gcalic.v.myalicdn.com/gc/jhs01_1/index.m3u8
@@ -683,8 +669,6 @@ https://gcalic.v.myalicdn.com/gc/sgns02_1/index.m3u8
 #EXTINF:-1 tvg-name="丽江古城大研花巷观景" tvg-logo="https://live.fanmingming.com/tv/丽江古城大研花巷观景.png" group-title="景区直播",丽江古城大研花巷观景
 https://gcalic.v.myalicdn.com/gc/ljgcdyhxgjt_1/index.m3u8
 #EXTINF:-1, 丽江古城大研花巷观景 (Backup)
-#EXTINF:-1 tvg-name="丽江古城大研花巷观景" tvg-logo="https://live.fanmingming.com/tv/丽江古城大研花巷观景.png" group-title="景区直播",丽江古城大研花巷观景
-#EXTINF:-1 tvg-name="丽江古城大研花巷观景" tvg-logo="https://live.fanmingming.com/tv/丽江古城大研花巷观景.png" group-title="景区直播",丽江古城大研花巷观景
 https://gcalic.v.myalicdn.com/gc/ljgcdyhxgjt_1/index.m3u8
 #EXTINF:-1 tvg-name="丽江古城大水车" tvg-logo="https://live.fanmingming.com/tv/丽江古城大水车.png" group-title="景区直播",丽江古城大水车
 https://gcalic.v.myalicdn.com/gc/ljgcdsc_1/index.m3u8
@@ -701,8 +685,6 @@ https://gcalic.v.myalicdn.com/gc/zjwzlyhb_1/index.m3u8
 #EXTINF:-1 tvg-name="乌镇西市河" tvg-logo="https://live.fanmingming.com/tv/乌镇西市河.png" group-title="景区直播",乌镇西市河
 https://gcalic.v.myalicdn.com/gc/zjwzbblh_1/index.m3u8
 #EXTINF:-1, 乌镇西市河 (Backup)
-#EXTINF:-1 tvg-name="乌镇西市河" tvg-logo="https://live.fanmingming.com/tv/乌镇西市河.png" group-title="景区直播",乌镇西市河
-#EXTINF:-1 tvg-name="乌镇西市河" tvg-logo="https://live.fanmingming.com/tv/乌镇西市河.png" group-title="景区直播",乌镇西市河
 https://gcalic.v.myalicdn.com/gc/zjwzbblh_1/index.m3u8
 #EXTINF:-1 tvg-name="乌镇龙形田" tvg-logo="https://live.fanmingming.com/tv/乌镇龙形田.png" group-title="景区直播",乌镇龙形田
 https://gcalic.v.myalicdn.com/gc/zjwzlxt_1/index.m3u8
@@ -733,8 +715,6 @@ https://gcalic.v.myalicdn.com/gc/taishan03_1/index.m3u8
 #EXTINF:-1 tvg-name="泰山玉皇顶" tvg-logo="https://live.fanmingming.com/tv/泰山玉皇顶.png" group-title="景区直播",泰山玉皇顶
 https://gcalic.v.myalicdn.com/gc/taishan06_1/index.m3u8
 #EXTINF:-1, 泰山玉皇顶 (Backup)
-#EXTINF:-1 tvg-name="泰山玉皇顶" tvg-logo="https://live.fanmingming.com/tv/泰山玉皇顶.png" group-title="景区直播",泰山玉皇顶
-#EXTINF:-1 tvg-name="泰山玉皇顶" tvg-logo="https://live.fanmingming.com/tv/泰山玉皇顶.png" group-title="景区直播",泰山玉皇顶
 https://gcalic.v.myalicdn.com/gc/taishan06_1/index.m3u8
 #EXTINF:-1 tvg-name="泰山十八盘" tvg-logo="https://live.fanmingming.com/tv/泰山十八盘.png" group-title="景区直播",泰山十八盘
 https://gcalic.v.myalicdn.com/gc/taishan05_1/index.m3u8
@@ -747,8 +727,6 @@ https://gcalic.v.myalicdn.com/gc/hkts02_1/index.m3u8
 #EXTINF:-1 tvg-name="泰山太平岭" tvg-logo="https://live.fanmingming.com/tv/泰山太平岭.png" group-title="景区直播",泰山太平岭
 https://gcalic.v.myalicdn.com/gc/hkts09_1/index.m3u8
 #EXTINF:-1, 泰山太平岭 (Backup)
-#EXTINF:-1 tvg-name="泰山太平岭" tvg-logo="https://live.fanmingming.com/tv/泰山太平岭.png" group-title="景区直播",泰山太平岭
-#EXTINF:-1 tvg-name="泰山太平岭" tvg-logo="https://live.fanmingming.com/tv/泰山太平岭.png" group-title="景区直播",泰山太平岭
 https://gcalic.v.myalicdn.com/gc/hkts09_1/index.m3u8
 #EXTINF:-1 tvg-name="泰山碧霞祠" tvg-logo="https://live.fanmingming.com/tv/泰山碧霞祠.png" group-title="景区直播",泰山碧霞祠
 https://gcalic.v.myalicdn.com/gc/hkts03_1/index.m3u8
@@ -773,16 +751,12 @@ https://gcalic.v.myalicdn.com/gc/ztn_1/index.m3u8
 #EXTINF:-1 tvg-name="恒山悬空寺全景" tvg-logo="https://live.fanmingming.com/tv/恒山悬空寺全景.png" group-title="景区直播",恒山悬空寺全景
 https://gcalic.v.myalicdn.com/gc/hsxksqj_1/index.m3u8
 #EXTINF:-1, 恒山悬空寺全景 (Backup)
-#EXTINF:-1 tvg-name="恒山悬空寺全景" tvg-logo="https://live.fanmingming.com/tv/恒山悬空寺全景.png" group-title="景区直播",恒山悬空寺全景
-#EXTINF:-1 tvg-name="恒山悬空寺全景" tvg-logo="https://live.fanmingming.com/tv/恒山悬空寺全景.png" group-title="景区直播",恒山悬空寺全景
 https://gcalic.v.myalicdn.com/gc/hsxksqj_1/index.m3u8
 #EXTINF:-1 tvg-name="黄果树六角亭瀑布" tvg-logo="https://live.fanmingming.com/tv/黄果树六角亭瀑布.png" group-title="景区直播",黄果树六角亭瀑布
 https://gcalic.v.myalicdn.com/gc/hgsspzxdpb_1/index.m3u8
 #EXTINF:-1 tvg-name="天涯石" tvg-logo="https://live.fanmingming.com/tv/天涯石.png" group-title="景区直播",天涯石
 https://gcalic.v.myalicdn.com/gc/tyhjtys_1/index.m3u8
 #EXTINF:-1, 天涯石 (Backup)
-#EXTINF:-1 tvg-name="天涯石" tvg-logo="https://live.fanmingming.com/tv/天涯石.png" group-title="景区直播",天涯石
-#EXTINF:-1 tvg-name="天涯石" tvg-logo="https://live.fanmingming.com/tv/天涯石.png" group-title="景区直播",天涯石
 https://gcalic.v.myalicdn.com/gc/tyhjtys_1/index.m3u8
 #EXTINF:-1 tvg-name="六盘山红军长征景区" tvg-logo="https://live.fanmingming.com/tv/六盘山红军长征景区.png" group-title="景区直播",六盘山红军长征景区
 https://gcalic.v.myalicdn.com/gc/lpsgmjng01_1/index.m3u8
@@ -805,6 +779,4 @@ https://gcalic.v.myalicdn.com/gc/djyqyl1_1/index.m3u8
 #EXTINF:-1 tvg-name="乐山大佛全景" tvg-logo="https://live.fanmingming.com/tv/乐山大佛全景.png" group-title="景区直播",乐山大佛全景
 https://gcalic.v.myalicdn.com/gc/lsdfgfl_1/index.m3u8
 #EXTINF:-1, 乐山大佛全景 (Backup)
-#EXTINF:-1 tvg-name="乐山大佛全景" tvg-logo="https://live.fanmingming.com/tv/乐山大佛全景.png" group-title="景区直播",乐山大佛全景
-#EXTINF:-1 tvg-name="乐山大佛全景" tvg-logo="https://live.fanmingming.com/tv/乐山大佛全景.png" group-title="景区直播",乐山大佛全景
 https://gcalic.v.myalicdn.com/gc/lsdfgfl_1/index.m3u8
