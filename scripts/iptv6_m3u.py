@@ -59,8 +59,13 @@ def load_and_merge(urls, template_url):
 
             name = entry["tvg-name"]
             if name in template_map:
-                # 标准化属性
-                entry.update({k: v for k, v in template_map[name].items() if k != "url"})
+                # 统一属性（只更新除播放链接外的属性）
+                template_entry = template_map[name]
+                entry.update({
+                    "name": template_entry.get("name", entry.get("name")),
+                    "logo": template_entry.get("logo", entry.get("logo")),
+                    "title": template_entry.get("title", entry.get("title")),
+                })
             if name in seen_names:
                 # 如果已经出现，确保一致性
                 existing_entry = seen_names[name]
