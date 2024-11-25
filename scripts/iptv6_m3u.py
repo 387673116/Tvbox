@@ -91,6 +91,7 @@ def remove_keywords_and_special_chars(m3u_content):
             channel_name = re.search(r",([^,]+)$", current_extinf_line)  # 提取频道名称
             if channel_name:
                 channel_name = channel_name.group(1).strip()
+                # 添加描述行和播放链接到字典
                 channel_links[channel_name].append(current_extinf_line)  # 添加描述行
                 channel_links[channel_name].append(line)  # 添加播放链接
 
