@@ -53,6 +53,24 @@ def remove_keywords_and_special_chars(m3u_content):
             # 删除“频道”和“IPV6”关键字，但保留其他内容
             line = re.sub(r"频道", "", line)
             line = re.sub(r"IPV6", "", line)
+            line = re.sub(r" 综合", "", line)
+            line = re.sub(r" 财经", "", line)
+            line = re.sub(r" 综艺", "", line)
+            line = re.sub(r" 科教", "", line)
+            line = re.sub(r" 中文国际", "", line)
+            line = re.sub(r" 体育赛事", "", line)
+            line = re.sub(r" 体育", "", line)
+            line = re.sub(r" 戏曲", "", line)
+            line = re.sub(r" 电影", "", line)
+            line = re.sub(r" 国防军事", "", line)
+            line = re.sub(r" 电视剧", "", line)
+            line = re.sub(r" 纪录", "", line)
+            line = re.sub(r" 社会与法", "", line)
+            line = re.sub(r" 新闻", "", line)
+            line = re.sub(r" 少儿", "", line)
+            line = re.sub(r" 音乐", "", line)
+            line = re.sub(r" 奥林匹克", "", line)
+            line = re.sub(r" 农业农村", "", line)
             line = re.sub(r"CCTV4欧洲", "CCTV-4 欧洲", line)
             line = re.sub(r"CCTV4美洲", "CCTV-4 美洲", line)
             line = re.sub(r"tvg-id", "tvg-name", line)
@@ -82,9 +100,15 @@ def remove_keywords_and_special_chars(m3u_content):
     # 合并每个频道的描述行和播放链接
     final_lines = []
     for channel_name, lines in channel_links.items():
+        # 将相同频道的链接邻近
         for i in range(0, len(lines), 2):  # 每两个元素一组，第一项为描述，第二项为播放链接
             final_lines.append(lines[i])  # 描述行
             final_lines.append(lines[i + 1])  # 播放链接
+
+            # 添加备用链接的格式
+            if i + 2 < len(lines):  # 确保有备用链接
+                final_lines.append(f'#EXTINF:-1, {channel_name} (Backup)')
+                final_lines.append(lines[i + 2])  # 备用播放链接
 
     return "\n".join(final_lines)
 
@@ -106,7 +130,7 @@ def main():
         "https://gh.999986.xyz/https://raw.githubusercontent.com/YanG-1989/m3u/master/Gather.m3u",
         "https://gh.999986.xyz/https://raw.githubusercontent.com/YueChan/live/master/APTV.m3u",
         "https://gh.999986.xyz/https://raw.githubusercontent.com/YueChan/live/master/Global.m3u",
-        "https://raw.githubusercontent.com/387673116/Tvbox/master/other/jingqu.m3u"  
+        "https://raw.githubusercontent.com/387673116/Tvbox/master/other/jingqu.m3u"  # 新增的链接
     ]
 
     # 合并并过滤内容
