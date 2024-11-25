@@ -33,7 +33,7 @@ def remove_keywords_and_special_chars(m3u_content):
         if line.startswith("#EXTM3U"):
             # 只保留第一个 #EXTM3U 标签
             if first_extm3u:
-                filtered_lines.append("#EXTM3U x-tvg-url=\"https://live.fanmingming.com/e.xml\"")  # 添加自定义的 #EXTM3U 标签
+                filtered_lines.append(line)
                 first_extm3u = False
             continue  # 跳过后续的 #EXTM3U 标签
         
@@ -47,30 +47,12 @@ def remove_keywords_and_special_chars(m3u_content):
         if line.startswith("#EXTINF:"):
             # 检查频道名称是否包含要删除的关键词
             if any(keyword in line for keyword in remove_keywords):
-                skip_next_line = True  # 如果包含这些关键词，则跳过下一行（播放链接）
+                skip_next_line = True  # 如果包含这些关键词，则跳过下一行（播放链接） 
                 continue  # 跳过当前频道的描述行
 
             # 删除“频道”和“IPV6”关键字，但保留其他内容
             line = re.sub(r"频道", "", line)
             line = re.sub(r"IPV6", "", line)
-            line = re.sub(r" 综合", "", line)
-            line = re.sub(r" 财经", "", line)
-            line = re.sub(r" 综艺", "", line)
-            line = re.sub(r" 科教", "", line)
-            line = re.sub(r" 中文国际", "", line)
-            line = re.sub(r" 体育赛事", "", line)
-            line = re.sub(r" 体育", "", line)
-            line = re.sub(r" 戏曲", "", line)
-            line = re.sub(r" 电影", "", line)
-            line = re.sub(r" 国防军事", "", line)
-            line = re.sub(r" 电视剧", "", line)
-            line = re.sub(r" 纪录", "", line)
-            line = re.sub(r" 社会与法", "", line)
-            line = re.sub(r" 新闻", "", line)
-            line = re.sub(r" 少儿", "", line)
-            line = re.sub(r" 音乐", "", line)
-            line = re.sub(r" 奥林匹克", "", line)
-            line = re.sub(r" 农业农村", "", line)
             line = re.sub(r"CCTV4欧洲", "CCTV-4 欧洲", line)
             line = re.sub(r"CCTV4美洲", "CCTV-4 美洲", line)
             line = re.sub(r"tvg-id", "tvg-name", line)
@@ -91,7 +73,6 @@ def remove_keywords_and_special_chars(m3u_content):
             channel_name = re.search(r",([^,]+)$", current_extinf_line)  # 提取频道名称
             if channel_name:
                 channel_name = channel_name.group(1).strip()
-                # 添加描述行和播放链接到字典
                 channel_links[channel_name].append(current_extinf_line)  # 添加描述行
                 channel_links[channel_name].append(line)  # 添加播放链接
 
@@ -121,19 +102,22 @@ def merge_m3u(urls):
 # 主函数
 def main():
     urls = [
-        "https://raw.githubusercontent.com/fanmingming/live/master/tv/m3u/ipv6.m3u",
-        "https://raw.githubusercontent.com/YanG-1989/m3u/master/Gather.m3u",
-        "https://raw.githubusercontent.com/YueChan/live/master/APTV.m3u",
-        "https://raw.githubusercontent.com/387673116/Tvbox/master/other/jingqu.m3u",  
-        "https://raw.githubusercontent.com/YueChan/live/master/Global.m3u"
+        "https://gh.999986.xyz/https://raw.githubusercontent.com/fanmingming/live/master/tv/m3u/ipv6.m3u",
+        "https://gh.999986.xyz/https://raw.githubusercontent.com/YanG-1989/m3u/master/Gather.m3u",
+        "https://gh.999986.xyz/https://raw.githubusercontent.com/YueChan/live/master/APTV.m3u",
+        "https://gh.999986.xyz/https://raw.githubusercontent.com/YueChan/live/master/Global.m3u",
+        "https://raw.githubusercontent.com/387673116/Tvbox/master/other/jingqu.m3u"  
     ]
 
     # 合并并过滤内容
     merged_m3u = merge_m3u(urls)
 
+    # 添加到文件的第一行
+    final_content = '#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"\n' + merged_m3u
+
     # 保存为 iptv6.m3u 文件
     with open("iptv6.m3u", "w") as f:
-        f.write(merged_m3u)
+        f.write(final_content)
 
     print("iptv6.m3u 文件已生成！")
 
