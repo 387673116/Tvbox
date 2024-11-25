@@ -24,6 +24,10 @@ def remove_keywords_and_special_chars(m3u_content):
             if any(keyword in line for keyword in remove_keywords):
                 skip_next_line = True  # 如果包含这些关键词，则跳过下一行（播放链接）
                 continue  # 跳过当前频道的描述行
+            
+            # 删除“频道”关键字，但保留其他内容
+            line = re.sub(r"频道", "", line)
+
             # 去除中文引号「」和符号“•”
             line = re.sub(r"[「」•]", "", line)
 
