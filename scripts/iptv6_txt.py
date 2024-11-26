@@ -46,11 +46,13 @@ def clean_line(line):
     
     return line
 
-
-
 def clean_group_title(category):
     """如果分类包含 '频道'，删除 '频道' 两个字"""
     return category.replace("频道", "") if "频道" in category else category
+
+def clean_tvg_id_or_name(value):
+    """去除tvg-id或tvg-name值中的空格符号和“-”符号"""
+    return value.replace(" ", "").replace("-", "")
 
 def format_and_merge_sources(urls, output_file):
     """将多个IPTV源内容合并为自定义txt格式"""
