@@ -34,29 +34,17 @@ def extract_group_title(line):
         return match.group(1)
     return None
 
-def format_category(category):
-    """如果分类包含 '频道'，删除 '频道' 两个字"""
-    return category.replace("频道", "") if "频道" in category else category
-
-def clean_line(line):
-    """删除符号•、‘IPV6’关键字和‘「」’符号，并检查是否包含排除的关键词"""
-    # 删除符号•、‘IPV6’关键字和‘「」’符号
 def clean_line(line):
     """删除符号•、‘IPV6’关键字和‘「」’符号，并检查是否包含排除的关键词"""
     # 删除符号•、‘IPV6’关键字和‘「」’符号
     line = line.replace("•", "").replace("IPV6", "").replace("「", "").replace("」", "")
+    
+    # 删除特定的分类关键字
     line = line.replace("综合", "").replace("财经", "").replace("综艺", "").replace("中文国际", "").replace("体育赛事", "")
     line = line.replace("体育", "").replace("电影", "").replace("国防军事", "").replace("电视剧", "").replace("纪录", "")
     line = line.replace("科教", "").replace("戏曲", "").replace("社会与法", "").replace("新闻", "").replace("少儿", "")
-    line = line.replace("音乐", "").replace("奥林匹克", "").replace("农村农业", "")
+    line = line.replace("音乐", "").replace("奥林匹克", "").replace("农业农村", "")
     
-    # 检查是否包含需要排除的关键词
-    for keyword in exclude_keywords:
-        if keyword in line:
-            return None  # 如果包含排除关键词，返回None表示该行应删除
-    
-    return line
-
     # 检查是否包含需要排除的关键词
     for keyword in exclude_keywords:
         if keyword in line:
@@ -80,6 +68,7 @@ def format_and_merge_sources(urls, output_file):
                 # 按行处理内容
                 lines = content.splitlines()
                 category = None  # 当前的分类
+                channel_name = None  # 当前频道名称
                 for line in lines:
                     line = line.strip()
                     if not line:  # 忽略空行
@@ -98,22 +87,19 @@ def format_and_merge_sources(urls, output_file):
                             category = group_title.strip()  # 提取并格式化分类
                             parts = cleaned_line.split(",")
                             channel_name = parts[1].strip()  # 获取频道名称
-
-                            # 清理tvg-id或tvg-name中的空格符号和“-”符号
                             tvg_id_or_name = channel_name
                             channel_name = clean_tvg_id_or_name(tvg_id_or_name)
                     elif cleaned_line.startswith("http"):  # 播放链接
                         # 存储同一分类下的所有频道及播放链接
                         if category not in category_channels:
                             category_channels[category] = {}
-                        # 如果播放链接相同，跳过添加重复链接
                         if cleaned_line not in category_channels[category]:
                             category_channels[category][cleaned_line] = channel_name
 
         # 将格式化后的分类和频道输出到文件
         for category, channels in category_channels.items():
             # 输出group-title和#genre#（只保留分类名）
-            formatted_category = format_category(category)
+            formatted_category = category  # 直接使用category，已经是干净的名称
             outfile.write(f"{formatted_category},#genre#\n")
             for link, channel_name in channels.items():
                 # 输出频道名称和播放链接
