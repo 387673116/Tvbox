@@ -46,9 +46,7 @@ def clean_line(line):
     
     return line
 
-def clean_tvg_id_or_name(value):
-    """去除tvg-id或tvg-name值中的空格符号和“-”符号"""
-    return value.replace(" ", "").replace("-", "")
+
 
 def clean_group_title(category):
     """如果分类包含 '频道'，删除 '频道' 两个字"""
