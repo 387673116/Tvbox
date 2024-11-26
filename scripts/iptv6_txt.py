@@ -48,7 +48,9 @@ def format_and_merge_sources(urls, output_file):
                         # 解析EXTINF，提取分类和频道信息
                         parts = line.split(",")
                         if len(parts) >= 2:
-                            category = parts[0].replace("#EXTINF:-1,", "").strip()  # 获取分类
+                            # 获取group-title（分类）和频道名称
+                            group_title_part = [part for part in line.split() if part.startswith('group-title')][0]
+                            category = group_title_part.split('=')[1].replace('"', "").strip()  # 提取并格式化分类
                             channel_name = parts[1].strip()  # 获取频道名称
                     elif line.startswith("http"):  # 播放链接
                         # 如果分类与上一行相同，跳过 group-title 输出
