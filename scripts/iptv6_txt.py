@@ -106,6 +106,13 @@ def apply_replace_rules(content):
     
     return "\n".join(final_content)
 
+def extract_number_from_channel_name(channel_name):
+    """从频道名称中提取数字，确保正确排序"""
+    match = re.search(r'(\d+)', channel_name)
+    if match:
+        return int(match.group(1))
+    return float('inf')  # 如果没有数字，放在最后
+
 def format_and_merge_sources(urls, output_file):
     """将多个IPTV源内容合并为自定义txt格式"""
     with open(output_file, "w", encoding="utf-8") as outfile:
@@ -148,8 +155,8 @@ def format_and_merge_sources(urls, output_file):
             # 输出group-title和#genre#（只保留分类名）
             formatted_category = category  # 直接使用category，已经是干净的名称
             final_content.append(f"{formatted_category},#genre#")
-            # 对每个分类下的频道按名称排序
-            channels.sort(key=lambda x: x[0])  # 根据频道名称排序
+            # 对每个分类下的频道按名称中提取的数字进行排序
+            channels.sort(key=lambda x: extract_number_from_channel_name(x[0]))  # 根据频道名称中的数字部分排序
             for channel_name, link in channels:
                 final_content.append(f"{channel_name},{link}")
         
