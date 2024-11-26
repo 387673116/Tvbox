@@ -1,5 +1,6 @@
 import requests
 import re
+from collections import defaultdict
 
 # IPTV源列表
 urls = [
@@ -108,7 +109,7 @@ def apply_replace_rules(content):
 def format_and_merge_sources(urls, output_file):
     """将多个IPTV源内容合并为自定义txt格式"""
     with open(output_file, "w", encoding="utf-8") as outfile:
-        category_channels = {}  # 用于存储每个分类的所有频道及其播放链接
+        category_channels = defaultdict(list)  # 使用defaultdict以便同名频道自动合并
 
         for url in urls:
             print(f"正在处理: {url}")
@@ -138,11 +139,8 @@ def format_and_merge_sources(urls, output_file):
                             parts = cleaned_line.split(",")
                             channel_name = parts[1].strip()  # 获取频道名称
                     elif cleaned_line.startswith("http"):  # 播放链接
-                        # 存储同一分类下的所有频道及播放链接
-                        if category not in category_channels:
-                            category_channels[category] = {}
-                        if cleaned_line not in category_channels[category]:
-                            category_channels[category][cleaned_line] = channel_name
+                        # 将播放链接和频道名称添加到分类对应的列表中
+                        category_channels[category].append((channel_name, cleaned_line))
 
         # 将格式化后的分类和频道输出到文件
         final_content = []
@@ -150,8 +148,9 @@ def format_and_merge_sources(urls, output_file):
             # 输出group-title和#genre#（只保留分类名）
             formatted_category = category  # 直接使用category，已经是干净的名称
             final_content.append(f"{formatted_category},#genre#")
-            for link, channel_name in channels.items():
-                # 输出频道名称和播放链接
+            # 对每个分类下的频道按名称排序
+            channels.sort(key=lambda x: x[0])  # 根据频道名称排序
+            for channel_name, link in channels:
                 final_content.append(f"{channel_name},{link}")
         
         # 应用替换规则并写入文件
