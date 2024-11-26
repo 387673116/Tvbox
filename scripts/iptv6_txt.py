@@ -1,4 +1,5 @@
 import requests
+import re
 
 # IPTV源列表
 urls = [
@@ -25,6 +26,13 @@ def fetch_url_content(url):
     except requests.RequestException as e:
         print(f"请求错误: {e}")
         return None
+
+def extract_group_title(line):
+    """从EXTINF行提取group-title的值"""
+    match = re.search(r'group-title="([^"]+)"', line)
+    if match:
+        return match.group(1)
+    return None
 
 def format_category(category):
     """如果分类包含 '频道'，删除 '频道' 两个字"""
@@ -68,11 +76,10 @@ def format_and_merge_sources(urls, output_file):
                     # 查找频道的相关信息
                     if cleaned_line.startswith("#EXTINF"):
                         # 解析EXTINF，提取分类和频道信息
-                        parts = cleaned_line.split(",")
-                        if len(parts) >= 2:
-                            # 获取group-title（分类）和频道名称
-                            group_title_part = [part for part in cleaned_line.split() if part.startswith('group-title')][0]
-                            category = group_title_part.split('=')[1].replace('"', "").strip()  # 提取并格式化分类
+                        group_title = extract_group_title(cleaned_line)
+                        if group_title:
+                            category = group_title.strip()  # 提取并格式化分类
+                            parts = cleaned_line.split(",")
                             channel_name = parts[1].strip()  # 获取频道名称
                     elif cleaned_line.startswith("http"):  # 播放链接
                         # 存储同一分类下的所有频道及播放链接
