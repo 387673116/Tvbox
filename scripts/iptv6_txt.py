@@ -70,6 +70,7 @@ def format_and_merge_sources(urls, output_file):
                 # 按行处理内容
                 lines = content.splitlines()
                 category = None  # 当前的分类
+                channel_name = None  # 当前的频道名称，初始化为空
                 for line in lines:
                     line = line.strip()
                     if not line:  # 忽略空行
@@ -87,17 +88,19 @@ def format_and_merge_sources(urls, output_file):
                         if group_title:
                             category = group_title.strip()  # 提取并格式化分类
                             parts = cleaned_line.split(",")
-                            channel_name = parts[1].strip()  # 获取频道名称
+                            if len(parts) > 1:
+                                channel_name = parts[1].strip()  # 获取频道名称
 
                             # 清理tvg-id或tvg-name中的空格符号和“-”符号
                             tvg_id_or_name = channel_name
                             channel_name = clean_tvg_id_or_name(tvg_id_or_name)
                     elif cleaned_line.startswith("http"):  # 播放链接
-                        # 存储同一分类下的所有频道及播放链接
-                        if category not in category_channels:
-                            category_channels[category] = {}
-                        if cleaned_line not in category_channels[category]:
-                            category_channels[category][cleaned_line] = channel_name
+                        if category and channel_name:
+                            # 存储同一分类下的所有频道及播放链接
+                            if category not in category_channels:
+                                category_channels[category] = {}
+                            if cleaned_line not in category_channels[category]:
+                                category_channels[category][cleaned_line] = channel_name
 
         # 将格式化后的分类和频道输出到文件
         for category, channels in category_channels.items():
