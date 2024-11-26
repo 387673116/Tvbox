@@ -50,6 +50,10 @@ def clean_line(line):
     
     return line
 
+def clean_tvg_id_or_name(value):
+    """去除tvg-id或tvg-name值中的空格符号和“-”符号"""
+    return value.replace(" ", "").replace("-", "")
+
 def format_and_merge_sources(urls, output_file):
     """将多个IPTV源内容合并为自定义txt格式"""
     with open(output_file, "w", encoding="utf-8") as outfile:
@@ -81,6 +85,10 @@ def format_and_merge_sources(urls, output_file):
                             category = group_title.strip()  # 提取并格式化分类
                             parts = cleaned_line.split(",")
                             channel_name = parts[1].strip()  # 获取频道名称
+
+                            # 清理tvg-id或tvg-name中的空格符号和“-”符号
+                            tvg_id_or_name = channel_name
+                            channel_name = clean_tvg_id_or_name(tvg_id_or_name)
                     elif cleaned_line.startswith("http"):  # 播放链接
                         # 存储同一分类下的所有频道及播放链接
                         if category not in category_channels:
