@@ -17,6 +17,48 @@ output_file = "iptv6.txt"
 # 需要删除的关键词列表
 exclude_keywords = ["咪咕", "轮播", "解说", "炫舞", "埋堆堆", "斗鱼", "虎牙", "B站"]
 
+# 频道名称的替换规则
+replace_rules = {
+    "CCTV4美洲": "CCTV-4 美洲",
+    "CCTV4欧洲": "CCTV-4 欧洲",
+    "CCTV1 综合": "CCTV-1 综合",
+    "CCTV2 财经": "CCTV-2 财经",
+    "CCTV3 综艺": "CCTV-3 综艺",
+    "CCTV4 中文国际": "CCTV-4 中文国际",
+    "CCTV5 体育": "CCTV-5 体育",
+    "CCTV5+ 体育赛事": "CCTV-5+ 体育赛事",
+    "CCTV6 电影": "CCTV-6 电影",
+    "CCTV7 国防军事": "CCTV-7 国防军事",
+    "CCTV8 电视剧": "CCTV-8 电视剧",
+    "CCTV9 纪录": "CCTV-9 纪录",
+    "CCTV 10 科教": "CCTV-10 科教",
+    "CCTV 11 戏曲": "CCTV-11 戏曲",
+    "CCTV 12 社会与法": "CCTV-12 社会与法",
+    "CCTV 13 新闻": "CCTV-13 新闻",
+    "CCTV 14 少儿": "CCTV-14 少儿",
+    "CCTV 15 音乐": "CCTV-15 音乐",
+    "CCTV 16 奥林匹克": "CCTV-16 奥林匹克",
+    "CCTV 17 农村农业": "CCTV-17 农业农村",
+    "CCTV-1": "CCTV-1 综合",
+    "CCTV-2": "CCTV-2 财经",
+    "CCTV-3": "CCTV-3 综艺",
+    "CCTV-4": "CCTV-4 中文国际",
+    "CCTV-5": "CCTV-5 体育",
+    "CCTV-5+": "CCTV-5+ 体育赛事",
+    "CCTV-6": "CCTV-6 电影",
+    "CCTV-7": "CCTV-7 国防军事",
+    "CCTV-8": "CCTV-8 电视剧",
+    "CCTV-9": "CCTV-9 纪录",
+    "CCTV-10": "CCTV-10 科教",
+    "CCTV-11": "CCTV-11 戏曲",
+    "CCTV-12": "CCTV-12 社会与法",
+    "CCTV-13": "CCTV-13 新闻",
+    "CCTV-14": "CCTV-14 少儿",
+    "CCTV-15": "CCTV-15 音乐",
+    "CCTV-16": "CCTV-16 奥林匹克",
+    "CCTV-17": "CCTV-17 农业农村"
+}
+
 def fetch_url_content(url):
     """从指定URL获取内容"""
     try:
@@ -50,6 +92,13 @@ def clean_group_title(category):
     """如果分类包含 '频道'，删除 '频道' 两个字"""
     return category.replace("频道", "") if "频道" in category else category
 
+def apply_replace_rules(channel_name):
+    """根据替换规则修改频道名称"""
+    for old, new in replace_rules.items():
+        if old in channel_name:
+            channel_name = channel_name.replace(old, new)
+    return channel_name
+
 def format_and_merge_sources(urls, output_file):
     """将多个IPTV源内容合并为自定义txt格式"""
     with open(output_file, "w", encoding="utf-8") as outfile:
@@ -82,6 +131,8 @@ def format_and_merge_sources(urls, output_file):
                             category = clean_group_title(category)  # 删除"频道"字样
                             parts = cleaned_line.split(",")
                             channel_name = parts[1].strip()  # 获取频道名称
+                            # 应用替换规则
+                            channel_name = apply_replace_rules(channel_name)
                     elif cleaned_line.startswith("http"):  # 播放链接
                         # 存储同一分类下的所有频道及播放链接
                         if category not in category_channels:
