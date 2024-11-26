@@ -39,12 +39,6 @@ def clean_line(line):
     # 删除符号•、‘IPV6’关键字和‘「」’符号
     line = line.replace("•", "").replace("IPV6", "").replace("「", "").replace("」", "")
     
-    # 删除特定的分类关键字
-    line = line.replace("综合", "").replace("财经", "").replace("综艺", "").replace("中文国际", "").replace("体育赛事", "")
-    line = line.replace("体育", "").replace("电影", "").replace("国防军事", "").replace("电视剧", "").replace("纪录", "")
-    line = line.replace("科教", "").replace("戏曲", "").replace("社会与法", "").replace("新闻", "").replace("少儿", "")
-    line = line.replace("音乐", "").replace("奥林匹克", "").replace("农业农村", "")
-    
     # 检查是否包含需要排除的关键词
     for keyword in exclude_keywords:
         if keyword in line:
@@ -55,6 +49,10 @@ def clean_line(line):
 def clean_tvg_id_or_name(value):
     """去除tvg-id或tvg-name值中的空格符号和“-”符号"""
     return value.replace(" ", "").replace("-", "")
+
+def clean_group_title(category):
+    """如果分类包含 '频道'，删除 '频道' 两个字"""
+    return category.replace("频道", "") if "频道" in category else category
 
 def format_and_merge_sources(urls, output_file):
     """将多个IPTV源内容合并为自定义txt格式"""
@@ -85,6 +83,7 @@ def format_and_merge_sources(urls, output_file):
                         group_title = extract_group_title(cleaned_line)
                         if group_title:
                             category = group_title.strip()  # 提取并格式化分类
+                            category = clean_group_title(category)  # 删除"频道"字样
                             parts = cleaned_line.split(",")
                             channel_name = parts[1].strip()  # 获取频道名称
                             tvg_id_or_name = channel_name
