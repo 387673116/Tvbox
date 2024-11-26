@@ -14,12 +14,8 @@ urls = [
 # 输出文件路径
 output_file = "iptv6.txt"
 
-# 需要删除的关键词列表（包含你提到的所有需要删除的分类）
-exclude_keywords = [
-    "综合", "财经", "综艺", "中文国际", "体育", "体育赛事", "电影", "国防军事",
-    "电视剧", "纪录", "科教", "戏曲", "社会与法", "新闻", "少儿", "音乐",
-    "奥林匹克", "农村农业"
-]
+# 需要删除的关键词列表
+exclude_keywords = ["咪咕", "轮播", "解说", "炫舞", "埋堆堆", "斗鱼", "虎牙", "B站"]
 
 def fetch_url_content(url):
     """从指定URL获取内容"""
@@ -45,8 +41,10 @@ def format_category(category):
 def clean_line(line):
     """删除符号•、‘IPV6’关键字和‘「」’符号，并检查是否包含排除的关键词"""
     # 删除符号•、‘IPV6’关键字和‘「」’符号
-    line = line.replace("•", "").replace("IPV6", "").replace("「", "").replace("」", "")
-    
+    line = line.replace("•", "").replace("IPV6", "").replace("「", "").replace("」", "").replace("综合", "").replace("财经", "")
+        .replace("综艺", "").replace("中文国际", "").replace("体育赛事", "").replace("体育", "").replace("电影", "").replace("国防军事", "").replace("电视剧", "")
+        .replace("纪录", "").replace("科教", "").replace("戏曲", "").replace("社会与法", "").replace("新闻", "").replace("少儿", "")
+        .replace("音乐", "").replace("奥林匹克", "").replace("农村农业", "")
     # 检查是否包含需要排除的关键词
     for keyword in exclude_keywords:
         if keyword in line:
