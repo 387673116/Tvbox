@@ -15,11 +15,7 @@ urls = [
 output_file = "iptv6.txt"
 
 # 需要删除的关键词列表
-exclude_keywords = [
-    "综合", "财经", "综艺", "中文国际", "体育", "体育赛事", "电影", "国防军事", 
-    "电视剧", "纪录", "科教", "戏曲", "社会与法", "新闻", "少儿", "音乐", 
-    "奥林匹克", "农村农业"
-]
+exclude_keywords = ["咪咕", "轮播", "解说", "炫舞", "埋堆堆", "斗鱼", "虎牙", "B站"]
 
 def fetch_url_content(url):
     """从指定URL获取内容"""
@@ -70,7 +66,6 @@ def format_and_merge_sources(urls, output_file):
                 # 按行处理内容
                 lines = content.splitlines()
                 category = None  # 当前的分类
-                channel_name = None  # 当前的频道名称，初始化为空
                 for line in lines:
                     line = line.strip()
                     if not line:  # 忽略空行
@@ -88,19 +83,18 @@ def format_and_merge_sources(urls, output_file):
                         if group_title:
                             category = group_title.strip()  # 提取并格式化分类
                             parts = cleaned_line.split(",")
-                            if len(parts) > 1:
-                                channel_name = parts[1].strip()  # 获取频道名称
+                            channel_name = parts[1].strip()  # 获取频道名称
 
                             # 清理tvg-id或tvg-name中的空格符号和“-”符号
                             tvg_id_or_name = channel_name
                             channel_name = clean_tvg_id_or_name(tvg_id_or_name)
                     elif cleaned_line.startswith("http"):  # 播放链接
-                        if category and channel_name:
-                            # 存储同一分类下的所有频道及播放链接
-                            if category not in category_channels:
-                                category_channels[category] = {}
-                            if cleaned_line not in category_channels[category]:
-                                category_channels[category][cleaned_line] = channel_name
+                        # 存储同一分类下的所有频道及播放链接
+                        if category not in category_channels:
+                            category_channels[category] = {}
+                        # 如果播放链接相同，跳过添加重复链接
+                        if cleaned_line not in category_channels[category]:
+                            category_channels[category][cleaned_line] = channel_name
 
         # 将格式化后的分类和频道输出到文件
         for category, channels in category_channels.items():
