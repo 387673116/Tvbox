@@ -41,10 +41,22 @@ def format_category(category):
 def clean_line(line):
     """删除符号•、‘IPV6’关键字和‘「」’符号，并检查是否包含排除的关键词"""
     # 删除符号•、‘IPV6’关键字和‘「」’符号
-    line = line.replace("•", "").replace("IPV6", "").replace("「", "").replace("」", "").replace("综合", "").replace("财经", "")
-        .replace("综艺", "").replace("中文国际", "").replace("体育赛事", "").replace("体育", "").replace("电影", "").replace("国防军事", "").replace("电视剧", "")
-        .replace("纪录", "").replace("科教", "").replace("戏曲", "").replace("社会与法", "").replace("新闻", "").replace("少儿", "")
-        .replace("音乐", "").replace("奥林匹克", "").replace("农村农业", "")
+def clean_line(line):
+    """删除符号•、‘IPV6’关键字和‘「」’符号，并检查是否包含排除的关键词"""
+    # 删除符号•、‘IPV6’关键字和‘「」’符号
+    line = line.replace("•", "").replace("IPV6", "").replace("「", "").replace("」", "")
+    line = line.replace("综合", "").replace("财经", "").replace("综艺", "").replace("中文国际", "").replace("体育赛事", "")
+    line = line.replace("体育", "").replace("电影", "").replace("国防军事", "").replace("电视剧", "").replace("纪录", "")
+    line = line.replace("科教", "").replace("戏曲", "").replace("社会与法", "").replace("新闻", "").replace("少儿", "")
+    line = line.replace("音乐", "").replace("奥林匹克", "").replace("农村农业", "")
+    
+    # 检查是否包含需要排除的关键词
+    for keyword in exclude_keywords:
+        if keyword in line:
+            return None  # 如果包含排除关键词，返回None表示该行应删除
+    
+    return line
+
     # 检查是否包含需要排除的关键词
     for keyword in exclude_keywords:
         if keyword in line:
