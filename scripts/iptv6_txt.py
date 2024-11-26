@@ -82,7 +82,7 @@ def format_and_merge_sources(urls, output_file):
 
         # 将格式化后的分类和频道输出到文件
         for category, channels in category_channels.items():
-            # 输出group-title和#genre#
+            # 输出group-title和#genre#（只保留分类名）
             formatted_category = format_category(category)
             outfile.write(f"{formatted_category},#genre#\n")
             for channel_name, link in channels:
