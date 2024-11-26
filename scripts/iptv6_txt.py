@@ -92,12 +92,18 @@ def clean_group_title(category):
     """如果分类包含 '频道'，删除 '频道' 两个字"""
     return category.replace("频道", "") if "频道" in category else category
 
-def apply_replace_rules(channel_name):
-    """根据替换规则修改频道名称"""
-    for old, new in replace_rules.items():
-        if old in channel_name:
-            channel_name = channel_name.replace(old, new)
-    return channel_name
+def apply_replace_rules(content):
+    """应用替换规则，修改频道名称，仅替换双引号内的内容"""
+    def replace_channel_name(match):
+        """替换频道名称，只修改引号内的内容"""
+        channel_name = match.group(1)
+        for old, new in replace_rules.items():
+            if old in channel_name:
+                channel_name = channel_name.replace(old, new)
+        return f'"{channel_name}"'
+
+    # 使用正则表达式查找并替换双引号内的频道名称
+    return re.sub(r'"([^"]+)"', replace_channel_name, content)
 
 def format_and_merge_sources(urls, output_file):
     """将多个IPTV源内容合并为自定义txt格式"""
@@ -131,8 +137,6 @@ def format_and_merge_sources(urls, output_file):
                             category = clean_group_title(category)  # 删除"频道"字样
                             parts = cleaned_line.split(",")
                             channel_name = parts[1].strip()  # 获取频道名称
-                            # 应用替换规则
-                            channel_name = apply_replace_rules(channel_name)
                     elif cleaned_line.startswith("http"):  # 播放链接
                         # 存储同一分类下的所有频道及播放链接
                         if category not in category_channels:
@@ -141,13 +145,18 @@ def format_and_merge_sources(urls, output_file):
                             category_channels[category][cleaned_line] = channel_name
 
         # 将格式化后的分类和频道输出到文件
+        final_content = []
         for category, channels in category_channels.items():
             # 输出group-title和#genre#（只保留分类名）
             formatted_category = category  # 直接使用category，已经是干净的名称
-            outfile.write(f"{formatted_category},#genre#\n")
+            final_content.append(f"{formatted_category},#genre#")
             for link, channel_name in channels.items():
                 # 输出频道名称和播放链接
-                outfile.write(f"{channel_name},{link}\n")
+                final_content.append(f"{channel_name},{link}")
+        
+        # 应用替换规则并写入文件
+        modified_content = apply_replace_rules("\n".join(final_content))
+        outfile.write(modified_content)
 
 if __name__ == "__main__":
     format_and_merge_sources(urls, output_file)
