@@ -31,6 +31,8 @@ def format_and_merge_sources(urls, output_file):
     """将多个IPTV源内容合并为自定义txt格式"""
     with open(output_file, "w", encoding="utf-8") as outfile:
         last_category = None  # 用于存储最后一次的分类，避免重复输出
+        category_channels = {}  # 用于存储每个分类的所有频道及其播放链接
+
         for url in urls:
             print(f"正在处理: {url}")
             content = fetch_url_content(url)
@@ -53,17 +55,19 @@ def format_and_merge_sources(urls, output_file):
                             category = group_title_part.split('=')[1].replace('"', "").strip()  # 提取并格式化分类
                             channel_name = parts[1].strip()  # 获取频道名称
                     elif line.startswith("http"):  # 播放链接
-                        # 如果分类与上一行相同，跳过 group-title 输出
-                        if category != last_category:
-                            # 输出group-title和#genre#格式
-                            formatted_category = format_category(category)
-                            outfile.write(f"{formatted_category},#genre#\n")
-                            last_category = category
-                        # 输出tvg-id 或 tvg-name 和 播放链接
-                        tvg_id_or_name = channel_name  # 假设tvg-id 或 tvg-name 为频道名称
-                        outfile.write(f"{tvg_id_or_name},{line}\n")
-            else:
-                print(f"跳过: {url}")
+                        # 存储同一分类下的所有频道及播放链接
+                        if category not in category_channels:
+                            category_channels[category] = []
+                        category_channels[category].append((channel_name, line))
+
+        # 将格式化后的分类和频道输出到文件
+        for category, channels in category_channels.items():
+            # 输出group-title和#genre#
+            formatted_category = format_category(category)
+            outfile.write(f"{formatted_category},#genre#\n")
+            for channel_name, link in channels:
+                # 输出频道名称和播放链接
+                outfile.write(f"{channel_name},{link}\n")
 
 if __name__ == "__main__":
     format_and_merge_sources(urls, output_file)
