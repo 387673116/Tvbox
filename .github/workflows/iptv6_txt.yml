@@ -2,7 +2,7 @@ name: 生成iptv6.txt
 
 on:
   schedule:
-    - cron: "0 19 * * *"  # 每天北京时间 1 点（UTC 时间为 17 点）
+    - cron: "0 20 * * *"  # 每天北京时间 1 点（UTC 时间为 17 点）
   workflow_dispatch:  # 手动触发
 
 jobs:
@@ -27,9 +27,9 @@ jobs:
     - name: 安装依赖
       run: pip install requests m3u8
 
-    # 步骤 4：执行合并和优化 M3U 脚本
+    # 步骤 4：执行合并和优化 txt 脚本
     - name: 执行脚本
-      run: python scripts/iptv6.txt.py  # 确保路径正确，脚本文件名更改为 ipv4_m3u.py
+      run: python scripts/iptv6_txt.py  # 确保路径正确，脚本文件名更改为 
 
     # 步骤 5：检查是否有更改并提交
     - name: 检查是否有更改并提交
