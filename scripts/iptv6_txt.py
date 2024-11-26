@@ -13,6 +13,9 @@ urls = [
 # 输出文件路径
 output_file = "iptv6.txt"
 
+# 需要删除的关键词列表
+exclude_keywords = ["咪咕", "轮播", "解说", "炫舞", "埋堆堆", "斗鱼", "虎牙", "B站"]
+
 def fetch_url_content(url):
     """从指定URL获取内容"""
     try:
@@ -26,6 +29,18 @@ def fetch_url_content(url):
 def format_category(category):
     """如果分类包含 '频道'，删除 '频道' 两个字"""
     return category.replace("频道", "") if "频道" in category else category
+
+def clean_line(line):
+    """删除符号•、‘IPV6’关键字和‘「」’符号，并检查是否包含排除的关键词"""
+    # 删除符号•、‘IPV6’关键字和‘「」’符号
+    line = line.replace("•", "").replace("IPV6", "").replace("「", "").replace("」", "")
+    
+    # 检查是否包含需要排除的关键词
+    for keyword in exclude_keywords:
+        if keyword in line:
+            return None  # 如果包含排除关键词，返回None表示该行应删除
+    
+    return line
 
 def format_and_merge_sources(urls, output_file):
     """将多个IPTV源内容合并为自定义txt格式"""
@@ -45,20 +60,25 @@ def format_and_merge_sources(urls, output_file):
                     if not line:  # 忽略空行
                         continue
                     
+                    # 清理行中的符号和关键词
+                    cleaned_line = clean_line(line)
+                    if not cleaned_line:  # 如果该行被删除，跳过
+                        continue
+                    
                     # 查找频道的相关信息
-                    if line.startswith("#EXTINF"):
+                    if cleaned_line.startswith("#EXTINF"):
                         # 解析EXTINF，提取分类和频道信息
-                        parts = line.split(",")
+                        parts = cleaned_line.split(",")
                         if len(parts) >= 2:
                             # 获取group-title（分类）和频道名称
-                            group_title_part = [part for part in line.split() if part.startswith('group-title')][0]
+                            group_title_part = [part for part in cleaned_line.split() if part.startswith('group-title')][0]
                             category = group_title_part.split('=')[1].replace('"', "").strip()  # 提取并格式化分类
                             channel_name = parts[1].strip()  # 获取频道名称
-                    elif line.startswith("http"):  # 播放链接
+                    elif cleaned_line.startswith("http"):  # 播放链接
                         # 存储同一分类下的所有频道及播放链接
                         if category not in category_channels:
                             category_channels[category] = []
-                        category_channels[category].append((channel_name, line))
+                        category_channels[category].append((channel_name, cleaned_line))
 
         # 将格式化后的分类和频道输出到文件
         for category, channels in category_channels.items():
