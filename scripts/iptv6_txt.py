@@ -4,10 +4,10 @@ from collections import defaultdict
 
 # IPTV源列表
 urls = [
-    "https://gh.999986.xyz/https://raw.githubusercontent.com/fanmingming/live/master/tv/m3u/ipv6.m3u",
-    "https://gh.999986.xyz/https://raw.githubusercontent.com/YanG-1989/m3u/master/Gather.m3u",
-    "https://gh.999986.xyz/https://raw.githubusercontent.com/YueChan/live/master/APTV.m3u",
-    "https://gh.999986.xyz/https://raw.githubusercontent.com/YueChan/live/master/Global.m3u",
+    "https://raw.githubusercontent.com/fanmingming/live/master/tv/m3u/ipv6.m3u",
+    "https://raw.githubusercontent.com/YanG-1989/m3u/master/Gather.m3u",
+    "https://raw.githubusercontent.com/YueChan/live/master/APTV.m3u",
+    "https://raw.githubusercontent.com/YueChan/live/master/Global.m3u",
     "https://raw.githubusercontent.com/387673116/Tvbox/master/other/jingqu.m3u",
     "https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt"
 ]
