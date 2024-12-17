@@ -73,7 +73,7 @@ urls = [
 output_file = "iptv6.txt"
 
 # 需要删除的关键词列表
-exclude_keywords = ["咪咕", "轮播", "解说", "炫舞", "埋堆堆", "斗鱼", "虎牙", "B站", "CETV"]
+exclude_keywords = ["咪咕", "轮播", "解说", "炫舞", "埋堆堆", "斗鱼", "虎牙", "B站", "CETV", "叫啥"]
 
 # 频道名称的替换规则 (注意包括逗号)
 replace_rules = {
