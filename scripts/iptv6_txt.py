@@ -40,46 +40,25 @@ replace_rules = {
     "CCTV 14 少儿,": "CCTV-14 少儿,",
     "CCTV 15 音乐,": "CCTV-15 音乐,",
     "CCTV 16 奥林匹克,": "CCTV-16 奥林匹克,",
-    "CCTV 17 农村农业,": "CCTV-17 农业农村,",
-    "CCTV-1,": "CCTV-1 综合,",
-    "CCTV-2,": "CCTV-2 财经,",
-    "CCTV-3,": "CCTV-3 综艺,",
-    "CCTV-4,": "CCTV-4 中文国际,",
-    "CCTV-5,": "CCTV-5 体育,",
-    "CCTV-5+,": "CCTV-5+ 体育赛事,",
-    "CCTV-6,": "CCTV-6 电影,",
-    "CCTV-7,": "CCTV-7 国防军事,",
-    "CCTV-8,": "CCTV-8 电视剧,",
-    "CCTV-9,": "CCTV-9 纪录,",
-    "CCTV-10,": "CCTV-10 科教,",
-    "CCTV-11,": "CCTV-11 戏曲,",
-    "CCTV-12,": "CCTV-12 社会与法,",
-    "CCTV-13,": "CCTV-13 新闻,",
-    "CCTV-14,": "CCTV-14 少儿,",
-    "CCTV-15,": "CCTV-15 音乐,",
-    "CCTV-16,": "CCTV-16 奥林匹克,",
-    "CCTV-17,": "CCTV-17 农业农村,"
+    "CCTV 17 农村农业,": "CCTV-17 农业农村,"
 }
 
 def fetch_url_content(url):
-    """从指定URL获取内容"""
     try:
         response = requests.get(url)
-        response.raise_for_status()  # 检查请求是否成功
+        response.raise_for_status()
         return response.text
     except requests.RequestException as e:
         print(f"请求错误: {e}")
         return None
 
 def extract_group_title(line):
-    """从EXTINF行提取group-title的值"""
     match = re.search(r'group-title="([^"]+)"', line)
     if match:
         return match.group(1)
     return None
 
 def clean_line(line):
-    """删除符号•、‘IPV6’关键字和‘「」’符号，并检查是否包含排除的关键词"""
     line = line.replace("•", "").replace("IPV6", "").replace("「", "").replace("」", "")
     for keyword in exclude_keywords:
         if keyword in line:
@@ -105,12 +84,6 @@ def apply_replace_rules(content):
         final_content.append(line)
     return "\n".join(final_content)
 
-def extract_number_from_channel_name(channel_name):
-    match = re.search(r'(\d+)', channel_name)
-    if match:
-        return int(match.group(1))
-    return float('inf')
-
 def format_and_merge_sources(urls, output_file):
     with open(output_file, "w", encoding="utf-8") as outfile:
         category_channels = defaultdict(list)
@@ -120,6 +93,7 @@ def format_and_merge_sources(urls, output_file):
             if content:
                 lines = content.splitlines()
                 category = None
+                channel_name = None
                 for line in lines:
                     line = line.strip()
                     if not line:
@@ -131,14 +105,18 @@ def format_and_merge_sources(urls, output_file):
                         group_title = extract_group_title(cleaned_line)
                         if group_title:
                             category = clean_group_title(group_title.strip())
+                            parts = cleaned_line.split(",")
+                            if len(parts) > 1:
+                                channel_name = parts[1].strip()
                     elif cleaned_line.startswith("http"):
-                        category_channels[category].append(cleaned_line)
+                        if category and channel_name:
+                            category_channels[category].append((channel_name, cleaned_line))
+                            channel_name = None
         final_content = []
         for category, channels in category_channels.items():
-            formatted_category = category
-            final_content.append(f"{formatted_category},#genre#")
-            for link in channels:
-                final_content.append(f"{link}")
+            final_content.append(f"{category},#genre#")
+            for channel_name, link in channels:
+                final_content.append(f"{channel_name},{link}")
         modified_content = apply_replace_rules("\n".join(final_content))
         outfile.write(modified_content)
 
