@@ -80,88 +80,65 @@ def extract_group_title(line):
 
 def clean_line(line):
     """删除符号•、‘IPV6’关键字和‘「」’符号，并检查是否包含排除的关键词"""
-    # 删除符号•、‘IPV6’关键字和‘「」’符号
     line = line.replace("•", "").replace("IPV6", "").replace("「", "").replace("」", "")
-    
-    # 检查是否包含需要排除的关键词
     for keyword in exclude_keywords:
         if keyword in line:
-            return None  # 如果包含排除关键词，返回None表示该行应删除
-    
+            return None
     return line
 
 def clean_group_title(category):
-    """如果分类包含 '频道'，删除 '频道' 两个字"""
-    return category.replace("频道", "") if "频道" in category else category
+    """清理分类名称并进行分类合并"""
+    category = category.replace("频道", "")
+    if category in ["上海", "内蒙", "地方", "地区"]:
+        return "地区"
+    if category == "4KIPV4":
+        return "4K"
+    return category
 
 def apply_replace_rules(content):
-    """应用替换规则，修改央视分类下的频道名称"""
     content_lines = content.splitlines()
     final_content = []
     for line in content_lines:
-        # 替换频道名称（含逗号）
         for old, new in replace_rules.items():
             if old in line:
                 line = line.replace(old, new)
         final_content.append(line)
-    
     return "\n".join(final_content)
 
 def extract_number_from_channel_name(channel_name):
-    """从频道名称中提取数字，确保正确排序"""
     match = re.search(r'(\d+)', channel_name)
     if match:
         return int(match.group(1))
-    return float('inf')  # 如果没有数字，放在最后
+    return float('inf')
 
 def format_and_merge_sources(urls, output_file):
-    """将多个IPTV源内容合并为自定义txt格式"""
     with open(output_file, "w", encoding="utf-8") as outfile:
-        category_channels = defaultdict(list)  # 使用defaultdict以便同名频道自动合并
-
+        category_channels = defaultdict(list)
         for url in urls:
             print(f"正在处理: {url}")
             content = fetch_url_content(url)
             if content:
-                # 按行处理内容
                 lines = content.splitlines()
-                category = None  # 当前的分类
-                channel_name = None  # 当前频道名称
+                category = None
                 for line in lines:
                     line = line.strip()
-                    if not line:  # 忽略空行
+                    if not line:
                         continue
-                    
-                    # 清理行中的符号和关键词
                     cleaned_line = clean_line(line)
-                    if not cleaned_line:  # 如果该行被删除，跳过
+                    if not cleaned_line:
                         continue
-                    
-                    # 查找频道的相关信息
                     if cleaned_line.startswith("#EXTINF"):
-                        # 解析EXTINF，提取分类和频道信息
                         group_title = extract_group_title(cleaned_line)
                         if group_title:
-                            category = group_title.strip()  # 提取并格式化分类
-                            category = clean_group_title(category)  # 删除"频道"字样
-                            parts = cleaned_line.split(",")
-                            channel_name = parts[1].strip()  # 获取频道名称
-                    elif cleaned_line.startswith("http"):  # 播放链接
-                        # 将播放链接和频道名称添加到分类对应的列表中
-                        category_channels[category].append((channel_name, cleaned_line))
-
-        # 将格式化后的分类和频道输出到文件
+                            category = clean_group_title(group_title.strip())
+                    elif cleaned_line.startswith("http"):
+                        category_channels[category].append(cleaned_line)
         final_content = []
         for category, channels in category_channels.items():
-            # 输出group-title和#genre#（只保留分类名）
-            formatted_category = category  # 直接使用category，已经是干净的名称
+            formatted_category = category
             final_content.append(f"{formatted_category},#genre#")
-            # 对每个分类下的频道按名称中提取的数字进行排序
-            channels.sort(key=lambda x: extract_number_from_channel_name(x[0]))  # 根据频道名称中的数字部分排序
-            for channel_name, link in channels:
-                final_content.append(f"{channel_name},{link}")
-        
-        # 应用替换规则并写入文件
+            for link in channels:
+                final_content.append(f"{link}")
         modified_content = apply_replace_rules("\n".join(final_content))
         outfile.write(modified_content)
 
