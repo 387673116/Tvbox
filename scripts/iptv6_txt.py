@@ -9,7 +9,7 @@ urls = [
     "https://raw.githubusercontent.com/YueChan/live/master/APTV.m3u",
     "https://raw.githubusercontent.com/YueChan/live/master/Global.m3u",
     "https://raw.githubusercontent.com/387673116/Tvbox/master/other/jingqu.m3u",
-    "https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt"
+    "https://gh.999986.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt"
 ]
 
 # 输出文件路径
