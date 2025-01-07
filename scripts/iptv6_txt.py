@@ -4,18 +4,18 @@ from collections import defaultdict
 
 # IPTV源列表
 urls = [
-    "https://raw.githubusercontent.com/fanmingming/live/master/tv/m3u/ipv6.m3u",
-    "https://raw.githubusercontent.com/YanG-1989/m3u/master/Gather.m3u",
-    "https://raw.githubusercontent.com/YueChan/live/master/APTV.m3u",
-    "https://raw.githubusercontent.com/YueChan/live/master/Global.m3u",
-    "https://raw.githubusercontent.com/387673116/Tvbox/master/other/jingqu.m3u",
+    "https://gh.999986.xyz/https://raw.githubusercontent.com/fanmingming/live/master/tv/m3u/ipv6.m3u",
+    "https://gh.999986.xyz/https://raw.githubusercontent.com/YanG-1989/m3u/master/Gather.m3u",
+    "https://gh.999986.xyz/https://raw.githubusercontent.com/YueChan/live/master/APTV.m3u",
+    "https://gh.999986.xyz/https://raw.githubusercontent.com/YueChan/live/master/Global.m3u",
+    "https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/other/jingqu.m3u",
 ]
 
 # 输出文件路径
 output_file = "iptv6.txt"
 
 # 需要删除的关键词列表
-exclude_keywords = ["咪咕", "轮播", "解说", "炫舞", "埋堆堆", "斗鱼", "虎牙", "B站", "CETV", "叫啥", "自贸", "海南新闻"]
+exclude_keywords = ["咪咕", "炫舞", "埋堆堆", "斗鱼", "虎牙", "B站", "CETV", "叫啥", "自贸"]
 
 # 频道名称的替换规则
 replace_rules = {
@@ -57,7 +57,25 @@ replace_rules = {
     "CCTV-14,": "CCTV-14 少儿,",
     "CCTV-15,": "CCTV-15 音乐,",
     "CCTV-16,": "CCTV-16 奥林匹克,",
-    "CCTV-17,": "CCTV-17 农业农村,"
+    "CCTV-17,": "CCTV-17 农业农村,",    
+    "CCTV1,": "CCTV-1 综合,",
+    "CCTV2,": "CCTV-2 财经,",
+    "CCTV3,": "CCTV-3 综艺,",
+    "CCTV4,": "CCTV-4 中文国际,",
+    "CCTV5,": "CCTV-5 体育,",
+    "CCTV5+,": "CCTV-5+ 体育赛事,",
+    "CCTV6,": "CCTV-6 电影,",
+    "CCTV7,": "CCTV-7 国防军事,",
+    "CCTV8,": "CCTV-8 电视剧,",
+    "CCTV9,": "CCTV-9 纪录,",
+    "CCTV10,": "CCTV-10 科教,",
+    "CCTV11,": "CCTV-11 戏曲,",
+    "CCTV12,": "CCTV-12 社会与法,",
+    "CCTV13,": "CCTV-13 新闻,",
+    "CCTV14,": "CCTV-14 少儿,",
+    "CCTV15,": "CCTV-15 音乐,",
+    "CCTV16,": "CCTV-16 奥林匹克,",
+    "CCTV17,": "CCTV-17 农业农村,"
 }
 
 
@@ -148,6 +166,10 @@ def format_and_merge_sources(urls, output_file):
     with open(output_file, "w", encoding="utf-8") as outfile:
         final_content = []
         for category, channels in category_channels.items():
+            # 跳过温馨提示分组及其内容
+            if category == "温馨提示":
+                continue
+
             final_content.append(f"{category},#genre#")
             channels.sort(key=lambda x: extract_number_from_channel_name(x[0]))  # 按频道名称中的数字排序
             for channel_name, link in channels:
