@@ -26,8 +26,8 @@ def clean_text(text):
     domain_pattern = r'https?://[^/]+/(https?://[\w./-]+)'
     text = re.sub(domain_pattern, r'https://gh.999986.xyz/\1', text)
 
-    # 替换 epg.112114.xyz 和 epg.51zmt.top（支持端口号）
-    epg_pattern = r'https?://(epg\.112114\.xyz|epg\.51zmt\.top(:\d+)?)(/.*)?'
+    # 替换 epg.112114.xyz 和 epg.51zmt.top（支持端口号和路径）
+    epg_pattern = r'https?://(epg\.112114\.xyz|epg\.51zmt\.top)(:\d+)?(/.*)?'
     text = re.sub(epg_pattern, r'https://epg.999986.xyz\3', text)
 
     # 替换 NanFeng.gif 链接为 tv.png 链接
