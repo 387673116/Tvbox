@@ -30,10 +30,6 @@ def clean_text(text):
     epg_pattern = r'https?://(epg\.112114\.xyz|epg\.51zmt\.top)(:\d+)?(/.*)?'
     text = re.sub(epg_pattern, r'https://epg.999986.xyz\3', text)
 
-    # 替换 https://epg.112114.xyz/logo/ 为 https://epg.999986.xyz/logo/
-    logo_pattern = r'https://epg\.112114\.xyz/logo/'
-    text = re.sub(logo_pattern, 'https://epg.999986.xyz/logo/', text)
-
     # 替换 NanFeng.gif 链接为 tv.png 链接
     gif_pattern = r'https://raw\.githubusercontent\.com/yoursmile66/TVBox/main/sub/NanFeng\.gif'
     text = re.sub(gif_pattern, 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/other/tv.png', text)
