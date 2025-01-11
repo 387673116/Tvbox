@@ -60,6 +60,7 @@ replace_rules = {
     "CCTV-15 音乐,": "CCTV-15,",
     "CCTV-16 奥林匹克,": "CCTV-16,",
     "CCTV-17 农村农业,": "CCTV-17,", 
+    "CCTV-17 农业农村,": "CCTV-17,", 
 
     "CCTV1,": "CCTV-1,",
     "CCTV2,": "CCTV-2,",
