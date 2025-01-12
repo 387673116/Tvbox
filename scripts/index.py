@@ -24,11 +24,11 @@ def clean_text(text):
 
     # 匹配以 http 或 https 开头的链接并替换域名
     domain_pattern = r'https?://[^/]+/(https?://[\w./-]+)'
-    text = re.sub(domain_pattern, r'https://gh.999986.xyz/\1', text)
+    text = re.sub(domain_pattern, r'https://gh.999986.xyz', text)
 
     # 替换 epg.112114.xyz 和 epg.51zmt.top（支持端口号和路径）
     epg_pattern = r'https?://(epg\.112114\.xyz|epg\.51zmt\.top)(:\d+)?(/.*)?'
-    text = re.sub(epg_pattern, r'https://epg.999986.xyz\3', text)
+    text = re.sub(epg_pattern, r'https://epg.999986.xyz', text)
 
     # 替换 https://epg.112114.xyz/logo/ 为 https://epg.999986.xyz/logo/
     logo_pattern = r'https://epg\.112114\.xyz/logo/'
