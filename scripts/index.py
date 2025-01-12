@@ -22,14 +22,6 @@ def clean_text(text):
     # 删除以 // 开头的注释行
     text = re.sub(r'^\s*//.*\n?', '', text, flags=re.MULTILINE)
 
-    # 匹配以 http 或 https 开头的链接并替换域名
-    domain_pattern = r'https?://[^/]+/(https?://[\w./-]+)'
-    text = re.sub(domain_pattern, r'https://gh.999986.xyz', text)
-
-    # 替换 epg.112114.xyz 和 epg.51zmt.top（支持端口号和路径）
-    epg_pattern = r'https?://(epg\.112114\.xyz|epg\.51zmt\.top)(:\d+)?(/.*)?'
-    text = re.sub(epg_pattern, r'https://epg.999986.xyz', text)
-
     # 替换 https://epg.112114.xyz/logo/ 为 https://epg.999986.xyz/logo/
     logo_pattern = r'https://epg\.112114\.xyz/logo/'
     text = re.sub(logo_pattern, 'https://epg.999986.xyz/logo/', text)
@@ -39,7 +31,6 @@ def clean_text(text):
     text = re.sub(gif_pattern, 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/other/tv.png', text)
 
     return text
-
 
 
 def process_json_data(cleaned_text):
@@ -70,13 +61,8 @@ def process_json_data(cleaned_text):
                     site['name'] = '⚡荐片'
                 elif site.get('key') == 'csp_SixV':
                     site['name'] = '🌸新6V'
-            # 将 "csp_Jianpian" 调整到第二个位置
-            # jianpian_site = next((site for site in data['sites'] if site.get('key') == 'csp_Jianpian'), None)
-            # if jianpian_site:
-                # data['sites'].remove(jianpian_site)
-                # data['sites'].insert(1, jianpian_site)
+            
         # 保留 "lives" 列表中的第一组数据，并删除其他数据
-        # 替换 "lives" 列表中的数据
         if 'lives' in data and len(data['lives']) > 0:
             # 删除除第一组外的所有数据
             data['lives'] = [data['lives'][0]]  # 只保留第一组数据
@@ -84,6 +70,10 @@ def process_json_data(cleaned_text):
             # 替换第一组数据的 name 和 url
             data['lives'][0]['name'] = 'IPTV4'
             data['lives'][0]['url'] = 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/iptv4.m3u'
+            
+            # 更新 epg 字段
+            for live in data['lives']:
+                live['epg'] = 'https://epg.999986.xyz'
 
             # 复制第一组数据，修改第二组和第三组的数据
             ipv6_data = {**data['lives'][0], 'name': 'IPTV6', 'url': 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/iptv6.txt'}
