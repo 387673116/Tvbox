@@ -30,6 +30,16 @@ def clean_text(text):
     gif_pattern = r'https://raw\.githubusercontent\.com/yoursmile66/TVBox/main/sub/NanFeng\.gif'
     text = re.sub(gif_pattern, 'https://gh.999986.xyz/https://raw.githubusercontent.com/387673116/Tvbox/master/other/tv.png', text)
 
+    # 调用 replace_links 函数，替换相关链接
+    text = replace_links(text)
+
+    return text
+
+
+def replace_links(text):
+    # 可以根据需要添加更多的域名匹配规则
+    text = re.sub(r'https?://[a-zA-Z0-9.-]+/https?://', 'https://gh.999986.xyz/https://', text)
+
     return text
 
 
